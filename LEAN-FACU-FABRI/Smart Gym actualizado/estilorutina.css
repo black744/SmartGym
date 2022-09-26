@@ -1,0 +1,94 @@
+*{
+padding:0%;
+margin:0;
+}
+
+body{
+background: #050505;
+}
+
+.cont-t{
+position:relative;
+display:inline-block;
+margin:1%;
+height: 200vh;
+width: 95vw;
+border: 1px solid red
+}
+
+.boton
+{
+	height:8vh;
+	width:15vh;
+	margin:0.5%;
+	color: #fff;
+	background: #101010;
+	border: none;
+	border-radius: 5px;
+	cursor:pointer;
+}
+
+.boton:hover
+{
+	color: #fb4c0d;
+	background: #101010;
+	cursor:pointer;
+	border: 1px solid #fb4c0d;
+}
+
+.c-t-rutina{ 
+	position:relative;
+	height: 85%;
+	width: 95%;
+	margin:1.5%;
+	color: white;
+}
+
+.s-d{
+	height: 10vh;
+	width: 20vh;
+	background: #101010;
+	border-radius: 20px;
+	border: none;
+	cursor: pointer;
+	color: #fff;
+}
+
+.s-d:hover{
+	color: #fb4c0d;
+	border: 1.5px solid white;
+}
+
+.dias
+{
+border-radius:5px; 
+height:4.8%;
+font-size:25px;
+border-collapse: collapse ;
+color: white;
+font-size:20px;
+text-align: center;
+background: #fb4c0d;
+}
+
+.ej{
+border-radius:5px; 
+height:4.8%;
+width:8%;
+border-collapse: collapse ;
+background: #fb4c0d;
+}
+
+.ej p{
+color: white;
+font-size:20px;
+text-align: center;
+}
+
+.ce
+{
+border-radius:5px; 
+border: 1px solid #999;
+}
+
+
