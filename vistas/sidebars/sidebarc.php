@@ -14,8 +14,10 @@
 
     <div class="wrapper">
         <div class="menulateral">
-            <h2>Smart-gym</h2>
+            
+            <a href="index.php"><img class="imagenlogo" src="../img/logo.png"></a>
             <ul>
+
                 <li><a href="homeusuarioc.php"><i class="fas fa-home"></i>Home</a></li>
                 <li><a href="perfilusuarioc.php"><i class="fas fa-user"></i>Perfil</a></li>
                 <li><a href="turnosc.php"><i class="fas fa-address-card"></i>Turnos</a></li>
