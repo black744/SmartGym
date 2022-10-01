@@ -70,41 +70,53 @@ $image= $row['image'];
                 <P>Turnos asignados</P>
             </div>
             <?php
-        $query1=mysqli_query($conex,"SELECT * FROM turnos WHERE identrenador='$idusuario'");
+        $query1=mysqli_query($conex,"SELECT * FROM turnos WHERE identrenador='$idusuario' AND estado='1'");
         $result1= mysqli_num_rows($query1);
         if($result1 > 0){
         while ($data= mysqli_fetch_array($query1)){
 
 ?> 
             <div class="turno-a">
-                <p> fecha del turno:<?php echo $data['fechahora'];?></p> <p> Horario: </p> 
-                <p> Entrenador: </p>
-                <p> Tipo de turno: </p>
-                <p> Direccion: </p>
+                <p> fecha del turno:<?php echo $data['fechahora'];?></p> <p> Horario:<?php echo $data['fechahora'];?></p> 
+                <p> Entrenador:<?php echo $data['identrenador'];?></p>
+                <p> Tipo de turno:<?php echo $data['modalidad'];?></p>
+                <p> Direccion:g</p>
             </div>
             <?php
         }};?>
-            <div class="turno-a">
-                <p> fecha del turno: </p> <p> Horario: </p> 
-                <p> Cliente: </p>
-                <p> Tipo de turno: </p>
-                <p> Direccion: </p>
-
-            </div>
             
 		</div>
 	  <div class="cont-calendario-seleccionar">
 		  <div class="header2">
                 <P>Aceptar turnos</P>
           </div>
-            
-            <div class="turno-a">
-                <P>fecha:<br> hora:<br> entrenador:<br> modalidad:<br> alumno:<br> </P>
-                <button class="boton"> Aceptar turno</button>
-                
-				<button class="boton"> Cancelar turno</button>
+            <?php
+            $query2=mysqli_query($conex,"SELECT * FROM turnos WHERE identrenador='$idusuario' AND estado='0'");
+            $result2= mysqli_num_rows($query2);
+            if($result2 > 0){
+            while ($data1= mysqli_fetch_array($query2)){
+                $idturno=$data1['idturno'];
+            ?>
+                <div class="turno-a">
+                <P><br> <?php echo $idturno?>fecha y hora:<?php echo $data1['fechahora']?><br> entrenador:<?php echo $data1['identrenador']?><br> modalidad:<br> alumno:<br> </P>
+                <button class="boton" name="aceptarturno" id="aceptarturno"></button>
+                <?php
+                if(isset($_post['aceptarturno'])){
+                    $consultaaceptar="UPDATE turnos SET estado='1' WHERE idturno='$idturno'";
+                    $resultadoaceptar=mysqli_query($conex,$consultaaceptar);
+                };?>
+				<button class="boton" name="cancelarturno" id="cancelarturno"></button>
+                <?php
+                if(isset($_post['cancelarturno'])){
+                    $consultacancelar="UPDATE turnos SET estado='2' WHERE idturno='$idturno'";
+                    $resultadocanc=mysqli_query($conex,$consultacancelar);
+
+                };?>    
+
             </div>
 
+            <?php
+            }};?>
              <div class="turno-a">
                 <P>fecha:<br> hora:<br> entrenador:<br> modalidad:<br> alumno:<br> </P>
                 <button class="boton"> Aceptar turno</button>
