@@ -23,11 +23,11 @@ $pesoideal= $row['pesoideal'];
 ?>
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
 
-    <title>Perfil</title>
+    <title>Home Usuario</title>
 
     <link rel="stylesheet" href="../css/estilousuario.css">
 </head>
@@ -51,11 +51,6 @@ $pesoideal= $row['pesoideal'];
 
         <div class="main_content">
 
-            <div class="header">
-                <?php
-                echo "Welcome $nusuario to smart Smart-gym !! Have a nice day."
-                ?>
-            </div>
             <div class="info">
                 <div class="izquierda">
                     <div class="turnoultimo">
@@ -72,7 +67,7 @@ $pesoideal= $row['pesoideal'];
                         $sqlquery= mysqli_fetch_array($queryProximoTurno);
                         $a= $sqlquery['idturno']; 
                         ?>
-                        <p>Tu Próximo Túrno</p>
+                        <p><br>Tu Próximo Túrno</p>
                         <p>Fecha y hora: 
                         <?php 
                         if ($sqlquery['fechahora'] == 0){
@@ -91,6 +86,7 @@ $pesoideal= $row['pesoideal'];
                     <p><?php echo $row['nombre']?></p>
                 </div>
                 <div class="progreso">
+                    <br>
                     <p>Peso actual: <?php echo $pesoactual ?> </p>
                     <p>Peso ideal: <?php echo $pesoideal ?> </p>
                     <p>Peso inicial: <?php echo $pesoinicial ?> </p>
@@ -99,7 +95,8 @@ $pesoideal= $row['pesoideal'];
                 <div class="progresoform">
                     <form method="post">
                         <p>ingrese peso actual</p>
-                        <input class="orange" type="text" name="pesoactual"><input class="botonenviar" type="submit" name="enviarpesoactual">
+                        <input class="orange" type="text" name="pesoactual">
+                        <input class="botonenviar" type="submit" name="enviar">
                     </form>
                     <?php
                     if(isset($_POST['enviarpesoactual'])){
@@ -110,7 +107,8 @@ $pesoideal= $row['pesoideal'];
                     ?>
                     <form method="post">
                         <p>ingrese peso ideal</p>
-                        <input class="orange" type="text" name="pesoideal"><input class="botonenviar" type="submit" name="enviarpesoideal">
+                        <input class="orange" type="text" name="pesoideal">
+                        <input class="botonenviar" type="submit" name="enviar">
                     </form>
                     <?php
                     if(isset($_POST['enviarpesoideal'])){

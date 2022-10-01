@@ -46,13 +46,13 @@ html {
 
 .wrapper .menulateral ul li {
     padding: 15px;
-    border-bottom: 1px solid #ff7514;
+    border-bottom: 1px solid #fb4c0d;
     border-bottom: 1px solid rgba(0, 0, 0, 0.05);
     border-top: 1px solid rgba(255, 255, 255, 0.05);
 }
 
 .wrapper .menulateral ul li a {
-    color: #ff7514;
+    color: #fb4c0d;
     display: block;
 }
 
@@ -61,7 +61,7 @@ html {
 }
 
 .wrapper .menulateral ul li:hover {
-    background-color: #ff7514;
+    background-color: #fb4c0d;
 }
 
 .wrapper .menulateral ul li:hover a {
@@ -151,7 +151,7 @@ html {
     height: 180px;
     align-items: center;
     justify-content: center;
-    border: 4px solid #ff7514;
+    border: 4px solid #fb4c0d;
     background-color: #DFE5F2;
     border-radius: 50%;
     box-shadow: 0 0 12px rgba(0, 0, 0, .2);
@@ -185,7 +185,7 @@ html {
 
 .perfil-usuario-avatar input {
     display: inline-block;
-    color: #ff7514;
+    color: #fb4c0d;
     background: #252525;
 }
 
@@ -210,7 +210,7 @@ html {
     margin-bottom: 3.5%;
     padding: 2%;
     box-shadow: 0 0 12px rgba(0, 0, 0, .2);
-    background-color: #ff7514;
+    background-color: #fb4c0d;
     border-radius: 15px;
     color: #fff;
 }
@@ -230,7 +230,7 @@ html {
     margin-top: 2%;
     margin-left: 0%;
     box-shadow: 0 0 12px rgba(0, 0, 0, .2);
-    background-color: #ff7514;
+    background-color: #fb4c0d;
     border-radius: 15px;
     color: #fff;
 }
@@ -267,8 +267,9 @@ html {
     margin-left: 20%;
     margin-bottom: 10%;
     margin-right: 1.5%;
-    border: 2px solid #ff7514;
-    color: #ff7514;
+    border: 2px solid #fb4c0d;
+    color: #fb4c0d;
+    font-size: 25px;
     background: #000;
     border-radius: 25px;
     height: 8vh;
@@ -295,7 +296,7 @@ html {
     margin-right: 2vw;
     margin-bottom: 2vh;
     border-radius: 20px;
-    border: 1px solid #ff7514;
+    border: 1px solid #fb4c0d;
     background: #000;
 }
 
@@ -336,7 +337,7 @@ p {
     margin-right: 2vw;
     margin-bottom: 2vh;
     background: #000;
-    border: 1px solid #ff7514;
+    border: 1px solid #fb4c0d;
     border-radius: 20px;
 }
 
@@ -345,7 +346,7 @@ p {
     margin: 5%;
     position: relative;
     background-color: transparent;
-    border: 2px #ff7514 solid;
+    border: 2px #fb4c0d solid;
     border-radius: 10px;
 }
 
@@ -369,7 +370,7 @@ p {
     overflow: scroll;
     position: relative;
     margin: 2.5%;
-    border: 2px #ff7514 solid;
+    border: 2px #fb4c0d solid;
     border-radius: 25px;
     background: #404040;
 }
@@ -379,13 +380,13 @@ p {
     width: 75vw;
     position: relative;
     margin: 3%;
-    border: 2px #ff7514 solid;
+    border: 2px #fb4c0d solid;
     border-radius: 20px;
     background: #252525;
 }
 
 .head-info h4 {
-    color: #ff7514;
+    color: #fb4c0d;
     font-size: 120%;
     margin: 2%;
 }
@@ -401,13 +402,13 @@ p {
     height: 22vh;
     width: 70vw;
     margin: 3%;
-    border: 2px #ff7514 solid;
+    border: 2px #fb4c0d solid;
     border-radius: 10px;
     background: #000;
 }
 
 .ejercicio h5 {
-    color: #ff7514;
+    color: #fb4c0d;
     font-size: 120%;
     margin: 2%;
 }
@@ -456,12 +457,12 @@ input:focus {
     -moz-box-shadow: none !important;
     -webkit-box-shadow: none !important;
     box-shadow: none !important;
-    border: 1px solid #ff7514;
+    border: 1px solid #fb4c0d;
     outline-width: 0;
 }
 
 ::placeholder {
-    color: #ff7514;
+    color: #fb4c0d;
     opacity: 1;
 }
 
@@ -482,7 +483,7 @@ button:focus {
 
 .datepicker {
     background-color: #101010 !important;
-    color: #ff7514 !important;
+    color: #fb4c0d !important;
     border: none;
     padding: 10px !important;
     cursor: pointer;
@@ -493,7 +494,7 @@ button:focus {
 }
 
 thead tr:nth-child(3) th {
-    color: #ff7514 !important;
+    color: #fb4c0d !important;
     font-weight: bold;
     padding-top: 20px;
     padding-bottom: 10px;
@@ -522,7 +523,7 @@ thead tr:nth-child(3) th {
 
 .active {
     border-radius: 6px !important;
-    background-image: linear-gradient(orange, #ff7514) !important;
+    background-image: linear-gradient(orange, #fb4c0d) !important;
     color: #000 !important;
 }
 
@@ -537,7 +538,7 @@ thead tr:nth-child(3) th {
     padding: 20px 10px !important;
     text-transform: uppercase;
     font-size: 20px;
-    color: #ff7514 !important;
+    color: #fb4c0d !important;
     opacity: 0.8;
 }
 
@@ -555,16 +556,16 @@ thead tr:nth-child(3) th {
 }
 
 .cell:hover {
-    border: 1px solid #ff7514;
+    border: 1px solid #fb4c0d;
 }
 
 .cell.select {
-    background-color: #ff7514;
+    background-color: #fb4c0d;
     color: #fff;
 }
 
 .fa-calendar {
-    color: #ff7514;
+    color: #fb4c0d;
     font-size: 30px;
     padding-top: 8px;
     padding-left: 3.5%;
@@ -577,7 +578,7 @@ thead tr:nth-child(3) th {
     width: 30vh;
     height: 25vh;
     background: #252525;
-    border: 1.5px solid #ff7514;
+    border: 1.5px solid #fb4c0d;
     border-radius: 25px;
     margin: 2%;
 }
@@ -587,7 +588,7 @@ thead tr:nth-child(3) th {
     height: 15%;
     margin: 6%;
     background: #101010;
-    color: #ff7514;
+    color: #fb4c0d;
 }
 
 .seleccion-e-m button {
@@ -595,7 +596,7 @@ thead tr:nth-child(3) th {
     height: 15%;
     margin: 6%;
     background: #101010;
-    color: #ff7514;
+    color: #fb4c0d;
 }
 
 .contenedor-turnos-asignados {
@@ -605,7 +606,7 @@ thead tr:nth-child(3) th {
     width: 50vh;
     height: fit-content;
     background: #252525;
-    border: 1.5px solid #ff7514;
+    border: 1.5px solid #fb4c0d;
     border-radius: 25px;
     margin: 2%;
 }
@@ -616,7 +617,7 @@ thead tr:nth-child(3) th {
     height: 15vh;
     margin: 2.5%;
     background: #252525;
-    border: 1.5px solid #ff7514;
+    border: 1.5px solid #fb4c0d;
     border-radius: 25px;
 }
 
@@ -642,7 +643,7 @@ thead tr:nth-child(3) th {
     height: 30vh;
     margin: 2.5%;
     background: #252525;
-    border: 1.5px solid #ff7514;
+    border: 1.5px solid #fb4c0d;
     border-radius: 25px;
 }
 
@@ -654,7 +655,7 @@ thead tr:nth-child(3) th {
     height: 30vh;
     margin: 2.5%;
     background: #252525;
-    border: 1.5px solid #ff7514;
+    border: 1.5px solid #fb4c0d;
     border-radius: 25px;
 }
 
@@ -679,11 +680,11 @@ thead tr:nth-child(3) th {
 
 /* main */
 .izquierda {
-    width: 785px;
-    height: 430px;
+    width: 100vh;
+    height: 80vh;
     margin-left: 2px;
     position: absolute;
-    background-color: #636363;
+    background-color: #252525;
     margin-top: 1px;
     border-width: 3px;
     border-bottom: 3px;
@@ -695,11 +696,11 @@ thead tr:nth-child(3) th {
 
 
 .derecha {
-    width: 325px;
-    height: 430px;
+    width: 60vh;
+    height: 80vh;
     margin-left: 800px;
     position: absolute;
-    background-color: #ff7514;
+    background: #252525;
     margin-top: 1px;
     border-width: 3px;
     border-bottom: 3px;
@@ -716,7 +717,7 @@ thead tr:nth-child(3) th {
 }
 .nombre{
     margin-top: 105px;
-    margin-left: 120px;
+    margin-left: 15vh;
     color:white;
     font-size: 20px;
 
@@ -731,20 +732,29 @@ thead tr:nth-child(3) th {
 }
 
 .progresoform{
+    width: 55vh;
+    height: 30vh;
+    background: #252525;
     color:white;
-    margin-left:65px;
+    margin-left: 2.5vh;
     margin-top:5px;
 }
 
+.progresoform p {
+    margin: 2vh;
+    color: #fff;
+}
+
 .orange{
-    background-color: orangered;
+    margin: 1.5vh ;
+    background: #202020;
 }
 .botonenviar{
     color:white;
-    width: 30px;
-    height: 30px;
-    margin-left: 5px;
-    border-radius: 100%;
+    width: 25vh;
+    height: 5vh;
+    margin-left: 2vh;
+    border-radius: 20px;
     background-color: orangered;
 }
 
@@ -752,14 +762,21 @@ thead tr:nth-child(3) th {
 
 /* Inicio Izquierda */
 .turnoultimo{
-    width: 200px;
-    height: 200px;
-    background-color: #ff7514;
+    width: 45vh;
+    height: 35vh;
+    background-color: #fb4c0d;
     margin-left: 10px;
     margin-top: 10px;
     border-radius: 5%;
-    color: white;
 }
+
+.turnoultimo p{
+    font-size: 20px;
+    margin-top: 3%;
+    margin-left: 5%;
+    color: #fff;
+}
+
 
 /* Fin Izquierda */
 
