@@ -93,30 +93,32 @@ $image= $row['image'];
             <?php
             $query2=mysqli_query($conex,"SELECT * FROM turnos WHERE identrenador='$idusuario' AND estado='0'");
             $result2= mysqli_num_rows($query2);
-            if($result2 > 0){
             while ($data1= mysqli_fetch_array($query2)){
                 $idturno=$data1['idturno'];
+                
             ?>
                 <div class="turno-a">
                 <P><br> <?php echo $idturno?>fecha y hora:<?php echo $data1['fechahora']?><br> entrenador:<?php echo $data1['identrenador']?><br> modalidad:<br> alumno:<br> </P>
-                <button class="boton" name="aceptarturno" id="aceptarturno"></button>
-                <?php
-                if(isset($_post['aceptarturno'])){
-                    $consultaaceptar="UPDATE turnos SET estado='1' WHERE idturno='$idturno'";
-                    $resultadoaceptar=mysqli_query($conex,$consultaaceptar);
+                <form method="POST">
+                    <input type="text" name="idturnoh" value="<?php echo $idturno;?>" hidden>
+                <input type="submit" id="cancelarturno" name="cancelarturno" value="Cancelar">
+                <input type="submit" id="aceptarturno" name="aceptarturno" value="Aceptar">
+            </form>
+            <?php
+                if(isset($_POST['cancelarturno'])){
+                    $idturno1= $_POST['idturnoh'];
+                    $consultacancelar="UPDATE turnos SET estado='2' WHERE idturno='$idturno1'";
+                    $resultadocanc = mysqli_query($conex, $consultacancelar);
+                };
+                if(isset($_POST['aceptarturno'])){
+                    $idturno2= $_POST['idturnoh'];
+                    $consultaaceptar="UPDATE turnos SET estado='1' WHERE idturno='$idturno2'";
+                    $resultadoacept = mysqli_query($conex, $consultaaceptar);
                 };?>
-				<button class="boton" name="cancelarturno" id="cancelarturno"></button>
-                <?php
-                if(isset($_post['cancelarturno'])){
-                    $consultacancelar="UPDATE turnos SET estado='2' WHERE idturno='$idturno'";
-                    $resultadocanc=mysqli_query($conex,$consultacancelar);
-
-                };?>    
-
             </div>
 
             <?php
-            }};?>
+            };?>
              <div class="turno-a">
                 <P>fecha:<br> hora:<br> entrenador:<br> modalidad:<br> alumno:<br> </P>
                 <button class="boton"> Aceptar turno</button>
