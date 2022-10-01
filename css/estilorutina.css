@@ -3,17 +3,14 @@ padding:0%;
 margin:0;
 }
 
-body{
-background: #050505;
-}
 
 .cont-t{
 position:relative;
+left: 12%;
 display:inline-block;
 margin:1%;
 height: 200vh;
-width: 95vw;
-border: 1px solid red
+width: 85vw;
 }
 
 .boton

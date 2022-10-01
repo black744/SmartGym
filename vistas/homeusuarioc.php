@@ -19,6 +19,7 @@ $image= $row['image'];
 $pesoactual= $row['pesoactual'];
 $pesoinicial= $row['pesoinicial'];
 $pesoideal= $row['pesoideal'];
+
 ?>
 
 <!DOCTYPE html>
@@ -59,13 +60,26 @@ $pesoideal= $row['pesoideal'];
                 <div class="izquierda">
                     <div class="turnoultimo">
                         <?php
+                        $sqlper= "SELECT * FROM turnos WHERE idusuario=$idusuario";
+                        $queryper= mysqli_query($conex, $sqlper);
+                        $datap= mysqli_fetch_row($queryper);
+                        if ($datap == 0){
+                            echo 'No existe un turno ';
+                        
+                        }else{
                         $sqlProximoTurno= "SELECT * FROM turnos WHERE idusuario='$idusuario' ORDER BY idturno DESC";
                         $queryProximoTurno= mysqli_query($conex, $sqlProximoTurno); 
                         $sqlquery= mysqli_fetch_array($queryProximoTurno);
-                        $a= $sqlquery['idturno'];
+                        $a= $sqlquery['idturno']; 
                         ?>
                         <p>Tu Próximo Túrno</p>
-                        <p>Fecha y hora: <?php echo $sqlquery['fechahora'];?></p>
+                        <p>Fecha y hora: 
+                        <?php 
+                        if ($sqlquery['fechahora'] == 0){
+                        echo 'Si deseas pedir un turno -->';
+                        }else{
+                        echo $sqlquery['fechahora'];
+                        };}?> </p>
                         <p>Entrenador</p>
 
                     </div>

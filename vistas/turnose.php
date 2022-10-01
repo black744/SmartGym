@@ -69,16 +69,23 @@ $image= $row['image'];
 		  <div class="header">
                 <P>Turnos asignados</P>
             </div>
+            <?php
+        $query1=mysqli_query($conex,"SELECT * FROM datos WHERE identrenador='$idusuario'");
+        $result1= mysqli_num_rows($query1);
+        if($result1 > 0){
+        while ($data= mysqli_fetch_array($query1)){
+?> 
             <div class="turno-a">
                 <p> fecha del turno: </p> <p> Horario: </p> 
                 <p> Entrenador: </p>
                 <p> Tipo de turno: </p>
                 <p> Direccion: </p>
-
             </div>
+            <?php
+        }?>
             <div class="turno-a">
                 <p> fecha del turno: </p> <p> Horario: </p> 
-                <p> Entrenador: </p>
+                <p> Cliente: </p>
                 <p> Tipo de turno: </p>
                 <p> Direccion: </p>
 

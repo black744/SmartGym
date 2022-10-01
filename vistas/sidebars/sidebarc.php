@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
 
@@ -14,7 +14,7 @@
 
     <div class="wrapper">
         <div class="menulateral">
-            
+
             <a href="index.php"><img class="imagenlogo" src="../img/logo.png"></a>
             <ul>
 
@@ -23,7 +23,6 @@
                 <li><a href="turnosc.php"><i class="fas fa-address-card"></i>Turnos</a></li>
                 <li><a href="rutinausuarioc.php"><i class="fas fa-project-diagram"></i>Rutina</a></li>
                 <li><a href="pagousuarioc.php"><i class="fas fa-sack-dollar"></i>Pago</a></li>
-                <!-- si se usan iconos se debe usar la version 5.15.4 -->
                 <li><a href="indexchat.php"><i class="fas fa-address-book"></i>mensajeria</a></li>
                 
             </ul>

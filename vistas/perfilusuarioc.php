@@ -67,11 +67,6 @@ $image= $row['image'];
                                 <li> Correo: <?php echo $correo ?> </li> <br>
                                 <li> DNI: <?php echo $dni ?> </li> <br>
                             </ul>
-                            <ul class="lista-datos">
-                                <li> Ubicacion: </li> <br>
-                                <li> Fecha nacimiento: </li> <br>
-                                <li> Registro: </li> <br>
-                            </ul>
 
                             <form action="editarinfo.php">
                                 <button>Editar info</button>
