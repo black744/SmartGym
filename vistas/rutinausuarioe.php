@@ -48,18 +48,14 @@ $image= $row['image']
 
 <div class="cont-t">
 	<div class="menu">
-			
+			<form method="post">
 			<button class="boton" name="Btn-crear-tabla" value="Btn-crear-tabla" id="Btn-crear-tabla"> Crear Rutina </button>
+			<button class="boton" name="Btn-crear-tabla" value="Btn-Ocultar-tabla" id="Btn-crear-tabla"> Ocultar rutina </button>
+			</form>
 			<?php
 			if(isset($_POST['Btn-crear-tabla'])){
 				?>
-				
-				<?php
-			}?>
-			
-	</div>
-		
-		<table class="c-t-rutina">
+						<table class="c-t-rutina">
 		<tbody class="cuerpo-t">
 			<tr class="fil">
 			<td></td>
@@ -346,7 +342,17 @@ $image= $row['image']
   
 	
   </div>
-  
+				
+
+				<?php
+					}else if(isset($_POST['Btn-Ocultar-tabla'])){
+						?>
+				<?php		
+				}
+			?>
+			
+	</div>
+		
 
 </body>
 
