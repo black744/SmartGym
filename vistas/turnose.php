@@ -84,14 +84,7 @@ $image= $row['image'];
             </div>
             <?php
         }};?>
-            <div class="turno-a">
-                <p> fecha del turno: </p> <p> Horario: </p> 
-                <p> Cliente: </p>
-                <p> Tipo de turno: </p>
-                <p> Direccion: </p>
-
-            </div>
-            
+        
 		</div>
 	  <div class="cont-calendario-seleccionar">
 		  <div class="header2">
