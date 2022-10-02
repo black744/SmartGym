@@ -68,6 +68,7 @@ $image= $row['image']
 			<th class="dias">Domingo</th>
 			</tr>
 			
+
 			<tr class="fil">
 				<td class="ej"> <p>Ejercicio 1</p> </td>
 				
@@ -77,7 +78,18 @@ $image= $row['image']
 				<br>
 				<button class="boton"> Eliminar ejercicio</button>
 				</th>
-				
+
+				<?php
+				$ne = $_POST['ne'];
+				$de = $_POST['de'];
+				$cs = $_POST['cs'];
+				$cr = $_POST['cr'];
+				echo $ne;
+				echo $de;
+				echo $cs;
+				echo $cr;
+				?>
+
 				<th class="ce">
                 <a href="ejercicios.php"> <button class="boton">  Añadir ejercicio </button> </a>
 				<br>
