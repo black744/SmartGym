@@ -46,7 +46,8 @@ a {
     position: sticky;
     height: 100%;
     width: 100%;
-    background: linear-gradient(180deg, #D16F0E, transparent);
+    background: rgb(237,25,0);
+    background: linear-gradient(180deg, rgba(237,25,0,0.7384686296393557) 0%, rgba(251,76,13,1) 50%, rgba(252,165,69,1) 100%); 
 }
 
 .contenedorbtnnav {
@@ -236,12 +237,14 @@ main .contenido .post p {
 }
 
 .box {
+    position: flex;
+    min-height: 30%;
+    min-width: 25%;
     margin: 2.5%;
-    width: 25vw;
-    height: fit-content;
     border-radius: 20px;
-    background: #252525;
-    border: 1.5px solid #D16F0E;
+    background: rgb(237,25,0);
+    background: linear-gradient(180deg, rgba(237,25,0,0.7384686296393557) 0%, rgba(251,76,13,1) 50%, rgba(252,165,69,1) 100%); 
+    border: none;
     transition: 0.5s;
     text-align: justify;
     cursor: pointer;
@@ -271,7 +274,9 @@ main .contenido .post p {
 }
 
 .box button {
+    position: relative;
     margin: 5%;
+    bottom: 1vh;
     width: 8vw;
     height: 5vh;
     background: #252525;

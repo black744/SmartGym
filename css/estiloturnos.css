@@ -58,17 +58,18 @@
     position: relative;
     top: 0%;
     left: 0%;
-    height: 35%;
+    height: 35vh;
     width: 88%;
     margin-top: 4%;
     margin-left: 5%;
-    border: 1px solid orangered;
+    border: none;
     border-radius: 5px;
-    color: #fff;
+    background: rgb(237,25,0);
+    background: linear-gradient(180deg, rgba(237,25,0,0.7384686296393557) 0%, rgba(251,76,13,1) 50%, rgba(252,165,69,1) 100%); 
 }
 
 .turno-a p{
-    margin: 2%;
+    margin: 2vh;
     color: #fff;
     font-family: 'Josefin Sans', sans-serif;
 }

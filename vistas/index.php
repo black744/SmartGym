@@ -70,6 +70,8 @@
                             <i class="fa-solid fa-arrow-right-arrow-left"></i>
                             <h2> Plan Mixto </h2><br>
                              <p>Se combinaran las caracteristicas de las modalidades virtual como presencial en los turnos</p>
+                             <br>
+                             <br>
                             <button> Desde $3000 </button>
                         </div>
 

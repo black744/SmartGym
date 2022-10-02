@@ -49,6 +49,8 @@ width: 85vw;
 	border: none;
 	cursor: pointer;
 	color: #fff;
+	text-align: center;
+	font-size: 20px;
 }
 
 .s-d:hover{
@@ -65,7 +67,8 @@ border-collapse: collapse ;
 color: white;
 font-size:20px;
 text-align: center;
-background: #fb4c0d;
+background: rgb(237,25,0);
+background: linear-gradient(180deg, rgba(237,25,0,0.7384686296393557) 0%, rgba(251,76,13,1) 50%, rgba(252,165,69,1) 100%); 
 }
 
 .ej{
@@ -73,7 +76,8 @@ border-radius:5px;
 height:4.8%;
 width:8%;
 border-collapse: collapse ;
-background: #fb4c0d;
+background: rgb(237,25,0);
+    background: linear-gradient(180deg, rgba(237,25,0,0.7384686296393557) 0%, rgba(251,76,13,1) 50%, rgba(252,165,69,1) 100%); 
 }
 
 .ej p{

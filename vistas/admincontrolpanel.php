@@ -15,21 +15,22 @@ $dni= $row['dni'];
 $correo= $row['correo'];
 $idusuario= $row['idusuario'];
 $image= $row['image'];
-
-function phpAlert($msg) {
-    echo '<script type="text/javascript">alert("' . $msg . '")</script>';
-}
 ?>
+
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
+
 <head>
     <meta charset="UTF-8">
-
     <title>Perfil</title>
 
     <link rel="stylesheet" href="../css/estilousuario.css">
     <link rel="stylesheet" href="../css/estilotabla.css">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    
+    <script src="https://unpkg.com/xlsx@0.16.9/dist/xlsx.full.min.js"></script>
+    <script src="https://unpkg.com/file-saverjs@latest/FileSaver.min.js"></script>
+    <script src="https://unpkg.com/tableexport@latest/dist/js/tableexport.min.js"></script>
+    <script src="../js/apptabla.js"></script>
 </head>
 
 <?php
@@ -50,135 +51,101 @@ function phpAlert($msg) {
 ?>
 
 <body>
+
     <div class="main_content">
         <div class="info">
-                
-            <div class="datatable-container">
+            
+        <div class="container">
 
-                <div class="header-tools">
-                    <div class="tools">
-                        <ul>
-                        <li>
-                            <button>
-                                <i class="material-icons">add_circle</i>
-                            </button>
-                        </li>
-                        <li>
-                            <button>
-                                <i class="material-icons">edit</i>
-                            </button>
-                        </li>
-                        <li>
-                            <button>
-                                <i class="material-icons">delete</i>
-                            </button>
-                        </li>
-                        <li>
-                            <button>
-                                <i class="material-icons">share</i>
-                            </button>
-                        </ul>
-                    </div>
+        <h4>Panel de control adminsitrador</h4>
 
-                        <div class="search">
-                            <input type="text" name="buscador" id="buscador" class="search-input">
-                        </div>
-                </div>
+        <input class="form-control col-md-3 light-table-filter" data-table="order-table" type="text" placeholder="Search..">
+        
+        <hr>
+        
+        <table class="table table-bordered order-table " id="tabla">
+            <thead class="tabla-header">
+                <tr>
+                    <th>seleccionar</th>
+                    <th>id usuario</th>
+                    <th>Nombre</th>
+                    <th>Edad</th>
+                    <th>DNI</th>
+                    <th>Pago</th>
+                    <th>Plan</th>
+                </tr>
+            </thead>
 
-                <table class="datatable">
-                    <thead>
-                        <tr>
-                            <th></th>
-                            <th>Status</th>
-                            <th>nombre</th>
-                            <th>edad</th>
-                            <th>posicion</th>
-                            <th>oficio</th>
-                            <th></th>
-                        </tr>
-                    </thead>
+            <tr class="tabla-fila" >
+                <td class="table-checkbox"><input type="checkbox" name="" id=""> </td>
+                <td class="datos">1</td>
+                <td class="datos">Ulises Argañaraz</td>
+                <td class="datos">18</td>
+                <td class="datos">45542643</td>
+                <td class="datos">Al dia</td>
+                <td class="datos">Mixto</td>
+            </tr>
 
-                    <tbody>
-                        <tr>
-                            <td class="table-checkbox"><input type="checkbox" name="" id=""> </td>
-                            <td><span class="available"></span></td>
-                            <td class="datos">polentero atganaras</td>
-                            <td class="datos">admin</td>
-                            <td class="datos">Bolivia</td>
-                            <td class="datos">18</td>
-                            <td class="datos">2003/28/02</td>
-                        </tr>
-                    </tbody>
-                    <tbody>
-                        <tr>
-                            <td class="table-checkbox"><input type="checkbox" name="" id=""> </td>
-                            <td><span class="available"></span></td>
-                            <td class="datos">polentero atganaras</td>
-                            <td class="datos">admin</td>
-                            <td class="datos">Bolivia</td>
-                            <td class="datos">18</td>
-                            <td class="datos">2003/28/02</td>
-                        </tr>
-                    </tbody>
-                    <tbody>
-                        <tr>
-                            <td class="table-checkbox"><input type="checkbox" name="" id=""> </td>
-                            <td><span class="away"></span></td>
-                            <td class="datos">chani lucio</td>
-                            <td class="datos">gay</td>
-                            <td class="datos">Portugal</td>
-                            <td class="datos">18</td>
-                            <td class="datos">2003/23/12</td>
-                        </tr>
-                    </tbody>
-                    <tbody>
-                        <tr>
-                            <td class="table-checkbox"><input type="checkbox" name="" id=""> </td>
-                            <td><span class="ofline"></span></td>
-                            <td class="datos">facundou ferndandou</td>
-                            <td class="datos">carreado</td>
-                            <td class="datos">Venezuela</td>
-                            <td class="datos">18</td>
-                            <td class="datos">no me acuerdo xd</td>
-                        </tr>
-                    </tbody>
-                    <tbody>
-                        <tr>
-                            <td class="table-checkbox"><input type="checkbox" name="" id=""> </td>
-                            <td><span class="available"></span></td>
-                            <td class="datos">leandro arnaldinosaurio</td>
-                            <td class="datos">pico grande</td>
-                            <td class="datos">Suiza del sur</td>
-                            <td class="datos">18</td>
-                            <td class="datos">2003/20/10</td>
-                        </tr>
-                    </tbody>
-                    <tbody>
-                        <tr>
-                            <td class="table-checkbox"><input type="checkbox" name="" id=""> </td>
-                            <td><span class="away"></span></td>
-                            <td class="datos">jpdib</td>
-                            <td class="datos">novio de atganaras</td>
-                            <td class="datos">dudosa procedencia</td>
-                            <td class="datos">18</td>
-                            <td class="datos">no se sabe</td>
-                        </tr>
-                    </tbody>
-                    <tbody>
-                        <tr>
-                            <td class="table-checkbox"><input type="checkbox" name="" id=""> </td>
-                            <td><span class="ofline"></span></td>
-                            <td class="datos">nati</td>
-                            <td class="datos">novia de arnaldinosaurio</td>
-                            <td class="datos">mi cama</td>
-                            <td class="datos">35</td>
-                            <td class="datos">no se sabe</td>
-                        </tr>
-                    </tbody>
-                </table>
+            <tr class="tabla-fila">
+                <td class="table-checkbox"><input type="checkbox" name="" id=""> </td>
+                <td class="datos">2</td>
+                <td class="datos">F.F</td>
+                <td class="datos">20</td>
+                <td class="datos">890.2135.12</td>
+                <td class="datos">Al dia</td>
+                <td class="datos">Mixto</td>
+            </tr>
 
+            <tr class="tabla-fila">
+                <td class="table-checkbox"><input type="checkbox" name="" id=""> </td>
+                <td class="datos">3</td>
+                <td class="datos">leankidd</td>
+                <td class="datos">18</td>
+                <td class="datos">32163565</td>
+                <td class="datos">adeuda</td>
+                <td class="datos">Presencial</td>
+            </tr>
+            <tr class="tabla-fila">
+                <td class="table-checkbox"><input type="checkbox" name="" id=""> </td>
+                <td class="datos">4</td>
+                <td class="datos">Ianni luccio</td>
+                <td class="datos">12</td>
+                <td class="datos">50.452643</td>
+                <td class="datos">Adeuda</td>
+                <td class="datos">Virtual</td>
+            </tr>
+        </table>
+
+        <Div class="barra-abajo">
+
+            <button id="btnExportar" class="btn btn-success">
+                <i class="fas fa-file-excel"></i> crear archivo mensual usuarios
+            </button>
+
+            <button>visualizar deuda</button>
+
+            <button>actualizar pago</button>
+            
+        </Div>
     </div>
-    <script src="../js/apptabla.js"></script>
+
+    
 </body>
+
+<script>
+    const $btnExportar = document.querySelector("#btnExportar"),
+        $tabla = document.querySelector("#tabla");
+
+    $btnExportar.addEventListener("click", function(){
+        let tableExport = new TableExport($tabla, {
+            exportButtons: false, // No queremos botones
+            filename: "Reporte de prueba", //Nombre del archivo de Excel
+            sheetname: "Reporte de prueba", //Título de la hoja
+        });
+        let datos = tableExport.getExportData();
+        let preferenciasDocumento = datos.tabla.xlsx;
+        tableExport.export2file(preferenciasDocumento.data, preferenciasDocumento.mimeType, preferenciasDocumento.filename, preferenciasDocumento.fileExtension, preferenciasDocumento.merges, preferenciasDocumento.RTL, preferenciasDocumento.sheetname);
+});
+</script>
 
 </html>

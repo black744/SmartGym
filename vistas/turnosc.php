@@ -71,6 +71,7 @@ $image= $row['image'];
             </div>
             <!-- <form action="">-->
             <div class="turno-a">
+                <br>
                 <p> fecha del turno: </p> <p> Horario: </p> 
                 <p> Entrenador: </p>
                 <p> Tipo de turno: </p>
@@ -78,6 +79,7 @@ $image= $row['image'];
 
             </div>
             <div class="turno-a">
+                <br>
                 <p> fecha del turno: </p> <p> Horario: </p> 
                 <p> Entrenador: </p>
                 <p> Tipo de turno: </p>
