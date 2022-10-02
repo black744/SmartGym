@@ -55,15 +55,12 @@ $image = $row['image'];
                         <div class="perfil-usuario-portada">
                             <div class="perfil-usuario-avatar">
                                 <img src="data:image/jpg;base64,<?php echo base64_encode($image); ?>">
-                                <form action="../models/uploadimage.php" method="post" enctype="multipart/form-data">
-                                    <div class="cssinput">
+
+                                <form class="form" action="../models/uploadimage.php" method="post" enctype="multipart/form-data">
                                     <input type="file" id="boton-av" name="image"/>
-                                    </div>
-                                    
-                                    <div class="cssinput2">
                                     <input type="submit" id="boton-av" value="UPLOAD" name="submit"/>
-                                    </div>
                                 </form>
+
                             </div>
                                
                         </div>
@@ -92,7 +89,8 @@ $image = $row['image'];
                 </section>
             </div>
         </div>
-    </div>
-
+        </div>
+        
+    </body>
 
 </html>
