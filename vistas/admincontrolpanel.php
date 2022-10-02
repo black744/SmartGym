@@ -52,83 +52,87 @@ $image= $row['image'];
 
 <body>
 
-    <div class="main_content">
-        <div class="info">
+<div class="main_content">
+    <div class="info">
             
-        <div class="container">
+        <div class="contenedortabla">
 
-        <h4>Panel de control adminsitrador</h4>
+            <h4>Panel de control adminsitrador</h4>
 
-        <input class="form-control col-md-3 light-table-filter" data-table="order-table" type="text" placeholder="Search..">
-        
-        <hr>
-        
-        <table class="table table-bordered order-table " id="tabla">
-            <thead class="tabla-header">
-                <tr>
-                    <th>seleccionar</th>
-                    <th>id usuario</th>
-                    <th>Nombre</th>
-                    <th>Edad</th>
-                    <th>DNI</th>
-                    <th>Pago</th>
-                    <th>Plan</th>
+            <input class="form-control col-md-3 light-table-filter" data-table="order-table" type="text" placeholder="Search..">
+            
+            <hr>
+            
+            <table class="table table-bordered order-table " id="tabla">
+                <thead class="tabla-header">
+                    <tr class="filah">
+                        <th>seleccionar</th>
+                        <th>id usuario</th>
+                        <th>Nombre</th>
+                        <th>Edad</th>
+                        <th>DNI</th>
+                        <th>Pago</th>
+                        <th>Deuda</th>
+                        <th>Plan</th>
+                    </tr>
+                </thead>
+
+                <tr class="tabla-fila" >
+                    <td class="table-checkbox"><input type="checkbox" name="" id=""> </td>
+                    <td class="datos">1</td>
+                    <td class="datos">Ulises Argañaraz</td>
+                    <td class="datos">18</td>
+                    <td class="datos">45542643</td>
+                    <td class="datos">Al dia</td>
+                    <td class="datos">-</td>
+                    <td class="datos">Mixto</td>
                 </tr>
-            </thead>
 
-            <tr class="tabla-fila" >
-                <td class="table-checkbox"><input type="checkbox" name="" id=""> </td>
-                <td class="datos">1</td>
-                <td class="datos">Ulises Argañaraz</td>
-                <td class="datos">18</td>
-                <td class="datos">45542643</td>
-                <td class="datos">Al dia</td>
-                <td class="datos">Mixto</td>
-            </tr>
+                <tr class="tabla-fila">
+                    <td class="table-checkbox"><input type="checkbox" name="" id=""> </td>
+                    <td class="datos">2</td>
+                    <td class="datos">F.F</td>
+                    <td class="datos">20</td>
+                    <td class="datos">890.2135.12</td>
+                    <td class="datos">Al dia</td>
+                    <td class="datos">-</td>
+                    <td class="datos">Mixto</td>
+                </tr>
 
-            <tr class="tabla-fila">
-                <td class="table-checkbox"><input type="checkbox" name="" id=""> </td>
-                <td class="datos">2</td>
-                <td class="datos">F.F</td>
-                <td class="datos">20</td>
-                <td class="datos">890.2135.12</td>
-                <td class="datos">Al dia</td>
-                <td class="datos">Mixto</td>
-            </tr>
+                <tr class="tabla-fila">
+                    <td class="table-checkbox"><input type="checkbox" name="" id=""> </td>
+                    <td class="datos">3</td>
+                    <td class="datos">leankidd</td>
+                    <td class="datos">18</td>
+                    <td class="datos">32163565</td>
+                    <td class="datos">adeuda</td>
+                    <td class="datos">abril</td>
+                    <td class="datos">Presencial</td>
+                </tr>
+                <tr class="tabla-fila">
+                    <td class="table-checkbox"><input type="checkbox" name="" id=""> </td>
+                    <td class="datos">4</td>
+                    <td class="datos">Ianni luccio</td>
+                    <td class="datos">12</td>
+                    <td class="datos">50.452643</td>
+                    <td class="datos">Adeuda</td>
+                    <td class="datos">abril y mayo</td>
+                    <td class="datos">Virtual</td>
+                </tr>
+            </table>
+            <hr>
 
-            <tr class="tabla-fila">
-                <td class="table-checkbox"><input type="checkbox" name="" id=""> </td>
-                <td class="datos">3</td>
-                <td class="datos">leankidd</td>
-                <td class="datos">18</td>
-                <td class="datos">32163565</td>
-                <td class="datos">adeuda</td>
-                <td class="datos">Presencial</td>
-            </tr>
-            <tr class="tabla-fila">
-                <td class="table-checkbox"><input type="checkbox" name="" id=""> </td>
-                <td class="datos">4</td>
-                <td class="datos">Ianni luccio</td>
-                <td class="datos">12</td>
-                <td class="datos">50.452643</td>
-                <td class="datos">Adeuda</td>
-                <td class="datos">Virtual</td>
-            </tr>
-        </table>
+            <Div class="barra-abajo">
 
-        <Div class="barra-abajo">
+                <button id="btnExportar" class="btn btn-success">
+                    <i class="fas fa-file-excel"></i> crear archivo mensual usuarios
+                </button>
 
-            <button id="btnExportar" class="btn btn-success">
-                <i class="fas fa-file-excel"></i> crear archivo mensual usuarios
-            </button>
-
-            <button>visualizar deuda</button>
-
-            <button>actualizar pago</button>
-            
-        </Div>
+                <button id="btnapago">actualizar pago</button>
+                
+            </Div>
+        </div>
     </div>
-
     
 </body>
 

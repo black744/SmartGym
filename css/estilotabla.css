@@ -1,190 +1,130 @@
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
 :root{
-    --primary-color:white;
-    --secondary-color: rgb(61,68,73);
-    --highlight-color: #fb4c0d;
-
-    --dt-status-avaliable-color: greenyellow;
-    --dt-status-away-color: lightsalmon;
-    --dt-status-offline-color: lightgray;
-
-    --dt-padding: 12px;
-    --dt-padding-s: 6px;
-    --dt-padding-xs: 2px;
-
-    --dt-border-radius: 3px;
-
-    --dt-background-color-container: #202020;
-    --dt-border-color:var(--secondary-color);
-    --dt-bg-color:var(--highlight-color);
-    --dt-text-color:var(--primary-color);
-    --dt-bg-activate-button:var(--highlight-color);
-    --dt-text-color-button:var(--primary-color);
-    --dt-text-color-activate-button:var(--primary-color);
-    --dt-hover-cell-color:var(--highlight-color);
-    --dt-even-row-color:var(--secondary-color);
-    --dt-focus-color:var(--highlight-color);
-    --dt-input-background-color:var(--secondary-color);
-    --dt-input-color:var(--primary-color);
+    --color-letra: #fff;
+    --color-fondos: #fb4c0d;
+    --color-fondobotones: #252525;
+    --color-bordes-normales: #303030;
 }
-.material-icons
-{
+
+hr{
+    height: 3px;
+    color: var(--color-fondos);
+    background: var(--color-fondos);
+}
+
+input [type="checkbox"]{
+    height: 2vh;
+    width: 2vh;
+}
+
+.contenedortabla{
+
+    position: relative;
+    margin-top: 4vh;
+    margin-left: 8vh;
+    height: 92vh;
+    width: 80vw;
+    background-color: var(--color-fondobotones) ;
+    border: 3px solid var(--color-bordes-normales) ;
+    border-radius: 10px;
+}
+
+.contenedortabla h4{
+    margin-top: 3vh;
+    margin-left: 3vh;
+    margin-bottom: 0vh;
     font-size: 20px;
-}
-.datatable-container
-{
-    font-family: 'josefine sans', sans-serif;
-    background-color:var(--dt-background-color-container);
-    border-radius:var(--dt-border-radius);
-    color:var(--dt-text-color);
-    width: 130vh;
-    height: fit-content;
-    margin: 0 auto;
-    font-size: 18px; 
-}
-.datatable-container .header-tools{
-    border-bottom: solid 1px var(--dt-border-color);
-    padding:var(--dt-padding);
-    display: flex;
-    align-items: baseline;
-}
-.datatable-container .header-tools .search{
-    width: 40%;
-}
-.datatable-container .header-tools .search .search-input{
-    width: 100%;
-    background-color: var(--dt-input-background-color);
-    display: block;
-    box-sizing: border-box;
-    border-radius: var(--dt-border-radius);
-    border: solid 1px var(--dt-border-color);
-    color:var(--dt-input-color);
-}
-.datatable-container .header-tools .tools{
-width: 60%;
-}
-.datatable-container .header-tools .tools ul{
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: start;
-    align-items: baseline;
-}
-.datatable-container .header-tools .tools ul li{
-display: inline-block;
-margin: 0 var(--dt-padding-xs);
-align-items: baseline;
-}
-.datatable-container .footer-tools{
-    padding: var(--dt-padding);
-    display: flex;
-    align-items: baseline;
-}
-.datatable-container .footer-tools .list-items{
-    width: 50%;
-}
-.datatable-container .footer-tools .pages{
-    margin-left: auto;
-    margin-right: 0;
-    width: 50%;
-}
-.datatable-container .footer-tools .pages ul{
-    margin: 0;
-    padding: 0;
-    display: flex;
-    align-items: baseline;
-    justify-content: flex-end;
-}
-.datatable-container .footer-tools .pages ul li{
-    display: inline-block;
-    margin: 0 var(--dt-padding-xs);
-}
-.datatable-container .footer-tools .pages ul li button,
-.datatable-container .header-tools .tools ul li button{
-    color: var(--dt-text-color-button);
-    width: 100%;
-    box-sizing: border-box;
-    border: 0;
-    border-radius: var(--dt-border-radius);
-    background: transparent;
-    cursor: pointer;
-}
-.datatable-container .footer-tools ,.pages ul li button:hover,
-.datatable-container .header-tools .tools ul li button:hover{
-    background: var(--dt-bg-activate-button);
-    color: var(--dt-text-color-activate-button);
-}
-.datatable-container .footer-tools .pages ul li span.active{
-    background-color: var(--dt-bg-color);
-    border-radius: var(--dt-border-radius);
-}
-.datatable-container .footer-tools .pages ul li button,
-.datatable-container .footer-tools .pages ul li span,
-.datatable-container .header-tools .tools ul li button{
-    padding: var(--dt-padding-s) var(--dt-padding) ; 
-}
-.datatable-container .datatable{
-    border-collapse: collapse;
-    width: 100%;
-}
-.datatable-container .datatable,
-.datatable-container .datatable th,
-.datatable-container .datatable td{
-    padding: var(--dt-padding) var(--dt-padding);
-}
-.datatable-container .datatable th{
-    font-weight: bolder;
-    text-align: left;
-    border-bottom: solid 1px var(--dt-border-color);
-}
-.datatable-container .datatable td{
-    border-bottom: solid 1px var(--dt-border-color);
-}
-.datatable-container .datatable tbody tr:nth-child(even){
-background-color: var(--dt-even-row-color);
-}
-.datatable-container .datatable tbody tr:hover{
-    background-color: var(--dt-hover-cell-color);
-}
-.datatable-container .datatable tbody tr .available::after,
-.datatable-container .datatable tbody tr .away::after,
-.datatable-container .datatable tbody tr .ofline::after{
-    display: inline-block;
-    vertical-align: middle;
-}
-.datatable-container .datatable tbody tr .available::after{
-    content: 'available';
-    color: var(--dt-status-avaliable-color);
-}
-.datatable-container .datatable tbody tr .away::after{
-    content: 'away';
-    color: var(--dt-status-away-color);
-}
-.datatable-container .datatable tbody tr .ofline::after{
-    content: 'ofline';
-    color: var(--dt-status-offline-color);
-}
-.datatable-container .datatable tbody tr .available::before,
-.datatable-container .datatable tbody tr .away::before,
-.datatable-container .datatable tbody tr .ofline::before{
-content: '';
-display: inline-block;
-width: 10px;
-height: 10px;
-margin-right: 10px;
-border-radius: 50%;
-vertical-align: middle;
-}
-.datatable-container .datatable tbody tr .available::before{
-    background-color: var(--dt-status-avaliable-color);
-}
-.datatable-container .datatable tbody tr .away::before{
-    background-color: var(--dt-status-away-color);
-}
-.datatable-container .datatable tbody tr .ofline::before{
-    background-color: var(--dt-status-offline-color);    
+    color: var(--color-letra);
 }
 
-.filtro{
-    display: none;
+
+.form-control{
+    position: relative;
+    margin-top: 5vh;
+    margin-left: 5vh;
+    margin-bottom: 2vh;
+    height: 3.5vh;
+    width: 25%;
+    text-align: center;
+    background: var(--color-fondobotones);
+    color: var(--color-letra);
+    border:3px solid var(--color-bordes-normales) ;
+    border-radius: 15px;
+    transition: 1.2s;
+    cursor:pointer;
+    font-size: 15px;
+}
+
+.form-control:focus{
+    border: 1px solid var(--color-fondos);
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.table{
+position: relative;
+height: fit-content;
+width: 80vw;
+text-align: center;
+}
+.filah{
+    color: var(--color-letra);
+    font-size: 18px;
+}
+
+.tabla-fila{
+    font-size: 15px;
+    color: var(--color-letra);
+}
+.tabla-fila:hover{
+    background: var(--color-fondos);
+}
+
+.barra-abajo{
+    position: relative;
+    display: flex;
+    top: 0%;
+    height: 10vh;
+    width: 80vw;
+}
+
+#btnExportar{
+    position: flex;
+    margin: 3vh;
+    height: 6.5vh;
+    width: 15%;
+    text-align: center;
+    background: var(--color-fondobotones);
+    color: var(--color-letra);
+    border:3px solid var(--color-bordes-normales) ;
+    border-radius: 15px;
+    transition: 1.2s;
+    cursor:pointer;
+    font-size: 15px;
+}
+
+#btnExportar:hover{
+    border: 1px solid var(--color-fondos);
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+#btnapago{
+    position: flex;
+    margin: 3vh;
+    height: 6.5vh;
+    width: 15%;
+    text-align: center;
+    background: var(--color-fondobotones);
+    color: var(--color-letra);
+    border:3px solid var(--color-bordes-normales) ;
+    border-radius: 15px;
+    transition: 1.2s;
+    cursor:pointer;
+    font-size: 15px;
+}
+
+#btnapago:hover{
+    border: 1px solid var(--color-fondos);
+    cursor: pointer;
+    transform: scale(1.1);
 }

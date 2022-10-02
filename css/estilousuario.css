@@ -54,7 +54,7 @@ html {
 .wrapper .menulateral ul li a {
     color: white;
     display: block;
-    transition: 0.5s;
+    transition:  0.5s;
 }
 
 .wrapper .menulateral ul li a .fas {
