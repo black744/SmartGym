@@ -184,3 +184,7 @@ vertical-align: middle;
 .datatable-container .datatable tbody tr .ofline::before{
     background-color: var(--dt-status-offline-color);    
 }
+
+.filtro{
+    display: none;
+}

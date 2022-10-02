@@ -84,11 +84,7 @@ $image= $row['image'];
             </div>
             <?php
         }};?>
-<<<<<<< HEAD
             
-=======
-        
->>>>>>> ba5c40068d37e4ac6323ab43d3d0821508e38934
 		</div>
 	  <div class="cont-calendario-seleccionar">
 		  <div class="header2">
