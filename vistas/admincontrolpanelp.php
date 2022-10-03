@@ -77,51 +77,28 @@ $image= $row['image'];
                     </tr>
                 </thead>
                 <?php
-                $query=mysqli_query($conex,"SELECT * FROM datos WHERE identrenador='$idusuario' AND estado='0'");
-                $result= mysqli_num_rows($query2);
-                while ($data1= mysqli_fetch_array($query2)){
+                $query=mysqli_query($conex,"SELECT * FROM datos");
+                $result= mysqli_num_rows($query);
+                while ($data=mysqli_fetch_array($query)){
+                    ?>
+                    <input type="text" value="<?php echo $data['idusuario'];?>" name="id" hidden>
+                    <?php
+                    $idu2=$data['idusuario'];
+                    $query2=mysqli_query($conex,"SELECT * FROM turnos WHERE idusuario='$idu2");
+                    $result2=mysqli_fetch_array($conex,$query2);
+                    ?>
                 <tr class="tabla-fila" >
                     <td class="table-checkbox"><input type="checkbox" name="" id=""> </td>
-                    <td class="datos">1</td>
-                    <td class="datos">Ulises Argañaraz</td>
-                    <td class="datos">18</td>
-                    <td class="datos">45542643</td>
-                    <td class="datos">Al dia</td>
-                    <td class="datos">-</td>
-                    <td class="datos">Mixto</td>
+                    <td class="datos"><?php echo $data['idusuario'];?></td>
+                    <td class="datos"><?php echo $data['usuario'];?></td>
+                    <td class="datos"><?php echo $data['edad'];?></td>
+                    <td class="datos"><?php echo $data['dni'];?></td>
+                    <td class="datos">pago</td>
+                    <td class="datos">deuda</td>
+                    <td class="datos"><?php echo $result2['modalidad']?></td>
                 </tr>
-
-                <tr class="tabla-fila">
-                    <td class="table-checkbox"><input type="checkbox" name="" id=""> </td>
-                    <td class="datos">2</td>
-                    <td class="datos">F.F</td>
-                    <td class="datos">20</td>
-                    <td class="datos">890.2135.12</td>
-                    <td class="datos">Al dia</td>
-                    <td class="datos">-</td>
-                    <td class="datos">Mixto</td>
-                </tr>
-
-                <tr class="tabla-fila">
-                    <td class="table-checkbox"><input type="checkbox" name="" id=""> </td>
-                    <td class="datos">3</td>
-                    <td class="datos">leankidd</td>
-                    <td class="datos">18</td>
-                    <td class="datos">32163565</td>
-                    <td class="datos">adeuda</td>
-                    <td class="datos">abril</td>
-                    <td class="datos">Presencial</td>
-                </tr>
-                <tr class="tabla-fila">
-                    <td class="table-checkbox"><input type="checkbox" name="" id=""> </td>
-                    <td class="datos">4</td>
-                    <td class="datos">Ianni luccio</td>
-                    <td class="datos">12</td>
-                    <td class="datos">50.452643</td>
-                    <td class="datos">Adeuda</td>
-                    <td class="datos">abril y mayo</td>
-                    <td class="datos">Virtual</td>
-                </tr>
+                <?php }?>
+                
             </table>
             <hr>
 
