@@ -125,7 +125,10 @@ $image= $row['image'];
                 $ID_E = $_POST['s-e'];
                 $MOD = $_POST['s-m'];
                 $DATE = $_POST['result'];
-                $TurnoQuery = "INSERT INTO `turnos`(`idturno`, `idusuario`, `identrenador`, `modalidad`, `fechahora`, `estado`) VALUES ('','$idusuario','$ID_E','$MOD','$DATE', '0')";
+                $sql1=mysqli_query($conex, "SELECT usuario FROM datos WHERE idusuario='$ID_E'");
+                $query1=mysqli_fetch_array($sql1);
+                $nombreent=$query1['usuario'];
+                $TurnoQuery = "INSERT INTO `turnos`(`idturno`, `idusuario`, `identrenador`, `modalidad`, `fechahora`, `estado`, `usuario_cliente`, `usuario_entrenador`) VALUES ('','$idusuario','$ID_E','$MOD','$DATE', '0', '$nusuario', '$nombreent')";
                 $queryT=mysqli_query($conex, $TurnoQuery);
             }
             ?>

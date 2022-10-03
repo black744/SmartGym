@@ -77,9 +77,10 @@ $image= $row['image'];
 
 ?> 
             <div class="turno-a">
+                <p> Cliente: <?php echo $data['usuario_cliente'];?></p>
                 <p> Fecha del Turno: <?php echo $data['fechahora'];?></p> 
                 <p> Horario: <?php echo $data['fechahora'];?></p> 
-                <p> Entrenador: <?php echo $data['identrenador'];?></p>
+                <p> Entrenador: <?php echo $data['usuario_entrenador'];?></p>
                 <p> Tipo de turno: <?php echo $data['descripcion'];?></p>
                 <p> Direccion: Miro 2126 (preguntar por silvia frujter)</p>
             </div>
