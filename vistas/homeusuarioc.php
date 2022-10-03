@@ -20,6 +20,7 @@ $pesoactual= $row['pesoactual'];
 $pesoinicial= $row['pesoinicial'];
 $pesoideal= $row['pesoideal'];
 
+include("../models/validacion_clientes.php");
 ?>
 
 <!DOCTYPE html>

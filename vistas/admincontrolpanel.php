@@ -87,9 +87,9 @@ $image= $row['image'];
                     <td class="datos"><?php echo $data['usuario'];?></td>
                     <td class="datos"><?php echo $data['edad'];?></td>
                     <td class="datos"><?php echo $data['dni'];?></td>
-                    <td class="datos">pago</td>
-                    <td class="datos">deuda</td>
-                    <td class="datos">demsar</td>
+                    <td class="datos">-</td>
+                    <td class="datos">-</td>
+                    <td class="datos">-</td>
                 </tr>
                 <?php }?>
                 
