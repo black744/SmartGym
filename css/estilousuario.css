@@ -37,9 +37,9 @@ html{
 
 .wrapper .menulateral img {
     position: relative;
-    margin-top: 0vh;
+    margin-top: 2vh;
     margin-bottom: 2vh; 
-    margin-left: 25%;
+    margin-left: 20%;
     height: 12vh;
     width: 8vw;
 }
@@ -59,6 +59,7 @@ html{
     padding: 1.5vh;
     display: block;
     transition: 0.5s;
+    text-decoration: none;
 }
 
 .wrapper .menulateral ul li :hover {
@@ -132,7 +133,7 @@ html{
     position: relative;
     width: 90%;
     height: 24vh;
-    background-image: url(https://p4.wallpaperbetter.com/wallpaper/724/369/287/black-and-var(--color-letra)-hall-rod-gym-wallpaper-preview.jpg);
+    background-image: url(https://p4.wallpaperbetter.com/wallpaper/724/369/287/black-and-hall-rod-gym-wallpaper-preview.jpg);
     border-radius: 0 0 15px 15px;
     border: none;
     margin-bottom: 2vh;
@@ -169,16 +170,22 @@ html{
 .perfil-usuario-avatar form {
     display: inline-block;
     position: absolute;
-    top: 50%;
+    top: 35%;
     left: -320%;
     border: none;
     background: transparent;
-    width: fit-content;
+    width: 25vw;
 }
 
 #boton-av {
     color: var(--color-letra);
     background: var(--color-fondobotones);
+}
+
+#boton-av{
+    border: 2px solid var(--color-fondos);
+    cursor: pointer;
+    transform: scale(1.1);
 }
 
 /* fin estilo de botones de cambio de foto de perfil*/
@@ -290,6 +297,13 @@ font-size: 15px;
     cursor:pointer;
     font-size: 15px;
 }
+
+.perfil-usuario-body button:hover{
+    border: 1px solid var(--color-fondos);
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
 /* fin de estilo de perfil*/
 
 
@@ -378,28 +392,27 @@ p {
     height: 80vh;
     margin-left: 2px;
     position: absolute;
-    background-color: var(--color-fondosn);
-    margin-top: 1px;
-    border-width: 3px;
-    border-bottom: 3px;
+    margin-top: 5vh;
     border-radius:10px;
+    background-color: var(--color-fondosn);
+    border: 2px solid var(--color-bordes);
 }
 
 .derecha {
     width: 60vh;
     height: 80vh;
-    margin-left: 800px;
+    margin-left: 50vw;
     position: absolute;
     background: var(--color-fondosn);
-    margin-top: 1px;
+    margin-top: 5vh;
     border-width: 3px;
     border-bottom: 3px;
     border-radius:10px;
 }
 .imgp{
-    margin-left: 118px;
-    max-width: 90px;
-    max-height: 90px;
+    margin-left: 40%;
+    max-width: 10vw;
+    max-height: 10vh;
     background-color: var(--color-fondosn);
     border-radius:100%;
     position: absolute;
@@ -407,17 +420,16 @@ p {
 }
 .nombre{
     margin-top: 105px;
-    margin-left: 15vh;
-    color:var(--color-letra);
-    font-size: 18px;
-
+    margin-left: 9vw;
+    color:var(--color-fondos);
+    font-size: 20px;
 }
 
 .progreso{
-    margin-top: -10px;
-    margin-left: 20px;
+    margin-top: 1vh;
+    margin-left: 3vh;
     color:var(--color-letra);
-    font-size: 20px;
+    font-size: 18px;
 
 }
 
@@ -431,15 +443,36 @@ p {
 }
 
 .progresoform p {
-    font-size: 20px;
-    margin: 2vh;
+    font-size: 18px;
+    margin-top: 2vh;
+    margin-left: 0.5vh;
+    margin-bottom: 1vh;
     color: var(--color-letra);
 }
 
 .orange{
-    margin: 1.5vh ;
-    background:var(--color-fondosn);
+    position: relative;
+    margin-top: 5vh;
+    margin-left: 5vh;
+    margin-bottom: 2vh;
+    height: 5.5vh;
+    width: 8vw;
+    text-align: center;
+    background: var(--color-fondobotones);
+    color: var(--color-letra);
+    border:3px solid var(--color-bordes-normales) ;
+    border-radius: 15px;
+    transition: 1.2s;
+    cursor:pointer;
+    font-size: 15px;
 }
+
+.orange:focus{
+    border: 2px solid var(--color-fondos);
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
 .botonenviar{
     position: flex;
     margin: 3vh;
@@ -455,22 +488,29 @@ p {
     font-size: 15px;
 }
 
+.botonenviar:hover{
+    border: 2px solid var(--color-fondos);
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
 /* main */
 
 /* Inicio Izquierda */
 .turnoultimo{
-    width: 45vh;
+    width: 55vh;
     height: 35vh;
-   background: var(--color-fondos);
+    background: var(--color-fondosn);
+    border: 1px  solid var(--color-fondos);
     margin-left: 10px;
     margin-top: 10px;
     border-radius: 5%;
 }
 
 .turnoultimo p{
-    font-size: 20px;
-    margin-top: 3%;
-    margin-left: 5%;
+    font-size: 18 px;
+    margin-top: 3vh;
+    margin-left: 5vh;
     color: var(--color-letra);
 }
 
@@ -486,10 +526,5 @@ p {
     margin-top: -25px;
 
 }
-
-
-
-
-
 
 /* Fin sidebars */
