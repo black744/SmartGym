@@ -1,6 +1,20 @@
-* {
-    padding: 0%;
+:root{
+    --color-letra: #fff;
+    --color-fondos: #fb4c0d;
+    --color-fondo-html:#020202;
+    --color-fondosn:#181818;
+    --color-fondobotones: #252525;
+    --color-bordes: #303030;
+}
+
+*{
     margin: 0%;
+    padding: 0%;
+    font-family: "Lucida Console", "Courier New", monospace;
+}
+
+html{
+    background: var(--color-fondo-html);
 }
 
 .cont-body-turnos {
@@ -11,9 +25,9 @@
     margin: 12vh;
     height: 90vh;
     width: 78vw;
-    background: #151515;
+    background: var(--color-fondosn);
     border-radius: 35px;
-    border: 1.5px solid orangered;
+    border: 1.5px solid var(--color-bordes);
 }
 
 .cont-turnos-asignados {
@@ -37,7 +51,7 @@
     height: 8%;
     width: 100%;
     border-top: none;
-    border-bottom: 2px solid orangered;
+    border-bottom: 2px solid var(--color-fondos);
     border-right: none;
     border-left: none;
     border-top-right-radius: 0%;
@@ -49,9 +63,8 @@
 
 .header p {
     margin-top: 8%;
-    color: white;
-    font-size: 30px;
-    font-family: 'Josefin Sans', sans-serif;
+    color: var(--color-letra);
+    font-size: 22px;
 }
 
 .turno-a {
@@ -64,8 +77,7 @@
     margin-left: 5%;
     border: none;
     border-radius: 5px;
-    background: rgb(237,25,0);
-    background: linear-gradient(180deg, rgba(237,25,0,0.7384686296393557) 0%, rgba(251,76,13,1) 50%, rgba(252,165,69,1) 100%); 
+    background: var(--color-fondos);
 }
 
 .turno-a p{
