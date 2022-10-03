@@ -70,17 +70,18 @@ $image= $row['image'];
                 <P>Turnos asignados</P>
             </div>
             <?php
-        $query1=mysqli_query($conex,"SELECT * FROM turnos WHERE identrenador='$idusuario' AND estado='1'");
+        $query1=mysqli_query($conex,"SELECT * from turnos INNER JOIN modalidad ON turnos.modalidad=modalidad.id WHERE identrenador='$idusuario' AND estado='1'");
         $result1= mysqli_num_rows($query1);
         if($result1 > 0){
         while ($data= mysqli_fetch_array($query1)){
 
 ?> 
             <div class="turno-a">
-                <p> fecha del turno:<?php echo $data['fechahora'];?></p> <p> Horario:<?php echo $data['fechahora'];?></p> 
-                <p> Entrenador:<?php echo $data['identrenador'];?></p>
-                <p> Tipo de turno:<?php echo $data['modalidad'];?></p>
-                <p> Direccion:g</p>
+                <p> Fecha del Turno: <?php echo $data['fechahora'];?></p> 
+                <p> Horario: <?php echo $data['fechahora'];?></p> 
+                <p> Entrenador: <?php echo $data['identrenador'];?></p>
+                <p> Tipo de turno: <?php echo $data['descripcion'];?></p>
+                <p> Direccion: Miro 2126 (preguntar por silvia frujter)</p>
             </div>
             <?php
         }};?>
@@ -98,7 +99,7 @@ $image= $row['image'];
                 
             ?>
                 <div class="turno-a">
-                <P><br> <?php echo $idturno?>fecha y hora:<?php echo $data1['fechahora']?><br> entrenador:<?php echo $data1['identrenador']?><br> modalidad:<br> alumno:<br> </P>
+                <P><br>fecha y hora:<?php echo $data1['fechahora']?><br> entrenador:<?php echo $data1['identrenador']?><br> modalidad:<br> alumno:<br> </P>
                 <form method="POST">
                     <input type="text" name="idturnoh" value="<?php echo $idturno;?>" hidden>
                 <input type="submit" id="cancelarturno" name="cancelarturno" value="Cancelar">
@@ -119,12 +120,6 @@ $image= $row['image'];
 
             <?php
             };?>
-             <div class="turno-a">
-                <P>fecha:<br> hora:<br> entrenador:<br> modalidad:<br> alumno:<br> </P>
-                <button class="boton"> Aceptar turno</button>
-                
-				<button class="boton"> Cancelar turno</button>
-            </div>
              
 		  
 	</div>

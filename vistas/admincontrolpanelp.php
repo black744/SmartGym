@@ -3,7 +3,7 @@ include("../db.php");
 $conex=conectar();
 session_start();
 $nusuario = $_SESSION['usuario'];
-
+//*SELECT * from turnos INNER JOIN modalidad ON turnos.modalidad=modalidad.id;*//
 $sql="SELECT * FROM datos WHERE usuario='$nusuario'";
 $query=mysqli_query($conex,$sql);
 
@@ -81,12 +81,6 @@ $image= $row['image'];
                 $result= mysqli_num_rows($query);
                 while ($data=mysqli_fetch_array($query)){
                     ?>
-                    <input type="text" value="<?php echo $data['idusuario'];?>" name="id" hidden>
-                    <?php
-                    $idu2=$data['idusuario'];
-                    $query2=mysqli_query($conex,"SELECT * FROM turnos WHERE idusuario='$idu2");
-                    $result2=mysqli_fetch_array($conex,$query2);
-                    ?>
                 <tr class="tabla-fila" >
                     <td class="table-checkbox"><input type="checkbox" name="" id=""> </td>
                     <td class="datos"><?php echo $data['idusuario'];?></td>
@@ -95,7 +89,7 @@ $image= $row['image'];
                     <td class="datos"><?php echo $data['dni'];?></td>
                     <td class="datos">pago</td>
                     <td class="datos">deuda</td>
-                    <td class="datos"><?php echo $result2['modalidad']?></td>
+                    <td class="datos">demsar</td>
                 </tr>
                 <?php }?>
                 
