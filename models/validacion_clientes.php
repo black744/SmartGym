@@ -1,6 +1,4 @@
 <?php
-    session_start();
-    $nusuario = $_SESSION['usuario'];
 
     $sql_query=mysqli_query($conex, "SELECT * FROM datos WHERE usuario='$nusuario'");
     $array=mysqli_fetch_array($sql_query);

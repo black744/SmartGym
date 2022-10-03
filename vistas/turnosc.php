@@ -15,6 +15,7 @@ $dni= $row['dni'];
 $correo= $row['correo'];
 $idusuario= $row['idusuario'];
 $image= $row['image'];
+include("../models/validacion_clientes.php");
 ?>
 
 

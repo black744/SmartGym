@@ -30,6 +30,7 @@ $idusuario2= $row2['idusuario'];
 $image2= $row2['image'];
 $de = $idusuario;
 $para = $idusuario2;
+include("../models/validacion_clientes.php");
 //mensajes
 if(isset($_GET['leido'])) {
   $leido = mysqli_real_escape_string($conex,$_GET['leido']);

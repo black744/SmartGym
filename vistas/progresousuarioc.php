@@ -14,7 +14,8 @@ $apellido= $row['apellido'];
 $dni= $row['dni'];
 $correo= $row['correo'];
 $idusuario= $row['idusuario'];
-$image= $row['image']
+$image= $row['image'];
+include("../models/validacion_clientes.php");
 ?>
 <!DOCTYPE html>
 <html lang="en">
