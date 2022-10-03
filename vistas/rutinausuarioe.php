@@ -48,9 +48,8 @@ $image= $row['image']
 
 <div class="cont-t">
 	<div class="menu">
-			<form method="post">
+			<form method="post" class="f">
 			<button class="boton" name="Btn-crear-tabla" value="Btn-crear-tabla" id="Btn-crear-tabla"> Crear Rutina </button>
-			<button class="boton" name="Btn-crear-tabla" value="Btn-Ocultar-tabla" id="Btn-crear-tabla"> Ocultar rutina </button>
 			</form>
 			<?php
 			if(isset($_POST['Btn-crear-tabla'])){

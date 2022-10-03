@@ -1,36 +1,53 @@
+:root{
+    --color-letra: #fff;
+    --color-fondos: #fb4c0d;
+    --color-fondo-html:#020202;
+    --color-fondosn:#181818;
+    --color-fondobotones: #252525;
+    --color-bordes: #303030;
+}
+
 *{
-padding:0%;
-margin:0;
+    margin: 0%;
+    padding: 0%;
+    font-family: "Lucida Console", "Courier New", monospace;
+}
+
+html{
+    background: var(--color-fondo-html);
 }
 
 
 .cont-t{
 position:relative;
-left: 12%;
+left: 14vw;
 display:inline-block;
 margin:1%;
-height: 200vh;
+height: 68vw;
 width: 85vw;
 }
 
 .boton
 {
-	height:8vh;
-	width:15vh;
-	margin:0.5%;
-	color: #fff;
-	background: #101010;
-	border: none;
-	border-radius: 5px;
-	cursor:pointer;
+	position: flex;
+    margin: 1.5vh;
+    height: 5vh;
+    width: 6vw;
+    text-align: center;
+    background: var(--color-fondobotones);
+    color: var(--color-letra);
+    border:3px solid var(--color-bordes-normales) ;
+    border-radius: 15px;
+    transition: 1.2s;
+    cursor:pointer;
+    font-size: 12px;
 }
 
 .boton:hover
 {
-	color: #fb4c0d;
-	background: #101010;
-	cursor:pointer;
-	border: 1px solid #fb4c0d;
+	border: 2px solid var(--color-fondos);
+    cursor: pointer;
+    transform: scale(1.1);
 }
 
 .c-t-rutina{ 
@@ -38,13 +55,13 @@ width: 85vw;
 	height: 85%;
 	width: 95%;
 	margin:1.5%;
-	color: white;
+	color: var(--color-letra);
 }
 
 .s-d{
 	height: 10vh;
 	width: 20vh;
-	background: #101010;
+	background: var(--color-fondos);
 	border-radius: 20px;
 	border: none;
 	cursor: pointer;
@@ -76,8 +93,7 @@ border-radius:5px;
 height:4.8%;
 width:8%;
 border-collapse: collapse ;
-background: rgb(237,25,0);
-    background: linear-gradient(180deg, rgba(237,25,0,0.7384686296393557) 0%, rgba(251,76,13,1) 50%, rgba(252,165,69,1) 100%); 
+background: var();
 }
 
 .ej p{
