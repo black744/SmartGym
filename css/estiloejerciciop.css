@@ -1,11 +1,20 @@
-*
-{
-    padding:0 ;
-    margin: 0;
+:root{
+    --color-letra: #fff;
+    --color-fondos: #fb4c0d;
+    --color-fondo-html:#020202;
+    --color-fondosn:#181818;
+    --color-fondobotones: #252525;
+    --color-bordes: #303030;
 }
 
-body{
-    background: #000;
+*{
+    margin: 0%;
+    padding: 0%;
+    font-family: "Lucida Console", "Courier New", monospace;
+}
+
+html{
+    background: var(--color-fondo-html);
 }
 
 hr{
