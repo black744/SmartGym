@@ -170,8 +170,8 @@ html{
 .perfil-usuario-avatar form {
     display: inline-block;
     position: absolute;
-    top: 35%;
-    left: -320%;
+    top: 25%;
+    left: -325%;
     border: none;
     background: transparent;
     width: 25vw;

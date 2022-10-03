@@ -66,25 +66,27 @@ $image = $row['image'];
                         </div>
                     </div>
                         <div class="perfil-usuario-body">
-                        <div class="perfil-usuario-bio">
-                        <input type="hidden" name="usuario" value= "<?php echo $row['usuario']  ?>">
-                        </div>
-                            <div class="perfil-usuario-footer">
-                                <form method="POST" action="../models/update.php">
-                                        <ul class="lista-datos">
-                                            <input type="text" class="inputinfo" name="nombre" placeholder="Nombre" value="<?php echo $row['nombre']  ?>"> <br><br>
-                                            <input type ="text" class="inputinfo" name="apellido" placeholder="Apellido" value="<?php echo $row['apellido']  ?>"> <br><br>
-                                            <input type="text" class="inputinfo" name="usuario" placeholder="Usuario" value="<?php echo $row['usuario']  ?>"> <br><br>
-                                            <input type="number" class="inputinfo" name="dni" placeholder="D.N.I" value="<?php echo $row['dni']  ?>"> <br><br>
-                                        </ul>
-                                        <ul class="lista-datos">  
-                                            <input type="password" class="inputinfo" name="contraseña" placeholder="Contraseña" value="<?php echo $row['contraseña']  ?>"> <br><br>
-                                            <!--<input type="text" class="inputinfo" name="dom" placeholder="domicilio" value="<?php echo $row['dom']  ?>">
-                                            <input type="date" class="inputinfo" name="fnac" placeholder="fecha de nacimiento" value="<?php echo $row['fnac']  ?>"> -->
-                                        </ul>
-                                        <button type="submit" name="buttonedit" value="Editar">finalizar edicion</button>
-                                </form>
+                            <div class="perfil-usuario-bio">
+                            <input type="hidden" name="usuario" value= "<?php echo $row['usuario']  ?>">
                             </div>
+                                <div class="perfil-usuario-footer">
+                                    <form method="POST" action="../models/update.php">
+                                            <ul class="lista-datos">
+                                                <input type="text" class="inputinfo" name="nombre" placeholder="Nombre" value="<?php echo $row['nombre']  ?>"> <br><br>
+                                                <input type ="text" class="inputinfo" name="apellido" placeholder="Apellido" value="<?php echo $row['apellido']  ?>"> <br><br>
+                                                <input type="text" class="inputinfo" name="usuario" placeholder="Usuario" value="<?php echo $row['usuario']  ?>"> <br><br>
+                                                <input type="number" class="inputinfo" name="dni" placeholder="D.N.I" value="<?php echo $row['dni']  ?>"> <br><br>
+                                            </ul>
+                                            <ul class="lista-datos">  
+                                                <input type="password" class="inputinfo" name="contraseña" placeholder="Contraseña" value="<?php echo $row['contraseña']  ?>"> <br><br>
+                                                <!--<input type="text" class="inputinfo" name="dom" placeholder="domicilio" value="<?php echo $row['dom']  ?>">
+                                                <input type="date" class="inputinfo" name="fnac" placeholder="fecha de nacimiento" value="<?php echo $row['fnac']  ?>"> -->
+                                            </ul>
+                                            <button type="submit" name="buttonedit" value="Editar">finalizar edicion</button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </section>
             </div>
