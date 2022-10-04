@@ -22,11 +22,11 @@ hr{
     margin-top: 3%;
     margin-bottom: 3%;
     width: 75vw;
-    color: #fb4c0d;
+    color: var(--color-fondos);
 }
 
 h2 {
-    color: #fff;
+    color: var(--color-letra);
     text-align: center;
 }
 
@@ -37,35 +37,36 @@ h2 {
     margin: 4.5%;
     height: 30vh;
     width: 92%;
-    background: #101010;
+    background: var(--color-fondosn);
     border-radius: 20px;
-    border: 2px solid #fb4c0d;
+    border: 2px solid var(--color-fondos);
     
 }
 
 .ejercicio p
 {
     margin: 2%;
-    color: #fff ;
-    font-size: 25px ;
-    /*font-family: ; */
+    color: var(--color-letra) ;
+    font-size: 22px ;
     text-align: justify;
 }
 
 .ingreso
 {
     position: relative;
-    margin: 2%;
-    height: 18%;
-    width: 28%;
-    background: #252525;
-    border: none;
-    border-radius: 20px;
-    color: #fff;
+    margin-top: 5vh;
+    margin-left: 5vh;
+    margin-bottom: 2vh;
+    height: 3.5vh;
+    width: 25%;
     text-align: center;
-    font-size: 18px;
-    cursor: pointer;
-    /*font-family: ;*/
+    background: var(--color-fondobotones);
+    color: var(--color-letra);
+    border:3px solid var(--color-bordes-normales) ;
+    border-radius: 15px;
+    transition: 1.2s;
+    cursor:pointer;
+    font-size: 15px;
 }
 
 .ingreso:focus
