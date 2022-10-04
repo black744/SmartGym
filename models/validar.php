@@ -26,11 +26,13 @@ if($filas){
             header("location: ../vistas/homeusuarioc.php");
             break;
         default:
-            die("ERROR DOGOR");
+        echo("<script>alert('El usuario y/o contraseña son invalidos');</script>");
+        echo("<script>window.location.href = '../vistas/registro.php';</script>");
             break;
     }
 }else{
-    die("error");
+    echo("<script>alert('El usuario y/o contraseña son invalidos');</script>");
+    echo("<script>window.location.href = '../vistas/registro.php';</script>");
 }
 
 

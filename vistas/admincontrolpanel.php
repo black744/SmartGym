@@ -86,7 +86,7 @@ include("../models/validacion_clientes.php");
                     <td class="table-checkbox"><input type="checkbox" name="" id=""> </td>
                     <td class="datos"><?php echo $data['idusuario'];?></td>
                     <td class="datos"><?php echo $data['usuario'];?></td>
-                    <td class="datos"><?php echo $data['edad'];?></td>
+                    <td class="datos">-</td>
                     <td class="datos"><?php echo $data['dni'];?></td>
                     <td class="datos">-</td>
                     <td class="datos">-</td>
