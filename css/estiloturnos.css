@@ -71,7 +71,7 @@ html{
     position: relative;
     top: 0%;
     left: 0%;
-    height: 35vh;
+    height: 35%;
     width: 88%;
     margin-top: 4%;
     margin-left: 5%;
@@ -82,18 +82,21 @@ html{
 
 .turno-a p{
     margin: 2vh;
-    color: #fff;
-    font-family: 'Josefin Sans', sans-serif;
+    color: var(--color-letra);
 }
 
 .cont-calendario-seleccionar {
-    position: flex;
-    height: fit-content;
-    width: 50%;
-    border-top-right-radius: 30px;
-    border-top-left-radius: 0%;
-    border-bottom-right-radius: 30px;
-    border-bottom-left-radius: 0%;
+  position: flex;
+  border-top: none;
+  border-bottom: none;
+  border-right: none;
+  border-left: none;
+  height: fit-content;
+  width: 50%;
+  border-top-right-radius: 30px;
+  border-top-left-radius: 0%;
+  border-bottom-right-radius: 30px;
+  border-bottom-left-radius: 0%;
 }
 
 .header2 {
@@ -114,10 +117,9 @@ html{
 }
 
 .header2 p {
-    margin-top: 8%;
-    color: white;
-    font-size: 30px;
-    font-family: 'Josefin Sans', sans-serif;
+  margin-top: 8%;
+  color: var(--color-letra);
+  font-size: 22px;
 }
 
 select
@@ -131,7 +133,6 @@ select
     font-size: 18px;
     text-align: center;
     border: none;
-    font-family: 'Josefin Sans', sans-serif;
 }
 
 .cont-calendario-seleccionar select:hover {
@@ -139,7 +140,6 @@ select
     background: #101010;
     cursor: pointer;
     border: 1px solid orangered;
-    font-family: 'Josefin Sans', sans-serif;
 }
 
 .cont-calendario-seleccionar button {
@@ -151,7 +151,6 @@ select
     border-radius: 10px;
     font-size: 18px;
     border: none;
-    font-family: 'Josefin Sans', sans-serif;
 }
 
 .botonguardado {
@@ -166,7 +165,7 @@ select
     top: 0%;
     left: 49%;
     margin-top: 5%;
-    font-family: 'Josefin Sans', sans-serif;
+
 }
 
 .botonguardado:hover {
@@ -174,7 +173,7 @@ select
     background: #101010;
     cursor: pointer;
     border: 1px solid orangered;
-    font-family: 'Josefin Sans', sans-serif;
+
 }
 
 .cont-calendario-seleccionar button:hover {
