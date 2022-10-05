@@ -100,7 +100,7 @@ include("../models/validacion_clientes.php");
                 $idturno=$data1['idturno'];
                 
             ?>
-                <div class="turno-a">
+                <div class="turno-php">
                 <P><br>fecha y hora:<?php echo $data1['fechahora']?><br> entrenador:<?php echo $data1['identrenador']?><br> modalidad:<br> alumno:<br> </P>
                 <form method="POST">
                     <input type="text" name="idturnoh" value="<?php echo $idturno;?>" hidden>

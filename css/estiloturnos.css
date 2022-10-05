@@ -24,7 +24,7 @@ html{
     left: 30vh;
     display: flex;
     margin: 12vh;
-    height: 90vh;
+    height: fit-content;
     width: 78vw;
     background: var(--color-fondosn);
     border-radius: 35px;
@@ -72,7 +72,20 @@ html{
     position: relative;
     top: 0%;
     left: 0%;
-    height: 35%;
+    height: 30%;
+    width: 88%;
+    margin-top: 4%;
+    margin-left: 5%;
+    border: none;
+    border-radius: 5px;
+    background: var(--color-fondos);
+}
+
+.turno-php {
+    position: relative;
+    top: 0%;
+    left: 0%;
+    height: 30%;
     width: 88%;
     margin-top: 4%;
     margin-left: 5%;
