@@ -112,11 +112,26 @@ include("../models/validacion_clientes.php");
 				<option value="1">Modalidad presencial </option>
 				<option value="2">Modalidad virtual </option>
 			</select>
-                <div style="width: 75%;margin:12%;">
-                    <div id="picker"></div>
-                    <input type="text" id="result" name="result" value="" hidden />
-
-                </div>
+            <div>
+                <div style="width: 250px; margin: 50px auto;">
+                <div id="picker-no-time"></div><input type="hidden" id="result" value="" /></div>
+                
+            </div>
+            <select class="hora" name="time" id="hora">
+                    <option value="1">9:00 AM</option>
+                    <option value="2">10:00 AM</option>
+                    <option value="3">11:00 AM</option>
+                    <option value="4">12:00 AM</option>
+                    <option value="5">13:00 PM</option>
+                    <option value="6">14:00 PM</option>
+                    <option value="7">15:00 PM</option>
+                    <option value="8">16:00 PM</option>
+                    <option value="9">17:00 PM</option>
+                    <option value="10">18:00 PM</option>
+                    <option value="11">19:00 PM</option>
+                    <option value="12">20:00 PM</option>
+                    <option value="13">21:00 PM</option>
+                </select>
             
                 <script type="text/javascript" src="../js/appturnos.js"></script>
             <input class="botonguardado" type="submit" value="enviar" name="enviar">

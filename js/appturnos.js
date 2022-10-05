@@ -1,19 +1,19 @@
-(function($) {
+(function ($) {
     'use strict';
-    $.fn.dateTimePicker = function(options) {
+    $.fn.dateTimePicker = function (options) {
 
         var settings = $.extend({
             selectData: "now",
-            dateFormat: "DD-MM-YYYY HH:mm",
-            showTime: true,
+            dateFormat: "DD-MM-YYYY",
+            showTime: false,
             locale: 'es',
-            positionShift: { top: 20, left: 0 },
-            title: "Selecciona una fecha y hora para el turno",
-            buttonTitle: "Seleccionar"
+            positionShift: { top: 20, left: 0},
+            title: "Selecciona una Fecha",
+            buttonTitle: "Select"
         }, options);
         moment.locale(settings.locale);
         var elem = this;
-        var limitation = { "hour": 23, "minute": 59 };
+        var limitation = {"hour": 23, "minute": 59};
         var mousedown = false;
         var timeout = 800;
         var selectDate = settings.selectData == "now" ? moment() : moment(settings.selectData, settings.dateFormat);
@@ -22,7 +22,7 @@
         }
         var startDate = copyDate(moment());
         var lastSelected = copyDate(selectDate);
-        return this.each(function() {
+        return this.each(function () {
             if (lastSelected != selectDate) {
                 selectDate = copyDate(lastSelected);
             }
@@ -52,7 +52,7 @@
                     elem.append($s);
                 }
             }
-            elem.on('click', function() {
+            elem.on('click', function () {
                 var $win = $('<div>');
                 $win.addClass("dtp_modal-win");
                 var $body = $('body');
@@ -60,9 +60,9 @@
                 var $content = createContent();
                 $body.append($content);
                 var offset = elem.offset();
-                $content.css({ top: (offset.top + settings.positionShift.top) + "px", left: (offset.left + settings.positionShift.left) + "px" });
+                $content.css({top: (offset.top + settings.positionShift.top) + "px", left: (offset.left + settings.positionShift.left) + "px"});
                 feelDates(selectDate);
-                $win.on('click', function() {
+                $win.on('click', function () {
                     $content.remove();
                     $win.remove();
                 })
@@ -108,9 +108,11 @@
                                 $b.text(day);
                                 if (flagStart && day < dayNow) {
                                     $b.addClass('dtp_modal-grey');
-                                } else if (flagSelect && day == cerDay) {
+                                }
+                                else if (flagSelect && day == cerDay) {
                                     $b.addClass('dtp_modal-cell-selected');
-                                } else {
+                                }
+                                else {
                                     $b.addClass('cursorily');
                                     $b.bind('click', changeDate);
                                 }
@@ -184,11 +186,11 @@
                 function attachChangeTime() {
                     var $angles = $($content).find('i[id^="angle-"]');
                     // $angles.bind('click', changeTime);
-                    $angles.bind('mouseup', function() {
+                    $angles.bind('mouseup', function () {
                         mousedown = false;
                         timeout = 800;
                     });
-                    $angles.bind('mousedown', function() {
+                    $angles.bind('mousedown', function () {
                         mousedown = true;
                         changeTime(this);
                     });
@@ -204,7 +206,7 @@
                         increment = -1;
                     }
                     appendIncrement(arr[2], increment);
-                    setTimeout(function() {
+                    setTimeout(function () {
                         autoIncrement($el);
                     }, timeout);
                 }
@@ -224,7 +226,8 @@
                     var val = parseInt($i.text()) + increment;
                     if (val < 0) {
                         val = limitation[typeDigits];
-                    } else if (val > limitation[typeDigits]) {
+                    }
+                    else if (val > limitation[typeDigits]) {
                         val = 0;
                     }
                     $i.text(formatDigits(val));
@@ -295,7 +298,8 @@
                     var $c = $('<div>');
                     if (settings.showTime) {
                         $c.addClass("dtp_modal-content");
-                    } else {
+                    }
+                    else {
                         $c.addClass("dtp_modal-content-no-time");
                     }
                     var $el = $('<div>');
@@ -329,7 +333,6 @@
                     }
                     return $c;
                 }
-
                 function updateDate() {
                     if (settings.showTime) {
                         $('#time-line').text(lastSelected.format(settings.dateFormat));
@@ -380,4 +383,6 @@
         var r = m.format('YYYY') * 12 + parseInt(m.format('MM'));
         return r;
     }
+
 }(jQuery));
+// fa-caret-down
