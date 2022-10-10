@@ -81,47 +81,48 @@ include("../models/validacion_clientes.php");
                 $query=mysqli_query($conex,"SELECT * FROM datos WHERE identrenador='$idusuario' AND estado='0'");
                 $result= mysqli_num_rows($query2);
                 while ($data1= mysqli_fetch_array($query2)){
+                    ?>
                 <tr class="tabla-fila" >
-                    <td class="table-checkbox"><input type="checkbox" name="" id=""> </td>
-                    <td class="datos">1</td>
-                    <td class="datos">Ulises Argañaraz</td>
-                    <td class="datos">18</td>
-                    <td class="datos">45542643</td>
-                    <td class="datos">Al dia</td>
-                    <td class="datos">-</td>
-                    <td class="datos">Mixto</td>
+                    <td> class="table-checkbox"><input type="checkbox" name="" id=""> </td>
+                    <td> class="datos">1</td>
+                    <td> class="datos">Ulises Argañaraz</td>
+                    <td> class="datos">18</td>
+                    <td> class="datos">45542643</td>
+                    <td> class="datos">Al dia</td>
+                    <td> class="datos">-</td>
+                    <td> class="datos">Mixto</td>
                 </tr>
 
                 <tr class="tabla-fila">
-                    <td class="table-checkbox"><input type="checkbox" name="" id=""> </td>
-                    <td class="datos">2</td>
-                    <td class="datos">F.F</td>
-                    <td class="datos">20</td>
-                    <td class="datos">890.2135.12</td>
-                    <td class="datos">Al dia</td>
-                    <td class="datos">-</td>
-                    <td class="datos">Mixto</td>
+                    <td> class="table-checkbox"><input type="checkbox" name="" id=""> </td>
+                    <td> class="datos">2</td>
+                    <td> class="datos">F.F</td>
+                    <td> class="datos">20</td>
+                    <td> class="datos">890.2135.12</td>
+                    <td> class="datos">Al dia</td>
+                    <td> class="datos">-</td>
+                    <td> class="datos">Mixto</td>
                 </tr>
 
                 <tr class="tabla-fila">
-                    <td class="table-checkbox"><input type="checkbox" name="" id=""> </td>
-                    <td class="datos">3</td>
-                    <td class="datos">leankidd</td>
-                    <td class="datos">18</td>
-                    <td class="datos">32163565</td>
-                    <td class="datos">adeuda</td>
-                    <td class="datos">abril</td>
-                    <td class="datos">Presencial</td>
+                    <td> class="table-checkbox"><input type="checkbox" name="" id=""> </td>
+                    <td> class="datos">3</td>
+                    <td> class="datos">leankidd</td>
+                    <td> class="datos">18</td>
+                    <td> class="datos">32163565</td>
+                    <td> class="datos">adeuda</td>
+                    <td> class="datos">abril</td>
+                    <td> class="datos">Presencial</td>
                 </tr>
                 <tr class="tabla-fila">
-                    <td class="table-checkbox"><input type="checkbox" name="" id=""> </td>
-                    <td class="datos">4</td>
-                    <td class="datos">Ianni luccio</td>
-                    <td class="datos">12</td>
-                    <td class="datos">50.452643</td>
-                    <td class="datos">Adeuda</td>
-                    <td class="datos">abril y mayo</td>
-                    <td class="datos">Virtual</td>
+                    <td> class="table-checkbox"><input type="checkbox" name="" id=""> </td>
+                    <td> class="datos">4</td>
+                    <td> class="datos">Ianni luccio</td>
+                    <td> class="datos">12</td>
+                    <td> class="datos">50.452643</td>
+                    <td> class="datos">Adeuda</td>
+                    <td> class="datos">abril y mayo</td>
+                    <td> class="datos">Virtual</td>
                 </tr>
             </table>
             <hr>
@@ -155,5 +156,4 @@ include("../models/validacion_clientes.php");
         tableExport.export2file(preferenciasDocumento.data, preferenciasDocumento.mimeType, preferenciasDocumento.filename, preferenciasDocumento.fileExtension, preferenciasDocumento.merges, preferenciasDocumento.RTL, preferenciasDocumento.sheetname);
 });
 </script>
-
 </html>

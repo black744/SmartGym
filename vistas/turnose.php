@@ -1,20 +1,20 @@
 <?php
 include("../db.php");
-$conex=conectar();
+$conex = conectar();
 session_start();
 $nusuario = $_SESSION['usuario'];
 
-$sql="SELECT * FROM datos WHERE usuario='$nusuario'";
-$query=mysqli_query($conex,$sql);
+$sql = "SELECT * FROM datos WHERE usuario='$nusuario'";
+$query = mysqli_query($conex, $sql);
 
-$row=mysqli_fetch_array($query);
-$idrol= $row['id_rol'];
-$nombre= $row['nombre'];
-$apellido= $row['apellido'];
-$dni= $row['dni'];
-$correo= $row['correo'];
-$idusuario= $row['idusuario'];
-$image= $row['image'];
+$row = mysqli_fetch_array($query);
+$idrol = $row['id_rol'];
+$nombre = $row['nombre'];
+$apellido = $row['apellido'];
+$dni = $row['dni'];
+$correo = $row['correo'];
+$idusuario = $row['idusuario'];
+$image = $row['image'];
 include("../models/validacion_clientes.php");
 ?>
 
@@ -47,51 +47,52 @@ include("../models/validacion_clientes.php");
 </head>
 
 <?php
-    switch($idrol){
-        case 0: 
-            include ("sidebars/sidebarc.php");
-            break;
-        case 1: 
-            include ("sidebars/sidebare.php");
-            break;
-        case 2: 
-            include ("sidebars/sidebara.php");
-            break;
-        default:
-            die("Error");
-            break;
-} 
+switch ($idrol) {
+    case 0:
+        include("sidebars/sidebarc.php");
+        break;
+    case 1:
+        include("sidebars/sidebare.php");
+        break;
+    case 2:
+        include("sidebars/sidebara.php");
+        break;
+    default:
+        die("Error");
+        break;
+}
 ?>
 
 <body>
 
-<div class="cont-body-turnos">
-	  <div class="cont-turnos-asignados">
-		  <div class="header">
+    <div class="cont-body-turnos">
+        <div class="cont-turnos-asignados">
+            <div class="header">
                 <P>Turnos asignados</P>
             </div>
             <?php
-        $query1=mysqli_query($conex,"SELECT * from clases WHERE entrenador='$nusuario'");
-        $result1= mysqli_num_rows($query1);
-        if($result1 > 0){
-        while ($data= mysqli_fetch_array($query1)){
+            $query1 = mysqli_query($conex, "SELECT * from clases WHERE entrenador='$nusuario'");
+            $result1 = mysqli_num_rows($query1);
+            if ($result1 > 0) {
+                while ($data = mysqli_fetch_array($query1)) {
 
-?> 
-            <div class="turno-a">
-                <p> Fecha: <?php echo $data['fecha'];?></p> 
-                <p> Horario: <?php echo $data['hora'];?></p> 
-                <p> Modalidad: <?php echo $data['modalidad'];?></p>
-                <p> Direccion: Miro 2126 (preguntar por silvia frujter)</p>
-            </div>
+            ?>
+                    <div class="turno-a">
+                        <p> Fecha: <?php echo $data['fecha']; ?></p>
+                        <p> Horario: <?php echo $data['hora']; ?></p>
+                        <p> Modalidad: <?php echo $data['modalidad']; ?></p>
+                        <p> Direccion: Miro 2126 (preguntar por silvia frujter)</p>
+                    </div>
             <?php
-        }};?>
-            
-		</div>
-	  <div class="cont-calendario-seleccionar">
-		  <div class="header2">
+                }
+            }; ?>
+
+        </div>
+        <div class="cont-calendario-seleccionar">
+            <div class="header2">
                 <P>Aceptar turnos</P>
-          </div>
-                <div class="turno-a">
+            </div>
+            <div class="turno-a">
                 <form method="post">
                     <br>
                     <h3> Generar turno para clase </h3>
@@ -102,7 +103,7 @@ include("../models/validacion_clientes.php");
                         <select name="modalidad">
                         <option value="Vitual">Virtual</option>
                         <option value="Presencial">Presencial</option>
-                        </select>
+                    </select>
 
                     <br>
                     <br>
@@ -120,23 +121,22 @@ include("../models/validacion_clientes.php");
                 </form>
 
             </div>
-             <br>
-             <br>
-             <br>
-             <?php
-             if(isset($_POST['cargarclase'])){
-                $fechaclase=$_POST['f-c'];
-                $modalidad=$_POST['modalidad'];
-                $horaclase=$_POST['h-c'];
-                $cuposclase=$_POST['c-c'];
-                $sqlclase="INSERT INTO `clases`(`idclase`, `entrenador`, `modalidad`, `fecha`, `hora`, `cupos`, `estado`) VALUES ('','$nusuario','$modalidad','$fechaclase','$horaclase','$cuposclase','0')";
-                $queryclase=mysqli_query($conex, $sqlclase);
-
+            <br>
+            <br>
+            <br>
+            <?php
+            if (isset($_POST['cargarclase'])) {
+                $fechaclase = $_POST['f-c'];
+                $modalidad = $_POST['modalidad'];
+                $horaclase = $_POST['h-c'];
+                $cuposclase = $_POST['c-c'];
+                $sqlclase = "INSERT INTO `clases`(`idclase`, `entrenador`, `modalidad`, `fecha`, `hora`, `cupos`, `estado`) VALUES ('','$nusuario','$modalidad','$fechaclase','$horaclase','$cuposclase','0')";
+                $queryclase = mysqli_query($conex, $sqlclase);
             }
-             ?>
-		  
-	</div>
-  
+            ?>
+
+        </div>
+
 </body>
 
 </html>
