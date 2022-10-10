@@ -93,7 +93,7 @@ switch ($idrol) {
 
 <body>
 
-  <div class="cont-t">
+  
 
     <div class="cont-t-u">
       <h4>Buscador de clientes</h4>
@@ -129,7 +129,7 @@ switch ($idrol) {
 
       </table>
 
-    </div>
+  
 
 
 </body>

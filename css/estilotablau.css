@@ -27,8 +27,8 @@ h4{
 }
 
 .cont-t-u{
-
     position: relative;
+    left: 15vw;
     margin-top: 4vh;
     margin-left: 1vw;
     height: fit-content;
@@ -38,10 +38,7 @@ h4{
     border-radius: 10px;
 }
 
-.cont-t-u::-webkit-scrollbar{
-    width: 5%;
-    background: var(--color-fondobotones);
-}
+
 .form-control{
     position: relative;
     margin-top: 5vh;

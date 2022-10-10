@@ -28,11 +28,11 @@ include("../models/validacion_clientes.php");
     <link rel="stylesheet" type="text/css" href="../css/estilousuario.css">
     <link rel="stylesheet" type="text/css" href="../css/estiloturnos.css">
     <title>Turnos</title>
-
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment-with-locales.min.js" integrity="sha512-LGXaggshOkD/at6PFNcp2V2unf9LzFq6LE+sChH7ceMTDP0g2kn6Vxwgg7wkPP7AAtX+lmPqPdxB47A0Nz0cMQ==" crossorigin="anonymous"></script>
     <script src="../js/appturnos.js"></script>
+    
     <script type="text/javascript">
         $(document).ready(function() {
             $('#picker').dateTimePicker();
@@ -151,7 +151,7 @@ switch ($idrol) {
             ?>
 
         </div>
-        <script src="apptimepicker.js"></script>
+        <script src="../js/apptime.js"></script>
 </body>
 
 </html>
