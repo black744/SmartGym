@@ -21,7 +21,7 @@
                 <p>Si ya tienes una cuenta,por favor inicia sesion aqui</p>
                 <button class="sign-up-btn">Iniciar Sesion</button>
             </div>
-        </div>class="
+        </div>
         <form class="formulario" action="../models/registrar.php" method="POST">
             <h2 class="create-account">Crear una cuenta</h2>
             <p class="cuenta-gratis">Crear una cuenta gratis</p>

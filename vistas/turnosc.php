@@ -76,22 +76,22 @@ include("../models/validacion_clientes.php");
                 <P>Turnos asignados</P>
             </div>
             <!-- <form action="">-->
+            <?php 
+                $sqlclasesasignadas="SELECT clases_clientes.idclase, clases_clientes.usuario, clases.entrenador, clases.modalidad, clases.fecha, clases.hora FROM clases INNER JOIN clases_clientes ON clases.idclase = clases_clientes.idclase WHERE usuario = '$idusuario'";
+                $queryclasesasignadas=mysqli_query($conex, $sqlclasesasignadas);
+                while($rowclasesasignadas = mysqli_fetch_array($queryclasesasignadas)){
+                    ?>
             <div class="turno-a">
                 <br>
-                <p> fecha del turno: </p> <p> Horario: </p> 
-                <p> Entrenador: </p>
-                <p> Tipo de turno: </p>
-                <p> Direccion: </p>
+                <p> Fecha: <?php echo $rowclasesasignadas['fecha'];?></p>
+                <p> Horario: <?php echo $rowclasesasignadas['hora'];?></p>  
+                <p> Entrenador: <?php echo $rowclasesasignadas['entrenador'];?></p>
+                <p> Tipo de turno: <?php echo $rowclasesasignadas['modalidad'];?></p>
+                <p> Direccion: av. siempre viva 777</p>
 
             </div>
-            <div class="turno-a">
-                <br>
-                <p> fecha del turno: </p> <p> Horario: </p> 
-                <p> Entrenador: </p>
-                <p> Tipo de turno: </p>
-                <p> Direccion: </p>
-
-            </div>
+                <?php
+                }?>
             <!-- </form> -->
         </div>
         <div class="cont-calendario-seleccionar">
