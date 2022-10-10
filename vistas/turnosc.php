@@ -99,8 +99,6 @@ include("../models/validacion_clientes.php");
                 <P>Crear turno</P>
             </div>
             <!-- <form action=""> -->
-            <button> Modificar turno</button>
-            <button> Cancelar turno</button>
             <form role="form" name="nD" id="nD" method="post">
             <select name="s-e" onchange="enviar(this.form)">
             <option value=""> Todos los entrenadores</option>
@@ -123,10 +121,36 @@ include("../models/validacion_clientes.php");
  if(isset($_POST['enviarclase'])){
 $idclase=$_POST['claseid'];
 
-$sqlcomp="SELECT * FROM clases_clientes WHERE usuario='$idusuario' AND idclase='$idclase'";
-$querycomp= mysqli_query($conex, $sqlcomp);
-echo $querycomp;
-
+$sqlcomp="SELECT * FROM clases WHERE idclase='$idclase'";
+$querycomp=mysqli_query($conex,$sqlcomp);
+$filascomp=mysqli_fetch_array($querycomp);
+if($idclase == 0){
+    echo("<script>window.location.href = '../vistas/turnosc.php';</script>");
+    echo("<script>alert('Error, Accede a una clase valida');</script>");
+       
+};
+if($filascomp['cupos'] == 0){
+    echo("<script>alert('Error, La clase esta llena');</script>");
+    $sqlupdate="UPDATE `clases` SET estado= 1 WHERE idclase='$idclase'";
+    $queryupdate=mysqli_query($conex, $sqlupdate);
+};
+$sqlcomp2="SELECT * FROM clases_clientes WHERE idclase='$idclase' AND usuario='$idusuario'";
+$querycomp2=mysqli_query($conex,$sqlcomp2);
+$filascomp2=mysqli_fetch_array($querycomp2);
+if($filascomp2){
+    echo("<script>alert('Error, ya estas en esta clase');</script>");
+    echo("<script>window.location.href = '../vistas/turnosc.php';</script>");
+ }else{
+    if($idclase == 0){
+        echo("<script>window.location.href = '../vistas/turnosc.php';</script>");
+        echo("<script>alert('Error, Accede a una clase valida');</script>");
+           
+    }else{
+    $sqlinsert="INSERT INTO `clases_clientes`(`idclase`, `usuario`, `ai_id`) VALUES ('$idclase','$idusuario','')";
+$sqlinsertquery=mysqli_query($conex, $sqlinsert);
+$sqlupdate="UPDATE `clases` SET cupos= cupos -1 WHERE idclase='$idclase'";
+$queryupdate=mysqli_query($conex, $sqlupdate);};
+ };
  };?>
 
             
