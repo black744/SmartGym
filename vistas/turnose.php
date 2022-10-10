@@ -71,18 +71,16 @@ include("../models/validacion_clientes.php");
                 <P>Turnos asignados</P>
             </div>
             <?php
-        $query1=mysqli_query($conex,"SELECT * from turnos INNER JOIN modalidad ON turnos.modalidad=modalidad.id WHERE identrenador='$idusuario' AND estado='1'");
+        $query1=mysqli_query($conex,"SELECT * from clases WHERE entrenador='$nusuario'");
         $result1= mysqli_num_rows($query1);
         if($result1 > 0){
         while ($data= mysqli_fetch_array($query1)){
 
 ?> 
             <div class="turno-a">
-                <p> Cliente: <?php echo $data['usuario_cliente'];?></p>
-                <p> Fecha del Turno: <?php echo $data['fechahora'];?></p> 
-                <p> Horario: <?php echo $data['fechahora'];?></p> 
-                <p> Entrenador: <?php echo $data['usuario_entrenador'];?></p>
-                <p> Tipo de turno: <?php echo $data['descripcion'];?></p>
+                <p> Fecha: <?php echo $data['fecha'];?></p> 
+                <p> Horario: <?php echo $data['hora'];?></p> 
+                <p> Modalidad: <?php echo $data['modalidad'];?></p>
                 <p> Direccion: Miro 2126 (preguntar por silvia frujter)</p>
             </div>
             <?php
@@ -93,36 +91,46 @@ include("../models/validacion_clientes.php");
 		  <div class="header2">
                 <P>Aceptar turnos</P>
           </div>
-            <?php
-            $query2=mysqli_query($conex,"SELECT * FROM turnos WHERE identrenador='$idusuario' AND estado='0'");
-            $result2= mysqli_num_rows($query2);
-            while ($data1= mysqli_fetch_array($query2)){
-                $idturno=$data1['idturno'];
-                
-            ?>
-                <div class="turno-php">
-                <P><br>fecha y hora:<?php echo $data1['fechahora']?><br> entrenador:<?php echo $data1['identrenador']?><br> modalidad:<br> alumno:<br> </P>
-                <form method="POST">
-                    <input type="text" name="idturnoh" value="<?php echo $idturno;?>" hidden>
-                <input type="submit" id="cancelarturno" name="cancelarturno" value="Cancelar">
-                <input type="submit" id="aceptarturno" name="aceptarturno" value="Aceptar">
-            </form>
-            <?php
-                if(isset($_POST['cancelarturno'])){
-                    $idturno1= $_POST['idturnoh'];
-                    $consultacancelar="UPDATE turnos SET estado='2' WHERE idturno='$idturno1'";
-                    $resultadocanc = mysqli_query($conex, $consultacancelar);
-                };
-                if(isset($_POST['aceptarturno'])){
-                    $idturno2= $_POST['idturnoh'];
-                    $consultaaceptar="UPDATE turnos SET estado='1' WHERE idturno='$idturno2'";
-                    $resultadoacept = mysqli_query($conex, $consultaaceptar);
-                };?>
-            </div>
+                <div class="turno-a">
+                <form method="post">
+                    <br>
+                    <h5>Fecha de clase</h5>
+                    <input type="text" placeholder="Ingrese fecha de clase" name="f-c">  <abbr title="Ingresar con el siguiente formato: dia/mes/año">?</abbr> 
+                        <select name="modalidad">
+                        <option value="Vitual">Virtual</option>
+                        <option value="Presencial">Presencial</option>
+                        </select>
 
-            <?php
-            };?>
-             
+                    <br>
+                    <br>
+                    <h5>Horario de clase</h5>
+                    <input type="text" placeholder="Ingrese el horario de la clase" name="h-c">  <abbr title="Ingresar con el siguiente formato: hora:minutos hs">?</abbr>                                   
+                    <br>
+                    <br>
+                    <h5>Ingrese los cupos de la clase</h5>
+                    <input type="number" min="10" max="30" placeholder="Ingrese los cupos de la clase" name="c-c">
+                    <br>
+                    <br>
+                    <input type="submit" name="cargarclase">
+                    <br>
+                    <br>
+                </form>
+
+            </div>
+             <br>
+             <br>
+             <br>
+             <?php
+             if(isset($_POST['cargarclase'])){
+                $fechaclase=$_POST['f-c'];
+                $modalidad=$_POST['modalidad'];
+                $horaclase=$_POST['h-c'];
+                $cuposclase=$_POST['c-c'];
+                $sqlclase="INSERT INTO `clases`(`idclase`, `entrenador`, `modalidad`, `fecha`, `hora`, `cupos`, `estado`) VALUES ('','$nusuario','$modalidad','$fechaclase','$horaclase','$cuposclase','0')";
+                $queryclase=mysqli_query($conex, $sqlclase);
+
+            }
+             ?>
 		  
 	</div>
   
