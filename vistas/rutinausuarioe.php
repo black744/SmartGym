@@ -18,9 +18,18 @@ $image= $row['image'];
 include("../models/validacion_clientes.php");
 ?>
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
+    <meta charset="UTF-8">
+    <title>Rutina</title>
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/css/select2.min.css" rel="stylesheet"/>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/js/select2.min.js"></script>
+    <link rel="stylesheet" href="../css/estilousuario.css">
+    <link rel="stylesheet" href="../css/estilorutina.css">
+
+</head>
+
 <?php
     switch($idrol){
         case 0: 
@@ -37,26 +46,20 @@ include("../models/validacion_clientes.php");
             break;
 } 
 ?>
-    <meta charset="UTF-8">
-
-    <title>Rutina</title>
-
-    <link rel="stylesheet" href="../css/estilousuario.css">
-    <link rel="stylesheet" href="../css/estilorutina.css">
-</head>
 
 <body>
 
 <div class="cont-t">
+
+<select class="js-example-basic-multiple" multiple="multiple">
+  <option value="AL">Alabama</option>
+  <option value="WY">Wyoming</option>
+</select>
+
 	<div class="menu">
-			<form method="post" class="f">
-			<button class="boton" name="Btn-crear-tabla" value="Btn-crear-tabla" id="Btn-crear-tabla"> Crear Rutina </button>
-			</form>
-			<?php
-			if(isset($_POST['Btn-crear-tabla'])){
-				?>
-						<table class="c-t-rutina">
-		<tbody class="cuerpo-t">
+			
+		<table class="c-t-rutina">
+			<tbody class="cuerpo-t">
 			<tr class="fil">
 			<td></td>
 			<th class="dias">Lunes</th>
@@ -79,17 +82,6 @@ include("../models/validacion_clientes.php");
 				<button class="boton"> Eliminar ejercicio</button>
 				
 				</th>
-
-				<?php
-				$ne = $_POST['ne'];
-				$de = $_POST['de'];
-				$cs = $_POST['cs'];
-				$cr = $_POST['cr'];
-				echo $ne;
-				echo $de;
-				echo $cs;
-				echo $cr;
-				?>
 
 				<th class="ce">
                 <a href="ejercicios.php"> <button class="boton">  Añadir ejercicio </button> </a>
@@ -352,21 +344,12 @@ include("../models/validacion_clientes.php");
 			</tr>
 		</tbody>
 		</table>
-  
-	
-  </div>
-				
-
-				<?php
-					}else if(isset($_POST['Btn-Ocultar-tabla'])){
-						?>
-				<?php		
-				}
-			?>
-			
 	</div>
-		
-
+	</div>
+	<script t>
+	<script type="text/javascript">
+	$(".js-example-basic-multiple").select2();
+	</script>
 </body>
 
 </html>
