@@ -101,6 +101,7 @@ include("../models/validacion_clientes.php");
     <table class="table table-bordered order-table ">
         <thead class="header">
         <tr class="fila-h">
+			<th>-</th>
             <th class="col-h">Nombre y apellido</th>
             <th class="col-h">DNI</th>
 			<th class="col-h">Asignar rutina</th>
@@ -108,30 +109,35 @@ include("../models/validacion_clientes.php");
         </thead>
 
         <tr class="fila">
+		<td><div class="foto"></div></td>
         <td class="columna">Juan Perez de Barradas</td>
         <td class="columna">00.000.001</td>
         <td><button class="btnr">crear rutina</button></td>
         </tr>
 
 		<tr class="fila">
+		<td><div class="foto"></div></td>
         <td class="columna">federico melomama</td>
         <td class="columna">00.000.002</td>
         <td><button class="btnr">crear rutina</button></td>
         </tr>
 
 		<tr class="fila">
+		<td><div class="foto"></div></td>
         <td class="columna">Ianni luchio</td>
         <td class="columna">00.000.003</td>
         <td><button class="btnr">crear rutina</button></td>
         </tr>
 
 		<tr class="fila">
+		<td><div class="foto"></div></td>
         <td class="columna">polentero</td>
         <td class="columna">00.000.004</td>
         <td><button class="btnr">crear rutina</button></td>
         </tr>
 
 		<tr class="fila">
+		<td><div class="foto"></div></td>
         <td class="columna">lean</td>
         <td class="columna">00.000.005</td>
         <td><button class="btnr">crear rutina</button></td>
@@ -141,296 +147,7 @@ include("../models/validacion_clientes.php");
 
     </div>
 
-	<div class="menu">
-			
-		<table class="c-t-rutina">
-			<tbody class="cuerpo-t">
-			<tr class="fil">
-			<td></td>
-			<th class="dias">Lunes</th>
-			<th class="dias">Martes</th>
-			<th class="dias">Miercoles</th>
-			<th class="dias">Jueves</th>
-			<th class="dias">Viernes</th>
-			<th class="dias">Sabado</th>
-			<th class="dias">Domingo</th>
-			</tr>
-			
-
-			<tr class="fil">
-				<td class="ej"> <p>Ejercicio 1</p> </td>
 	
-				<th class="ce">
-                <a href="ejercicios.php"> <button class="boton">  Añadir ejercicio </button> </a>
-				<br>
-				<br>
-				<button class="boton"> Eliminar ejercicio</button>
-				
-				</th>
-
-				<th class="ce">
-                <a href="ejercicios.php"> <button class="boton">  Añadir ejercicio </button> </a>
-				<br>
-				<br>
-				<button class="boton"> Eliminar ejercicio</button>
-				</th>
-				
-				<th class="ce">
-                <a href="ejercicios.php"> <button class="boton">  Añadir ejercicio </button> </a>
-				<br>
-				<br>
-				<button class="boton"> Eliminar ejercicio</button>
-				</th>
-				
-				<th class="ce">
-                <a href="ejercicios.php"> <button class="boton">  Añadir ejercicio </button> </a>
-				<br>
-				<br>
-				<button class="boton"> Eliminar ejercicio</button>
-				</th>
-				
-				<th class="ce">
-                <a href="ejercicios.php"> <button class="boton">  Añadir ejercicio </button> </a>
-				<br>
-				<br>
-				<button class="boton"> Eliminar ejercicio</button>
-				</th>
-				
-				<th class="ce">
-                <a href="ejercicios.php"> <button class="boton">  Añadir ejercicio </button> </a>
-				<br>
-				<br>
-				<button class="boton"> Eliminar ejercicio</button>
-				</th>
-				
-				<th class="ce">
-                <a href="ejercicios.php"> <button class="boton">  Añadir ejercicio </button> </a>
-				<br>
-				<br>
-				<button class="boton"> Eliminar ejercicio</button>
-				</th>
-				
-			</tr>
-			<tr class="fil">
-				<td class="ej"> <p>Ejercicio 2</p> </td>
-				
-				<th class="ce">
-                <a href="ejercicios.php"> <button class="boton">  Añadir ejercicio </button> </a>
-				<br>
-				<br>
-				<button class="boton"> Eliminar ejercicio</button>
-				</th>
-				
-				<th class="ce">
-                <a href="ejercicios.php"> <button class="boton">  Añadir ejercicio </button> </a>
-				<br>
-				<br>
-				<button class="boton"> Eliminar ejercicio</button>
-				</th>
-				
-				<th class="ce">
-                <a href="ejercicios.php"> <button class="boton">  Añadir ejercicio </button> </a>
-				<br>
-				<br>
-				<button class="boton"> Eliminar ejercicio</button>
-				</th>
-				
-				<th class="ce">
-                <a href="ejercicios.php"> <button class="boton">  Añadir ejercicio </button> </a>
-				<br>
-				<br>
-				<button class="boton"> Eliminar ejercicio</button>
-				</th>
-				
-				<th class="ce">
-                <a href="ejercicios.php"> <button class="boton">  Añadir ejercicio </button> </a>
-				<br>
-				<br>
-				<button class="boton"> Eliminar ejercicio</button>
-				</th>
-				
-				<th class="ce">
-                <a href="ejercicios.php"> <button class="boton">  Añadir ejercicio </button> </a>
-				<br>
-				<br>
-				<button class="boton"> Eliminar ejercicio</button>
-				</th>
-				
-				<th class="ce">
-                <a href="ejercicios.php"> <button class="boton">  Añadir ejercicio </button> </a>
-				<br>
-				<br>
-				<button class="boton"> Eliminar ejercicio</button>
-				</th>
-				
-			
-			</tr>
-			<tr class="fil">
-				<td class="ej"> <p>Ejercicio 3</p> </td>
-				
-				<th class="ce">
-                <a href="ejercicios.php"> <button class="boton">  Añadir ejercicio </button> </a>
-				<br>
-				<br>
-				<button class="boton"> Eliminar ejercicio</button>
-				</th>
-				
-				<th class="ce">
-                <a href="ejercicios.php"> <button class="boton">  Añadir ejercicio </button> </a>
-				<br>
-				<br>
-				<button class="boton"> Eliminar ejercicio</button>
-				</th>
-				
-				<th class="ce">
-                <a href="ejercicios.php"> <button class="boton">  Añadir ejercicio </button> </a>
-				<br>
-				<br>
-				<button class="boton"> Eliminar ejercicio</button>
-				</th>
-				
-				<th class="ce">
-                <a href="ejercicios.php"> <button class="boton">  Añadir ejercicio </button> </a>
-				<br>
-				<br>
-				<button class="boton"> Eliminar ejercicio</button>
-				</th>
-				
-				<th class="ce">
-                <a href="ejercicios.php"> <button class="boton">  Añadir ejercicio </button> </a>
-				<br>
-				<br>
-				<button class="boton"> Eliminar ejercicio</button>
-				</th>
-				
-				<th class="ce">
-                <a href="ejercicios.php"> <button class="boton">  Añadir ejercicio </button> </a>
-				<br>
-				<br>
-				<button class="boton"> Eliminar ejercicio</button>
-				</th>
-				
-				<th class="ce">
-                <a href="ejercicios.php"> <button class="boton">  Añadir ejercicio </button> </a>
-				<br>
-				<br>
-				<button class="boton"> Eliminar ejercicio</button>
-				</th>
-				
-
-			</tr>
-			<tr class="fil">
-				<td class="ej"> <p>Ejercicio 4</p> </td>
-				
-				<th class="ce">
-                <a href="ejercicios.php"> <button class="boton">  Añadir ejercicio </button> </a>
-				<br>
-				<br>
-				<button class="boton"> Eliminar ejercicio</button>
-				</th>
-				
-				<th class="ce">
-                <a href="ejercicios.php"> <button class="boton">  Añadir ejercicio </button> </a>
-				<br>
-				<br>
-				<button class="boton"> Eliminar ejercicio</button>
-				</th>
-				
-				<th class="ce">
-                <a href="ejercicios.php"> <button class="boton">  Añadir ejercicio </button> </a>
-				<br>
-				<br>
-				<button class="boton"> Eliminar ejercicio</button>
-				</th>
-				
-				<th class="ce">
-                <a href="ejercicios.php"> <button class="boton">  Añadir ejercicio </button> </a>
-				<br>
-				<br>
-				<button class="boton"> Eliminar ejercicio</button>
-				</th>
-				
-				<th class="ce">
-                <a href="ejercicios.php"> <button class="boton">  Añadir ejercicio </button> </a>
-				<br>
-				<br>
-				<button class="boton"> Eliminar ejercicio</button>
-				</th>
-				
-				<th class="ce">
-                <a href="ejercicios.php"> <button class="boton">  Añadir ejercicio </button> </a>
-				<br>
-				<br>
-				<button class="boton"> Eliminar ejercicio</button>
-				</th>
-				
-				<th class="ce">
-                <a href="ejercicios.php"> <button class="boton">  Añadir ejercicio </button> </a>
-				<br>
-				<br>
-				<button class="boton"> Eliminar ejercicio</button>
-				</th>
-				
-			
-			</tr>
-			<tr class="fil">
-				<td class="ej"> <p>Ejercicio 5</p> </td>
-				
-				<th class="ce">
-                <a href="ejercicios.php"> <button class="boton">  Añadir ejercicio </button> </a>
-				<br>
-				<br>
-				<button class="boton"> Eliminar ejercicio</button>
-				</th>
-				
-				<th class="ce">
-                <a href="ejercicios.php"> <button class="boton">  Añadir ejercicio </button> </a>
-				<br>
-				<br>
-				<button class="boton"> Eliminar ejercicio</button>
-				</th>
-				
-				<th class="ce">
-                <a href="ejercicios.php"> <button class="boton">  Añadir ejercicio </button> </a>
-				<br>
-				<br>
-				<button class="boton"> Eliminar ejercicio</button>
-				</th>
-				
-				<th class="ce">
-                <a href="ejercicios.php"> <button class="boton">  Añadir ejercicio </button> </a>
-				<br>
-				<br>
-				<button class="boton"> Eliminar ejercicio</button>
-				</th>
-				
-				<th class="ce">
-                <a href="ejercicios.php"> <button class="boton">  Añadir ejercicio </button> </a>
-				<br>
-				<br>
-				<button class="boton"> Eliminar ejercicio</button>
-				</th>
-				
-				<th class="ce">
-                <a href="ejercicios.php"> <button class="boton">  Añadir ejercicio </button> </a>
-				<br>
-				<br>
-				<button class="boton"> Eliminar ejercicio</button>
-				</th>
-				
-				<th class="ce">
-                <a href="ejercicios.php"> <button class="boton">  Añadir ejercicio </button> </a>
-				<br>
-				<br>
-				<button class="boton"> Eliminar ejercicio</button>
-				</th>
-				
-			
-			</tr>
-		</tbody>
-		</table>
-	</div>
-	</div>
 </body>
 
 </html>
