@@ -27,6 +27,49 @@ include("../models/validacion_clientes.php");
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/js/select2.min.js"></script>
     <link rel="stylesheet" href="../css/estilousuario.css">
     <link rel="stylesheet" href="../css/estilorutina.css">
+	<link rel="stylesheet" href="../css/estilotablau.css">
+
+	<script>
+		(function(document) {
+      'use strict';
+
+      var LightTableFilter = (function(Arr) {
+
+        var _input;
+
+        function _onInputEvent(e) {
+          _input = e.target;
+          var tables = document.getElementsByClassName(_input.getAttribute('data-table'));
+          Arr.forEach.call(tables, function(table) {
+            Arr.forEach.call(table.tBodies, function(tbody) {
+              Arr.forEach.call(tbody.rows, _filter);
+            });
+          });
+        }
+
+        function _filter(row) {
+          var text = row.textContent.toLowerCase(), val = _input.value.toLowerCase();
+          row.style.display = text.indexOf(val) === -1 ? 'none' : 'table-row';
+        }
+
+        return {
+          init: function() {
+            var inputs = document.getElementsByClassName('light-table-filter');
+            Arr.forEach.call(inputs, function(input) {
+              input.oninput = _onInputEvent;
+            });
+          }
+        };
+      })(Array.prototype);
+
+      document.addEventListener('readystatechange', function() {
+        if (document.readyState === 'complete') {
+          LightTableFilter.init();
+        }
+      });
+
+    })(document);
+	</script>
 
 </head>
 
@@ -51,42 +94,49 @@ include("../models/validacion_clientes.php");
 
 <div class="cont-t">
 
-<div class="container">
-
-    <input class="form-control col-md-3 light-table-filter" data-table="order-table" type="text" placeholder="Search..">
+	<div class="cont-t-u">
+	<h4>Buscador de clientes</h4>
+    <input class="form-control col-md-3 light-table-filter" data-table="order-table" type="text" placeholder="Buscar usuario">
     <hr>
-
     <table class="table table-bordered order-table ">
-        <thead>
-        <tr>
-            <th>Nombre y apellido</th>
-            <th>DNI</th>
+        <thead class="header">
+        <tr class="fila-h">
+            <th class="col-h">Nombre y apellido</th>
+            <th class="col-h">DNI</th>
+			<th class="col-h">Asignar rutina</th>
         </tr>
         </thead>
-        <tr>
-        <td>Ecopetrol</td>
-        <td>Maria Perez</td>
-        <td><button>crear rutina</button></td>
+
+        <tr class="fila">
+        <td class="columna">Juan Perez de Barradas</td>
+        <td class="columna">00.000.001</td>
+        <td><button class="btnr">crear rutina</button></td>
         </tr>
 
-        <tr>
-        <td>Ecocaca</td>
-        <td>Maria P</td>
-        <td><button>crear rutina</button></td>
+		<tr class="fila">
+        <td class="columna">federico melomama</td>
+        <td class="columna">00.000.002</td>
+        <td><button class="btnr">crear rutina</button></td>
         </tr>
 
-        <tr>
-        <td>Ecopedo</td>
-        <td>Maria Perez</td>
-        <td><button>crear rutina</button></td>
+		<tr class="fila">
+        <td class="columna">Ianni luchio</td>
+        <td class="columna">00.000.003</td>
+        <td><button class="btnr">crear rutina</button></td>
         </tr>
 
-        <tr>
-        <td>Ecopete</td>
-        <td>Maria Perez</td>
-        <td><button>crear rutina</button></td>
+		<tr class="fila">
+        <td class="columna">polentero</td>
+        <td class="columna">00.000.004</td>
+        <td><button class="btnr">crear rutina</button></td>
         </tr>
-        
+
+		<tr class="fila">
+        <td class="columna">lean</td>
+        <td class="columna">00.000.005</td>
+        <td><button class="btnr">crear rutina</button></td>
+        </tr>
+
     </table>
 
     </div>

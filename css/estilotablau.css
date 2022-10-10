@@ -9,6 +9,7 @@
     --color-fondos: #fb4c0d;
     --color-fondobotones: #252525;
     --color-bordes-normales: #303030;
+    --color-letras-gris: #555555;
 }
 
 hr{
@@ -17,32 +18,30 @@ hr{
     background: var(--color-fondos);
 }
 
-input [type="checkbox"]{
-    height: 2vh;
-    width: 2vh;
+h4{
+        margin-top: 3vh;
+        margin-left: 3vh;
+        margin-bottom: 0vh;
+        font-size: 20px;
+        color: var(--color-letra);
 }
 
-.contenedortabla{
+.cont-t-u{
 
     position: relative;
     margin-top: 4vh;
     margin-left: 1vw;
-    height: 92vh;
+    height: fit-content;
     width: 81vw;
     background-color: var(--color-fondobotones) ;
     border: 3px solid var(--color-bordes-normales) ;
     border-radius: 10px;
 }
 
-.contenedortabla h4{
-    margin-top: 3vh;
-    margin-left: 3vh;
-    margin-bottom: 0vh;
-    font-size: 20px;
-    color: var(--color-letra);
+.cont-t-u::-webkit-scrollbar{
+    width: 5%;
+    background: var(--color-fondobotones);
 }
-
-
 .form-control{
     position: relative;
     margin-top: 5vh;
@@ -71,34 +70,31 @@ position: relative;
 height: fit-content;
 width: 81vw;
 text-align: center;
-
-}
-.filah{
-    color: var(--color-letra);
-    font-size: 18px;
 }
 
-.tabla-fila{
-    font-size: 15px;
-    color: var(--color-letra);
+.col-h{
+    position: relative;
+    margin: 1%;
+    font-size: 22px;
+    color: var(--color-letras-gris);
 }
-.tabla-fila:hover{
+
+.fila{
+    color: var(--color-letra);
+    font-size: 16px;
+    transition: 0.5s;
+}
+
+.fila:hover{
+    transform: scale(1.03);
     background: var(--color-fondos);
 }
 
-.barra-abajo{
-    position: relative;
-    display: flex;
-    top: 0%;
-    height: 10vh;
-    width: 80vw;
-}
-
-#btnExportar{
+.btnr{
     position: flex;
-    margin: 3vh;
-    height: 6.5vh;
-    width: 15%;
+    margin: 1vh;
+    height: 4vh;
+    width: 25%;
     text-align: center;
     background: var(--color-fondobotones);
     color: var(--color-letra);
@@ -109,28 +105,7 @@ text-align: center;
     font-size: 15px;
 }
 
-#btnExportar:hover{
-    border: 1px solid var(--color-fondos);
-    cursor: pointer;
-    transform: scale(1.1);
-}
-
-#btnapago{
-    position: flex;
-    margin: 3vh;
-    height: 6.5vh;
-    width: 15%;
-    text-align: center;
-    background: var(--color-fondobotones);
-    color: var(--color-letra);
-    border:3px solid var(--color-bordes-normales) ;
-    border-radius: 15px;
-    transition: 1.2s;
-    cursor:pointer;
-    font-size: 15px;
-}
-
-#btnapago:hover{
+.btnr:hover{
     border: 1px solid var(--color-fondos);
     cursor: pointer;
     transform: scale(1.1);
