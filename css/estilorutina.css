@@ -17,10 +17,15 @@ html{
     background: var(--color-fondo-html);
 }
 
+.menu{
+    position: relative;
+    left: 15vw;
+
+}
 
 .cont-t{
 position:relative;
-left: 14vw;
+left: 20vw;
 display:inline-block;
 margin:1%;
 height: 68vw;
