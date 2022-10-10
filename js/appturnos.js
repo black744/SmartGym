@@ -4,12 +4,12 @@
 
         var settings = $.extend({
             selectData: "now",
-            dateFormat: "DD-MM-YYYY",
-            showTime: false,
+            dateFormat: "DD/MM/YYYY HH:mm",
+            showTime: true,
             locale: 'es',
             positionShift: { top: 20, left: 0},
-            title: "Selecciona una Fecha",
-            buttonTitle: "Select"
+            title: "Selecciona una fecha",
+            buttonTitle: "Selecciona una fecha"
         }, options);
         moment.locale(settings.locale);
         var elem = this;

@@ -32,7 +32,7 @@ include("../models/validacion_clientes.php");
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment-with-locales.min.js" integrity="sha512-LGXaggshOkD/at6PFNcp2V2unf9LzFq6LE+sChH7ceMTDP0g2kn6Vxwgg7wkPP7AAtX+lmPqPdxB47A0Nz0cMQ==" crossorigin="anonymous"></script>
-
+    <script src="../js/appturnos.js"></script>
     <script type="text/javascript">
         $(document).ready(function() {
             $('#picker').dateTimePicker();
@@ -94,8 +94,11 @@ include("../models/validacion_clientes.php");
                 <div class="turno-a">
                 <form method="post">
                     <br>
-                    <h5>Fecha de clase</h5>
-                    <input type="text" placeholder="Ingrese fecha de clase" name="f-c">  <abbr title="Ingresar con el siguiente formato: dia/mes/año">?</abbr> 
+                    <h3> Generar turno para clase </h3>
+                    <div style="width: 250px; margin: 50px auto;">
+                        <div id="picker-no-time"></div>
+                        <input name="f-c" type="hidden" id="result2" value="" />
+                        </div>
                         <select name="modalidad">
                         <option value="Vitual">Virtual</option>
                         <option value="Presencial">Presencial</option>
@@ -103,15 +106,15 @@ include("../models/validacion_clientes.php");
 
                     <br>
                     <br>
-                    <h5>Horario de clase</h5>
-                    <input type="text" placeholder="Ingrese el horario de la clase" name="h-c">  <abbr title="Ingresar con el siguiente formato: hora:minutos hs">?</abbr>                                   
+                    
+                    <input class="ingreso-t" type="text" placeholder="Ingrese el horario de la clase" name="h-c">  <abbr title="Ingresar con el siguiente formato: hora:minutos hs">?</abbr>                                   
                     <br>
                     <br>
-                    <h5>Ingrese los cupos de la clase</h5>
-                    <input type="number" min="10" max="30" placeholder="Ingrese los cupos de la clase" name="c-c">
+                    
+                    <input class="ingreso-t" type="number" min="10" max="30" placeholder="Ingrese los cupos de la clase" name="c-c">
                     <br>
                     <br>
-                    <input type="submit" name="cargarclase">
+                    <input class="botonguardado" type="submit" name="cargarclase">
                     <br>
                     <br>
                 </form>
