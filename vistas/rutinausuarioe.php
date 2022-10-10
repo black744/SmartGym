@@ -115,11 +115,13 @@ switch ($idrol) {
         ?>
           <tr class="fila">
             <td>
-              <div class="foto"></div>
+              <img class="foto" src="data:image/jpg;base64,<?php echo base64_encode($nBuscador['image'])?>">
             </td>
             <td class="columna"><?php echo $nBuscador['usuario']?></td>
-            <td class="columna"><?php echo $nBuscador['usuario']?></td>
-            <td><button class="btnr">crear rutina</button></td>
+            <td class="columna"><?php echo $nBuscador['dni']?></td>
+            <form method="post" action="rutina.php">
+              <input hidden type="text" value="<?php echo $nbuscador['idusuario']?>">
+            <td><input type="submit" class="btnr" value="Crear Rutina"></td>
           </tr>
         <?php
         };?>
