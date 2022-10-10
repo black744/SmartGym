@@ -71,12 +71,13 @@ include("../models/validacion_clientes.php");
 
 			<tr class="fil">
 				<td class="ej"> <p>Ejercicio 1</p> </td>
-				
+	
 				<th class="ce">
                 <a href="ejercicios.php"> <button class="boton">  Añadir ejercicio </button> </a>
 				<br>
 				<br>
 				<button class="boton"> Eliminar ejercicio</button>
+				
 				</th>
 
 				<?php
