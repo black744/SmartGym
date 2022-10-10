@@ -67,7 +67,6 @@ include("../models/validacion_clientes.php");
             <table class="table table-bordered order-table " id="tabla">
                 <thead class="tabla-header">
                     <tr class="filah">
-                        <th>seleccionar</th>
                         <th>id usuario</th>
                         <th>Nombre</th>
                         <th>Edad</th>
@@ -83,7 +82,6 @@ include("../models/validacion_clientes.php");
                 while ($data=mysqli_fetch_array($query)){
                     ?>
                 <tr class="tabla-fila" >
-                    <td class="table-checkbox"><input type="checkbox" name="" id=""> </td>
                     <td class="datos"><?php echo $data['idusuario'];?></td>
                     <td class="datos"><?php echo $data['usuario'];?></td>
                     <td class="datos">-</td>
