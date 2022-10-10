@@ -1,30 +1,31 @@
 <?php
 include("../db.php");
-$conex=conectar();
+$conex = conectar();
 session_start();
 $nusuario = $_SESSION['usuario'];
 
 
-$sql="SELECT * FROM datos WHERE usuario='$nusuario'";
-$query=mysqli_query($conex,$sql);
+$sql = "SELECT * FROM datos WHERE usuario='$nusuario'";
+$query = mysqli_query($conex, $sql);
 
-$row=mysqli_fetch_array($query);
-$idrol= $row['id_rol'];
-$nombre= $row['nombre'];
-$apellido= $row['apellido'];
-$dni= $row['dni'];
-$correo= $row['correo'];
-$idusuario= $row['idusuario'];
-$image= $row['image'];  
-$pesoactual= $row['pesoactual'];
-$pesoinicial= $row['pesoinicial'];
-$pesoideal= $row['pesoideal'];
+$row = mysqli_fetch_array($query);
+$idrol = $row['id_rol'];
+$nombre = $row['nombre'];
+$apellido = $row['apellido'];
+$dni = $row['dni'];
+$correo = $row['correo'];
+$idusuario = $row['idusuario'];
+$image = $row['image'];
+$pesoactual = $row['pesoactual'];
+$pesoinicial = $row['pesoinicial'];
+$pesoideal = $row['pesoideal'];
 
 include("../models/validacion_clientes.php");
 ?>
 
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
 
@@ -33,65 +34,66 @@ include("../models/validacion_clientes.php");
     <link rel="stylesheet" href="../css/estilousuario.css">
 </head>
 <?php
-    switch($idrol){
-        case 0: 
-            include ("sidebars/sidebarc.php");
-            break;
-        case 1: 
-            include ("sidebars/sidebare.php");
-            break;
-        case 2: 
-            include ("sidebars/sidebara.php");
-            break;
-        default:
-            die("Error");
-            break;
-} 
+switch ($idrol) {
+    case 0:
+        include("sidebars/sidebarc.php");
+        break;
+    case 1:
+        include("sidebars/sidebare.php");
+        break;
+    case 2:
+        include("sidebars/sidebara.php");
+        break;
+    default:
+        die("Error");
+        break;
+}
 ?>
+
 <body>
 
-        <div class="main_content">
+    <div class="main_content">
 
-            <div class="info">
-                <div class="izquierda">
-                    <div class="turnoultimo">
-                        <?php
-                        $sqlper= "SELECT * FROM turnos WHERE idusuario=$idusuario";
-                        $queryper= mysqli_query($conex, $sqlper);
-                        $datap= mysqli_fetch_row($queryper);
-                        if ($datap == 0){
-                            echo 'No existe un turno ';
-                        
-                        }else{
-                        $sqlProximoTurno= "SELECT * FROM turnos WHERE idusuario='$idusuario' ORDER BY idturno DESC";
-                        $queryProximoTurno= mysqli_query($conex, $sqlProximoTurno); 
-                        $sqlquery= mysqli_fetch_array($queryProximoTurno);
-                        $a= $sqlquery['idturno']; 
-                        ?>
+        <div class="info">
+            <div class="izquierda">
+                <div class="turnoultimo">
+                    <?php
+                    $sqlper = "SELECT * FROM turnos WHERE idusuario=$idusuario";
+                    $queryper = mysqli_query($conex, $sqlper);
+                    $datap = mysqli_fetch_row($queryper);
+                    if ($datap == 0) {
+                        echo 'No existe un turno ';
+                    } else {
+                        $sqlProximoTurno = "SELECT * FROM turnos WHERE idusuario='$idusuario' ORDER BY idturno DESC";
+                        $queryProximoTurno = mysqli_query($conex, $sqlProximoTurno);
+                        $sqlquery = mysqli_fetch_array($queryProximoTurno);
+                        $a = $sqlquery['idturno'];
+                    ?>
                         <p><br>Tu Próximo Túrno</p>
-                        <p>Fecha y hora: 
-                        <?php 
-                        if ($sqlquery['fechahora'] == 0){
-                        echo 'Si deseas pedir un turno -->';
-                        }else{
-                        echo $sqlquery['fechahora'];
-                        };}?> </p>
+                        <p>Fecha y hora:
+                        <?php
+                        if ($sqlquery['fechahora'] == 0) {
+                            echo 'Si deseas pedir un turno -->';
+                        } else {
+                            echo $sqlquery['fechahora'];
+                        };
+                    } ?> </p>
                         <p>Entrenador</p>
 
-                    </div>
                 </div>
+            </div>
 
-                <div class="derecha">
+            <div class="derecha">
                 <img src="data:image/jpg;base64,<?php echo base64_encode($image); ?>" class="imgp">
                 <div class="nombre">
-                    <p><?php echo $row['nombre']?></p>
+                    <p><?php echo $row['nombre'] ?></p>
                 </div>
                 <div class="progreso">
                     <br>
                     <p>Peso actual: <?php echo $pesoactual ?> </p>
                     <p>Peso ideal: <?php echo $pesoideal ?> </p>
                     <p>Peso inicial: <?php echo $pesoinicial ?> </p>
-                    
+
                 </div>
                 <div class="progresoform">
                     <form method="post">
@@ -100,10 +102,10 @@ include("../models/validacion_clientes.php");
                         <input class="botonenviar" type="submit" name="enviar">
                     </form>
                     <?php
-                    if(isset($_POST['enviarpesoactual'])){
-                    $NPactual= $_POST['pesoactual'];
-                    $sqlNPA= "UPDATE datos SET pesoactual='$NPactual' WHERE idusuario='$idusuario'";
-                    $queryNPA= mysqli_query($conex, $sqlNPA);
+                    if (isset($_POST['enviarpesoactual'])) {
+                        $NPactual = $_POST['pesoactual'];
+                        $sqlNPA = "UPDATE datos SET pesoactual='$NPactual' WHERE idusuario='$idusuario'";
+                        $queryNPA = mysqli_query($conex, $sqlNPA);
                     }
                     ?>
                     <form method="post">
@@ -112,19 +114,19 @@ include("../models/validacion_clientes.php");
                         <input class="botonenviar" type="submit" name="enviar">
                     </form>
                     <?php
-                    if(isset($_POST['enviarpesoideal'])){
-                    $NPideal= $_POST['pesoideal'];
-                    $sqlideal= "UPDATE datos SET pesoideal='$NPideal' WHERE idusuario='$idusuario'";
-                    $queryideal= mysqli_query($conex, $sqlideal);
+                    if (isset($_POST['enviarpesoideal'])) {
+                        $NPideal = $_POST['pesoideal'];
+                        $sqlideal = "UPDATE datos SET pesoideal='$NPideal' WHERE idusuario='$idusuario'";
+                        $queryideal = mysqli_query($conex, $sqlideal);
                     }
-                    ?>                    
+                    ?>
                 </div>
-                
 
-                </div>
+
             </div>
-
         </div>
+
+    </div>
     </div>
 
 </body>
