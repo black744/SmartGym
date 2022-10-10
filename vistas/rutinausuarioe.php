@@ -108,51 +108,22 @@ switch ($idrol) {
             <th class="col-h">Asignar rutina</th>
           </tr>
         </thead>
-
-        <tr class="fila">
-          <td>
-            <div class="foto"></div>
-          </td>
-          <td class="columna">Juan Perez de Barradas</td>
-          <td class="columna">00.000.001</td>
-          <td><button class="btnr">crear rutina</button></td>
-        </tr>
-
-        <tr class="fila">
-          <td>
-            <div class="foto"></div>
-          </td>
-          <td class="columna">federico melomama</td>
-          <td class="columna">00.000.002</td>
-          <td><button class="btnr">crear rutina</button></td>
-        </tr>
-
-        <tr class="fila">
-          <td>
-            <div class="foto"></div>
-          </td>
-          <td class="columna">Ianni luchio</td>
-          <td class="columna">00.000.003</td>
-          <td><button class="btnr">crear rutina</button></td>
-        </tr>
-
-        <tr class="fila">
-          <td>
-            <div class="foto"></div>
-          </td>
-          <td class="columna">polentero</td>
-          <td class="columna">00.000.004</td>
-          <td><button class="btnr">crear rutina</button></td>
-        </tr>
-
-        <tr class="fila">
-          <td>
-            <div class="foto"></div>
-          </td>
-          <td class="columna">lean</td>
-          <td class="columna">00.000.005</td>
-          <td><button class="btnr">crear rutina</button></td>
-        </tr>
+        <?php
+        $sqlbuscador = "SELECT * FROM `datos` WHERE id_rol=0 AND estado_cuenta=1";
+        $querybuscador = mysqli_query($conex, $sqlbuscador);
+        while ($nBuscador = mysqli_fetch_array($querybuscador)) {
+        ?>
+          <tr class="fila">
+            <td>
+              <div class="foto"></div>
+            </td>
+            <td class="columna"><?php echo $nBuscador['usuario']?></td>
+            <td class="columna"><?php echo $nBuscador['usuario']?></td>
+            <td><button class="btnr">crear rutina</button></td>
+          </tr>
+        <?php
+        };?>
+  
 
       </table>
 
