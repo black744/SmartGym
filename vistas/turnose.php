@@ -108,7 +108,22 @@ switch ($idrol) {
                     <br>
                     <br>
                     
-                    <input class="ingreso-t" type="text" placeholder="Ingrese el horario de la clase" name="h-c">  <abbr title="Ingresar con el siguiente formato: hora:minutos hs">?</abbr>                                   
+                        <div class="time-picker" data-time="00:00">
+                            <div class="hour">
+                            <div class="hr-up"></div>
+                            <input type="number" class="hr" value="00" />
+                            <div class="hr-down"></div>
+                            </div>
+
+                        <div class="separator">:</div>
+
+                        <div class="minute">
+                                <div class="min-up"></div>
+                                <input type="number" class="min" value="00">
+                                <div class="min-down"></div>
+                        </div>
+                        </div>
+                        
                     <br>
                     <br>
                     
@@ -136,7 +151,7 @@ switch ($idrol) {
             ?>
 
         </div>
-
+        <script src="apptimepicker.js"></script>
 </body>
 
 </html>
