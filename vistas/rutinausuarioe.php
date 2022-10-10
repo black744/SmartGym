@@ -51,10 +51,45 @@ include("../models/validacion_clientes.php");
 
 <div class="cont-t">
 
-<select class="js-example-basic-multiple" multiple="multiple">
-  <option value="AL">Alabama</option>
-  <option value="WY">Wyoming</option>
-</select>
+<div class="container">
+
+    <input class="form-control col-md-3 light-table-filter" data-table="order-table" type="text" placeholder="Search..">
+    <hr>
+
+    <table class="table table-bordered order-table ">
+        <thead>
+        <tr>
+            <th>Nombre y apellido</th>
+            <th>DNI</th>
+        </tr>
+        </thead>
+        <tr>
+        <td>Ecopetrol</td>
+        <td>Maria Perez</td>
+        <td><button>crear rutina</button></td>
+        </tr>
+
+        <tr>
+        <td>Ecocaca</td>
+        <td>Maria P</td>
+        <td><button>crear rutina</button></td>
+        </tr>
+
+        <tr>
+        <td>Ecopedo</td>
+        <td>Maria Perez</td>
+        <td><button>crear rutina</button></td>
+        </tr>
+
+        <tr>
+        <td>Ecopete</td>
+        <td>Maria Perez</td>
+        <td><button>crear rutina</button></td>
+        </tr>
+        
+    </table>
+
+    </div>
 
 	<div class="menu">
 			
@@ -346,10 +381,6 @@ include("../models/validacion_clientes.php");
 		</table>
 	</div>
 	</div>
-	<script t>
-	<script type="text/javascript">
-	$(".js-example-basic-multiple").select2();
-	</script>
 </body>
 
 </html>
