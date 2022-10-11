@@ -107,7 +107,7 @@ switch ($idrol) {
 
                     <br>
                     <br>
-                    
+                        
                         <div class="time-picker" data-time="00:00">
                             <div class="hour">
                             <div class="hr-up"></div>
