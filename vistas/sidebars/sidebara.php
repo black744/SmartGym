@@ -23,6 +23,6 @@
                 <li><a href="admincontrolpanel.php"><i class="fas fa-map-pin"></i>Panel Admin</a></li>
             </ul>
             <div class="salida">
-                <button class="btn-exit"><a href="../models/sessiondestroy.php"><i class="fas fa-door-open"></i></a></button>
+            <a href="../models/sessiondestroy.php"><button class="btn-exit"><i class="fas fa-door-open"></i></button></a>
             </div>
         </div>

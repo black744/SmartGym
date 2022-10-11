@@ -76,26 +76,40 @@ html{
 .salida button {
     position: absolute;
     bottom: 2%;
-    left: 80%;
-    transform: translateX(-50%);
+    left: 60%;
     display: flex;
     
 }
 
-.wrapper .menulateral .salida .btn-exit {
+.btn-exit {
     display: block;
     width: 5vw;
-    height: 6vh;
+    height: 5vh;
     margin-bottom: 3vh;
-    margin-right: 1vw;
-
+    margin-right: 5vw;
     background:var(--color-fondobotones);
     text-decoration: none;
-    color: #fff;
     text-align: center;
     font-size: 20px;
     border-radius: 10px;
+    color: var(--color-letra);
+    border:3px solid var(--color-bordes-normales) ;
+    border-radius: 15px;
+    transition:0.5s;
+    cursor:pointer;
 }
+.btn-exit i{
+    margin-top: 10%;
+    margin-left: 35%;
+}
+
+.btn-exit:hover{
+    color: var(--color-fondos);
+    border: 2px solid var(--color-fondos);
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
 
 .main_content {
     width: 80%;

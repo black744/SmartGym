@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
@@ -31,7 +31,7 @@
             <input type="Usuario" placeholder="Usuario" name="usuario">
             <input type="email" placeholder="Email" name="correo">
             <input type="password" placeholder="Contraseña" name="contraseña">
-            <input type="submit" name="buttonreg" value="Registrarse">
+            <input class="btn-r" type="submit" name="buttonreg" value="Registrarse">
         </form>
     </div>
     <div class="container-form sign-in">
@@ -40,7 +40,7 @@
             <p class="cuenta-gratis">¿Aun no tienes una cuenta?</p>
             <input type="user" placeholder="Usuario" name="usuario">
             <input type="password" placeholder="Contraseña" name="contraseña">
-            <input type="submit" name="buttonlog" value="Loguearse">
+            <input class="btn-r" type="submit" name="buttonlog" value="Loguearse">
         </form>
         <div class="welcome-back">
             <div class="message">

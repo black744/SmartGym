@@ -1,8 +1,16 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Roboto', sans-serif;
+:root{
+    --color-letra: #fff;
+    --color-fondos: #fb4c0d;
+    --color-fondo-html:#020202;
+    --color-fondosn:#181818;
+    --color-fondobotones: #252525;
+    --color-bordes: #303030;
+}
+
+*{
+    margin: 0%;
+    padding: 0%;
+    font-family: "Lucida Console", "Courier New", monospace;
 }
 
 body {
@@ -10,16 +18,16 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    background: #828282;
+    background: none;
     background: url(https://synergym.es/assets/images/gyms/global/2018/08/Base_FAQ_Background_Synergym_web.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    color: #fff;
+    color: var(--color-letra);
 }
 
 .container-form {
-    width: 90%;
+    width: 95vw;
     height: 90vh;
     display: flex;
     justify-content: space-around;
@@ -44,7 +52,7 @@ body {
 .message button {
     padding: 1rem;
     font-weight: 400;
-    background-color: orange;
+    background-color: var(--color-fondos);
     border-radius: 2rem;
     border: none;
     outline: none;
@@ -52,15 +60,16 @@ body {
     font-size: .9rem;
     margin-top: 1vh;
     transition: all .3s ease-in;
-    color: #fff;
+    color:var(--color-letra);
 }
 
 .message button:hover {
     color: black;
-    background-color: orange;
+    background-color: var(--color-fondos);
 }
 
 .formulario {
+    border-radius: 15px;
     width: 60vh;
     padding: 1rem;
     margin: 2rem;
@@ -94,7 +103,7 @@ body {
 }
 
 .border-icon:hover {
-    background-color: orange;
+    background-color: var(--color-fondos);
     cursor: pointer;
 }
 
@@ -124,7 +133,7 @@ body {
     margin-bottom: 2rem;
     background-color: transparent;
     border: none;
-    border-bottom: orange thin solid;
+    border-bottom: var(--color-fondos) thin solid;
     text-align: center;
     outline: none;
     padding: .2rem 0;
@@ -132,32 +141,26 @@ body {
     color: white;
 }
 
-.formulario button[type="submit"]{
-    width: 60%;
-    margin: auto;
-    border: solid thin white;
-    padding: .7rem;
-    border-radius: 2rem;
-    background-color: white;
-    font-weight: 600;
-    margin-top: 3rem;
-    font-size: .8rem;
-    cursor: pointer;
-    color: #222;
+.btn-r{
+    position: flex;
+    margin: 3vh;
+    height: 6.5vh;
+    width: 15%;
+    text-align: center;
+    background: var(--color-fondobotones);
+    color: var(--color-letra);
+    border:3px solid var(--color-bordes-normales) ;
+    border-radius: 15px;
+    transition: 0.5s;
+    cursor:pointer;
+    font-size: 15px;
 }
 
-.formulario  button[type="submit"]:hover{
-    width: 60%;
-    margin: auto;
-    border: solid thin white;
-    padding: .7rem;
-    border-radius: 2rem;
-    background-color: orange;
-    font-weight: 600;
-    margin-top: 3rem;
-    font-size: .8rem;
+.btn-r:hover{
+    background: var(--color-fondobotones);
+    border: 1px solid var(--color-fondos);
     cursor: pointer;
-    color: #222;
+    transform: scale(1.1);
 }
 
 
