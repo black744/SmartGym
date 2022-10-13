@@ -100,7 +100,7 @@ switch ($idrol) {
             </div>
             <!-- <form action=""> -->
             <form role="form" name="nD" id="nD" method="post">
-                <select name="s-e" onchange="enviar(this.form)">
+                <select class="s-t" name="s-e" onchange="enviar(this.form)">
                     <option value=""> Todos los entrenadores</option>
                     <?php
                     $sqlentrenador = "SELECT * FROM `datos` WHERE id_rol=1";

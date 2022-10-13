@@ -15,6 +15,7 @@ $dni = $row['dni'];
 $correo = $row['correo'];
 $idusuario = $row['idusuario'];
 $image = $row['image'];
+
 include("../models/validacion_clientes.php");
 ?>
 
@@ -76,7 +77,6 @@ switch ($idrol) {
                         <br>
                         <br>
                         <button class="boton"> Eliminar ejercicio</button>
-
                     </th>
 
                     <th class="ce">

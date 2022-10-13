@@ -100,13 +100,19 @@ switch ($idrol) {
                     <button id="btnExportar" class="btn btn-success">
                         <i class="fas fa-file-excel"></i> crear archivo mensual usuarios
                     </button>
+                    <button id="btnExportar">
+                        Actualizar Pago (tambien aplicar descuentos)
+                    </button>
+                    <button id="btnExportar">
+                        Dar de baja usuario
+                    </button>
 
-                    <button id="btnapago">actualizar pago</button>
+                    <input type="button" onclick="Crearform()">
 
                 </Div>
             </div>
         </div>
-
+<script src="app1.js"></script>
 </body>
 
 <script>

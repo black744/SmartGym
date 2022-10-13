@@ -58,7 +58,7 @@ width: 85vw;
 .c-t-rutina{ 
 	position:relative;
 	height: 85%;
-	width: 95%;
+	width: 80vw;
 	margin:1.5%;
 	color: var(--color-letra);
 }
