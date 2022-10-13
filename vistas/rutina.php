@@ -27,9 +27,13 @@ include("../models/validacion_clientes.php");
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
     <link rel="stylesheet" href="../css/estilousuario.css">
     <link rel="stylesheet" href="../css/estilorutina.css">
+    <link rel="stylesheet" href="../css/estilodiv.css">
 </head>
 
 <?php
@@ -53,304 +57,312 @@ switch ($idrol) {
 
     <div class="menu">
 
-        <table class="c-t-rutina">
-            <tbody class="cuerpo-t">
-                <tr class="fil">
-                    <td></td>
-                    <th class="dias">Lunes</th>
-                    <th class="dias">Martes</th>
-                    <th class="dias">Miercoles</th>
-                    <th class="dias">Jueves</th>
-                    <th class="dias">Viernes</th>
-                    <th class="dias">Sabado</th>
-                    <th class="dias">Domingo</th>
-                </tr>
+    <div class="carousel">
+        <div class="carousel__item">Lunes 
+            
+        <div class="swiper swiper-hero">
+      <!-- Additional required wrapper -->
+      <div class="swiper-wrapper">
+        <!-- Slides -->
+        <div class="swiper-slide">
+            <p>ejercicio  1</p>
+        <input class="boton-eje" type="submit" value="+">
+        <p class="zzz">añadir ejercicio</p>
+        </div>
+        <div class="swiper-slide">
+            <p>ejercicio  2</p>
+            <input class="boton-eje" type="submit" value="+">
+        <p class="zzz">añadir ejercicio</p>
+        </div>
+        <div class="swiper-slide">
+            <p>ejercicio  3</p>
+            <input class="boton-eje" type="submit" value="+">
+        <p class="zzz">añadir ejercicio</p>
+        </div>
+        <div class="swiper-slide">
+            <p>ejercicio  4</p>
+            <input class="boton-eje" type="submit" value="+">
+        <p class="zzz">añadir ejercicio</p>
+        </div>
+        <div class="swiper-slide">
+         <p>ejercicio  5</p>
+         <input class="boton-eje" type="submit" value="+">
+        <p class="zzz">añadir ejercicio</p>
+        </div>
+      </div>
+      <!-- If we need pagination -->
+      <div class="swiper-pagination"></div>
 
+      <!-- If we need navigation buttons -->
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
 
-                <tr class="fil">
-                    <td class="ej">
-                        <p>Ejercicio 1</p>
-                    </td>
-
-                    <th class="ce">
-                        <a href="ejercicios.php"> <button class="boton"> Añadir ejercicio </button> </a>
-                        <br>
-                        <br>
-                        <button class="boton"> Eliminar ejercicio</button>
-                    </th>
-
-                    <th class="ce">
-                        <a href="ejercicios.php"> <button class="boton"> Añadir ejercicio </button> </a>
-                        <br>
-                        <br>
-                        <button class="boton"> Eliminar ejercicio</button>
-                    </th>
-
-                    <th class="ce">
-                        <a href="ejercicios.php"> <button class="boton"> Añadir ejercicio </button> </a>
-                        <br>
-                        <br>
-                        <button class="boton"> Eliminar ejercicio</button>
-                    </th>
-
-                    <th class="ce">
-                        <a href="ejercicios.php"> <button class="boton"> Añadir ejercicio </button> </a>
-                        <br>
-                        <br>
-                        <button class="boton"> Eliminar ejercicio</button>
-                    </th>
-
-                    <th class="ce">
-                        <a href="ejercicios.php"> <button class="boton"> Añadir ejercicio </button> </a>
-                        <br>
-                        <br>
-                        <button class="boton"> Eliminar ejercicio</button>
-                    </th>
-
-                    <th class="ce">
-                        <a href="ejercicios.php"> <button class="boton"> Añadir ejercicio </button> </a>
-                        <br>
-                        <br>
-                        <button class="boton"> Eliminar ejercicio</button>
-                    </th>
-
-                    <th class="ce">
-                        <a href="ejercicios.php"> <button class="boton"> Añadir ejercicio </button> </a>
-                        <br>
-                        <br>
-                        <button class="boton"> Eliminar ejercicio</button>
-                    </th>
-
-                </tr>
-                <tr class="fil">
-                    <td class="ej">
-                        <p>Ejercicio 2</p>
-                    </td>
-
-                    <th class="ce">
-                        <a href="ejercicios.php"> <button class="boton"> Añadir ejercicio </button> </a>
-                        <br>
-                        <br>
-                        <button class="boton"> Eliminar ejercicio</button>
-                    </th>
-
-                    <th class="ce">
-                        <a href="ejercicios.php"> <button class="boton"> Añadir ejercicio </button> </a>
-                        <br>
-                        <br>
-                        <button class="boton"> Eliminar ejercicio</button>
-                    </th>
-
-                    <th class="ce">
-                        <a href="ejercicios.php"> <button class="boton"> Añadir ejercicio </button> </a>
-                        <br>
-                        <br>
-                        <button class="boton"> Eliminar ejercicio</button>
-                    </th>
-
-                    <th class="ce">
-                        <a href="ejercicios.php"> <button class="boton"> Añadir ejercicio </button> </a>
-                        <br>
-                        <br>
-                        <button class="boton"> Eliminar ejercicio</button>
-                    </th>
-
-                    <th class="ce">
-                        <a href="ejercicios.php"> <button class="boton"> Añadir ejercicio </button> </a>
-                        <br>
-                        <br>
-                        <button class="boton"> Eliminar ejercicio</button>
-                    </th>
-
-                    <th class="ce">
-                        <a href="ejercicios.php"> <button class="boton"> Añadir ejercicio </button> </a>
-                        <br>
-                        <br>
-                        <button class="boton"> Eliminar ejercicio</button>
-                    </th>
-
-                    <th class="ce">
-                        <a href="ejercicios.php"> <button class="boton"> Añadir ejercicio </button> </a>
-                        <br>
-                        <br>
-                        <button class="boton"> Eliminar ejercicio</button>
-                    </th>
-
-
-                </tr>
-                <tr class="fil">
-                    <td class="ej">
-                        <p>Ejercicio 3</p>
-                    </td>
-
-                    <th class="ce">
-                        <a href="ejercicios.php"> <button class="boton"> Añadir ejercicio </button> </a>
-                        <br>
-                        <br>
-                        <button class="boton"> Eliminar ejercicio</button>
-                    </th>
-
-                    <th class="ce">
-                        <a href="ejercicios.php"> <button class="boton"> Añadir ejercicio </button> </a>
-                        <br>
-                        <br>
-                        <button class="boton"> Eliminar ejercicio</button>
-                    </th>
-
-                    <th class="ce">
-                        <a href="ejercicios.php"> <button class="boton"> Añadir ejercicio </button> </a>
-                        <br>
-                        <br>
-                        <button class="boton"> Eliminar ejercicio</button>
-                    </th>
-
-                    <th class="ce">
-                        <a href="ejercicios.php"> <button class="boton"> Añadir ejercicio </button> </a>
-                        <br>
-                        <br>
-                        <button class="boton"> Eliminar ejercicio</button>
-                    </th>
-
-                    <th class="ce">
-                        <a href="ejercicios.php"> <button class="boton"> Añadir ejercicio </button> </a>
-                        <br>
-                        <br>
-                        <button class="boton"> Eliminar ejercicio</button>
-                    </th>
-
-                    <th class="ce">
-                        <a href="ejercicios.php"> <button class="boton"> Añadir ejercicio </button> </a>
-                        <br>
-                        <br>
-                        <button class="boton"> Eliminar ejercicio</button>
-                    </th>
-
-                    <th class="ce">
-                        <a href="ejercicios.php"> <button class="boton"> Añadir ejercicio </button> </a>
-                        <br>
-                        <br>
-                        <button class="boton"> Eliminar ejercicio</button>
-                    </th>
-
-
-                </tr>
-                <tr class="fil">
-                    <td class="ej">
-                        <p>Ejercicio 4</p>
-                    </td>
-
-                    <th class="ce">
-                        <a href="ejercicios.php"> <button class="boton"> Añadir ejercicio </button> </a>
-                        <br>
-                        <br>
-                        <button class="boton"> Eliminar ejercicio</button>
-                    </th>
-
-                    <th class="ce">
-                        <a href="ejercicios.php"> <button class="boton"> Añadir ejercicio </button> </a>
-                        <br>
-                        <br>
-                        <button class="boton"> Eliminar ejercicio</button>
-                    </th>
-
-                    <th class="ce">
-                        <a href="ejercicios.php"> <button class="boton"> Añadir ejercicio </button> </a>
-                        <br>
-                        <br>
-                        <button class="boton"> Eliminar ejercicio</button>
-                    </th>
-
-                    <th class="ce">
-                        <a href="ejercicios.php"> <button class="boton"> Añadir ejercicio </button> </a>
-                        <br>
-                        <br>
-                        <button class="boton"> Eliminar ejercicio</button>
-                    </th>
-
-                    <th class="ce">
-                        <a href="ejercicios.php"> <button class="boton"> Añadir ejercicio </button> </a>
-                        <br>
-                        <br>
-                        <button class="boton"> Eliminar ejercicio</button>
-                    </th>
-
-                    <th class="ce">
-                        <a href="ejercicios.php"> <button class="boton"> Añadir ejercicio </button> </a>
-                        <br>
-                        <br>
-                        <button class="boton"> Eliminar ejercicio</button>
-                    </th>
-
-                    <th class="ce">
-                        <a href="ejercicios.php"> <button class="boton"> Añadir ejercicio </button> </a>
-                        <br>
-                        <br>
-                        <button class="boton"> Eliminar ejercicio</button>
-                    </th>
-
-
-                </tr>
-                <tr class="fil">
-                    <td class="ej">
-                        <p>Ejercicio 5</p>
-                    </td>
-
-                    <th class="ce">
-                        <a href="ejercicios.php"> <button class="boton"> Añadir ejercicio </button> </a>
-                        <br>
-                        <br>
-                        <button class="boton"> Eliminar ejercicio</button>
-                    </th>
-
-                    <th class="ce">
-                        <a href="ejercicios.php"> <button class="boton"> Añadir ejercicio </button> </a>
-                        <br>
-                        <br>
-                        <button class="boton"> Eliminar ejercicio</button>
-                    </th>
-
-                    <th class="ce">
-                        <a href="ejercicios.php"> <button class="boton"> Añadir ejercicio </button> </a>
-                        <br>
-                        <br>
-                        <button class="boton"> Eliminar ejercicio</button>
-                    </th>
-
-                    <th class="ce">
-                        <a href="ejercicios.php"> <button class="boton"> Añadir ejercicio </button> </a>
-                        <br>
-                        <br>
-                        <button class="boton"> Eliminar ejercicio</button>
-                    </th>
-
-                    <th class="ce">
-                        <a href="ejercicios.php"> <button class="boton"> Añadir ejercicio </button> </a>
-                        <br>
-                        <br>
-                        <button class="boton"> Eliminar ejercicio</button>
-                    </th>
-
-                    <th class="ce">
-                        <a href="ejercicios.php"> <button class="boton"> Añadir ejercicio </button> </a>
-                        <br>
-                        <br>
-                        <button class="boton"> Eliminar ejercicio</button>
-                    </th>
-
-                    <th class="ce">
-                        <a href="ejercicios.php"> <button class="boton"> Añadir ejercicio </button> </a>
-                        <br>
-                        <br>
-                        <button class="boton"> Eliminar ejercicio</button>
-                    </th>
-
-
-                </tr>
-            </tbody>
-        </table>
+      <!-- If we need scrollbar -->
+      <!-- <div class="swiper-scrollbar"></div> -->
     </div>
+</div>
+        <div class="carousel__item">Martes
+
+        <div class="swiper swiper-hero">
+      <!-- Additional required wrapper -->
+      <div class="swiper-wrapper">
+        <!-- Slides -->
+        <div class="swiper-slide">
+            <p>ejercicio  1</p>
+            <input class="boton-eje" type="submit" value="+">
+        <p class="zzz">añadir ejercicio</p>
+        </div>
+        <div class="swiper-slide">
+            <p>ejercicio  2</p>
+            <input class="boton-eje" type="submit" value="+">
+        <p class="zzz">añadir ejercicio</p>
+        </div>
+        <div class="swiper-slide">
+            <p>ejercicio  3</p>
+            <input class="boton-eje" type="submit" value="+">
+        <p class="zzz">añadir ejercicio</p>
+        </div>
+        <div class="swiper-slide">
+            <p>ejercicio  4</p>
+            <input class="boton-eje" type="submit" value="+">
+        <p class="zzz">añadir ejercicio</p>
+        </div>
+        <div class="swiper-slide">
+         <p>ejercicio  5</p>
+         <input class="boton-eje" type="submit" value="+">
+        <p class="zzz">añadir ejercicio</p>
+        </div>
+      </div>
+      <!-- If we need pagination -->
+      <div class="swiper-pagination"></div>
+
+      <!-- If we need navigation buttons -->
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+
+      <!-- If we need scrollbar -->
+      <!-- <div class="swiper-scrollbar"></div> -->
     </div>
 
+        </div>
+        <div class="carousel__item">Miercoles
+
+        <div class="swiper swiper-hero">
+      <!-- Additional required wrapper -->
+      <div class="swiper-wrapper">
+        <!-- Slides -->
+        <div class="swiper-slide">
+            <p>ejercicio  1</p>
+            <input class="boton-eje" type="submit" value="+">
+        <p class="zzz">añadir ejercicio</p>
+        </div>
+        <div class="swiper-slide">
+            <p>ejercicio  2</p>
+            <input class="boton-eje" type="submit" value="+">
+        <p class="zzz">añadir ejercicio</p>
+        </div>
+        <div class="swiper-slide">
+            <p>ejercicio  3</p>
+            <input class="boton-eje" type="submit" value="+">
+        <p class="zzz">añadir ejercicio</p>
+        </div>
+        <div class="swiper-slide">
+            <p>ejercicio  4</p>
+            <input class="boton-eje" type="submit" value="+">
+        <p class="zzz">añadir ejercicio</p>
+        </div>
+        <div class="swiper-slide">
+         <p>ejercicio  5</p>
+         <input class="boton-eje" type="submit" value="+">
+        <p class="zzz">añadir ejercicio</p>
+        </div>
+      </div>
+      <!-- If we need pagination -->
+      <div class="swiper-pagination"></div>
+
+      <!-- If we need navigation buttons -->
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+
+      <!-- If we need scrollbar -->
+      <!-- <div class="swiper-scrollbar"></div> -->
+    </div>
+
+        </div>
+        <div class="carousel__item">Jueves
+
+        <div class="swiper swiper-hero">
+      <!-- Additional required wrapper -->
+      <div class="swiper-wrapper">
+        <!-- Slides -->
+        <div class="swiper-slide">
+            <p>ejercicio  1</p>
+            <input class="boton-eje" type="submit" value="+">
+        <p class="zzz">añadir ejercicio</p>
+        </div>
+        <div class="swiper-slide">
+            <p>ejercicio  2</p>
+            <input class="boton-eje" type="submit" value="+">
+        <p class="zzz">añadir ejercicio</p>
+        </div>
+        <div class="swiper-slide">
+            <p>ejercicio  3</p>
+            <input class="boton-eje" type="submit" value="+">
+        <p class="zzz">añadir ejercicio</p>
+        </div>
+        <div class="swiper-slide">
+            <p>ejercicio  4</p>
+            <input class="boton-eje" type="submit" value="+">
+        <p class="zzz">añadir ejercicio</p>
+        </div>
+        <div class="swiper-slide">
+         <p>ejercicio  5</p>
+         <input class="boton-eje" type="submit" value="+">
+        <p class="zzz">añadir ejercicio</p>
+        </div>
+      </div>
+      <!-- If we need pagination -->
+      <div class="swiper-pagination"></div>
+
+      <!-- If we need navigation buttons -->
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+
+      <!-- If we need scrollbar -->
+      <!-- <div class="swiper-scrollbar"></div> -->
+    </div>
+
+        </div>
+        <div class="carousel__item">Viernes
+
+        <div class="swiper swiper-hero">
+      <!-- Additional required wrapper -->
+      <div class="swiper-wrapper">
+        <!-- Slides -->
+        <div class="swiper-slide">
+            <p>ejercicio  1</p>
+            <input class="boton-eje" type="submit" value="+">
+        <p class="zzz">añadir ejercicio</p>
+        </div>
+        <div class="swiper-slide">
+            <p>ejercicio  2</p>
+            <input class="boton-eje" type="submit" value="+">
+        <p class="zzz">añadir ejercicio</p>
+        </div>
+        <div class="swiper-slide">
+            <p>ejercicio  3</p>
+            <input class="boton-eje" type="submit" value="+">
+        <p class="zzz">añadir ejercicio</p>
+        </div>
+        <div class="swiper-slide">
+            <p>ejercicio  4</p>
+            <input class="boton-eje" type="submit" value="+">
+        <p class="zzz">añadir ejercicio</p>
+        </div>
+        <div class="swiper-slide">
+         <p>ejercicio  5</p>
+         <input class="boton-eje" type="submit" value="+">
+        <p class="zzz">añadir ejercicio</p>
+        </div>
+      </div>
+      <!-- If we need pagination -->
+      <div class="swiper-pagination"></div>
+
+      <!-- If we need navigation buttons -->
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+
+      <!-- If we need scrollbar -->
+      <!-- <div class="swiper-scrollbar"></div> -->
+    </div>
+
+        </div>
+        <div class="carousel__item">Sabado
+
+        <div class="swiper swiper-hero">
+      <!-- Additional required wrapper -->
+      <div class="swiper-wrapper">
+        <!-- Slides -->
+        <div class="swiper-slide">
+            <p>ejercicio  1</p>
+            <input class="boton-eje" type="submit" value="+">
+        <p class="zzz">añadir ejercicio</p>
+        </div>
+        <div class="swiper-slide">
+            <p>ejercicio  2</p>
+            <input class="boton-eje" type="submit" value="+">
+        <p class="zzz">añadir ejercicio</p>
+        </div>
+        <div class="swiper-slide">
+            <p>ejercicio  3</p>
+            <input class="boton-eje" type="submit" value="+">
+        <p class="zzz">añadir ejercicio</p>
+        </div>
+        <div class="swiper-slide">
+            <p>ejercicio  4</p>
+            <input class="boton-eje" type="submit" value="+">
+        <p class="zzz">añadir ejercicio</p>
+        </div>
+        <div class="swiper-slide">
+         <p>ejercicio  5</p>
+         <input class="boton-eje" type="submit" value="+">
+        <p class="zzz">añadir ejercicio</p>
+        </div>
+      </div>
+      <!-- If we need pagination -->
+      <div class="swiper-pagination"></div>
+
+      <!-- If we need navigation buttons -->
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+
+      <!-- If we need scrollbar -->
+      <!-- <div class="swiper-scrollbar"></div> -->
+    </div>
+
+        </div>
+    </div> 
+       
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script>
+      const swiper = new Swiper(".swiper-hero", {
+        // Optional parameters
+        // slidesPerView: "auto",
+        // spaceBetween: 15,
+        // slidesPerGroupAuto: true,
+
+        direction: "horizontal",
+        loop: true,
+        // allowTouchMove: true,
+        // effect: "cube",
+        autoplay: {
+          delay: 1000000,
+          pauseOnMouseEnter: true,
+          disableOnInteraction: false,
+        },
+
+        // If we need pagination
+        pagination: {
+          el: ".swiper-pagination",
+          // type: "progressbar"
+          clickable: true,
+          // dynamicBullets: true
+        },
+
+        // Navigation arrows
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+
+        // And if we need scrollbar
+        // scrollbar: {
+        //   el: ".swiper-scrollbar",
+        //   draggable: true,
+        // },
+      });
+    </script>
 </body>
-
+<script src="../js/appdiv.js"></script>
 </html>
