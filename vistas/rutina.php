@@ -3,10 +3,8 @@ include("../db.php");
 $conex = conectar();
 session_start();
 $nusuario = $_SESSION['usuario'];
-
 $sql = "SELECT * FROM datos WHERE usuario='$nusuario'";
 $query = mysqli_query($conex, $sql);
-
 $row = mysqli_fetch_array($query);
 $idrol = $row['id_rol'];
 $nombre = $row['nombre'];
@@ -15,7 +13,6 @@ $dni = $row['dni'];
 $correo = $row['correo'];
 $idusuario = $row['idusuario'];
 $image = $row['image'];
-
 include("../models/validacion_clientes.php");
 ?>
 
@@ -23,346 +20,297 @@ include("../models/validacion_clientes.php");
 <html lang="es">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
-    />
-    <link rel="stylesheet" href="../css/estilousuario.css">
-    <link rel="stylesheet" href="../css/estilorutina.css">
-    <link rel="stylesheet" href="../css/estilodiv.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="../css/estilousuario.css">
+  <link rel="stylesheet" href="../css/estilorutina.css">
+  <link rel="stylesheet" href="../css/estilodiv.css">
+
+  
+
 </head>
 
 <?php
 switch ($idrol) {
-    case 0:
-        include("sidebars/sidebarc.php");
-        break;
-    case 1:
-        include("sidebars/sidebare.php");
-        break;
-    case 2:
-        include("sidebars/sidebara.php");
-        break;
-    default:
-        die("Error");
-        break;
+  case 0:
+    include("sidebars/sidebarc.php");
+    break;
+  case 1:
+    include("sidebars/sidebare.php");
+    break;
+  case 2:
+    include("sidebars/sidebara.php");
+    break;
+  default:
+    die("Error");
+    break;
 }
 ?>
 
 <body>
-
-    <div class="menu">
-
+  <div class="menu">
     <div class="carousel">
-        <div class="carousel__item">Lunes 
-            
+      <div class="carousel__item">Lunes
         <div class="swiper swiper-hero">
-      <!-- Additional required wrapper -->
-      <div class="swiper-wrapper">
-        <!-- Slides -->
-        <div class="swiper-slide">
-            <p>ejercicio  1</p>
-        <input class="boton-eje" type="submit" value="+">
-        <p class="zzz">añadir ejercicio</p>
-        </div>
-        <div class="swiper-slide">
-            <p>ejercicio  2</p>
-            <input class="boton-eje" type="submit" value="+">
-        <p class="zzz">añadir ejercicio</p>
-        </div>
-        <div class="swiper-slide">
-            <p>ejercicio  3</p>
-            <input class="boton-eje" type="submit" value="+">
-        <p class="zzz">añadir ejercicio</p>
-        </div>
-        <div class="swiper-slide">
-            <p>ejercicio  4</p>
-            <input class="boton-eje" type="submit" value="+">
-        <p class="zzz">añadir ejercicio</p>
-        </div>
-        <div class="swiper-slide">
-         <p>ejercicio  5</p>
-         <input class="boton-eje" type="submit" value="+">
-        <p class="zzz">añadir ejercicio</p>
+        
+          <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <p>ejercicio 1</p>
+                <button class="btn-m" id="mostra"><i class="fa-solid fa-plus"></i></button>
+                <div class="sobretodo" id="oculto"> 
+                  <form>
+                    <select class="se" id="">
+                      <option value="">flexiones</option>
+                      <option value="">sentadillas</option>
+                      <option value="">abdominales</option>
+                    </select>
+                    <input class="ingreso1" type="text">
+                    <input class="ingreso2"type="number">
+                    <input class="ingreso2" type="number">
+                    <input class="btn-g" type="submit" value="Guardar ejercicio">
+                  </form>
+                </div>
+              </div>
+          </div>
+          <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <p>ejercicio 2</p>
+                <button class="btn-m" id="mostra"><i class="fa-solid fa-plus"></i></button>
+                <div class="sobretodo" id="oculto"> 
+                  <form>
+                    <select class="se" id="">
+                      <option value="">flexiones</option>
+                      <option value="">sentadillas</option>
+                      <option value="">abdominales</option>
+                    </select>
+                    <input class="ingreso1" type="text">
+                    <input class="ingreso2"type="number">
+                    <input class="ingreso2" type="number">
+                    <input class="btn-g" type="submit" value="Guardar ejercicio">
+                  </form>
+                </div>
+              </div>
+          </div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
         </div>
       </div>
-      <!-- If we need pagination -->
-      <div class="swiper-pagination"></div>
-
-      <!-- If we need navigation buttons -->
-      <div class="swiper-button-prev"></div>
-      <div class="swiper-button-next"></div>
-
-      <!-- If we need scrollbar -->
-      <!-- <div class="swiper-scrollbar"></div> -->
-    </div>
-</div>
-        <div class="carousel__item">Martes
+      <div class="carousel__item">Martes
 
         <div class="swiper swiper-hero">
-      <!-- Additional required wrapper -->
-      <div class="swiper-wrapper">
-        <!-- Slides -->
-        <div class="swiper-slide">
-            <p>ejercicio  1</p>
-            <input class="boton-eje" type="submit" value="+">
-        <p class="zzz">añadir ejercicio</p>
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <p>ejercicio 1</p>
+              <input class="boton-eje" type="submit" value="+">
+              <p class="zzz">añadir ejercicio</p>
+            </div>
+            <div class="swiper-slide">
+              <p>ejercicio 2</p>
+              <input class="boton-eje" type="submit" value="+">
+              <p class="zzz">añadir ejercicio</p>
+            </div>
+            <div class="swiper-slide">
+              <p>ejercicio 3</p>
+              <input class="boton-eje" type="submit" value="+">
+              <p class="zzz">añadir ejercicio</p>
+            </div>
+            <div class="swiper-slide">
+              <p>ejercicio 4</p>
+              <input class="boton-eje" type="submit" value="+">
+              <p class="zzz">añadir ejercicio</p>
+            </div>
+            <div class="swiper-slide">
+              <p>ejercicio 5</p>
+              <input class="boton-eje" type="submit" value="+">
+              <p class="zzz">añadir ejercicio</p>
+            </div>
+          </div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
         </div>
-        <div class="swiper-slide">
-            <p>ejercicio  2</p>
-            <input class="boton-eje" type="submit" value="+">
-        <p class="zzz">añadir ejercicio</p>
-        </div>
-        <div class="swiper-slide">
-            <p>ejercicio  3</p>
-            <input class="boton-eje" type="submit" value="+">
-        <p class="zzz">añadir ejercicio</p>
-        </div>
-        <div class="swiper-slide">
-            <p>ejercicio  4</p>
-            <input class="boton-eje" type="submit" value="+">
-        <p class="zzz">añadir ejercicio</p>
-        </div>
-        <div class="swiper-slide">
-         <p>ejercicio  5</p>
-         <input class="boton-eje" type="submit" value="+">
-        <p class="zzz">añadir ejercicio</p>
-        </div>
+
       </div>
-      <!-- If we need pagination -->
-      <div class="swiper-pagination"></div>
-
-      <!-- If we need navigation buttons -->
-      <div class="swiper-button-prev"></div>
-      <div class="swiper-button-next"></div>
-
-      <!-- If we need scrollbar -->
-      <!-- <div class="swiper-scrollbar"></div> -->
-    </div>
-
-        </div>
-        <div class="carousel__item">Miercoles
+      <div class="carousel__item">Miercoles
 
         <div class="swiper swiper-hero">
-      <!-- Additional required wrapper -->
-      <div class="swiper-wrapper">
-        <!-- Slides -->
-        <div class="swiper-slide">
-            <p>ejercicio  1</p>
-            <input class="boton-eje" type="submit" value="+">
-        <p class="zzz">añadir ejercicio</p>
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <p>ejercicio 1</p>
+              <input class="boton-eje" type="submit" value="+">
+              <p class="zzz">añadir ejercicio</p>
+            </div>
+            <div class="swiper-slide">
+              <p>ejercicio 2</p>
+              <input class="boton-eje" type="submit" value="+">
+              <p class="zzz">añadir ejercicio</p>
+            </div>
+            <div class="swiper-slide">
+              <p>ejercicio 3</p>
+              <input class="boton-eje" type="submit" value="+">
+              <p class="zzz">añadir ejercicio</p>
+            </div>
+            <div class="swiper-slide">
+              <p>ejercicio 4</p>
+              <input class="boton-eje" type="submit" value="+">
+              <p class="zzz">añadir ejercicio</p>
+            </div>
+            <div class="swiper-slide">
+              <p>ejercicio 5</p>
+              <input class="boton-eje" type="submit" value="+">
+              <p class="zzz">añadir ejercicio</p>
+            </div>
+          </div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
         </div>
-        <div class="swiper-slide">
-            <p>ejercicio  2</p>
-            <input class="boton-eje" type="submit" value="+">
-        <p class="zzz">añadir ejercicio</p>
-        </div>
-        <div class="swiper-slide">
-            <p>ejercicio  3</p>
-            <input class="boton-eje" type="submit" value="+">
-        <p class="zzz">añadir ejercicio</p>
-        </div>
-        <div class="swiper-slide">
-            <p>ejercicio  4</p>
-            <input class="boton-eje" type="submit" value="+">
-        <p class="zzz">añadir ejercicio</p>
-        </div>
-        <div class="swiper-slide">
-         <p>ejercicio  5</p>
-         <input class="boton-eje" type="submit" value="+">
-        <p class="zzz">añadir ejercicio</p>
-        </div>
+
       </div>
-      <!-- If we need pagination -->
-      <div class="swiper-pagination"></div>
-
-      <!-- If we need navigation buttons -->
-      <div class="swiper-button-prev"></div>
-      <div class="swiper-button-next"></div>
-
-      <!-- If we need scrollbar -->
-      <!-- <div class="swiper-scrollbar"></div> -->
-    </div>
-
+      <div class="carousel__item">Jueves
+        <div class="swiper swiper-hero">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <p>ejercicio 1</p>
+              <input class="boton-eje" type="submit" value="+">
+              <p class="zzz">añadir ejercicio</p>
+            </div>
+            <div class="swiper-slide">
+              <p>ejercicio 2</p>
+              <input class="boton-eje" type="submit" value="+">
+              <p class="zzz">añadir ejercicio</p>
+            </div>
+            <div class="swiper-slide">
+              <p>ejercicio 3</p>
+              <input class="boton-eje" type="submit" value="+">
+              <p class="zzz">añadir ejercicio</p>
+            </div>
+            <div class="swiper-slide">
+              <p>ejercicio 4</p>
+              <input class="boton-eje" type="submit" value="+">
+              <p class="zzz">añadir ejercicio</p>
+            </div>
+            <div class="swiper-slide">
+              <p>ejercicio 5</p>
+              <input class="boton-eje" type="submit" value="+">
+              <p class="zzz">añadir ejercicio</p>
+            </div>
+          </div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
         </div>
-        <div class="carousel__item">Jueves
+
+      </div>
+      <div class="carousel__item">Viernes
 
         <div class="swiper swiper-hero">
-      <!-- Additional required wrapper -->
-      <div class="swiper-wrapper">
-        <!-- Slides -->
-        <div class="swiper-slide">
-            <p>ejercicio  1</p>
-            <input class="boton-eje" type="submit" value="+">
-        <p class="zzz">añadir ejercicio</p>
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <p>ejercicio 1</p>
+              <input class="boton-eje" type="submit" value="+">
+              <p class="zzz">añadir ejercicio</p>
+            </div>
+            <div class="swiper-slide">
+              <p>ejercicio 2</p>
+              <input class="boton-eje" type="submit" value="+">
+              <p class="zzz">añadir ejercicio</p>
+            </div>
+            <div class="swiper-slide">
+              <p>ejercicio 3</p>
+              <input class="boton-eje" type="submit" value="+">
+              <p class="zzz">añadir ejercicio</p>
+            </div>
+            <div class="swiper-slide">
+              <p>ejercicio 4</p>
+              <input class="boton-eje" type="submit" value="+">
+              <p class="zzz">añadir ejercicio</p>
+            </div>
+            <div class="swiper-slide">
+              <p>ejercicio 5</p>
+              <input class="boton-eje" type="submit" value="+">
+              <p class="zzz">añadir ejercicio</p>
+            </div>
+          </div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
         </div>
-        <div class="swiper-slide">
-            <p>ejercicio  2</p>
-            <input class="boton-eje" type="submit" value="+">
-        <p class="zzz">añadir ejercicio</p>
-        </div>
-        <div class="swiper-slide">
-            <p>ejercicio  3</p>
-            <input class="boton-eje" type="submit" value="+">
-        <p class="zzz">añadir ejercicio</p>
-        </div>
-        <div class="swiper-slide">
-            <p>ejercicio  4</p>
-            <input class="boton-eje" type="submit" value="+">
-        <p class="zzz">añadir ejercicio</p>
-        </div>
-        <div class="swiper-slide">
-         <p>ejercicio  5</p>
-         <input class="boton-eje" type="submit" value="+">
-        <p class="zzz">añadir ejercicio</p>
-        </div>
+
       </div>
-      <!-- If we need pagination -->
-      <div class="swiper-pagination"></div>
-
-      <!-- If we need navigation buttons -->
-      <div class="swiper-button-prev"></div>
-      <div class="swiper-button-next"></div>
-
-      <!-- If we need scrollbar -->
-      <!-- <div class="swiper-scrollbar"></div> -->
-    </div>
-
-        </div>
-        <div class="carousel__item">Viernes
+      <div class="carousel__item">Sabado
 
         <div class="swiper swiper-hero">
-      <!-- Additional required wrapper -->
-      <div class="swiper-wrapper">
-        <!-- Slides -->
-        <div class="swiper-slide">
-            <p>ejercicio  1</p>
-            <input class="boton-eje" type="submit" value="+">
-        <p class="zzz">añadir ejercicio</p>
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <p>ejercicio 1</p>
+              <input class="boton-eje" type="submit" value="+">
+              <p class="zzz">añadir ejercicio</p>
+            </div>
+            <div class="swiper-slide">
+              <p>ejercicio 2</p>
+              <input class="boton-eje" type="submit" value="+">
+              <p class="zzz">añadir ejercicio</p>
+            </div>
+            <div class="swiper-slide">
+              <p>ejercicio 3</p>
+              <input class="boton-eje" type="submit" value="+">
+              <p class="zzz">añadir ejercicio</p>
+            </div>
+            <div class="swiper-slide">
+              <p>ejercicio 4</p>
+              <input class="boton-eje" type="submit" value="+">
+              <p class="zzz">añadir ejercicio</p>
+            </div>
+            <div class="swiper-slide">
+              <p>ejercicio 5</p>
+              <input class="boton-eje" type="submit" value="+">
+              <p class="zzz">añadir ejercicio</p>
+            </div>
+          </div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
         </div>
-        <div class="swiper-slide">
-            <p>ejercicio  2</p>
-            <input class="boton-eje" type="submit" value="+">
-        <p class="zzz">añadir ejercicio</p>
-        </div>
-        <div class="swiper-slide">
-            <p>ejercicio  3</p>
-            <input class="boton-eje" type="submit" value="+">
-        <p class="zzz">añadir ejercicio</p>
-        </div>
-        <div class="swiper-slide">
-            <p>ejercicio  4</p>
-            <input class="boton-eje" type="submit" value="+">
-        <p class="zzz">añadir ejercicio</p>
-        </div>
-        <div class="swiper-slide">
-         <p>ejercicio  5</p>
-         <input class="boton-eje" type="submit" value="+">
-        <p class="zzz">añadir ejercicio</p>
-        </div>
+
       </div>
-      <!-- If we need pagination -->
-      <div class="swiper-pagination"></div>
-
-      <!-- If we need navigation buttons -->
-      <div class="swiper-button-prev"></div>
-      <div class="swiper-button-next"></div>
-
-      <!-- If we need scrollbar -->
-      <!-- <div class="swiper-scrollbar"></div> -->
     </div>
 
-        </div>
-        <div class="carousel__item">Sabado
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+  <script>
+    const swiper = new Swiper(".swiper-hero", {
+      direction: "horizontal",
+      loop: true,
+      autoplay: {
+        delay: 100000000,
+        pauseOnMouseEnter: true,
+        disableOnInteraction: false,
+      },
 
-        <div class="swiper swiper-hero">
-      <!-- Additional required wrapper -->
-      <div class="swiper-wrapper">
-        <!-- Slides -->
-        <div class="swiper-slide">
-            <p>ejercicio  1</p>
-            <input class="boton-eje" type="submit" value="+">
-        <p class="zzz">añadir ejercicio</p>
-        </div>
-        <div class="swiper-slide">
-            <p>ejercicio  2</p>
-            <input class="boton-eje" type="submit" value="+">
-        <p class="zzz">añadir ejercicio</p>
-        </div>
-        <div class="swiper-slide">
-            <p>ejercicio  3</p>
-            <input class="boton-eje" type="submit" value="+">
-        <p class="zzz">añadir ejercicio</p>
-        </div>
-        <div class="swiper-slide">
-            <p>ejercicio  4</p>
-            <input class="boton-eje" type="submit" value="+">
-        <p class="zzz">añadir ejercicio</p>
-        </div>
-        <div class="swiper-slide">
-         <p>ejercicio  5</p>
-         <input class="boton-eje" type="submit" value="+">
-        <p class="zzz">añadir ejercicio</p>
-        </div>
-      </div>
-      <!-- If we need pagination -->
-      <div class="swiper-pagination"></div>
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
 
-      <!-- If we need navigation buttons -->
-      <div class="swiper-button-prev"></div>
-      <div class="swiper-button-next"></div>
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
 
-      <!-- If we need scrollbar -->
-      <!-- <div class="swiper-scrollbar"></div> -->
-    </div>
-
-        </div>
-    </div> 
-       
-    </div>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
-    <script>
-      const swiper = new Swiper(".swiper-hero", {
-        // Optional parameters
-        // slidesPerView: "auto",
-        // spaceBetween: 15,
-        // slidesPerGroupAuto: true,
-
-        direction: "horizontal",
-        loop: true,
-        // allowTouchMove: true,
-        // effect: "cube",
-        autoplay: {
-          delay: 1000000,
-          pauseOnMouseEnter: true,
-          disableOnInteraction: false,
-        },
-
-        // If we need pagination
-        pagination: {
-          el: ".swiper-pagination",
-          // type: "progressbar"
-          clickable: true,
-          // dynamicBullets: true
-        },
-
-        // Navigation arrows
-        navigation: {
-          nextEl: ".swiper-button-next",
-          prevEl: ".swiper-button-prev",
-        },
-
-        // And if we need scrollbar
-        // scrollbar: {
-        //   el: ".swiper-scrollbar",
-        //   draggable: true,
-        // },
-      });
-    </script>
+    });
+  </script>
+  <script>
+    const btn = document.querySelector("#mostra")
+    const conteinerr= document.querySelector("#oculto")
+    btn.addEventListener("click", function(){
+        if(conteinerr.style.display ==="block"){
+          conteinerr.style.display ="none";
+        }
+        else{
+          conteinerr.style.display ="block";
+        }
+    })
+  </script>
 </body>
 <script src="../js/appdiv.js"></script>
+
 </html>

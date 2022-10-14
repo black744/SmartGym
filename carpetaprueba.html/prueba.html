@@ -1,173 +1,33 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title> CARROUSEL 2</title>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> ineerhtml </title>
 
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
-    />
+  <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
 
-    <style>
-      body {
-        margin: 0;
-      }
+  <div class="contenedor-i">
+    <p> aca esta el div que vamos a trabajar</>
+  </div>
 
-      .swiper-hero {
-        position:relative ;
-        margin: 5vw;
-        height: 35vh;
-        width: 50vw;
-        border-radius: 5px;
-        background: #858585;
-      }
+  <button type="submit" class="mi-btn"> hace click aca</button>
 
-      .swiper-hero .swiper-slide {
-        width:100%
-      }
+  <script>
+    const btn = document.querySelector(".mi-btn")
+    const conteinerr= document.querySelector(".contenedor-i")
+    btn.addEventListener("click", function(){
+        if(conteinerr.style.display ==="block"){
+          conteinerr.style.display ="none";
+        }
+        else{
+          conteinerr.style.display ="block";
+        }
+    })
+  </script>
 
-      .swiper-hero p {
-        color: #000;
-        object-fit: cover;
-      }
-
-      .swiper-hero .swiper-button-prev
-      {
-        --swiper-navigation-size: 20px;
-        background-color: transparent;
-        margin-left: 2vw ;
-        color: #fff;
-        height: 50px;
-        width: 30px;
-        opacity: 0;
-        transition: opacity 0.3s;
-      }
-
-      
-      .swiper-hero .swiper-button-next {
-        --swiper-navigation-size: 20px;
-        background-color: transparent;
-        margin-right: 2vw;
-        color: #fff;
-        height: 50px;
-        width: 30px;
-        opacity: 0;
-        transition: opacity 0.3s;
-      }
-
-      .swiper-hero .swiper-button-prev:hover{
-        color: #fb4c0d;
-      }
-      .swiper-hero .swiper-button-next:hover{
-          color: #fb4c0d;
-      }
-
-      .swiper-hero .swiper-button-prev {
-        border-radius: 0 65px 65px 0;
-        left: -10px;
-      }
-      .swiper-hero .swiper-button-next {
-        border-radius: 65px 0 0 65px;
-        right: -10px;
-      }
-
-      .swiper-hero:hover .swiper-button-prev,
-      .swiper-hero:hover .swiper-button-next {
-        opacity: 1;
-      }
-
-      .swiper-hero .swiper-pagination {
-        --swiper-pagination-color: white;
-        --swiper-pagination-bullet-size: 6px;
-        --swiper-pagination-bullet-inactive-color: #000;
-        --swiper-pagination-bullet-inactive-opacity: 0.25;
-        --swiper-pagination-bullet-opacity: 1;
-        --swiper-pagination-bullet-horizontal-gap: 2px;
-      }
-
-      .swiper-hero .swiper-pagination-bullet {
-        box-shadow: inset 0 0 0 1px #fff;
-      }
-
-      .swiper-hero .swiper-pagination-bullet-active {
-        box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.25);
-      }
-    </style>
-  </head>
-  <body>
-    <!-- Slider main container -->
-    <div class="swiper swiper-hero">
-      <!-- Additional required wrapper -->
-      <div class="swiper-wrapper">
-        <!-- Slides -->
-        <div class="swiper-slide">
-            <p>ejercicio  1</p>
-        </div>
-        <div class="swiper-slide">
-            <p>ejercicio  2</p>
-        </div>
-        <div class="swiper-slide">
-            <p>ejercicio  3</p>
-        </div>
-        <div class="swiper-slide">
-            <p>ejercicio  4</p>
-        </div>
-        <div class="swiper-slide">
-         <p>ejercicio  5</p>
-        </div>
-      </div>
-      <!-- If we need pagination -->
-      <div class="swiper-pagination"></div>
-
-      <!-- If we need navigation buttons -->
-      <div class="swiper-button-prev"></div>
-      <div class="swiper-button-next"></div>
-
-      <!-- If we need scrollbar -->
-      <!-- <div class="swiper-scrollbar"></div> -->
-    </div>
-
-    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
-    <script>
-      const swiper = new Swiper(".swiper-hero", {
-        // Optional parameters
-        // slidesPerView: "auto",
-        // spaceBetween: 15,
-        // slidesPerGroupAuto: true,
-
-        direction: "horizontal",
-        loop: true,
-        // allowTouchMove: true,
-        // effect: "cube",
-        autoplay: {
-          delay: 10000,
-          pauseOnMouseEnter: true,
-          disableOnInteraction: false,
-        },
-
-        // If we need pagination
-        pagination: {
-          el: ".swiper-pagination",
-          // type: "progressbar"
-          clickable: true,
-          // dynamicBullets: true
-        },
-
-        // Navigation arrows
-        navigation: {
-          nextEl: ".swiper-button-next",
-          prevEl: ".swiper-button-prev",
-        },
-
-        // And if we need scrollbar
-        // scrollbar: {
-        //   el: ".swiper-scrollbar",
-        //   draggable: true,
-        // },
-      });
-    </script>
-  </body>
+</body>
 </html>
