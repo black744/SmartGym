@@ -182,6 +182,7 @@
   }
 
 .sobretodo{
+  display: none;
   position: absolute;
   top: 5vh;
   left: 3vw;
@@ -190,7 +191,6 @@
   background: #151515;
   border: transparent;
   border-radius: 15px;
-  display: none;
 }
 
 .btn-g{

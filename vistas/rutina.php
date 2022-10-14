@@ -29,7 +29,7 @@ include("../models/validacion_clientes.php");
   <link rel="stylesheet" href="../css/estilorutina.css">
   <link rel="stylesheet" href="../css/estilodiv.css">
 
-  
+
 
 </head>
 
@@ -53,328 +53,186 @@ switch ($idrol) {
 <body>
   <div class="menu">
     <div class="carousel">
+
       <div class="carousel__item">Lunes
-        <div class="swiper swiper-hero">
-          <div class="swiper-wrapper">
-              <div class="swiper-slide">
-                <p>ejercicio 1</p>
-                <button class="btn-m" id="mostra"><i class="fa-solid fa-plus"></i></button>
-                <div class="sobretodo" id="oculto"> 
-                  <form>
-                    <select class="se" id="">
-                      <option value="">flexiones</option>
-                      <option value="">sentadillas</option>
-                      <option value="">abdominales</option>
-                    </select>
-                    <input class="ingreso1" type="text">
-                    <input class="ingreso2"type="number">
-                    <input class="ingreso2" type="number">
-                    <input class="btn-g" type="submit" value="Guardar ejercicio">
-                  </form>
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <p>ejercicio 2</p>
-                <button class="btn-m" id="mostra"><i class="fa-solid fa-plus"></i></button>
-                <div class="sobretodo" id="oculto"> 
-                  <form>
-                    <select class="se" id="">
-                      <option value="">flexiones</option>
-                      <option value="">sentadillas</option>
-                      <option value="">abdominales</option>
-                    </select>
-                    <input class="ingreso1" type="text">
-                    <input class="ingreso2"type="number">
-                    <input class="ingreso2" type="number">
-                    <input class="btn-g" type="submit" value="Guardar ejercicio">
-                  </form>
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <p>ejercicio 3</p>
-                <button class="btn-m" id="mostra"><i class="fa-solid fa-plus"></i></button>
-                <div class="sobretodo" id="oculto"> 
-                  <form>
-                    <select class="se" id="">
-                      <option value="">flexiones</option>
-                      <option value="">sentadillas</option>
-                      <option value="">abdominales</option>
-                    </select>
-                    <input class="ingreso1" type="text">
-                    <input class="ingreso2"type="number">
-                    <input class="ingreso2" type="number">
-                    <input class="btn-g" type="submit" value="Guardar ejercicio">
-                  </form>
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <p>ejercicio 4</p>
-                <button class="btn-m" id="mostra"><i class="fa-solid fa-plus"></i></button>
-                <div class="sobretodo" id="oculto"> 
-                  <form>
-                    <select class="se" id="">
-                      <option value="">flexiones</option>
-                      <option value="">sentadillas</option>
-                      <option value="">abdominales</option>
-                    </select>
-                    <input class="ingreso1" type="text">
-                    <input class="ingreso2"type="number">
-                    <input class="ingreso2" type="number">
-                    <input class="btn-g" type="submit" value="Guardar ejercicio">
-                  </form>
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <p>ejercicio 5</p>
-                <button class="btn-m" id="mostra"><i class="fa-solid fa-plus"></i></button>
-                <div class="sobretodo" id="oculto"> 
-                  <form>
-                    <select class="se" id="">
-                      <option value="">flexiones</option>
-                      <option value="">sentadillas</option>
-                      <option value="">abdominales</option>
-                    </select>
-                    <input class="ingreso1" type="text">
-                    <input class="ingreso2"type="number">
-                    <input class="ingreso2" type="number">
-                    <input class="btn-g" type="submit" value="Guardar ejercicio">
-                  </form>
-                </div>
-              </div>
-          </div>
-          
-          <div class="swiper-button-prev"></div>
-          <div class="swiper-button-next"></div>
-        </div>
-      </div>
-      <div class="carousel__item">Martes
-
-        <div class="swiper-slide">
-                <p>ejercicio 1</p>
-                <button class="btn-m" id="mostra"><i class="fa-solid fa-plus"></i></button>
-                <div class="sobretodo" id="oculto"> 
-                  <form>
-                    <select class="se" id="">
-                      <option value="">flexiones</option>
-                      <option value="">sentadillas</option>
-                      <option value="">abdominales</option>
-                    </select>
-                    <input class="ingreso1" type="text">
-                    <input class="ingreso2"type="number">
-                    <input class="ingreso2" type="number">
-                    <input class="btn-g" type="submit" value="Guardar ejercicio">
-                  </form>
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <p>ejercicio 2</p>
-                <button class="btn-m" id="mostra"><i class="fa-solid fa-plus"></i></button>
-                <div class="sobretodo" id="oculto"> 
-                  <form>
-                    <select class="se" id="">
-                      <option value="">flexiones</option>
-                      <option value="">sentadillas</option>
-                      <option value="">abdominales</option>
-                    </select>
-                    <input class="ingreso1" type="text">
-                    <input class="ingreso2"type="number">
-                    <input class="ingreso2" type="number">
-                    <input class="btn-g" type="submit" value="Guardar ejercicio">
-                  </form>
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <p>ejercicio 3</p>
-                <button class="btn-m" id="mostra"><i class="fa-solid fa-plus"></i></button>
-                <div class="sobretodo" id="oculto"> 
-                  <form>
-                    <select class="se" id="">
-                      <option value="">flexiones</option>
-                      <option value="">sentadillas</option>
-                      <option value="">abdominales</option>
-                    </select>
-                    <input class="ingreso1" type="text">
-                    <input class="ingreso2"type="number">
-                    <input class="ingreso2" type="number">
-                    <input class="btn-g" type="submit" value="Guardar ejercicio">
-                  </form>
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <p>ejercicio 4</p>
-                <button class="btn-m" id="mostra"><i class="fa-solid fa-plus"></i></button>
-                <div class="sobretodo" id="oculto"> 
-                  <form>
-                    <select class="se" id="">
-                      <option value="">flexiones</option>
-                      <option value="">sentadillas</option>
-                      <option value="">abdominales</option>
-                    </select>
-                    <input class="ingreso1" type="text">
-                    <input class="ingreso2"type="number">
-                    <input class="ingreso2" type="number">
-                    <input class="btn-g" type="submit" value="Guardar ejercicio">
-                  </form>
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <p>ejercicio 5</p>
-                <button class="btn-m" id="mostra"><i class="fa-solid fa-plus"></i></button>
-                <div class="sobretodo" id="oculto"> 
-                  <form>
-                    <select class="se" id="">
-                      <option value="">flexiones</option>
-                      <option value="">sentadillas</option>
-                      <option value="">abdominales</option>
-                    </select>
-                    <input class="ingreso1" type="text">
-                    <input class="ingreso2"type="number">
-                    <input class="ingreso2" type="number">
-                    <input class="btn-g" type="submit" value="Guardar ejercicio">
-                  </form>
-                </div>
-              </div>
-          </div>
-
-      </div>
-      <div class="carousel__item">Miercoles
-
         <div class="swiper swiper-hero">
           <div class="swiper-wrapper">
             <div class="swiper-slide">
               <p>ejercicio 1</p>
-              <input class="boton-eje" type="submit" value="+">
-              <p class="zzz">añadir ejercicio</p>
+              <button class="btn-m" id="mostra"><i class="fa-solid fa-plus"></i></button>
+              <div class="sobretodo" id="oculto">
+                <form>
+                  <select class="se" id="">
+                    <option value="">flexiones</option>
+                    <option value="">sentadillas</option>
+                    <option value="">abdominales</option>
+                  </select>
+                  <input class="ingreso1" type="text">
+                  <input class="ingreso2" type="number">
+                  <input class="ingreso2" type="number">
+                  <input class="btn-g" type="submit" value="Guardar ejercicio">
+                </form>
+              </div>
             </div>
             <div class="swiper-slide">
               <p>ejercicio 2</p>
-              <input class="boton-eje" type="submit" value="+">
-              <p class="zzz">añadir ejercicio</p>
+              <button class="btn-m" id="mostra"><i class="fa-solid fa-plus"></i></button>
+              <div class="sobretodo" id="oculto">
+                <form>
+                  <select class="se" id="">
+                    <option value="">flexiones</option>
+                    <option value="">sentadillas</option>
+                    <option value="">abdominales</option>
+                  </select>
+                  <input class="ingreso1" type="text">
+                  <input class="ingreso2" type="number">
+                  <input class="ingreso2" type="number">
+                  <input class="btn-g" type="submit" value="Guardar ejercicio">
+                </form>
+              </div>
             </div>
-            <div class="swiper-slide">
-              <p>ejercicio 3</p>
-              <input class="boton-eje" type="submit" value="+">
-              <p class="zzz">añadir ejercicio</p>
-            </div>
-            <div class="swiper-slide">
-              <p>ejercicio 4</p>
-              <input class="boton-eje" type="submit" value="+">
-              <p class="zzz">añadir ejercicio</p>
-            </div>
-            <div class="swiper-slide">
-              <p>ejercicio 5</p>
-              <input class="boton-eje" type="submit" value="+">
-              <p class="zzz">añadir ejercicio</p>
-            </div>
+
           </div>
+
           <div class="swiper-button-prev"></div>
           <div class="swiper-button-next"></div>
         </div>
+      </div>
 
+      <div class="carousel__item">Martes
+        <div class="swiper swiper-hero">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <p>ejercicio 1</p>
+              <button class="btn-m" id="mostra"><i class="fa-solid fa-plus"></i></button>
+              <div class="sobretodo" id="oculto">
+                <form>
+                  <select class="se" id="">
+                    <option value="">flexiones</option>
+                    <option value="">sentadillas</option>
+                    <option value="">abdominales</option>
+                  </select>
+                  <input class="ingreso1" type="text">
+                  <input class="ingreso2" type="number">
+                  <input class="ingreso2" type="number">
+                  <input class="btn-g" type="submit" value="Guardar ejercicio">
+                </form>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+        </div>
+      </div>
+      <div class="carousel__item">Miercoles
+        <div class="swiper swiper-hero">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <p>ejercicio 1</p>
+              <button class="btn-m" id="mostra"><i class="fa-solid fa-plus"></i></button>
+              <div class="sobretodo" id="oculto">
+                <form>
+                  <select class="se" id="">
+                    <option value="">flexiones</option>
+                    <option value="">sentadillas</option>
+                    <option value="">abdominales</option>
+                  </select>
+                  <input class="ingreso1" type="text">
+                  <input class="ingreso2" type="number">
+                  <input class="ingreso2" type="number">
+                  <input class="btn-g" type="submit" value="Guardar ejercicio">
+                </form>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+        </div>
       </div>
       <div class="carousel__item">Jueves
         <div class="swiper swiper-hero">
           <div class="swiper-wrapper">
             <div class="swiper-slide">
               <p>ejercicio 1</p>
-              <input class="boton-eje" type="submit" value="+">
-              <p class="zzz">añadir ejercicio</p>
+              <button class="btn-m" id="mostra"><i class="fa-solid fa-plus"></i></button>
+              <div class="sobretodo" id="oculto">
+                <form>
+                  <select class="se" id="">
+                    <option value="">flexiones</option>
+                    <option value="">sentadillas</option>
+                    <option value="">abdominales</option>
+                  </select>
+                  <input class="ingreso1" type="text">
+                  <input class="ingreso2" type="number">
+                  <input class="ingreso2" type="number">
+                  <input class="btn-g" type="submit" value="Guardar ejercicio">
+                </form>
+              </div>
             </div>
-            <div class="swiper-slide">
-              <p>ejercicio 2</p>
-              <input class="boton-eje" type="submit" value="+">
-              <p class="zzz">añadir ejercicio</p>
-            </div>
-            <div class="swiper-slide">
-              <p>ejercicio 3</p>
-              <input class="boton-eje" type="submit" value="+">
-              <p class="zzz">añadir ejercicio</p>
-            </div>
-            <div class="swiper-slide">
-              <p>ejercicio 4</p>
-              <input class="boton-eje" type="submit" value="+">
-              <p class="zzz">añadir ejercicio</p>
-            </div>
-            <div class="swiper-slide">
-              <p>ejercicio 5</p>
-              <input class="boton-eje" type="submit" value="+">
-              <p class="zzz">añadir ejercicio</p>
-            </div>
+
           </div>
+
           <div class="swiper-button-prev"></div>
           <div class="swiper-button-next"></div>
         </div>
-
       </div>
       <div class="carousel__item">Viernes
-
         <div class="swiper swiper-hero">
           <div class="swiper-wrapper">
             <div class="swiper-slide">
               <p>ejercicio 1</p>
-              <input class="boton-eje" type="submit" value="+">
-              <p class="zzz">añadir ejercicio</p>
+              <button class="btn-m" id="mostra"><i class="fa-solid fa-plus"></i></button>
+              <div class="sobretodo" id="oculto">
+                <form>
+                  <select class="se" id="">
+                    <option value="">flexiones</option>
+                    <option value="">sentadillas</option>
+                    <option value="">abdominales</option>
+                  </select>
+                  <input class="ingreso1" type="text">
+                  <input class="ingreso2" type="number">
+                  <input class="ingreso2" type="number">
+                  <input class="btn-g" type="submit" value="Guardar ejercicio">
+                </form>
+              </div>
             </div>
-            <div class="swiper-slide">
-              <p>ejercicio 2</p>
-              <input class="boton-eje" type="submit" value="+">
-              <p class="zzz">añadir ejercicio</p>
-            </div>
-            <div class="swiper-slide">
-              <p>ejercicio 3</p>
-              <input class="boton-eje" type="submit" value="+">
-              <p class="zzz">añadir ejercicio</p>
-            </div>
-            <div class="swiper-slide">
-              <p>ejercicio 4</p>
-              <input class="boton-eje" type="submit" value="+">
-              <p class="zzz">añadir ejercicio</p>
-            </div>
-            <div class="swiper-slide">
-              <p>ejercicio 5</p>
-              <input class="boton-eje" type="submit" value="+">
-              <p class="zzz">añadir ejercicio</p>
-            </div>
+
           </div>
+
           <div class="swiper-button-prev"></div>
           <div class="swiper-button-next"></div>
         </div>
-
       </div>
       <div class="carousel__item">Sabado
-
         <div class="swiper swiper-hero">
           <div class="swiper-wrapper">
             <div class="swiper-slide">
               <p>ejercicio 1</p>
-              <input class="boton-eje" type="submit" value="+">
-              <p class="zzz">añadir ejercicio</p>
+              <button class="btn-m" id="mostra"><i class="fa-solid fa-plus"></i></button>
+              <div class="sobretodo" id="oculto">
+                <form>
+                  <select class="se" id="">
+                    <option value="">flexiones</option>
+                    <option value="">sentadillas</option>
+                    <option value="">abdominales</option>
+                  </select>
+                  <input class="ingreso1" type="text">
+                  <input class="ingreso2" type="number">
+                  <input class="ingreso2" type="number">
+                  <input class="btn-g" type="submit" value="Guardar ejercicio">
+                </form>
+              </div>
             </div>
-            <div class="swiper-slide">
-              <p>ejercicio 2</p>
-              <input class="boton-eje" type="submit" value="+">
-              <p class="zzz">añadir ejercicio</p>
-            </div>
-            <div class="swiper-slide">
-              <p>ejercicio 3</p>
-              <input class="boton-eje" type="submit" value="+">
-              <p class="zzz">añadir ejercicio</p>
-            </div>
-            <div class="swiper-slide">
-              <p>ejercicio 4</p>
-              <input class="boton-eje" type="submit" value="+">
-              <p class="zzz">añadir ejercicio</p>
-            </div>
-            <div class="swiper-slide">
-              <p>ejercicio 5</p>
-              <input class="boton-eje" type="submit" value="+">
-              <p class="zzz">añadir ejercicio</p>
-            </div>
+
           </div>
+
           <div class="swiper-button-prev"></div>
           <div class="swiper-button-next"></div>
         </div>
-
       </div>
     </div>
 
@@ -402,18 +260,23 @@ switch ($idrol) {
 
     });
   </script>
+  
   <script>
-    const btn = document.querySelector("#mostra")
-    const conteinerr= document.querySelector("#oculto")
-    btn.addEventListener("click", function(){
-        if(conteinerr.style.display ==="block"){
-          conteinerr.style.display ="none";
-        }
-        else{
-          conteinerr.style.display ="block";
-        }
-    })
+    const btn = document.querySelectorAll(".btn-m")
+    const conteinerr = document.querySelectorAll(".sobretodo")
+    console.log(btn);
+    console.log(conteinerr);
+    for (let i = 0; i < btn.length; i++) {
+      btn[i].addEventListener("click", function() {
+        if (conteinerr[i].style.display === "block") {
+        conteinerr[i].style.display = "none"
+      } else {
+        conteinerr[i].style.display = "block"
+      }
+      });
+    }
   </script>
+
 </body>
 <script src="../js/appdiv.js"></script>
 
