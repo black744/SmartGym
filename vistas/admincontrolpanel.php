@@ -100,15 +100,19 @@ switch ($idrol) {
                     <button id="btnExportar" class="btn btn-success">
                         <i class="fas fa-file-excel"></i> crear archivo mensual usuarios
                     </button>
-                    <button id="btnExportar">
+                    <button class="abrir" id="btnExportar">
                         Actualizar Pago (tambien aplicar descuentos)
                     </button>
                     <button id="btnExportar">
                         Dar de baja usuario
                     </button>
-
-                    <input type="button" onclick="Crearform()">
-
+                    <div class="cuadro-admin">
+                        <input type="text">
+                        <input type="text">
+                        <div class="meses">
+                            
+                        </div>
+                    </div>
                 </Div>
             </div>
         </div>
@@ -130,5 +134,18 @@ switch ($idrol) {
         tableExport.export2file(preferenciasDocumento.data, preferenciasDocumento.mimeType, preferenciasDocumento.filename, preferenciasDocumento.fileExtension, preferenciasDocumento.merges, preferenciasDocumento.RTL, preferenciasDocumento.sheetname);
     });
 </script>
+
+<script>
+    const btn = document.querySelector(".abrir")
+    const contei= document.querySelector(".cuadro-admin")
+    btn.addEventListener("click", function(){
+        if(contei.style.display ==="block"){
+        contei.style.display ="none";
+        }
+        else{
+        contei.style.display ="block";
+        }
+    })
+  </script>
 
 </html>
