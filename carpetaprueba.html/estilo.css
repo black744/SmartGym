@@ -1,19 +1,12 @@
 *{
+    margin: 0%;
     padding: 0%;
-    margin:0%;
+    font-family: "Lucida Console", "Courier New", monospace;
 }
 
-.contenedor-i{
-    position: relative;
-    margin: 5vw;
-    height: 25vh;
-    width: 20vw;
-    display: none;
-    background: #252525;
-    border-radius: 15px;
-}
-
-.contenedor-i p{
-    margin: 5%;
-    color: #fff;
+:root{
+    --color-letra: #fff;
+    --color-fondos: #fb4c0d;
+    --color-fondobotones: #252525;
+    --color-bordes-normales: #303030;
 }
