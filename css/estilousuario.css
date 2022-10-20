@@ -412,8 +412,11 @@ p {
     position: absolute;
     margin-top: 5vh;
     border-radius:10px;
-    background-color: var(--color-fondosn);
-    border: 2px solid var(--color-bordes);
+    background: rgba( 255, 255, 255, 0.2 );
+    backdrop-filter: blur( 3.5px );
+    -webkit-backdrop-filter: blur( 3.5px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
 }
 
 .derecha {
@@ -421,11 +424,15 @@ p {
     height: 80vh;
     margin-left: 50vw;
     position: absolute;
-    background: var(--color-fondosn);
     margin-top: 5vh;
     border-width: 3px;
     border-bottom: 3px;
     border-radius:10px;
+    background: rgba( 255, 255, 255, 0.2 );
+    backdrop-filter: blur( 3.5px );
+    -webkit-backdrop-filter: blur( 3.5px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
 }
 .imgp{
     margin-left: 40%;
@@ -439,7 +446,7 @@ p {
 .nombre{
     margin-top: 105px;
     margin-left: 9vw;
-    color:var(--color-fondos);
+    color:var(--color-letra);
     font-size: 20px;
 }
 
@@ -448,13 +455,11 @@ p {
     margin-left: 3vh;
     color:var(--color-letra);
     font-size: 18px;
-
 }
 
 .progresoform{
     width: 55vh;
     height: 30vh;
-    background: var(--color-fondosn);
     color:var(--color-letra);
     margin-left: 2.5vh;
     margin-top:5px;
@@ -516,13 +521,10 @@ p {
 
 /* Inicio Izquierda */
 .turnoultimo{
-    width: 55vh;
-    height: 35vh;
-    background: var(--color-fondosn);
-    border: 1px  solid var(--color-fondos);
+    width: 98vh;
+    height: 77.7vh;
     margin-left: 10px;
     margin-top: 10px;
-    border-radius: 5%;
 }
 
 .turnoultimo p{
@@ -546,3 +548,38 @@ p {
 }
 
 /* Fin sidebars */
+
+/*Aca estilo usuario admin*/
+
+.inicio{
+    position: absolute;
+    margin-top: 5vh;
+    margin-left: 5%;
+    margin-bottom: 2vh;
+    height: 60vh;
+    width: 30vw;
+    text-align: justify;
+    border-radius: 15px;
+    font-size: 15px;
+    background: rgba( 255, 255, 255, 0.2 );
+    backdrop-filter: blur( 3.5px );
+    -webkit-backdrop-filter: blur( 3.5px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+
+.datos{
+    position: absolute;
+    height: 90vh;
+    width: 30vw;
+    margin-left: 45%;
+    margin-top: 2.6%;
+    margin-bottom: 9%;
+    border-radius:10px ;
+    text-align: justify;
+    background: rgba( 255, 255, 255, 0.2 );
+    backdrop-filter: blur( 3.5px );
+    -webkit-backdrop-filter: blur( 3.5px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+}

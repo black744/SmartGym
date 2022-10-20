@@ -89,7 +89,7 @@ html{
     margin-right: 5vw;
     background:var(--color-fondobotones);
     text-decoration: none;
-    text-align: center;
+    text-align: justify;
     font-size: 20px;
     border-radius: 10px;
     color: var(--color-letra);
@@ -116,20 +116,33 @@ html{
     padding-bottom: 3%;
     margin-left: 15vw;
 }
-.turnos{
+.inicio{
     position: relative;
     margin-top: 5vh;
     margin-left: 20vw;
     margin-bottom: 2vh;
-    height: 45vh;
-    width: 25vw;
-    text-align: center;
+    height: 60vh;
+    width: 35vw;
+    text-align: justify;
     border-radius: 15px;
     font-size: 15px;
-    background: rgba( 255, 255, 255, 0.3 );
-    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
-    backdrop-filter: blur( 9px );
-    -webkit-backdrop-filter: blur( 9px );
+    background: rgba( 255, 255, 255, 0.2 );
+    backdrop-filter: blur( 3.5px );
+    -webkit-backdrop-filter: blur( 3.5px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+
+.datos{
+    height: 90vh;
+    width: 32vw;
+    margin-left: 8%;
+    margin-top: 2%;
+    border-radius:10px ;
+    text-align: justify;
+    background: rgba( 255, 255, 255, 0.2 );
+    backdrop-filter: blur( 3.5px );
+    -webkit-backdrop-filter: blur( 3.5px );
     border-radius: 10px;
     border: 1px solid rgba( 255, 255, 255, 0.18 );
 }
