@@ -87,6 +87,7 @@ text-align: center;
     font-size: 15px;
     color: var(--color-letra);
 }
+
 .tabla-fila:hover{
     background: var(--color-fondos);
 }

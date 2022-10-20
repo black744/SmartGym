@@ -109,8 +109,7 @@ switch ($idrol) {
                     <div class="cuadro-admin">
                         <input type="text">
                         <input type="text">
-                        <div class="meses">
-                            
+                        <div class="meses">  
                         </div>
                     </div>
                 </Div>
