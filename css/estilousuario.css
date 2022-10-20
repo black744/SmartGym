@@ -14,7 +14,7 @@
 }
 
 html{
-    background: var(--color-fondo-html);
+    background-image: url("../img/fondo_icon.png");
 }
 
 

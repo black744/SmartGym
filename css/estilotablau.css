@@ -12,6 +12,11 @@
     --color-letras-gris: #555555;
 }
 
+html{
+    background-image: url("../img/fondo_icon.png");
+}
+
+
 hr{
     height: 3px;
     color: var(--color-fondos);
