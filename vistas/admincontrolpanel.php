@@ -107,10 +107,24 @@ switch ($idrol) {
                         Dar de baja usuario
                     </button>
                     <div class="cuadro-admin">
-                        <input type="text">
-                        <input type="text">
+                        <input class="ing1" type="text" placeholder="Codigo de usuario">
+                        <input class="ing2" type="text" placeholder="Contraseña admin">
                         <div class="meses">
-                            
+                            <select name="meses-pago" id="p-meses">
+                                <option value="">Enero</option>
+                                <option value="">Febrero</option>
+                                <option value="">Marzo</option>
+                                <option value="">Abril</option>
+                                <option value="">Mayo</option>
+                                <option value="">Junio</option>
+                                <option value="">Julio</option>
+                                <option value="">Agosto</option>
+                                <option value="">Septiembre</option>
+                                <option value="">Octubre</option>
+                                <option value="">Noviembre</option>
+                                <option value="">Diciembre</option>
+                            </select>
+                            <button type="submit"  id="btnExportar"> guardar pago</button>
                         </div>
                     </div>
                 </Div>
