@@ -221,9 +221,11 @@ html{
     margin-left: 0%;
     margin-bottom: 2.5%;
     padding: 2%;
-    box-shadow: 0 0 12px rgba(0, 0, 0, .2);
-    background: var(--color-fondos);
-    border-radius: 15px;
+    background: rgba( 251, 76, 13, 0.5 );
+box-shadow: 0 4px 10px 0 rgba(  251, 76, 13,0.37 );
+backdrop-filter: blur( 15.5px );
+-webkit-backdrop-filter: blur( 15.5px );
+border-radius: 10px;
 }
 
 .perfil-usuario-bio h4 {
@@ -242,9 +244,11 @@ html{
     margin-top: 2%;
     margin-left: 0%;
     margin-bottom: 4vh;
-    box-shadow: 0 0 12px rgba(0, 0, 0, .2);
-    background: var(--color-fondos);
-    border-radius: 15px;
+    background: rgba( 251, 76, 13, 0.5 );
+box-shadow: 0 4px 10px 0 rgba(  251, 76, 13,0.37 );
+backdrop-filter: blur( 15.5px );
+-webkit-backdrop-filter: blur( 15.5px );
+border-radius: 10px;
 }
 
 .perfil-usuario-footer p{
