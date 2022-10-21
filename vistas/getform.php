@@ -119,6 +119,217 @@ $image = $row['image'];
 
                                 };
 
+                                //miercoles
+
+                                if(isset($_POST['miercolesej1boton'])){
+                                  $miercolesejercicio1series=$_POST['miercolesserej1'];
+                                  $miercolesejercicio1repeticiones=$_POST['miercolesrepej1'];
+                                  $miercolesejercicio1ejercicio=$_POST['s-e'];
+                                  $iduselectr=$_POST['iduselectr'];
+                                  
+                                  $sqlinsertmiercolesEj1 = "UPDATE `rutinas_miercoles` SET `id_ej1`='$miercolesejercicio1ejercicio',`series_ej1`='$miercolesejercicio1series',`repeticiones_ej1`='$miercolesejercicio1repeticiones' WHERE idusuario='$iduselectr'";
+                                  $queryinsertmiercolesEj1 = mysqli_query($conex, $sqlinsertmiercolesEj1);
+
+                                };
+                                if(isset($_POST['miercolesej2boton'])){
+                                  $miercolesejercicio2series=$_POST['miercolesserej2'];
+                                  $miercolesejercicio2repeticiones=$_POST['miercolesrepej2'];
+                                  $miercolesejercicio2ejercicio=$_POST['s-e'];
+                                  $iduselectr=$_POST['iduselectr'];
+                                  
+                                  $sqlinsertmiercolesEj2 = "UPDATE `rutinas_miercoles` SET `id_ej2`='$miercolesejercicio2ejercicio',`series_ej2`='$miercolesejercicio2series',`repeticiones_ej2`='$miercolesejercicio2repeticiones' WHERE idusuario='$iduselectr'";
+                                  $queryinsertmiercolesEj2 = mysqli_query($conex, $sqlinsertmiercolesEj2);
+
+                                };
+                                if(isset($_POST['miercolesej3boton'])){
+                                  $miercolesejercicio3series=$_POST['miercolesserej3'];
+                                  $miercolesejercicio3repeticiones=$_POST['miercolesrepej3'];
+                                  $miercolesejercicio3ejercicio=$_POST['s-e'];
+                                  $iduselectr=$_POST['iduselectr'];
+                                  
+                                  $sqlinsertmiercolesEj3 = "UPDATE `rutinas_miercoles` SET `id_ej3`='$miercolesejercicio3ejercicio',`series_ej3`='$miercolesejercicio3series',`repeticiones_ej3`='$miercolesejercicio3repeticiones' WHERE idusuario='$iduselectr'";
+                                  $queryinsertmiercolesEj3 = mysqli_query($conex, $sqlinsertmiercolesEj3);
+
+                                };
+                                if(isset($_POST['miercolesej4boton'])){
+                                  $miercolesejercicio4series=$_POST['miercolesserej4'];
+                                  $miercolesejercicio4repeticiones=$_POST['miercolesrepej4'];
+                                  $miercolesejercicio4ejercicio=$_POST['s-e'];
+                                  $iduselectr=$_POST['iduselectr'];
+                                  
+                                  $sqlinsertmiercolesEj4 = "UPDATE `rutinas_miercoles` SET `id_ej4`='$miercolesejercicio4ejercicio',`series_ej4`='$miercolesejercicio4series',`repeticiones_ej4`='$miercolesejercicio4repeticiones' WHERE idusuario='$iduselectr'";
+                                  $queryinsertmiercolesEj4 = mysqli_query($conex, $sqlinsertmiercolesEj4);
+
+                                };
+                                if(isset($_POST['miercolesej5boton'])){
+                                  $miercolesejercicio5series=$_POST['miercolesserej5'];
+                                  $miercolesejercicio5repeticiones=$_POST['miercolesrepej5'];
+                                  $miercolesejercicio5ejercicio=$_POST['s-e'];
+                                  $iduselectr=$_POST['iduselectr'];
+                                  
+                                  $sqlinsertmiercolesEj5 = "UPDATE `rutinas_miercoles` SET `id_ej5`='$miercolesejercicio5ejercicio',`series_ej5`='$miercolesejercicio5series',`repeticiones_ej5`='$miercolesejercicio5repeticiones' WHERE idusuario='$iduselectr'";
+                                  $queryinsertmiercolesEj5 = mysqli_query($conex, $sqlinsertmiercolesEj5);
+
+                                };
+                                
+                                //jueves
+
+                                if(isset($_POST['juevesej1boton'])){
+                                  $juevesejercicio1series=$_POST['juevesserej1'];
+                                  $juevesejercicio1repeticiones=$_POST['juevesrepej1'];
+                                  $juevesejercicio1ejercicio=$_POST['s-e'];
+                                  $iduselectr=$_POST['iduselectr'];
+                                  
+                                  $sqlinsertjuevesEj1 = "UPDATE `rutinas_jueves` SET `id_ej1`='$juevesejercicio1ejercicio',`series_ej1`='$juevesejercicio1series',`repeticiones_ej1`='$juevesejercicio1repeticiones' WHERE idusuario='$iduselectr'";
+                                  $queryinsertjuevesEj1 = mysqli_query($conex, $sqlinsertjuevesEj1);
+
+                                };
+                                if(isset($_POST['juevesej2boton'])){
+                                  $juevesejercicio2series=$_POST['juevesserej2'];
+                                  $juevesejercicio2repeticiones=$_POST['juevesrepej2'];
+                                  $juevesejercicio2ejercicio=$_POST['s-e'];
+                                  $iduselectr=$_POST['iduselectr'];
+                                  
+                                  $sqlinsertjuevesEj2 = "UPDATE `rutinas_jueves` SET `id_ej2`='$juevesejercicio2ejercicio',`series_ej2`='$juevesejercicio2series',`repeticiones_ej2`='$juevesejercicio2repeticiones' WHERE idusuario='$iduselectr'";
+                                  $queryinsertjuevesEj2 = mysqli_query($conex, $sqlinsertjuevesEj2);
+
+                                };
+                                if(isset($_POST['juevesej3boton'])){
+                                  $juevesejercicio3series=$_POST['juevesserej3'];
+                                  $juevesejercicio3repeticiones=$_POST['juevesrepej3'];
+                                  $juevesejercicio3ejercicio=$_POST['s-e'];
+                                  $iduselectr=$_POST['iduselectr'];
+                                  
+                                  $sqlinsertjuevesEj3 = "UPDATE `rutinas_jueves` SET `id_ej3`='$juevesejercicio3ejercicio',`series_ej3`='$juevesejercicio3series',`repeticiones_ej3`='$juevesejercicio3repeticiones' WHERE idusuario='$iduselectr'";
+                                  $queryinsertjuevesEj3 = mysqli_query($conex, $sqlinsertjuevesEj3);
+
+                                };
+                                if(isset($_POST['juevesej4boton'])){
+                                  $juevesejercicio4series=$_POST['juevesserej4'];
+                                  $juevesejercicio4repeticiones=$_POST['juevesrepej4'];
+                                  $juevesejercicio4ejercicio=$_POST['s-e'];
+                                  $iduselectr=$_POST['iduselectr'];
+                                  
+                                  $sqlinsertjuevesEj4 = "UPDATE `rutinas_jueves` SET `id_ej4`='$juevesejercicio4ejercicio',`series_ej4`='$juevesejercicio4series',`repeticiones_ej4`='$juevesejercicio4repeticiones' WHERE idusuario='$iduselectr'";
+                                  $queryinsertjuevesEj4 = mysqli_query($conex, $sqlinsertjuevesEj4);
+
+                                };
+                                if(isset($_POST['juevesej5boton'])){
+                                  $juevesejercicio5series=$_POST['juevesserej5'];
+                                  $juevesejercicio5repeticiones=$_POST['miercolesrepej5'];
+                                  $juevesejercicio5ejercicio=$_POST['s-e'];
+                                  $iduselectr=$_POST['iduselectr'];
+                                  
+                                  $sqlinsertjuevesEj5 = "UPDATE `rutinas_jueves` SET `id_ej5`='$juevesejercicio5ejercicio',`series_ej5`='$juevesejercicio5series',`repeticiones_ej5`='$juevesejercicio5repeticiones' WHERE idusuario='$iduselectr'";
+                                  $queryinsertjuevesEj5 = mysqli_query($conex, $sqlinsertjuevesEj5);
+
+                                };
+
+                                //viernes
+
+                                if(isset($_POST['viernesej1boton'])){
+                                  $viernesejercicio1series=$_POST['viernesserej1'];
+                                  $viernesejercicio1repeticiones=$_POST['viernesrepej1'];
+                                  $viernesejercicio1ejercicio=$_POST['s-e'];
+                                  $iduselectr=$_POST['iduselectr'];
+                                  
+                                  $sqlinsertviernesEj1 = "UPDATE `rutinas_viernes` SET `id_ej1`='$viernesejercicio1ejercicio',`series_ej1`='$viernesejercicio1series',`repeticiones_ej1`='$viernesejercicio1repeticiones' WHERE idusuario='$iduselectr'";
+                                  $queryinsertviernesEj1 = mysqli_query($conex, $sqlinsertviernesEj1);
+
+                                };
+                                if(isset($_POST['viernesej2boton'])){
+                                  $viernesejercicio2series=$_POST['viernesserej2'];
+                                  $viernesejercicio2repeticiones=$_POST['viernesrepej2'];
+                                  $viernesejercicio2ejercicio=$_POST['s-e'];
+                                  $iduselectr=$_POST['iduselectr'];
+                                  
+                                  $sqlinsertviernesEj2 = "UPDATE `rutinas_viernes` SET `id_ej2`='$viernesejercicio2ejercicio',`series_ej2`='$viernesejercicio2series',`repeticiones_ej2`='$viernesejercicio2repeticiones' WHERE idusuario='$iduselectr'";
+                                  $queryinsertviernesEj2 = mysqli_query($conex, $sqlinsertviernesEj2);
+
+                                };
+                                if(isset($_POST['viernesej3boton'])){
+                                  $viernesejercicio3series=$_POST['viernesserej3'];
+                                  $viernesejercicio3repeticiones=$_POST['viernesrepej3'];
+                                  $viernesejercicio3ejercicio=$_POST['s-e'];
+                                  $iduselectr=$_POST['iduselectr'];
+                                  
+                                  $sqlinsertviernesEj3 = "UPDATE `rutinas_viernes` SET `id_ej3`='$viernesejercicio3ejercicio',`series_ej3`='$viernesejercicio3series',`repeticiones_ej3`='$viernesejercicio3repeticiones' WHERE idusuario='$iduselectr'";
+                                  $queryinsertviernesEj3 = mysqli_query($conex, $sqlinsertviernesEj3);
+
+                                };
+                                if(isset($_POST['viernesej4boton'])){
+                                  $viernesejercicio4series=$_POST['viernesserej4'];
+                                  $viernesejercicio4repeticiones=$_POST['viernesrepej4'];
+                                  $viernesejercicio4ejercicio=$_POST['s-e'];
+                                  $iduselectr=$_POST['iduselectr'];
+                                  
+                                  $sqlinsertviernesEj4 = "UPDATE `rutinas_viernes` SET `id_ej4`='$viernesejercicio4ejercicio',`series_ej4`='$viernesejercicio4series',`repeticiones_ej4`='$viernesejercicio4repeticiones' WHERE idusuario='$iduselectr'";
+                                  $queryinsertviernesEj4 = mysqli_query($conex, $sqlinsertviernesEj4);
+
+                                };
+                                if(isset($_POST['viernesej5boton'])){
+                                  $viernesejercicio5series=$_POST['viernesserej5'];
+                                  $viernesejercicio5repeticiones=$_POST['viernesrepej5'];
+                                  $viernesejercicio5ejercicio=$_POST['s-e'];
+                                  $iduselectr=$_POST['iduselectr'];
+                                  
+                                  $sqlinsertviernesEj5 = "UPDATE `rutinas_viernes` SET `id_ej5`='$viernesejercicio5ejercicio',`series_ej5`='$viernesejercicio5series',`repeticiones_ej5`='$viernesejercicio5repeticiones' WHERE idusuario='$iduselectr'";
+                                  $queryinsertviernesEj5 = mysqli_query($conex, $sqlinsertviernesEj5);
+
+                                };
+                                
+                                //sabado
+
+                                if(isset($_POST['sabadoej1boton'])){
+                                  $sabadoejercicio1series=$_POST['sabadoserej1'];
+                                  $sabadoejercicio1repeticiones=$_POST['sabadorepej1'];
+                                  $sabadoejercicio1ejercicio=$_POST['s-e'];
+                                  $iduselectr=$_POST['iduselectr'];
+                                  
+                                  $sqlinsertsabadoEj1 = "UPDATE `rutinas_sabado` SET `id_ej1`='$sabadoejercicio1ejercicio',`series_ej1`='$sabadoejercicio1series',`repeticiones_ej1`='$sabadoejercicio1repeticiones' WHERE idusuario='$iduselectr'";
+                                  $queryinsertsabadoEj1 = mysqli_query($conex, $sqlinsertsabadoEj1);
+
+                                };
+                                if(isset($_POST['sabadoej2boton'])){
+                                  $sabadoejercicio2series=$_POST['sabadoserej2'];
+                                  $sabadoejercicio2repeticiones=$_POST['sabadorepej2'];
+                                  $sabadoejercicio2ejercicio=$_POST['s-e'];
+                                  $iduselectr=$_POST['iduselectr'];
+                                  
+                                  $sqlinsertsabadoEj2 = "UPDATE `rutinas_sabado` SET `id_ej2`='$sabadoejercicio2ejercicio',`series_ej2`='$sabadoejercicio2series',`repeticiones_ej2`='$sabadoejercicio2repeticiones' WHERE idusuario='$iduselectr'";
+                                  $queryinsertsabadoEj2 = mysqli_query($conex, $sqlinsertsabadoEj2);
+
+                                };
+                                if(isset($_POST['sabadoej3boton'])){
+                                  $sabadoejercicio3series=$_POST['sabadoserej3'];
+                                  $sabadoejercicio3repeticiones=$_POST['sabadorepej3'];
+                                  $sabadoejercicio3ejercicio=$_POST['s-e'];
+                                  $iduselectr=$_POST['iduselectr'];
+                                  
+                                  $sqlinsertsabadoEj3 = "UPDATE `rutinas_sabado` SET `id_ej3`='$sabadoejercicio3ejercicio',`series_ej3`='$sabadoejercicio3series',`repeticiones_ej3`='$sabadoejercicio3repeticiones' WHERE idusuario='$iduselectr'";
+                                  $queryinsertsabadoEj3 = mysqli_query($conex, $sqlinsertsabadoEj3);
+
+                                };
+                                if(isset($_POST['sabadoej4boton'])){
+                                  $sabadoejercicio4series=$_POST['sabadoserej4'];
+                                  $sabadoejercicio4repeticiones=$_POST['sabadorepej4'];
+                                  $sabadoejercicio4ejercicio=$_POST['s-e'];
+                                  $iduselectr=$_POST['iduselectr'];
+                                  
+                                  $sqlinsertsabadoEj4 = "UPDATE `rutinas_sabado` SET `id_ej4`='$sabadoejercicio4ejercicio',`series_ej4`='$sabadoejercicio4series',`repeticiones_ej4`='$sabadoejercicio4repeticiones' WHERE idusuario='$iduselectr'";
+                                  $queryinsertsabadoEj4 = mysqli_query($conex, $sqlinsertsabadoEj4);
+
+                                };
+                                if(isset($_POST['sabadoej5boton'])){
+                                  $sabadoejercicio5series=$_POST['sabadoserej5'];
+                                  $sabadoejercicio5repeticiones=$_POST['sabadorepej5'];
+                                  $sabadoejercicio5ejercicio=$_POST['s-e'];
+                                  $iduselectr=$_POST['iduselectr'];
+                                  
+                                  $sqlinsertsabadoEj5 = "UPDATE `rutinas_sabado` SET `id_ej5`='$sabadoejercicio5ejercicio',`series_ej5`='$sabadoejercicio5series',`repeticiones_ej5`='$sabadoejercicio5repeticiones' WHERE idusuario='$iduselectr'";
+                                  $queryinsertsabadoEj5 = mysqli_query($conex, $sqlinsertsabadoEj5);
+
+                                };
                                 ?>
                                 <body onLoad="setTimeout('window.close()',100)">
                                 

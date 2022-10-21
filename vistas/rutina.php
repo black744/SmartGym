@@ -26,22 +26,22 @@ include("../models/validacion_clientes.php");
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=2.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
     <link rel="stylesheet" href="../css/estilousuario.css">
     <link rel="stylesheet" href="../css/estilorutina.css">
     <link rel="stylesheet" href="../css/estilodiv.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <script src="https://code.jquery.com/jquery-2.22.4.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.2/moment-with-locales.min.js"
-        integrity="sha522-LGXaggshOkD/at6PFNcp2V2unf9LzFq6LE+sChH7ceMTDP0g2kn6Vxwgg7wkPP7AAtX+lmPqPdxB47A0Nz0cMQ=="
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment-with-locales.min.js"
+        integrity="sha512-LGXaggshOkD/at6PFNcp2V2unf9LzFq6LE+sChH7ceMTDP0g2kn6Vxwgg7wkPP7AAtX+lmPqPdxB47A0Nz0cMQ=="
         crossorigin="anonymous"></script>
 
 
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.22.3/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 
 
 
@@ -51,7 +51,7 @@ switch ($idrol) {
   case 0:
     include("sidebars/sidebarc.php");
     break;
-  case 2:
+  case 1:
     include("sidebars/sidebare.php");
     break;
   case 2:
@@ -77,7 +77,7 @@ switch ($idrol) {
                 <div class="swiper swiper-hero">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">
-                            <p>ejercicio 2</p>
+                            <p>ejercicio 1</p>
                             <button class="btn-m" id="mostra"><i class="fa-solid fa-plus"></i></button>
                             <div class="sobretodo" id="oculto">
                                 <form method="post" action="getform.php" target="print_popup" onsubmit="window.open('about:blank','print_popup','width=600,height=300');">
@@ -97,10 +97,10 @@ switch ($idrol) {
                     ?>
                                         </select>
                                     <input type="text" name="iduselectr" value="<?php echo $iduselect?>">
-                                    <input name="lunesserej2" class="ingreso2" type="number">
-                                    <input name="lunesrepej2" class="ingreso2" type="number">
+                                    <input name="lunesserej1" class="ingreso2" type="number">
+                                    <input name="lunesrepej1" class="ingreso2" type="number">
                                 
-                                <input class="btn-g" name="lunesej2boton" type="submit" value="Guardar ejercicio">
+                                <input class="btn-g" name="lunesej1boton" type="submit" value="Guardar ejercicio">
                                 </form>          
 
                             </div>
@@ -228,7 +228,7 @@ switch ($idrol) {
                 <div class="swiper swiper-hero">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">
-                            <p>ejercicio 2</p>
+                            <p>ejercicio 1</p>
                             <button class="btn-m" id="mostra"><i class="fa-solid fa-plus"></i></button>
                             <div class="sobretodo" id="oculto">
                             <form method="post" action="getform.php" target="print_popup" onsubmit="window.open('about:blank','print_popup','width=600,height=300');">
@@ -248,10 +248,10 @@ switch ($idrol) {
                 ?>
                                     </select>
                                 <input type="text" name="iduselectr" value="<?php echo $iduselect?>" hidden>
-                                <input name="martesserej2" class="ingreso2" type="number">
-                                <input name="martesrepej2" class="ingreso2" type="number">
+                                <input name="martesserej1" class="ingreso2" type="number">
+                                <input name="martesrepej1" class="ingreso2" type="number">
                             
-                            <input class="btn-g" name="martesej2boton" type="submit" value="Guardar ejercicio">
+                            <input class="btn-g" name="martesej1boton" type="submit" value="Guardar ejercicio">
                             </form>
                             </div>
                         </div>
@@ -676,7 +676,7 @@ switch ($idrol) {
                 <div class="swiper swiper-hero">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">
-                            <p>ejercicio 2</p>
+                            <p>ejercicio 1</p>
                             <button class="btn-m" id="mostra"><i class="fa-solid fa-plus"></i></button>
                             <div class="sobretodo" id="oculto">
                             <form method="post" action="getform.php" target="print_popup" onsubmit="window.open('about:blank','print_popup','width=600,height=300');">
@@ -978,7 +978,7 @@ switch ($idrol) {
     function enviar(theForm) {
         $.ajax({
             type: "POST",
-            url: "buscador2.php",
+            url: "buscador1.php",
             data: $(theForm).serialize(),
             success: function(data) {
                 $('#mostrarinfo').html(data);
@@ -993,7 +993,7 @@ switch ($idrol) {
         direction: "horizontal",
         loop: true,
         autoplay: {
-            delay: 200000000,
+            delay: 100000000,
             pauseOnMouseEnter: true,
             disableOnInteraction: false,
         },
