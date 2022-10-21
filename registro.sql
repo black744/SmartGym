@@ -3,9 +3,9 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 11-10-2022 a las 04:45:50
+-- Tiempo de generación: 22-10-2022 a las 00:09:27
 -- Versión del servidor: 10.4.24-MariaDB
--- Versión de PHP: 7.4.29
+-- Versión de PHP: 8.1.6
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -218,8 +218,8 @@ INSERT INTO `ejercicios` (`nombre`, `descripcion`, `id_ejercicio`) VALUES
 ('flexiones', 'Baja el torso hacia el suelo hasta que tus codos formen un ángulo de 90 grados. Mantén los codos junto al cuerpo para lograr una mayor resistencia. Mantén tu cabeza mirando hacia adelante', 1),
 ('Sentadilla', 'Colócate con los pies hacia afuera de tal manera que no queden perpendiculares. Es importante que mantengas el tronco bien recto sin tensionar la espalda. Comienza el movimiento agachándote llevando los glúteos hacia atrás.', 2),
 ('curl con mancuernas', 'Sitúate en pie con la espalda bien recta y los hombros relajados. A continuación, coge el tensor y agárralo con ambas manos sujetándolo con las plantas de los pies. Una vez estés bien colocado, empieza el movimiento.', 3),
-('', 'curl con barra', 4),
-('', 'remo', 5),
+('h', 'curl con barra', 4),
+('h', 'remo', 5),
 ('', 'press banca', 6),
 ('', 'press con mancuerna', 7),
 ('', 'sentadilla con barra', 8),
@@ -267,6 +267,204 @@ INSERT INTO `roles` (`id`, `descripcion`) VALUES
 (0, 'Cliente'),
 (1, 'Entrenador'),
 (2, 'Administrador');
+
+-- --------------------------------------------------------
+
+--
+-- Estructura de tabla para la tabla `rutinas_jueves`
+--
+
+CREATE TABLE `rutinas_jueves` (
+  `idusuario` int(11) NOT NULL,
+  `id_ej1` int(11) NOT NULL,
+  `series_ej1` int(11) NOT NULL,
+  `repeticiones_ej1` int(11) NOT NULL,
+  `id_ej2` int(11) NOT NULL,
+  `series_ej2` int(11) NOT NULL,
+  `repeticiones_ej2` int(11) NOT NULL,
+  `id_ej3` int(11) NOT NULL,
+  `series_ej3` int(11) NOT NULL,
+  `repeticiones_ej3` int(11) NOT NULL,
+  `id_ej4` int(11) NOT NULL,
+  `series_ej4` int(11) NOT NULL,
+  `repeticiones_ej4` int(11) NOT NULL,
+  `id_ej5` int(11) NOT NULL,
+  `series_ej5` int(11) NOT NULL,
+  `repeticiones_ej5` int(11) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Volcado de datos para la tabla `rutinas_jueves`
+--
+
+INSERT INTO `rutinas_jueves` (`idusuario`, `id_ej1`, `series_ej1`, `repeticiones_ej1`, `id_ej2`, `series_ej2`, `repeticiones_ej2`, `id_ej3`, `series_ej3`, `repeticiones_ej3`, `id_ej4`, `series_ej4`, `repeticiones_ej4`, `id_ej5`, `series_ej5`, `repeticiones_ej5`) VALUES
+(80, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0),
+(83, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+
+-- --------------------------------------------------------
+
+--
+-- Estructura de tabla para la tabla `rutinas_lunes`
+--
+
+CREATE TABLE `rutinas_lunes` (
+  `idusuario` int(11) NOT NULL,
+  `id_ej1` int(11) NOT NULL,
+  `series_ej1` int(11) NOT NULL,
+  `repeticiones_ej1` int(11) NOT NULL,
+  `id_ej2` int(11) NOT NULL,
+  `series_ej2` int(11) NOT NULL,
+  `repeticiones_ej2` int(11) NOT NULL,
+  `id_ej3` int(11) NOT NULL,
+  `series_ej3` int(11) NOT NULL,
+  `repeticiones_ej3` int(11) NOT NULL,
+  `id_ej4` int(11) NOT NULL,
+  `series_ej4` int(11) NOT NULL,
+  `repeticiones_ej4` int(11) NOT NULL,
+  `id_ej5` int(11) NOT NULL,
+  `series_ej5` int(11) NOT NULL,
+  `repeticiones_ej5` int(11) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Volcado de datos para la tabla `rutinas_lunes`
+--
+
+INSERT INTO `rutinas_lunes` (`idusuario`, `id_ej1`, `series_ej1`, `repeticiones_ej1`, `id_ej2`, `series_ej2`, `repeticiones_ej2`, `id_ej3`, `series_ej3`, `repeticiones_ej3`, `id_ej4`, `series_ej4`, `repeticiones_ej4`, `id_ej5`, `series_ej5`, `repeticiones_ej5`) VALUES
+(80, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0),
+(83, 1, 1, 1, 2, 12, 12, 0, 0, 0, 0, 0, 0, 1, 1, 1);
+
+-- --------------------------------------------------------
+
+--
+-- Estructura de tabla para la tabla `rutinas_martes`
+--
+
+CREATE TABLE `rutinas_martes` (
+  `idusuario` int(11) NOT NULL,
+  `id_ej1` int(11) NOT NULL,
+  `series_ej1` int(11) NOT NULL,
+  `repeticiones_ej1` int(11) NOT NULL,
+  `id_ej2` int(11) NOT NULL,
+  `series_ej2` int(11) NOT NULL,
+  `repeticiones_ej2` int(11) NOT NULL,
+  `id_ej3` int(11) NOT NULL,
+  `series_ej3` int(11) NOT NULL,
+  `repeticiones_ej3` int(11) NOT NULL,
+  `id_ej4` int(11) NOT NULL,
+  `series_ej4` int(11) NOT NULL,
+  `repeticiones_ej4` int(11) NOT NULL,
+  `id_ej5` int(11) NOT NULL,
+  `series_ej5` int(11) NOT NULL,
+  `repeticiones_ej5` int(11) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Volcado de datos para la tabla `rutinas_martes`
+--
+
+INSERT INTO `rutinas_martes` (`idusuario`, `id_ej1`, `series_ej1`, `repeticiones_ej1`, `id_ej2`, `series_ej2`, `repeticiones_ej2`, `id_ej3`, `series_ej3`, `repeticiones_ej3`, `id_ej4`, `series_ej4`, `repeticiones_ej4`, `id_ej5`, `series_ej5`, `repeticiones_ej5`) VALUES
+(80, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0),
+(83, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+
+-- --------------------------------------------------------
+
+--
+-- Estructura de tabla para la tabla `rutinas_miercoles`
+--
+
+CREATE TABLE `rutinas_miercoles` (
+  `idusuario` int(11) NOT NULL,
+  `id_ej1` int(11) NOT NULL,
+  `series_ej1` int(11) NOT NULL,
+  `repeticiones_ej1` int(11) NOT NULL,
+  `id_ej2` int(11) NOT NULL,
+  `series_ej2` int(11) NOT NULL,
+  `repeticiones_ej2` int(11) NOT NULL,
+  `id_ej3` int(11) NOT NULL,
+  `series_ej3` int(11) NOT NULL,
+  `repeticiones_ej3` int(11) NOT NULL,
+  `id_ej4` int(11) NOT NULL,
+  `series_ej4` int(11) NOT NULL,
+  `repeticiones_ej4` int(11) NOT NULL,
+  `id_ej5` int(11) NOT NULL,
+  `series_ej5` int(11) NOT NULL,
+  `repeticiones_ej5` int(11) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Volcado de datos para la tabla `rutinas_miercoles`
+--
+
+INSERT INTO `rutinas_miercoles` (`idusuario`, `id_ej1`, `series_ej1`, `repeticiones_ej1`, `id_ej2`, `series_ej2`, `repeticiones_ej2`, `id_ej3`, `series_ej3`, `repeticiones_ej3`, `id_ej4`, `series_ej4`, `repeticiones_ej4`, `id_ej5`, `series_ej5`, `repeticiones_ej5`) VALUES
+(80, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0),
+(83, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+
+-- --------------------------------------------------------
+
+--
+-- Estructura de tabla para la tabla `rutinas_sabado`
+--
+
+CREATE TABLE `rutinas_sabado` (
+  `idusuario` int(11) NOT NULL,
+  `id_ej1` int(11) NOT NULL,
+  `series_ej1` int(11) NOT NULL,
+  `repeticiones_ej1` int(11) NOT NULL,
+  `id_ej2` int(11) NOT NULL,
+  `series_ej2` int(11) NOT NULL,
+  `repeticiones_ej2` int(11) NOT NULL,
+  `id_ej3` int(11) NOT NULL,
+  `series_ej3` int(11) NOT NULL,
+  `repeticiones_ej3` int(11) NOT NULL,
+  `id_ej4` int(11) NOT NULL,
+  `series_ej4` int(11) NOT NULL,
+  `repeticiones_ej4` int(11) NOT NULL,
+  `id_ej5` int(11) NOT NULL,
+  `series_ej5` int(11) NOT NULL,
+  `repeticiones_ej5` int(11) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Volcado de datos para la tabla `rutinas_sabado`
+--
+
+INSERT INTO `rutinas_sabado` (`idusuario`, `id_ej1`, `series_ej1`, `repeticiones_ej1`, `id_ej2`, `series_ej2`, `repeticiones_ej2`, `id_ej3`, `series_ej3`, `repeticiones_ej3`, `id_ej4`, `series_ej4`, `repeticiones_ej4`, `id_ej5`, `series_ej5`, `repeticiones_ej5`) VALUES
+(80, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0),
+(83, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 11, 777, 888);
+
+-- --------------------------------------------------------
+
+--
+-- Estructura de tabla para la tabla `rutinas_viernes`
+--
+
+CREATE TABLE `rutinas_viernes` (
+  `idusuario` int(11) NOT NULL,
+  `id_ej1` int(11) NOT NULL,
+  `series_ej1` int(11) NOT NULL,
+  `repeticiones_ej1` int(11) NOT NULL,
+  `id_ej2` int(11) NOT NULL,
+  `series_ej2` int(11) NOT NULL,
+  `repeticiones_ej2` int(11) NOT NULL,
+  `id_ej3` int(11) NOT NULL,
+  `series_ej3` int(11) NOT NULL,
+  `repeticiones_ej3` int(11) NOT NULL,
+  `id_ej4` int(11) NOT NULL,
+  `series_ej4` int(11) NOT NULL,
+  `repeticiones_ej4` int(11) NOT NULL,
+  `id_ej5` int(11) NOT NULL,
+  `series_ej5` int(11) NOT NULL,
+  `repeticiones_ej5` int(11) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Volcado de datos para la tabla `rutinas_viernes`
+--
+
+INSERT INTO `rutinas_viernes` (`idusuario`, `id_ej1`, `series_ej1`, `repeticiones_ej1`, `id_ej2`, `series_ej2`, `repeticiones_ej2`, `id_ej3`, `series_ej3`, `repeticiones_ej3`, `id_ej4`, `series_ej4`, `repeticiones_ej4`, `id_ej5`, `series_ej5`, `repeticiones_ej5`) VALUES
+(80, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0),
+(83, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
 
 -- --------------------------------------------------------
 
@@ -349,6 +547,42 @@ ALTER TABLE `roles`
   ADD PRIMARY KEY (`id`);
 
 --
+-- Indices de la tabla `rutinas_jueves`
+--
+ALTER TABLE `rutinas_jueves`
+  ADD PRIMARY KEY (`idusuario`);
+
+--
+-- Indices de la tabla `rutinas_lunes`
+--
+ALTER TABLE `rutinas_lunes`
+  ADD PRIMARY KEY (`idusuario`);
+
+--
+-- Indices de la tabla `rutinas_martes`
+--
+ALTER TABLE `rutinas_martes`
+  ADD PRIMARY KEY (`idusuario`);
+
+--
+-- Indices de la tabla `rutinas_miercoles`
+--
+ALTER TABLE `rutinas_miercoles`
+  ADD PRIMARY KEY (`idusuario`);
+
+--
+-- Indices de la tabla `rutinas_sabado`
+--
+ALTER TABLE `rutinas_sabado`
+  ADD PRIMARY KEY (`idusuario`);
+
+--
+-- Indices de la tabla `rutinas_viernes`
+--
+ALTER TABLE `rutinas_viernes`
+  ADD PRIMARY KEY (`idusuario`);
+
+--
 -- Indices de la tabla `turnos`
 --
 ALTER TABLE `turnos`
@@ -386,7 +620,7 @@ ALTER TABLE `c_chats`
 -- AUTO_INCREMENT de la tabla `datos`
 --
 ALTER TABLE `datos`
-  MODIFY `idusuario` int(9) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=97;
+  MODIFY `idusuario` int(9) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=117;
 
 --
 -- AUTO_INCREMENT de la tabla `ejercicios`
