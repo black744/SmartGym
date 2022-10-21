@@ -89,7 +89,8 @@ switch ($idrol) {
                             <td class="datos">-</td>
                             <td class="datos">-</td>
                             <td class="datos">-</td>
-                            <td> <button class="pagoetc"> act pago</button></td>
+                            <td><button class="pagoetc"> act pago</button></td>
+                            <td><button id="bajaetc"> dar de baja</button></td>
                         </tr>
                     <?php } ?>
 
@@ -124,6 +125,11 @@ switch ($idrol) {
                             </select>
                             <button type="submit"  id="btnExportar"> guardar pago</button>
                         </div>
+                    </div>
+                    <div id="cuadro-adminbaja">
+                        <input class="ing1" type="text" placeholder="Codigo de usuario">
+                        <input class="ing2" type="text" placeholder="Contraseña admin">
+                        <button type="submit"  id="btnExportar"> guardar pago</button>
                     </div>
                 </Div>
             </div>
@@ -161,6 +167,22 @@ switch ($idrol) {
         }
     })
 }
-  </script>
+</script>
+
+<script>
+    const btne = document.querySelectorAll("#bajaetc")
+    const conteinerrrr= document.querySelector("#cuadro-adminbaja")
+    console.log(btne);
+    for(let i = 0; i < btne.length; i++){
+    btne[i].addEventListener("click", function(){
+        if(conteinerrrr.style.display ==="block"){
+        conteinerrrr.style.display ="none";
+        }
+        else{
+        conteinerrrr.style.display ="block";
+        }
+    })
+}
+</script>
 
 </html>

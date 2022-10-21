@@ -148,6 +148,17 @@ text-align: center;
     border-radius: 15px;
 }
 
+#cuadro-adminbaja{
+    display: none;
+    position: relative;
+    margin: 2vh;
+    height: 52vh;
+    width: 45vw;
+    background: transparent;
+    border: 1px solid white;
+    border-radius: 15px;
+}
+
 .ing1{
     position: relative;
     margin-top: 5vh;
