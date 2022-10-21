@@ -12,6 +12,7 @@
     padding: 0%;
     font-family: "Lucida Console", "Courier New", monospace;
 }
+
 html{
     background-image: url("../img/fondo_icon.png");
 }
@@ -283,20 +284,29 @@ main .contenido .post p {
     width: 8vw;
     height: 5vh;
     text-align: center;
-    background: var(--color-fondobotones);
-    color: var(--color-letra);
-    border:3px solid var(--color-bordes-normales) ;
-    border-radius: 15px;
-    transition: 1.2s;
+    background:transparent; 
+	color: var(--color-letra); 
+	border: 2px solid #fb4c0d;
+	transition: 0.3s;
+	border-radius: 6px;
     cursor:pointer;
     font-size: 15px;
 }
 
-.box:hover {
-    border: 2px solid var(--color-fondos);
-    cursor: pointer;
-    transform: scale(1.1);
+.btn1 {
+	background:transparent; 
+	color: black; 
+	border: 2px solid #fb4c0d;
+	transition: 0.3s;
+	border-radius: 6px;
 }
+
+.btn1:hover {
+	background-color: #fb4c0d;
+	color: white;
+	cursor: pointer;
+}
+
 
 .box:hover i {
     color: var(--color-fondos);
@@ -318,11 +328,11 @@ main .contenido .post p {
     height: 8vh;
     width: 15%;
     text-align: center;
-    background: var(--color-fondobotones);
-    color: var(--color-letra);
-    border:3px solid var(--color-bordes-normales) ;
-    border-radius: 15px;
-    transition: 1.2s;
+    background:transparent; 
+	color: black; 
+	border: 2px solid #fb4c0d;
+	transition: 0.3s;
+	border-radius: 6px;
     cursor:pointer;
     font-size: 15px;
 }
