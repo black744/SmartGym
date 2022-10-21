@@ -20,10 +20,10 @@ if($filas){
             header("location: ../vistas/homeusuarioc.php");
             break;
         case 1: 
-            header("location: ../vistas/homeusuarioc.php");
+            header("location: ../vistas/homeusuarioe.php");
             break;
         case 2: 
-            header("location: ../vistas/homeusuarioc.php");
+            header("location: ../vistas/homeusuarioa.php");
             break;
         default:
         echo("<script>alert('El usuario y/o contraseña son invalidos');</script>");

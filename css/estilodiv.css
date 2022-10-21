@@ -21,13 +21,17 @@
   .carousel__item {
     height: 60vh;
     width: 45vw;
-    background: #252525;
     padding: 1em;
     font-size: 2em;
     color: #ffffff;
     border-radius: 10px;
     display: none;
     align-items: center;
+    background: rgba( 255, 255, 255, 0.2 );
+    backdrop-filter: blur( 3.5px );
+    -webkit-backdrop-filter: blur( 3.5px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
   }
   
   .carousel__item--selected {

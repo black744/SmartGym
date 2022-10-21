@@ -12,10 +12,10 @@
     padding: 0%;
     font-family: "Lucida Console", "Courier New", monospace;
 }
-
 html{
-    background: var(--color-fondo-html);
+    background-image: url("../img/fondo_icon.png");
 }
+
 
 
 body {

@@ -54,7 +54,7 @@ switch ($idrol) {
 <body>
 
     <div class="main_content">
-        <div class="info">
+        
 
             <div class="contenedortabla">
 
@@ -89,6 +89,8 @@ switch ($idrol) {
                             <td class="datos">-</td>
                             <td class="datos">-</td>
                             <td class="datos">-</td>
+                            <td><button class="pagoetc"> act pago</button></td>
+                            <td><button id="bajaetc"> dar de baja</button></td>
                         </tr>
                     <?php } ?>
 
@@ -100,18 +102,34 @@ switch ($idrol) {
                     <button id="btnExportar" class="btn btn-success">
                         <i class="fas fa-file-excel"></i> crear archivo mensual usuarios
                     </button>
-                    <button class="abrir" id="btnExportar">
-                        Actualizar Pago (tambien aplicar descuentos)
-                    </button>
                     <button id="btnExportar">
                         Dar de baja usuario
                     </button>
                     <div class="cuadro-admin">
-                        <input type="text">
-                        <input type="text">
+                        <input class="ing1" type="text" placeholder="Codigo de usuario">
+                        <input class="ing2" type="text" placeholder="Contraseña admin">
                         <div class="meses">
-                            
+                            <select name="meses-pago" id="p-meses">
+                                <option value="">Enero</option>
+                                <option value="">Febrero</option>
+                                <option value="">Marzo</option>
+                                <option value="">Abril</option>
+                                <option value="">Mayo</option>
+                                <option value="">Junio</option>
+                                <option value="">Julio</option>
+                                <option value="">Agosto</option>
+                                <option value="">Septiembre</option>
+                                <option value="">Octubre</option>
+                                <option value="">Noviembre</option>
+                                <option value="">Diciembre</option>
+                            </select>
+                            <button type="submit"  id="btnExportar"> guardar pago</button>
                         </div>
+                    </div>
+                    <div id="cuadro-adminbaja">
+                        <input class="ing1" type="text" placeholder="Codigo de usuario">
+                        <input class="ing2" type="text" placeholder="Contraseña admin">
+                        <button type="submit"  id="btnExportar"> guardar pago</button>
                     </div>
                 </Div>
             </div>
@@ -136,9 +154,11 @@ switch ($idrol) {
 </script>
 
 <script>
-    const btn = document.querySelector(".abrir")
+    const btn = document.querySelectorAll(".pagoetc")
     const contei= document.querySelector(".cuadro-admin")
-    btn.addEventListener("click", function(){
+    console.log(btn);
+    for(let i = 0; i < btn.length; i++){
+    btn[i].addEventListener("click", function(){
         if(contei.style.display ==="block"){
         contei.style.display ="none";
         }
@@ -146,6 +166,23 @@ switch ($idrol) {
         contei.style.display ="block";
         }
     })
-  </script>
+}
+</script>
+
+<script>
+    const btne = document.querySelectorAll("#bajaetc")
+    const conteinerrrr= document.querySelector("#cuadro-adminbaja")
+    console.log(btne);
+    for(let i = 0; i < btne.length; i++){
+    btne[i].addEventListener("click", function(){
+        if(conteinerrrr.style.display ==="block"){
+        conteinerrrr.style.display ="none";
+        }
+        else{
+        conteinerrrr.style.display ="block";
+        }
+    })
+}
+</script>
 
 </html>

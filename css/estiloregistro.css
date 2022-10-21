@@ -13,6 +13,11 @@
     font-family: "Lucida Console", "Courier New", monospace;
 }
 
+html{
+    background-image: url("../img/fondo_icon.png");
+}
+
+
 body {
     height: 100vh;
     display: flex;
