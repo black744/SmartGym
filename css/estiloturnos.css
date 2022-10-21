@@ -27,9 +27,12 @@ html{
     margin: 12vh;
     height: fit-content;
     width: 78vw;
-    background: var(--color-fondosn);
     border-radius: 35px;
-    border: 1.5px solid var(--color-bordes);
+    background: rgba( 255, 255, 255, 0.2 );
+    backdrop-filter: blur( 3.5px );
+    -webkit-backdrop-filter: blur( 3.5px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
 }
 
 .cont-turnos-asignados {
@@ -96,7 +99,7 @@ html{
 }
 
 .turno-a p{
-    margin: 2vh;
+    margin: 3vh;
     color: var(--color-letra);
 }
 

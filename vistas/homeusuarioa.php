@@ -50,18 +50,17 @@ switch ($idrol) {
 ?>
 
 <body>
-    <div class="main_content">
+    
 
-        <div class="izq">
-
-        </div>
-
-        <div class="der">
+        <div class="izqui">
 
         </div>
 
+        <div class="dere">
 
-    </div>
+        </div>
+
+
 </body>
 
 </html>

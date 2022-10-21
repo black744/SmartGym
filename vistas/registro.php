@@ -31,6 +31,8 @@
             <input type="Usuario" placeholder="Usuario" name="usuario">
             <input type="email" placeholder="Email" name="correo">
             <input type="password" placeholder="Contraseña" name="contraseña">
+            <input type="number" placeholder="Edad" name="ED">
+            <input type="text" placeholder="Domicilio" name="DC">
             <input class="btn-r" type="submit" name="buttonreg" value="Registrarse">
         </form>
     </div>
