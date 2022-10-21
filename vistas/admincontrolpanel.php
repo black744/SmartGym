@@ -102,12 +102,14 @@ switch ($idrol) {
                     <button id="btnExportar" class="btn btn-success">
                         <i class="fas fa-file-excel"></i> crear archivo mensual usuarios
                     </button>
-                    <button id="btnExportar">
-                        Dar de baja usuario
-                    </button>
                     <div class="cuadro-admin">
                         <input class="ing1" type="text" placeholder="Codigo de usuario">
                         <input class="ing2" type="text" placeholder="Contraseña admin">
+                        <select name="metodopago" id="mtp">
+                            <option value="1">efectivo</option>
+                            <option value="2">transferencia</option>
+                            <option value="3">debito</option>
+                        </select>
                         <div class="meses">
                             <select name="meses-pago" id="p-meses">
                                 <option value="">Enero</option>

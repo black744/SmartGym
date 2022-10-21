@@ -1,12 +1,40 @@
-*{
-    margin: 0%;
-    padding: 0%;
-    font-family: "Lucida Console", "Courier New", monospace;
+* {
+	padding: 0;
+	margin: 0;
+	font-family: century gothic;
 }
 
-:root{
-    --color-letra: #fff;
-    --color-fondos: #fb4c0d;
-    --color-fondobotones: #252525;
-    --color-bordes-normales: #303030;
+body {
+	background-color: #ededed
+}
+
+#form-param {
+	padding: 20px;
+	background-color: #fff;
+	display: flex;
+}
+
+#form-param .container {
+    flex: 2;
+}
+#form-param .buttons {
+	flex: 1;
+}
+
+input {
+	padding: 9px;
+	margin: 6px;
+	width: 42%
+}
+
+button{
+	border: none;
+	padding: 9px;
+	display: block;
+	margin: 6px
+}
+
+button:first-child {
+	background-color: #48e;
+	color: #fff
 }
