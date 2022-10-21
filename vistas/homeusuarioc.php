@@ -21,6 +21,26 @@ $pesoinicial = $row['pesoinicial'];
 $pesoideal = $row['pesoideal'];
 
 include("../models/validacion_clientes.php");
+
+$sql1 = "SELECT idusuario FROM rutinas_lunes WHERE idusuario='$idusuario'";
+$query1 = mysqli_query($conex, $sql1);
+$numrowsquery = mysqli_num_rows($query1);
+
+if($numrowsquery == 0){
+$sqlinsertLunes = "INSERT INTO `rutinas_lunes`(`idusuario`, `id_ej1`, `series_ej1`, `repeticiones_ej1`, `id_ej2`, `series_ej2`, `repeticiones_ej2`, `id_ej3`, `series_ej3`, `repeticiones_ej3`, `id_ej4`, `series_ej4`, `repeticiones_ej4`, `id_ej5`, `series_ej5`, `repeticiones_ej5`) VALUES ('$idusuario','','','','','','','','','','','','','','','')";
+$sqlinsertMartes = "INSERT INTO `rutinas_martes`(`idusuario`, `id_ej1`, `series_ej1`, `repeticiones_ej1`, `id_ej2`, `series_ej2`, `repeticiones_ej2`, `id_ej3`, `series_ej3`, `repeticiones_ej3`, `id_ej4`, `series_ej4`, `repeticiones_ej4`, `id_ej5`, `series_ej5`, `repeticiones_ej5`) VALUES ('$idusuario','','','','','','','','','','','','','','','')";
+$sqlinsertMiercoles = "INSERT INTO `rutinas_miercoles`(`idusuario`, `id_ej1`, `series_ej1`, `repeticiones_ej1`, `id_ej2`, `series_ej2`, `repeticiones_ej2`, `id_ej3`, `series_ej3`, `repeticiones_ej3`, `id_ej4`, `series_ej4`, `repeticiones_ej4`, `id_ej5`, `series_ej5`, `repeticiones_ej5`) VALUES ('$idusuario','','','','','','','','','','','','','','','')";
+$sqlinsertJueves = "INSERT INTO `rutinas_jueves`(`idusuario`, `id_ej1`, `series_ej1`, `repeticiones_ej1`, `id_ej2`, `series_ej2`, `repeticiones_ej2`, `id_ej3`, `series_ej3`, `repeticiones_ej3`, `id_ej4`, `series_ej4`, `repeticiones_ej4`, `id_ej5`, `series_ej5`, `repeticiones_ej5`) VALUES ('$idusuario','','','','','','','','','','','','','','','')";
+$sqlinsertViernes = "INSERT INTO `rutinas_viernes`(`idusuario`, `id_ej1`, `series_ej1`, `repeticiones_ej1`, `id_ej2`, `series_ej2`, `repeticiones_ej2`, `id_ej3`, `series_ej3`, `repeticiones_ej3`, `id_ej4`, `series_ej4`, `repeticiones_ej4`, `id_ej5`, `series_ej5`, `repeticiones_ej5`) VALUES ('$idusuario','','','','','','','','','','','','','','','')";
+$sqlinsertSabado = "INSERT INTO `rutinas_sabado`(`idusuario`, `id_ej1`, `series_ej1`, `repeticiones_ej1`, `id_ej2`, `series_ej2`, `repeticiones_ej2`, `id_ej3`, `series_ej3`, `repeticiones_ej3`, `id_ej4`, `series_ej4`, `repeticiones_ej4`, `id_ej5`, `series_ej5`, `repeticiones_ej5`) VALUES ('$idusuario','','','','','','','','','','','','','','','')";
+
+$queryinsertLunes = mysqli_query($conex, $sqlinsertLunes);
+$queryinsertMartes = mysqli_query($conex, $sqlinsertMartes);
+$queryinsertMiercoles = mysqli_query($conex, $sqlinsertMiercoles);
+$queryinsertJueves = mysqli_query($conex, $sqlinsertJueves);
+$queryinsertViernes = mysqli_query($conex, $sqlinsertViernes);
+$queryinsertSabado = mysqli_query($conex, $sqlinsertSabado);
+};
 ?>
 
 <!DOCTYPE html>

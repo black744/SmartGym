@@ -120,8 +120,9 @@ switch ($idrol) {
             <td class="columna"><?php echo $nBuscador['usuario']?></td>
             <td class="columna"><?php echo $nBuscador['dni']?></td>
             <form method="post" action="rutina.php">
-              <input hidden type="text" value="<?php echo $nbuscador['idusuario']?>">
-            <td><input type="submit" class="btnr" value="Crear Rutina"></td>
+              <input type="text" name="iduselect" value="<?php echo $nBuscador['idusuario']?>">
+            <td><input type="submit" name="enviarid" class="btnr" value="Crear Rutina"></td>
+        </form>
           </tr>
         <?php
         };?>

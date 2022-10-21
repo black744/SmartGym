@@ -27,7 +27,7 @@
             <p class="cuenta-gratis">Crear una cuenta gratis</p>
             <input type="text" placeholder="Nombre" name="nombre">
             <input type="apellido" placeholder="Apellido" name="apellido">
-            <input type="number" placeholder="DNI" name="dni">
+            <input type="text" placeholder="DNI" name="dni">
             <input type="Usuario" placeholder="Usuario" name="usuario">
             <input type="email" placeholder="Email" name="correo">
             <input type="password" placeholder="Contraseña" name="contraseña">
