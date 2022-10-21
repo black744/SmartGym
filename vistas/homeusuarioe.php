@@ -51,10 +51,10 @@ switch ($idrol) {
 
 <body>
 
-<div class="inicio">
+<div class="izq">
 </div>
 
-<div class="datos">
+<div class="der">
 </div>
 
 </body>

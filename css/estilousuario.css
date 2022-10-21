@@ -551,10 +551,10 @@ p {
 
 /*Aca estilo usuario admin*/
 
-.inicio{
+.izq{
     position: absolute;
     margin-top: 5vh;
-    margin-left: 5%;
+    margin-left: 2%;
     margin-bottom: 2vh;
     height: 60vh;
     width: 30vw;
@@ -568,11 +568,11 @@ p {
     border: 1px solid rgba( 255, 255, 255, 0.18 );
 }
 
-.datos{
+.der{
     position: absolute;
     height: 90vh;
-    width: 30vw;
-    margin-left: 45%;
+    width: 40vw;
+    margin-left: 40%;
     margin-top: 2.6%;
     margin-bottom: 9%;
     border-radius:10px ;

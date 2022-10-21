@@ -54,7 +54,7 @@ switch ($idrol) {
 <body>
 
     <div class="main_content">
-        <div class="info">
+        
 
             <div class="contenedortabla">
 
@@ -89,6 +89,7 @@ switch ($idrol) {
                             <td class="datos">-</td>
                             <td class="datos">-</td>
                             <td class="datos">-</td>
+                            <td> <button class="pagoetc"> act pago</button></td>
                         </tr>
                     <?php } ?>
 
@@ -99,9 +100,6 @@ switch ($idrol) {
 
                     <button id="btnExportar" class="btn btn-success">
                         <i class="fas fa-file-excel"></i> crear archivo mensual usuarios
-                    </button>
-                    <button class="abrir" id="btnExportar">
-                        Actualizar Pago (tambien aplicar descuentos)
                     </button>
                     <button id="btnExportar">
                         Dar de baja usuario
@@ -150,9 +148,11 @@ switch ($idrol) {
 </script>
 
 <script>
-    const btn = document.querySelector(".abrir")
+    const btn = document.querySelectorAll(".pagoetc")
     const contei= document.querySelector(".cuadro-admin")
-    btn.addEventListener("click", function(){
+    console.log(btn);
+    for(let i = 0; i < btn.length; i++){
+    btn[i].addEventListener("click", function(){
         if(contei.style.display ==="block"){
         contei.style.display ="none";
         }
@@ -160,6 +160,7 @@ switch ($idrol) {
         contei.style.display ="block";
         }
     })
+}
   </script>
 
 </html>
