@@ -57,7 +57,11 @@ switch ($idrol) {
         </div>
 
         <div class="dere">
-
+            <h3> Datos Mensuales </h3>
+            <hr>
+            <div><h5> Usuarios nuevos : </h5></div>
+            <br>
+            <div><h5> Usuarios Dados de baja : </h5></div>
         </div>
 
 

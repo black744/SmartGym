@@ -14,6 +14,22 @@
 </head>
 
 <body>
+    <div class="container-form sign-in">
+        <form method="POST" class="formulario" action="../models/validar.php">
+            <h2 class="create-account">Iniciar Sesion</h2>
+            <p class="cuenta-gratis">¿Aun no tienes una cuenta?</p>
+            <input type="user" placeholder="Usuario" name="usuario">
+            <input type="password" placeholder="Contraseña" name="contraseña">
+            <input class="btn-r" type="submit" name="buttonlog" value="Loguearse">
+        </form>
+        <div class="welcome-back">
+            <div class="message">
+                <h2>Bienvenido de nuevo</h2>
+                <p>Si aun no tienes una cuenta por favor registrese aqui</p>
+                <button class="sign-in-btn">Registrarse</button>
+            </div>
+        </div>
+    </div>
     <div class="container-form sign-up">
         <div class="welcome-back">
             <div class="message">
@@ -35,22 +51,6 @@
             <input type="text" placeholder="Domicilio" name="DC">
             <input class="btn-r" type="submit" name="buttonreg" value="Registrarse">
         </form>
-    </div>
-    <div class="container-form sign-in">
-        <form method="POST" class="formulario" action="../models/validar.php">
-            <h2 class="create-account">Iniciar Sesion</h2>
-            <p class="cuenta-gratis">¿Aun no tienes una cuenta?</p>
-            <input type="user" placeholder="Usuario" name="usuario">
-            <input type="password" placeholder="Contraseña" name="contraseña">
-            <input class="btn-r" type="submit" name="buttonlog" value="Loguearse">
-        </form>
-        <div class="welcome-back">
-            <div class="message">
-                <h2>Bienvenido de nuevo</h2>
-                <p>Si aun no tienes una cuenta por favor registrese aqui</p>
-                <button class="sign-in-btn">Registrarse</button>
-            </div>
-        </div>
     </div>
     <script src="../js/appregistro.js"></script>
 </body>
