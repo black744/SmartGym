@@ -417,8 +417,8 @@ p {
 
 /* main */
 .izquierda {
-    width: 100vh;
-    height: 80vh;
+    width: 45VW;
+    height: fit-content;
     margin-left: 2px;
     position: absolute;
     margin-top: 5vh;
@@ -533,7 +533,7 @@ p {
 /* Inicio Izquierda */
 .turnoultimo{
     width: 98vh;
-    height: 77.7vh;
+    height: fit-content;
     margin-left: 10px;
     margin-top: 10px;
 }
@@ -568,7 +568,7 @@ p {
     margin-top: 2.6%;
     margin-left: 2%;
     margin-bottom: 2vh;
-    height: 60vh;
+    height: fit-content;
     width: 30vw;
     text-align: justify;
     border-radius: 15px;

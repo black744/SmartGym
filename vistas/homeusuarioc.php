@@ -99,9 +99,27 @@ switch ($idrol) {
                         };
                     } ?> </p>
                         <p>Entrenador</p>
-
                 </div>
             </div>
+            
+            <div class="homepago">
+                
+            </div>
+            
+            <style>
+                .homepago{
+                    position: absolute;
+                    margin-top: 20vw;
+                    height: 20vw;
+                    width: 45vw;
+                    border-radius:10px;
+                    background: rgba( 255, 255, 255, 0.2 );
+                    backdrop-filter: blur( 3.5px );
+                    -webkit-backdrop-filter: blur( 3.5px );
+                    border-radius: 10px;
+                    border: 1px solid rgba( 255, 255, 255, 0.18 );
+                }
+            </style>
 
             <div class="derecha">
                 <img src="data:image/jpg;base64,<?php echo base64_encode($image); ?>" class="imgp">

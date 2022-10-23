@@ -52,9 +52,29 @@ switch ($idrol) {
 <body>
 
 <div class="izq">
+    <h1>Turnos proximos</h1>
+    <hr>
+    <div class="turno-prox">
+        <p> de turno <br> xd <br> xd <br> xd </p>
+    </div>
 </div>
 
+<style>
+    .turno-prox{
+        position:relative;
+        height: 25vh;
+        width: 90%;
+        margin: 5%;
+        border: 1px solid red;
+        border-radius: 15px;
+        background: #fb5c0d;
+    }
+</style>
+
 <div class="der">
+    <h1> datos semanales</h1>
+    <hr>
+    <p> cuantos clientes tienen clases con vos</p>
 </div>
 
 </body>
