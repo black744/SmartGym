@@ -19,6 +19,7 @@ $image = $row['image'];
 <style>
 .s-p{
 position: relative;
+display: none;
 z-index:1;
 top: 68vh;
 left: 28vw;
@@ -31,16 +32,14 @@ font-size: 10px;
 </style>
 
 <script>
-    const selec = document.querySelectorAll(".se")
-    const testo = document.querySelectorAll(".s-p")
-    console.log(btn);
-    console.log(conteinerr);
-    for (let i = 0; i < btn.length; i++) {
-        btn[i].addEventListener("click", function() {
-            if (conteinerr[i].style.display === "block") {
-                conteinerr[i].style.display = "none"
+    const bton = document.querySelectorAll(".llamars-p")
+    const testo = document.querySelector(".s-p")
+    for (let i = 0; i < bton.length; i++) {
+            bton[i].addEventListener("click", function() {
+            if (testo.style.display === "block") {
+                testo.style.display = "none"
             } else {
-                conteinerr[i].style.display = "block"
+                testo.style.display = "block"
             }
         });
     }
