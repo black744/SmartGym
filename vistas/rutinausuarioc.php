@@ -55,11 +55,11 @@ include("../models/validacion_clientes.php");
 <style>
   .dataview{
     background: #fb4c0d;
-    left: 4vh;
-    top: 8vh;
+    left: 8vh;
+    top: 6vh;
     position: absolute;
-    height: 40vh;
-    width: 80vh;
+    height: 50vh;
+    width: 78vh;
     border-radius: 30px;
     border-width: 3px ;
   }
@@ -88,8 +88,8 @@ include("../models/validacion_clientes.php");
               ?>
               <h5 class="neje"><?php echo $rowlunesej1['nombre'];?></h5>
               <hr>
-              <p class="deje">Descripcion del Ejercicio: <br><br><br> <?php echo $rowlunesej1['descripcion'];?></p>
-              <p class="cseje" >Cantidad de Series:  <?php echo $rowlunesej1['series_ej1'];?></p>
+              <p class="deje">Descripcion del Ejercicio: <br><br> <?php echo $rowlunesej1['descripcion'];?></p>
+              <p class="cseje" >Cantidad de Series:  <?php echo $rowlunesej1['series_ej1'];?></p><br>
               <p class="creje" >Cantidad de Repeticiones:  <?php echo $rowlunesej1['repeticiones_ej1'];?></p>
             <?php  
             }else{
@@ -113,15 +113,13 @@ include("../models/validacion_clientes.php");
                 color: #fff;
               }
               .cseje{
-                margin: 3%;
+                margin: ;
                 color: #fff;
               }
 
               .creje{
-                position:absolute;
-                top: 58%;
-                left: 40%;
-                margin: 3%;
+                
+                margin: 1%;
                 color: #fff;
               }
             </style>
@@ -140,7 +138,7 @@ include("../models/validacion_clientes.php");
               ?>
               <h5 class="neje"><?php echo $rowlunesej2['nombre'];?></h5>
               <hr>
-              <p class="deje">Descripcion del Ejercicio: <br><br><br> <?php echo $rowlunesej2['descripcion'];?></p>
+              <p class="deje">Descripcion del Ejercicio: <br><br> <?php echo $rowlunesej2['descripcion'];?></p>
               <p class="cseje">Cantidad de Series:  <?php echo $rowlunesej2['series_ej2'];?></p>
               <p class="creje">Cantidad de Repeticiones:  <?php echo $rowlunesej2['repeticiones_ej2'];?></p>
             <?php  
@@ -166,7 +164,7 @@ include("../models/validacion_clientes.php");
               ?>
               <h5 class="neje"><?php echo $rowlunesej3['nombre'];?></h5>
 <hr>
-              <p class="deje">Descripcion del Ejercicio: <br><br><br> <?php echo $rowlunesej3['descripcion'];?></p>
+              <p class="deje">Descripcion del Ejercicio: <br><br> <?php echo $rowlunesej3['descripcion'];?></p>
               <p class="cseje">Cantidad de Series:  <?php echo $rowlunesej3['series_ej3'];?></p>
               <p class="creje">Cantidad de Repeticiones:  <?php echo $rowlunesej3['repeticiones_ej3'];?></p>
             <?php  
