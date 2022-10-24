@@ -75,27 +75,27 @@ switch ($idrol) {
     <div class="main_content">
 
         <div class="info">
+            
             <div class="izquierda">
                 <div class="turnoultimo">
                     <?php
-                    $sqlper = "SELECT * FROM turnos WHERE idusuario=$idusuario";
+                    $sqlper = "SELECT * FROM clases_clientes WHERE usuario=$idusuario";
                     $queryper = mysqli_query($conex, $sqlper);
                     $datap = mysqli_fetch_row($queryper);
                     if ($datap == 0) {
                         echo 'No existe un turno ';
                     } else {
-                        $sqlProximoTurno = "SELECT * FROM turnos WHERE idusuario='$idusuario' ORDER BY idturno DESC";
+                        $sqlProximoTurno = "SELECT clases.entrenador, clases.modalidad, clases.fecha, clases.cupos, clases_clientes.idclase, clases_clientes.usuario FROM clases INNER JOIN clases_clientes ON clases.idclase= clases_clientes.idclase WHERE usuario='$idusuario' ORDER BY fecha ASC";
                         $queryProximoTurno = mysqli_query($conex, $sqlProximoTurno);
-                        $sqlquery = mysqli_fetch_array($queryProximoTurno);
-                        $a = $sqlquery['idturno'];
+                        $sqlquery = mysqli_fetch_row($queryProximoTurno);
                     ?>
                         <p><br>Tu Próximo Túrno</p>
-                        <p>Fecha y hora:
+                        <p>Fecha y hora: <?php echo $sqlquery[2]?> 
                         <?php
-                        if ($sqlquery['fechahora'] == 0) {
+                        if ($sqlquery['fecha'] == 0) {
                             echo 'Si deseas pedir un turno -->';
                         } else {
-                            echo $sqlquery['fechahora'];
+                            echo $sqlquery['fecha'];
                         };
                     } ?> </p>
                         <p>Entrenador</p>
@@ -103,7 +103,7 @@ switch ($idrol) {
             </div>
             
             <div class="homepago">
-                
+                <div></div>
             </div>
             
             <style>

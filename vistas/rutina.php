@@ -69,7 +69,7 @@ switch ($idrol) {
     </style>
 <body>
     <div class="menu">
-    <div class="none" id="mostrarinfo"></div>
+    
         <div class="carousel">
 
             <div class="carousel__item">Lunes
@@ -100,11 +100,11 @@ switch ($idrol) {
                                     <input type="text" name="iduselectr" value="<?php echo $iduselect?>">
                                     <input name="lunesserej1" class="ingreso2" type="number">
                                     <input name="lunesrepej1" class="ingreso2" type="number">
-                                    
+                                    <div class="none mostrarinfo"></div>
                                 
                                 <input class="btn-g" name="lunesej1boton" type="submit" value="Guardar ejercicio">
                                 </form>          
-                                <button class="llamars-p">mostrar descripcion</button>
+                                
                             </div>
                         </div>
                         <div class="swiper-slide">
@@ -130,10 +130,11 @@ switch ($idrol) {
                                     <input type="text" name="iduselectr" value="<?php echo $iduselect?>" hidden>
                                     <input name="lunesserej2" class="ingreso2" type="number">
                                     <input name="lunesrepej2" class="ingreso2" type="number">
+                                    <div class="none mostrarinfo"></div>
                                 
                                 <input class="btn-g" name="lunesej2boton" type="submit" value="Guardar ejercicio">
                                 </form>
-                                <button class="llamars-p">mostrar descripcion</button>
+                                
                             </div>
                         </div>
                         <div class="swiper-slide">
@@ -162,7 +163,7 @@ switch ($idrol) {
                             
                             <input class="btn-g" name="lunesej3boton" type="submit" value="Guardar ejercicio">
                             </form>
-                            <button class="llamars-p">mostrar descripcion</button>
+                            
                             </div>
                         </div>
                         <div class="swiper-slide">
@@ -191,7 +192,7 @@ switch ($idrol) {
                             
                             <input class="btn-g" name="lunesej4boton" type="submit" value="Guardar ejercicio">
                             </form>
-                            <button class="llamars-p">mostrar descripcion</button>
+                            
                             </div>
                         </div>
                         <div class="swiper-slide">
@@ -220,7 +221,7 @@ switch ($idrol) {
                             
                             <input class="btn-g" name="lunesej5boton" type="submit" value="Guardar ejercicio">
                             </form>
-                            <button class="llamars-p">mostrar descripcion</button>
+                            
                             </div>
                         </div>
                     </div>
@@ -259,7 +260,7 @@ switch ($idrol) {
                             
                             <input class="btn-g" name="martesej1boton" type="submit" value="Guardar ejercicio">
                             </form>
-                            <button class="llamars-p">mostrar descripcion</button>
+                            
                             </div>
                         </div>
                         <div class="swiper-slide">
@@ -288,7 +289,7 @@ switch ($idrol) {
                             
                             <input class="btn-g" name="martesej2boton" type="submit" value="Guardar ejercicio">
                             </form>
-                            <button class="llamars-p">mostrar descripcion</button>
+                            
                             </div>
                         </div>
                         <div class="swiper-slide">
@@ -317,7 +318,7 @@ switch ($idrol) {
                             
                             <input class="btn-g" name="martesej3boton" type="submit" value="Guardar ejercicio">
                             </form>
-                            <button class="llamars-p">mostrar descripcion</button>
+                            
                             </div>
                         </div>
                         <div class="swiper-slide">
@@ -346,7 +347,7 @@ switch ($idrol) {
                             
                             <input class="btn-g" name="martesej4boton" type="submit" value="Guardar ejercicio">
                             </form>
-                            <button class="llamars-p">mostrar descripcion</button>
+                            
                             </div>
                         </div>
                         <div class="swiper-slide">
@@ -375,7 +376,7 @@ switch ($idrol) {
                             
                             <input class="btn-g" name="martesej5boton" type="submit" value="Guardar ejercicio">
                             </form>
-                            <button class="llamars-p">mostrar descripcion</button>
+                            
                             </div>
                         </div>
 
@@ -414,7 +415,7 @@ switch ($idrol) {
                             
                             <input class="btn-g" name="miercolesej1boton" type="submit" value="Guardar ejercicio">
                             </form>
-                            <button class="llamars-p">mostrar descripcion</button>
+                            
                             </div>
                         </div>
                         <div class="swiper-slide">
@@ -443,7 +444,7 @@ switch ($idrol) {
                             
                             <input class="btn-g" name="miercolesej2boton" type="submit" value="Guardar ejercicio">
                             </form>
-                            <button class="llamars-p">mostrar descripcion</button>
+                            
                             </div>
                         </div>
                         <div class="swiper-slide">
@@ -472,7 +473,7 @@ switch ($idrol) {
                             
                             <input class="btn-g" name="miercolesej3boton" type="submit" value="Guardar ejercicio">
                             </form>
-                            <button class="llamars-p">mostrar descripcion</button>
+                            
                             </div>
                         </div>
                         <div class="swiper-slide">
@@ -501,7 +502,7 @@ switch ($idrol) {
                             
                             <input class="btn-g" name="miercolesej4boton" type="submit" value="Guardar ejercicio">
                             </form>
-                            <button class="llamars-p">mostrar descripcion</button>
+                            
                             </div>
                         </div>
                         <div class="swiper-slide">
@@ -530,7 +531,7 @@ switch ($idrol) {
                             
                             <input class="btn-g" name="miercolesej5boton" type="submit" value="Guardar ejercicio">
                             </form>
-                            <button class="llamars-p">mostrar descripcion</button>
+                            
                             </div>
                         </div>
                     </div>
@@ -568,7 +569,7 @@ switch ($idrol) {
                             
                             <input class="btn-g" name="juevesej1boton" type="submit" value="Guardar ejercicio">
                             </form>
-                            <button class="llamars-p">mostrar descripcion</button>
+                            
                             </div>
                         </div>
                         <div class="swiper-slide">
@@ -597,7 +598,7 @@ switch ($idrol) {
                             
                             <input class="btn-g" name="juevesej2boton" type="submit" value="Guardar ejercicio">
                             </form>
-                            <button class="llamars-p">mostrar descripcion</button>
+                            
                             </div>
                         </div>
                         <div class="swiper-slide">
@@ -626,7 +627,7 @@ switch ($idrol) {
                             
                             <input class="btn-g" name="juevesej3boton" type="submit" value="Guardar ejercicio">
                             </form>
-                            <button class="llamars-p">mostrar descripcion</button>
+                            
                             </div>
                         </div>
                         <div class="swiper-slide">
@@ -655,7 +656,7 @@ switch ($idrol) {
                             
                             <input class="btn-g" name="juevesej4boton" type="submit" value="Guardar ejercicio">
                             </form>
-                            <button class="llamars-p">mostrar descripcion</button>
+                            
                             </div>
                         </div>
                         <div class="swiper-slide">
@@ -684,7 +685,7 @@ switch ($idrol) {
                             
                             <input class="btn-g" name="juevesej5boton" type="submit" value="Guardar ejercicio">
                             </form>
-                            <button class="llamars-p">mostrar descripcion</button>
+                            
                             </div>
                         </div>
                     </div>
@@ -722,7 +723,7 @@ switch ($idrol) {
                             
                             <input class="btn-g" name="viernesej1boton" type="submit" value="Guardar ejercicio">
                             </form>
-                            <button class="llamars-p">mostrar descripcion</button>
+                            
                             </div>
                         </div>
                         <div class="swiper-slide">
@@ -751,7 +752,7 @@ switch ($idrol) {
                             
                             <input class="btn-g" name="viernesej2boton" type="submit" value="Guardar ejercicio">
                             </form>
-                            <button class="llamars-p">mostrar descripcion</button>
+                            
                             </div>
                         </div>
                         <div class="swiper-slide">
@@ -780,7 +781,7 @@ switch ($idrol) {
                             
                             <input class="btn-g" name="viernesej3boton" type="submit" value="Guardar ejercicio">
                             </form>
-                            <button class="llamars-p">mostrar descripcion</button>
+                            
                             </div>
                         </div>
                         <div class="swiper-slide">
@@ -809,7 +810,7 @@ switch ($idrol) {
                             
                             <input class="btn-g" name="viernesej4boton" type="submit" value="Guardar ejercicio">
                             </form>
-                            <button class="llamars-p">mostrar descripcion</button>
+                            
                             </div>
                         </div>
                         <div class="swiper-slide">
@@ -838,7 +839,7 @@ switch ($idrol) {
                             
                             <input class="btn-g" name="viernesej5boton" type="submit" value="Guardar ejercicio">
                             </form>
-                            <button class="llamars-p">mostrar descripcion</button>
+                            
                             </div>
                         </div>
                     </div>
@@ -876,7 +877,7 @@ switch ($idrol) {
                             
                             <input class="btn-g" name="sabadoej1boton" type="submit" value="Guardar ejercicio">
                             </form>
-                            <button class="llamars-p">mostrar descripcion</button>
+                            
                             </div>
                         </div>
                         <div class="swiper-slide">
@@ -905,7 +906,7 @@ switch ($idrol) {
                             
                             <input class="btn-g" name="sabadoej2boton" type="submit" value="Guardar ejercicio">
                             </form>
-                            <button class="llamars-p">mostrar descripcion</button>
+                            
                             </div>
                         </div>
                         <div class="swiper-slide">
@@ -934,7 +935,7 @@ switch ($idrol) {
                             
                             <input class="btn-g" name="sabadoej3boton" type="submit" value="Guardar ejercicio">
                             </form>
-                            <button class="llamars-p">mostrar descripcion</button>
+                            
                             </div>
                         </div>
                         <div class="swiper-slide">
@@ -963,7 +964,7 @@ switch ($idrol) {
                             
                             <input class="btn-g" name="sabadoej4boton" type="submit" value="Guardar ejercicio">
                             </form>
-                            <button class="llamars-p">mostrar descripcion</button>
+                            
                             </div>
                         </div>
                         <div class="swiper-slide">
@@ -992,7 +993,6 @@ switch ($idrol) {
                             
                             <input class="btn-g" name="sabadoej5boton" type="submit" value="Guardar ejercicio">
                             </form>
-                            <button class="llamars-p">mostrar descripcion</button>
                             </div>
                         </div>
 
@@ -1012,11 +1012,20 @@ switch ($idrol) {
             url: "buscador1.php",
             data: $(theForm).serialize(),
             success: function(data) {
-                $('#mostrarinfo').html(data);
+                $(theForm).find(".mostrarinfo").html(data);
             }
         });
         event.preventDefault();
     };
+    const pto = document.querySelectorAll(".se")
+    const ctn = document.querySelectorAll(".mostrarinfo")
+    for (let i = 0; i < pto.length; i++) {
+            pto[i].addEventListener("onchange", function() {
+                
+                ctn[i].style.display = "block"
+            });
+    }
+
     </script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <script>
@@ -1045,8 +1054,6 @@ switch ($idrol) {
     <script>
     const btn = document.querySelectorAll(".btn-m")
     const conteinerr = document.querySelectorAll(".sobretodo")
-    console.log(btn);
-    console.log(conteinerr);
     for (let i = 0; i < btn.length; i++) {
         btn[i].addEventListener("click", function() {
             if (conteinerr[i].style.display === "block") {

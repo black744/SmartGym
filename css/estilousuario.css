@@ -532,10 +532,10 @@ p {
 
 /* Inicio Izquierda */
 .turnoultimo{
-    width: 98vh;
-    height: fit-content;
-    margin-left: 10px;
-    margin-top: 10px;
+    width: 95%;
+    height: 20%;
+    border: 1px solid red;
+    margin: 3%;
 }
 
 .turnoultimo p{
