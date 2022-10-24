@@ -90,26 +90,30 @@ switch ($idrol) {
                         $sqlquery = mysqli_fetch_row($queryProximoTurno);
                     ?>
                         <p><br>Tu Próximo Túrno</p>
-                        <p>Fecha y hora: <?php echo $sqlquery[2]?> 
+                        <p>Fecha: <?php echo $sqlquery[2]?>
+                        <p>hora: <?php echo $sqlquery[4]?>hs
+                        <p>Entrenador: <?php echo $sqlquery[0]?> 
+                        <p>modalidad: <?php echo $sqlquery[1]?> 
+                        <p> Ubicacion: Av viva la polenta 1976</p>
                         <?php
-                        if ($sqlquery['fecha'] == 0) {
-                            echo 'Si deseas pedir un turno -->';
-                        } else {
-                            echo $sqlquery['fecha'];
-                        };
+                        
                     } ?> </p>
-                        <p>Entrenador</p>
+                    
+                    
+
                 </div>
             </div>
             
             <div class="homepago">
-                <div></div>
+                <p> pago esta al dia</p>
+
+                <h3>deberas de actualizar el pago en el rango de fechas de: 1er al 10mo dia habil</h3>
             </div>
             
             <style>
                 .homepago{
                     position: absolute;
-                    margin-top: 20vw;
+                    margin-top: 25vw;
                     height: 20vw;
                     width: 45vw;
                     border-radius:10px;

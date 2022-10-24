@@ -534,7 +534,9 @@ p {
 .turnoultimo{
     width: 95%;
     height: 20%;
-    border: 1px solid red;
+    background: var(--color-fondos) ;
+    border-radius: 10px;
+    border: none;
     margin: 3%;
 }
 

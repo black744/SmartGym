@@ -98,8 +98,8 @@ switch ($idrol) {
                                         </select>
                                     
                                     <input type="text" name="iduselectr" value="<?php echo $iduselect?>" hidden>
-                                    <input name="lunesserej1" class="ingreso2" type="number">
-                                    <input name="lunesrepej1" class="ingreso2" type="number">
+                                    <input name="lunesserej1" class="ingreso2" type="number" placeholder=" cantidad de series ">
+                                    <input name="lunesrepej1" class="ingreso2" type="number" placeholder=" cantidad de repeticiones">
                                     <div class="none mostrarinfo"></div>
                                 
                                 <input class="btn-g" name="lunesej1boton" type="submit" value="Guardar ejercicio">
@@ -128,8 +128,8 @@ switch ($idrol) {
                     ?>
                                         </select>
                                     <input type="text" name="iduselectr" value="<?php echo $iduselect?>" hidden>
-                                    <input name="lunesserej2" class="ingreso2" type="number">
-                                    <input name="lunesrepej2" class="ingreso2" type="number">
+                                    <input name="lunesserej2" class="ingreso2" type="number" placeholder=" cantidad de series ">
+                                    <input name="lunesrepej2" class="ingreso2" type="number" placeholder=" cantidad de repeticiones">
                                     <div class="none mostrarinfo"></div>
                                 
                                 <input class="btn-g" name="lunesej2boton" type="submit" value="Guardar ejercicio">
@@ -158,8 +158,9 @@ switch ($idrol) {
                 ?>
                                     </select>
                                 <input type="text" name="iduselectr" value="<?php echo $iduselect?>" hidden>
-                                <input name="lunesserej3" class="ingreso2" type="number">
-                                <input name="lunesrepej3" class="ingreso2" type="number">
+                                <input name="lunesserej3" class="ingreso2" type="number" placeholder=" cantidad de series ">
+                                <input name="lunesrepej3" class="ingreso2" type="number" placeholder=" cantidad de repeticiones">
+                                <div class="none mostrarinfo"></div>
                             
                             <input class="btn-g" name="lunesej3boton" type="submit" value="Guardar ejercicio">
                             </form>
@@ -187,8 +188,9 @@ switch ($idrol) {
                 ?>
                                     </select>
                                 <input type="text" name="iduselectr" value="<?php echo $iduselect?>" hidden>
-                                <input name="lunesserej4" class="ingreso2" type="number">
-                                <input name="lunesrepej4" class="ingreso2" type="number">
+                                <input name="lunesserej4" class="ingreso2" type="number" placeholder=" cantidad de series ">
+                                <input name="lunesrepej4" class="ingreso2" type="number" placeholder=" cantidad de repeticiones">
+                                <div class="none mostrarinfo"></div>
                             
                             <input class="btn-g" name="lunesej4boton" type="submit" value="Guardar ejercicio">
                             </form>
@@ -216,8 +218,9 @@ switch ($idrol) {
                 ?>
                                     </select>
                                 <input type="text" name="iduselectr" value="<?php echo $iduselect?>" hidden>
-                                <input name="lunesserej5" class="ingreso2" type="number">
-                                <input name="lunesrepej5" class="ingreso2" type="number">
+                                <input name="lunesserej5" class="ingreso2" type="number" placeholder=" cantidad de series ">
+                                <input name="lunesrepej5" class="ingreso2" type="number" placeholder=" cantidad de repeticiones">
+                                <div class="none mostrarinfo"></div>
                             
                             <input class="btn-g" name="lunesej5boton" type="submit" value="Guardar ejercicio">
                             </form>
@@ -255,8 +258,9 @@ switch ($idrol) {
                 ?>
                                     </select>
                                 <input type="text" name="iduselectr" value="<?php echo $iduselect?>" hidden>
-                                <input name="martesserej1" class="ingreso2" type="number">
-                                <input name="martesrepej1" class="ingreso2" type="number">
+                                <input name="martesserej1" class="ingreso2" type="number" placeholder=" cantidad de series ">
+                                <input name="martesrepej1" class="ingreso2" type="number" placeholder=" cantidad de repeticiones">
+                                <div class="none mostrarinfo"></div>
                             
                             <input class="btn-g" name="martesej1boton" type="submit" value="Guardar ejercicio">
                             </form>
@@ -284,8 +288,9 @@ switch ($idrol) {
                 ?>
                                     </select>
                                 <input type="text" name="iduselectr" value="<?php echo $iduselect?>" hidden>
-                                <input name="martesserej2" class="ingreso2" type="number">
-                                <input name="martesrepej2" class="ingreso2" type="number">
+                                <input name="martesserej2" class="ingreso2" type="number" placeholder=" cantidad de series ">
+                                <input name="martesrepej2" class="ingreso2" type="number" placeholder=" cantidad de repeticiones">
+                                <div class="none mostrarinfo"></div>
                             
                             <input class="btn-g" name="martesej2boton" type="submit" value="Guardar ejercicio">
                             </form>
@@ -313,8 +318,9 @@ switch ($idrol) {
                 ?>
                                     </select>
                                 <input type="text" name="iduselectr" value="<?php echo $iduselect?>" hidden>
-                                <input name="martesserej3" class="ingreso2" type="number">
-                                <input name="martesrepej3" class="ingreso2" type="number">
+                                <input name="martesserej3" class="ingreso2" type="number" placeholder=" cantidad de series ">
+                                <input name="martesrepej3" class="ingreso2" type="number" placeholder=" cantidad de repeticiones">
+                                <div class="none mostrarinfo"></div>
                             
                             <input class="btn-g" name="martesej3boton" type="submit" value="Guardar ejercicio">
                             </form>
@@ -342,8 +348,9 @@ switch ($idrol) {
                 ?>
                                     </select>
                                 <input type="text" name="iduselectr" value="<?php echo $iduselect?>" hidden>
-                                <input name="martesserej4" class="ingreso2" type="number">
-                                <input name="martesrepej4" class="ingreso2" type="number">
+                                <input name="martesserej4" class="ingreso2" type="number" placeholder=" cantidad de series ">
+                                <input name="martesrepej4" class="ingreso2" type="number" placeholder=" cantidad de repeticiones">
+                                <div class="none mostrarinfo"></div>
                             
                             <input class="btn-g" name="martesej4boton" type="submit" value="Guardar ejercicio">
                             </form>
@@ -371,8 +378,9 @@ switch ($idrol) {
                 ?>
                                     </select>
                                 <input type="text" name="iduselectr" value="<?php echo $iduselect?>" hidden>
-                                <input name="martesserej5" class="ingreso2" type="number">
-                                <input name="martesrepej5" class="ingreso2" type="number">
+                                <input name="martesserej5" class="ingreso2" type="number" placeholder=" cantidad de series ">
+                                <input name="martesrepej5" class="ingreso2" type="number" placeholder=" cantidad de repeticiones">
+                                <div class="none mostrarinfo"></div>
                             
                             <input class="btn-g" name="martesej5boton" type="submit" value="Guardar ejercicio">
                             </form>
@@ -410,8 +418,9 @@ switch ($idrol) {
                 ?>
                                     </select>
                                 <input type="text" name="iduselectr" value="<?php echo $iduselect?>" hidden>
-                                <input name="miercolesserej1" class="ingreso2" type="number">
-                                <input name="miercolesrepej1" class="ingreso2" type="number">
+                                <input name="miercolesserej1" class="ingreso2" type="number" placeholder=" cantidad de series ">
+                                <input name="miercolesrepej1" class="ingreso2" type="number" placeholder=" cantidad de repeticiones">
+                                <div class="none mostrarinfo"></div>
                             
                             <input class="btn-g" name="miercolesej1boton" type="submit" value="Guardar ejercicio">
                             </form>
@@ -439,8 +448,9 @@ switch ($idrol) {
                 ?>
                                     </select>
                                 <input type="text" name="iduselectr" value="<?php echo $iduselect?>" hidden>
-                                <input name="miercolesserej2" class="ingreso2" type="number">
-                                <input name="miercolesrepej2" class="ingreso2" type="number">
+                                <input name="miercolesserej2" class="ingreso2" type="number" placeholder=" cantidad de series ">
+                                <input name="miercolesrepej2" class="ingreso2" type="number" placeholder=" cantidad de repeticiones">
+                                <div class="none mostrarinfo"></div>
                             
                             <input class="btn-g" name="miercolesej2boton" type="submit" value="Guardar ejercicio">
                             </form>
@@ -468,8 +478,9 @@ switch ($idrol) {
                 ?>
                                     </select>
                                 <input type="text" name="iduselectr" value="<?php echo $iduselect?>" hidden>
-                                <input name="miercolesserej3" class="ingreso2" type="number">
-                                <input name="miercolesrepej3" class="ingreso2" type="number">
+                                <input name="miercolesserej3" class="ingreso2" type="number" placeholder=" cantidad de series ">
+                                <input name="miercolesrepej3" class="ingreso2" type="number" placeholder=" cantidad de repeticiones">
+                                <div class="none mostrarinfo"></div>
                             
                             <input class="btn-g" name="miercolesej3boton" type="submit" value="Guardar ejercicio">
                             </form>
@@ -497,8 +508,9 @@ switch ($idrol) {
                 ?>
                                     </select>
                                 <input type="text" name="iduselectr" value="<?php echo $iduselect?>" hidden>
-                                <input name="miercolesserej4" class="ingreso2" type="number">
-                                <input name="miercolesrepej4" class="ingreso2" type="number">
+                                <input name="miercolesserej4" class="ingreso2" type="number" placeholder=" cantidad de series ">
+                                <input name="miercolesrepej4" class="ingreso2" type="number" placeholder=" cantidad de repeticiones">
+                                <div class="none mostrarinfo"></div>
                             
                             <input class="btn-g" name="miercolesej4boton" type="submit" value="Guardar ejercicio">
                             </form>
@@ -526,8 +538,9 @@ switch ($idrol) {
                 ?>
                                     </select>
                                 <input type="text" name="iduselectr" value="<?php echo $iduselect?>" hidden>
-                                <input name="miercolesserej5" class="ingreso2" type="number">
-                                <input name="miercolesrepej5" class="ingreso2" type="number">
+                                <input name="miercolesserej5" class="ingreso2" type="number" placeholder=" cantidad de series ">
+                                <input name="miercolesrepej5" class="ingreso2" type="number" placeholder=" cantidad de repeticiones">
+                                <div class="none mostrarinfo"></div>
                             
                             <input class="btn-g" name="miercolesej5boton" type="submit" value="Guardar ejercicio">
                             </form>
@@ -564,8 +577,9 @@ switch ($idrol) {
                 ?>
                                     </select>
                                 <input type="text" name="iduselectr" value="<?php echo $iduselect?>" hidden>
-                                <input name="juevesserej1" class="ingreso2" type="number">
-                                <input name="juevesrepej1" class="ingreso2" type="number">
+                                <input name="juevesserej1" class="ingreso2" type="number" placeholder=" cantidad de series ">
+                                <input name="juevesrepej1" class="ingreso2" type="number" placeholder=" cantidad de repeticiones">
+                                <div class="none mostrarinfo"></div>
                             
                             <input class="btn-g" name="juevesej1boton" type="submit" value="Guardar ejercicio">
                             </form>
@@ -593,8 +607,9 @@ switch ($idrol) {
                 ?>
                                     </select>
                                 <input type="text" name="iduselectr" value="<?php echo $iduselect?>" hidden>
-                                <input name="juevesserej2" class="ingreso2" type="number">
-                                <input name="juevesrepej2" class="ingreso2" type="number">
+                                <input name="juevesserej2" class="ingreso2" type="number" placeholder=" cantidad de series ">
+                                <input name="juevesrepej2" class="ingreso2" type="number" placeholder=" cantidad de repeticiones">
+                                <div class="none mostrarinfo"></div>
                             
                             <input class="btn-g" name="juevesej2boton" type="submit" value="Guardar ejercicio">
                             </form>
@@ -622,9 +637,10 @@ switch ($idrol) {
                 ?>
                                     </select>
                                 <input type="text" name="iduselectr" value="<?php echo $iduselect?>" hidden>
-                                <input name="juevesserej3" class="ingreso2" type="number">
-                                <input name="juevesrepej3" class="ingreso2" type="number">
-                            
+                                <input name="juevesserej3" class="ingreso2" type="number" placeholder=" cantidad de series ">
+                                <input name="juevesrepej3" class="ingreso2" type="number" placeholder=" cantidad de repeticiones">
+                                <div class="none mostrarinfo"></div>
+
                             <input class="btn-g" name="juevesej3boton" type="submit" value="Guardar ejercicio">
                             </form>
                             
@@ -651,8 +667,9 @@ switch ($idrol) {
                 ?>
                                     </select>
                                 <input type="text" name="iduselectr" value="<?php echo $iduselect?>" hidden>
-                                <input name="juevesserej4" class="ingreso2" type="number">
-                                <input name="juevesrepej4" class="ingreso2" type="number">
+                                <input name="juevesserej4" class="ingreso2" type="number" placeholder=" cantidad de series ">
+                                <input name="juevesrepej4" class="ingreso2" type="number" placeholder=" cantidad de repeticiones">
+                                <div class="none mostrarinfo"></div>
                             
                             <input class="btn-g" name="juevesej4boton" type="submit" value="Guardar ejercicio">
                             </form>
@@ -680,8 +697,9 @@ switch ($idrol) {
                 ?>
                                     </select>
                                 <input type="text" name="iduselectr" value="<?php echo $iduselect?>" hidden>
-                                <input name="juevesserej5" class="ingreso2" type="number">
-                                <input name="juevesrepej5" class="ingreso2" type="number">
+                                <input name="juevesserej5" class="ingreso2" type="number" placeholder=" cantidad de series ">
+                                <input name="juevesrepej5" class="ingreso2" type="number" placeholder=" cantidad de repeticiones">
+                                <div class="none mostrarinfo"></div>
                             
                             <input class="btn-g" name="juevesej5boton" type="submit" value="Guardar ejercicio">
                             </form>
@@ -718,8 +736,9 @@ switch ($idrol) {
                 ?>
                                     </select>
                                 <input type="text" name="iduselectr" value="<?php echo $iduselect?>" hidden>
-                                <input name="viernesserej1" class="ingreso2" type="number">
-                                <input name="viernesrepej1" class="ingreso2" type="number">
+                                <input name="viernesserej1" class="ingreso2" type="number" placeholder=" cantidad de series ">
+                                <input name="viernesrepej1" class="ingreso2" type="number" placeholder=" cantidad de repeticiones">
+                                <div class="none mostrarinfo"></div>
                             
                             <input class="btn-g" name="viernesej1boton" type="submit" value="Guardar ejercicio">
                             </form>
@@ -747,8 +766,9 @@ switch ($idrol) {
                 ?>
                                     </select>
                                 <input type="text" name="iduselectr" value="<?php echo $iduselect?>" hidden>
-                                <input name="viernesserej2" class="ingreso2" type="number">
-                                <input name="viernesrepej2" class="ingreso2" type="number">
+                                <input name="viernesserej2" class="ingreso2" type="number" placeholder=" cantidad de series ">
+                                <input name="viernesrepej2" class="ingreso2" type="number" placeholder=" cantidad de repeticiones">
+                                <div class="none mostrarinfo"></div>
                             
                             <input class="btn-g" name="viernesej2boton" type="submit" value="Guardar ejercicio">
                             </form>
@@ -776,8 +796,9 @@ switch ($idrol) {
                 ?>
                                     </select>
                                 <input type="text" name="iduselectr" value="<?php echo $iduselect?>" hidden>
-                                <input name="viernesserej3" class="ingreso2" type="number">
-                                <input name="viernesrepej3" class="ingreso2" type="number">
+                                <input name="viernesserej3" class="ingreso2" type="number" placeholder=" cantidad de series ">
+                                <input name="viernesrepej3" class="ingreso2" type="number" placeholder=" cantidad de repeticiones">
+                                <div class="none mostrarinfo"></div>
                             
                             <input class="btn-g" name="viernesej3boton" type="submit" value="Guardar ejercicio">
                             </form>
@@ -805,8 +826,9 @@ switch ($idrol) {
                 ?>
                                     </select>
                                 <input type="text" name="iduselectr" value="<?php echo $iduselect?>" hidden>
-                                <input name="viernesserej4" class="ingreso2" type="number">
-                                <input name="viernesrepej4" class="ingreso2" type="number">
+                                <input name="viernesserej4" class="ingreso2" type="number" placeholder=" cantidad de series ">
+                                <input name="viernesrepej4" class="ingreso2" type="number" placeholder=" cantidad de repeticiones">
+                                <div class="none mostrarinfo"></div>
                             
                             <input class="btn-g" name="viernesej4boton" type="submit" value="Guardar ejercicio">
                             </form>
@@ -834,8 +856,9 @@ switch ($idrol) {
                 ?>
                                     </select>
                                 <input type="text" name="iduselectr" value="<?php echo $iduselect?>" hidden>
-                                <input name="viernesserej5" class="ingreso2" type="number">
-                                <input name="viernesrepej5" class="ingreso2" type="number">
+                                <input name="viernesserej5" class="ingreso2" type="number" placeholder=" cantidad de series ">
+                                <input name="viernesrepej5" class="ingreso2" type="number" placeholder=" cantidad de repeticiones">
+                                <div class="none mostrarinfo"></div>
                             
                             <input class="btn-g" name="viernesej5boton" type="submit" value="Guardar ejercicio">
                             </form>
@@ -872,8 +895,9 @@ switch ($idrol) {
                 ?>
                                     </select>
                                 <input type="text" name="iduselectr" value="<?php echo $iduselect?>" hidden>
-                                <input name="sabadoserej1" class="ingreso2" type="number">
-                                <input name="sabadorepej1" class="ingreso2" type="number">
+                                <input name="sabadoserej1" class="ingreso2" type="number" placeholder=" cantidad de series ">
+                                <input name="sabadorepej1" class="ingreso2" type="number" placeholder=" cantidad de repeticiones">
+                                <div class="none mostrarinfo"></div>
                             
                             <input class="btn-g" name="sabadoej1boton" type="submit" value="Guardar ejercicio">
                             </form>
@@ -901,8 +925,9 @@ switch ($idrol) {
                 ?>
                                     </select>
                                 <input type="text" name="iduselectr" value="<?php echo $iduselect?>" hidden>
-                                <input name="sabadoserej2" class="ingreso2" type="number">
-                                <input name="sabadorepej2" class="ingreso2" type="number">
+                                <input name="sabadoserej2" class="ingreso2" type="number" placeholder=" cantidad de series ">
+                                <input name="sabadorepej2" class="ingreso2" type="number" placeholder=" cantidad de repeticiones">
+                                <div class="none mostrarinfo"></div>
                             
                             <input class="btn-g" name="sabadoej2boton" type="submit" value="Guardar ejercicio">
                             </form>
@@ -930,8 +955,9 @@ switch ($idrol) {
                 ?>
                                     </select>
                                 <input type="text" name="iduselectr" value="<?php echo $iduselect?>" hidden>
-                                <input name="sabadoserej3" class="ingreso2" type="number">
-                                <input name="sabadorepej3" class="ingreso2" type="number">
+                                <input name="sabadoserej3" class="ingreso2" type="number" placeholder=" cantidad de series ">
+                                <input name="sabadorepej3" class="ingreso2" type="number" placeholder=" cantidad de repeticiones">
+                                <div class="none mostrarinfo"></div>
                             
                             <input class="btn-g" name="sabadoej3boton" type="submit" value="Guardar ejercicio">
                             </form>
@@ -959,8 +985,9 @@ switch ($idrol) {
                 ?>
                                     </select>
                                 <input type="text" name="iduselectr" value="<?php echo $iduselect?>" hidden>
-                                <input name="sabadoserej4" class="ingreso2" type="number">
-                                <input name="sabadorepej4" class="ingreso2" type="number">
+                                <input name="sabadoserej4" class="ingreso2" type="number" placeholder=" cantidad de series ">
+                                <input name="sabadorepej4" class="ingreso2" type="number" placeholder=" cantidad de repeticiones">
+                                <div class="none mostrarinfo"></div>
                             
                             <input class="btn-g" name="sabadoej4boton" type="submit" value="Guardar ejercicio">
                             </form>
@@ -988,8 +1015,9 @@ switch ($idrol) {
                 ?>
                                     </select>
                                 <input type="text" name="iduselectr" value="<?php echo $iduselect?>" hidden>
-                                <input name="sabadoserej5" class="ingreso2" type="number">
-                                <input name="sabadorepej5" class="ingreso2" type="number">
+                                <input name="sabadoserej5" class="ingreso2" type="number" placeholder=" cantidad de series ">
+                                <input name="sabadorepej5" class="ingreso2" type="number" placeholder=" cantidad de repeticiones">
+                                <div class="none mostrarinfo"></div>
                             
                             <input class="btn-g" name="sabadoej5boton" type="submit" value="Guardar ejercicio">
                             </form>
