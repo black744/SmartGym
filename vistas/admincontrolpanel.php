@@ -89,8 +89,6 @@ switch ($idrol) {
                             <td class="datos">-</td>
                             <td class="datos">-</td>
                             <td class="datos">-</td>
-                            <td><button class="pagoetc"> act pago</button></td>
-                            <td><button id="bajaetc"> dar de baja</button></td>
                         </tr>
                     <?php } ?>
 
