@@ -85,13 +85,13 @@ switch ($idrol) {
                     if ($datap == 0) {
                         echo 'No existe un turno ';
                     } else {
-                        $sqlProximoTurno = "SELECT clases.entrenador, clases.modalidad, clases.fecha, clases.cupos, clases_clientes.idclase, clases_clientes.usuario FROM clases INNER JOIN clases_clientes ON clases.idclase= clases_clientes.idclase WHERE usuario='$idusuario' ORDER BY fecha ASC";
+                        $sqlProximoTurno = "SELECT clases.entrenador, clases.modalidad, clases.fecha, clases.cupos, clases.hora, clases_clientes.idclase, clases_clientes.usuario FROM clases INNER JOIN clases_clientes ON clases.idclase= clases_clientes.idclase WHERE usuario='$idusuario' ORDER BY fecha ASC";
                         $queryProximoTurno = mysqli_query($conex, $sqlProximoTurno);
                         $sqlquery = mysqli_fetch_row($queryProximoTurno);
                     ?>
                         <p><br>Tu Próximo Túrno</p>
                         <p>Fecha: <?php echo $sqlquery[2]?>
-                        <p>hora: <?php echo $sqlquery[4]?>hs
+                        <p>hora: <?php echo $sqlquery[4]?>
                         <p>Entrenador: <?php echo $sqlquery[0]?> 
                         <p>modalidad: <?php echo $sqlquery[1]?> 
                         <p> Ubicacion: Av viva la polenta 1976</p>

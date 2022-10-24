@@ -54,7 +54,7 @@ include("../models/validacion_clientes.php");
 </head>
 <style>
   .dataview{
-    background-color: red;
+    background: #fb4c0d;
     left: 4vh;
     top: 8vh;
     position: absolute;
