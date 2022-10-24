@@ -75,9 +75,11 @@ switch ($idrol) {
             $result1 = mysqli_num_rows($query1);
             if ($result1 > 0) {
                 while ($data = mysqli_fetch_array($query1)) {
+                    
 
             ?>
                     <div class="turno-a">
+                        <p> <?php echo $nturno ?></p>
                         <p> Fecha: <?php echo $data['fecha']; ?></p>
                         <p> Horario: <?php echo $data['hora']; ?></p>
                         <p> Modalidad: <?php echo $data['modalidad']; ?></p>
