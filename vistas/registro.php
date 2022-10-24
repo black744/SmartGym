@@ -41,14 +41,16 @@
         <form class="formulario" action="../models/registrar.php" method="POST">
             <h2 class="create-account">Crear una cuenta</h2>
             <p class="cuenta-gratis">Crear una cuenta gratis</p>
-            <input type="text" placeholder="Nombre" name="nombre">
+            <input type="text" placeholder="Nombre" name="nombre" require>
             <input type="apellido" placeholder="Apellido" name="apellido">
-            <input type="text" placeholder="DNI" name="dni">
-            <input type="Usuario" placeholder="Usuario" name="usuario">
-            <input type="email" placeholder="Email" name="correo">
-            <input type="password" placeholder="Contraseña" name="contraseña">
-            <input type="number" placeholder="Edad" name="ED">
-            <input type="text" placeholder="Domicilio" name="DC">
+            <input type="number" placeholder="DNI" name="dni" require pattern="[0-9]">
+            <input type="Usuario" placeholder="Usuario" name="usuario" require>
+            <input type="email" placeholder="Email" name="correo" require>
+            <input type="password" placeholder="Contraseña" name="contraseña" require>
+            <input type="number" placeholder="Edad" name="ED" require>
+            <input type="text" placeholder="Domicilio" name="DC" require>
+            <input type="number" placeholder="peso actual" name="PA" require pattern="[0-9]">
+            <input type="number" placeholder="peso ideal" name="PI" require pattern="[0-9]">
             <input class="btn-r" type="submit" name="buttonreg" value="Registrarse">
         </form>
     </div>
