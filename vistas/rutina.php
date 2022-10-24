@@ -97,10 +97,9 @@ switch ($idrol) {
                     ?>
                                         </select>
                                     
-                                    <input type="text" name="iduselectr" value="<?php echo $iduselect?>">
+                                    <input type="text" name="iduselectr" value="<?php echo $iduselect?>" hidden>
                                     <input name="lunesserej1" class="ingreso2" type="number">
                                     <input name="lunesrepej1" class="ingreso2" type="number">
-                                    <button class="llamars-p">mostrar descripcion</button>
                                 
                                 <input class="btn-g" name="lunesej1boton" type="submit" value="Guardar ejercicio">
                                 </form>          

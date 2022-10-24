@@ -80,8 +80,10 @@ switch ($idrol) {
             $sqlclasesasignadas = "SELECT clases_clientes.idclase, clases_clientes.usuario, clases.entrenador, clases.modalidad, clases.fecha, clases.hora FROM clases INNER JOIN clases_clientes ON clases.idclase = clases_clientes.idclase WHERE usuario = '$idusuario'";
             $queryclasesasignadas = mysqli_query($conex, $sqlclasesasignadas);
             while ($rowclasesasignadas = mysqli_fetch_array($queryclasesasignadas)) {
+                $nturno= $rowclasesasignadas['idclase'];
             ?>
                 <div class="turno-a">
+
                     <br>
                     <p> Fecha: <?php echo $rowclasesasignadas['fecha']; ?></p>
                     <p> Horario: <?php echo $rowclasesasignadas['hora']; ?></p>
