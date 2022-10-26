@@ -26,20 +26,20 @@ $sql1 = "SELECT idusuario FROM rutinas_lunes WHERE idusuario='$idusuario'";
 $query1 = mysqli_query($conex, $sql1);
 $numrowsquery = mysqli_num_rows($query1);
 
-if($numrowsquery == 0){
-$sqlinsertLunes = "INSERT INTO `rutinas_lunes`(`idusuario`, `id_ej1`, `series_ej1`, `repeticiones_ej1`, `id_ej2`, `series_ej2`, `repeticiones_ej2`, `id_ej3`, `series_ej3`, `repeticiones_ej3`, `id_ej4`, `series_ej4`, `repeticiones_ej4`, `id_ej5`, `series_ej5`, `repeticiones_ej5`) VALUES ('$idusuario','','','','','','','','','','','','','','','')";
-$sqlinsertMartes = "INSERT INTO `rutinas_martes`(`idusuario`, `id_ej1`, `series_ej1`, `repeticiones_ej1`, `id_ej2`, `series_ej2`, `repeticiones_ej2`, `id_ej3`, `series_ej3`, `repeticiones_ej3`, `id_ej4`, `series_ej4`, `repeticiones_ej4`, `id_ej5`, `series_ej5`, `repeticiones_ej5`) VALUES ('$idusuario','','','','','','','','','','','','','','','')";
-$sqlinsertMiercoles = "INSERT INTO `rutinas_miercoles`(`idusuario`, `id_ej1`, `series_ej1`, `repeticiones_ej1`, `id_ej2`, `series_ej2`, `repeticiones_ej2`, `id_ej3`, `series_ej3`, `repeticiones_ej3`, `id_ej4`, `series_ej4`, `repeticiones_ej4`, `id_ej5`, `series_ej5`, `repeticiones_ej5`) VALUES ('$idusuario','','','','','','','','','','','','','','','')";
-$sqlinsertJueves = "INSERT INTO `rutinas_jueves`(`idusuario`, `id_ej1`, `series_ej1`, `repeticiones_ej1`, `id_ej2`, `series_ej2`, `repeticiones_ej2`, `id_ej3`, `series_ej3`, `repeticiones_ej3`, `id_ej4`, `series_ej4`, `repeticiones_ej4`, `id_ej5`, `series_ej5`, `repeticiones_ej5`) VALUES ('$idusuario','','','','','','','','','','','','','','','')";
-$sqlinsertViernes = "INSERT INTO `rutinas_viernes`(`idusuario`, `id_ej1`, `series_ej1`, `repeticiones_ej1`, `id_ej2`, `series_ej2`, `repeticiones_ej2`, `id_ej3`, `series_ej3`, `repeticiones_ej3`, `id_ej4`, `series_ej4`, `repeticiones_ej4`, `id_ej5`, `series_ej5`, `repeticiones_ej5`) VALUES ('$idusuario','','','','','','','','','','','','','','','')";
-$sqlinsertSabado = "INSERT INTO `rutinas_sabado`(`idusuario`, `id_ej1`, `series_ej1`, `repeticiones_ej1`, `id_ej2`, `series_ej2`, `repeticiones_ej2`, `id_ej3`, `series_ej3`, `repeticiones_ej3`, `id_ej4`, `series_ej4`, `repeticiones_ej4`, `id_ej5`, `series_ej5`, `repeticiones_ej5`) VALUES ('$idusuario','','','','','','','','','','','','','','','')";
+if ($numrowsquery == 0) {
+    $sqlinsertLunes = "INSERT INTO `rutinas_lunes`(`idusuario`, `id_ej1`, `series_ej1`, `repeticiones_ej1`, `id_ej2`, `series_ej2`, `repeticiones_ej2`, `id_ej3`, `series_ej3`, `repeticiones_ej3`, `id_ej4`, `series_ej4`, `repeticiones_ej4`, `id_ej5`, `series_ej5`, `repeticiones_ej5`) VALUES ('$idusuario','','','','','','','','','','','','','','','')";
+    $sqlinsertMartes = "INSERT INTO `rutinas_martes`(`idusuario`, `id_ej1`, `series_ej1`, `repeticiones_ej1`, `id_ej2`, `series_ej2`, `repeticiones_ej2`, `id_ej3`, `series_ej3`, `repeticiones_ej3`, `id_ej4`, `series_ej4`, `repeticiones_ej4`, `id_ej5`, `series_ej5`, `repeticiones_ej5`) VALUES ('$idusuario','','','','','','','','','','','','','','','')";
+    $sqlinsertMiercoles = "INSERT INTO `rutinas_miercoles`(`idusuario`, `id_ej1`, `series_ej1`, `repeticiones_ej1`, `id_ej2`, `series_ej2`, `repeticiones_ej2`, `id_ej3`, `series_ej3`, `repeticiones_ej3`, `id_ej4`, `series_ej4`, `repeticiones_ej4`, `id_ej5`, `series_ej5`, `repeticiones_ej5`) VALUES ('$idusuario','','','','','','','','','','','','','','','')";
+    $sqlinsertJueves = "INSERT INTO `rutinas_jueves`(`idusuario`, `id_ej1`, `series_ej1`, `repeticiones_ej1`, `id_ej2`, `series_ej2`, `repeticiones_ej2`, `id_ej3`, `series_ej3`, `repeticiones_ej3`, `id_ej4`, `series_ej4`, `repeticiones_ej4`, `id_ej5`, `series_ej5`, `repeticiones_ej5`) VALUES ('$idusuario','','','','','','','','','','','','','','','')";
+    $sqlinsertViernes = "INSERT INTO `rutinas_viernes`(`idusuario`, `id_ej1`, `series_ej1`, `repeticiones_ej1`, `id_ej2`, `series_ej2`, `repeticiones_ej2`, `id_ej3`, `series_ej3`, `repeticiones_ej3`, `id_ej4`, `series_ej4`, `repeticiones_ej4`, `id_ej5`, `series_ej5`, `repeticiones_ej5`) VALUES ('$idusuario','','','','','','','','','','','','','','','')";
+    $sqlinsertSabado = "INSERT INTO `rutinas_sabado`(`idusuario`, `id_ej1`, `series_ej1`, `repeticiones_ej1`, `id_ej2`, `series_ej2`, `repeticiones_ej2`, `id_ej3`, `series_ej3`, `repeticiones_ej3`, `id_ej4`, `series_ej4`, `repeticiones_ej4`, `id_ej5`, `series_ej5`, `repeticiones_ej5`) VALUES ('$idusuario','','','','','','','','','','','','','','','')";
 
-$queryinsertLunes = mysqli_query($conex, $sqlinsertLunes);
-$queryinsertMartes = mysqli_query($conex, $sqlinsertMartes);
-$queryinsertMiercoles = mysqli_query($conex, $sqlinsertMiercoles);
-$queryinsertJueves = mysqli_query($conex, $sqlinsertJueves);
-$queryinsertViernes = mysqli_query($conex, $sqlinsertViernes);
-$queryinsertSabado = mysqli_query($conex, $sqlinsertSabado);
+    $queryinsertLunes = mysqli_query($conex, $sqlinsertLunes);
+    $queryinsertMartes = mysqli_query($conex, $sqlinsertMartes);
+    $queryinsertMiercoles = mysqli_query($conex, $sqlinsertMiercoles);
+    $queryinsertJueves = mysqli_query($conex, $sqlinsertJueves);
+    $queryinsertViernes = mysqli_query($conex, $sqlinsertViernes);
+    $queryinsertSabado = mysqli_query($conex, $sqlinsertSabado);
 };
 ?>
 
@@ -50,8 +50,9 @@ $queryinsertSabado = mysqli_query($conex, $sqlinsertSabado);
     <meta charset="UTF-8">
 
     <title>Home Usuario</title>
-
+    <script src="https://kit.fontawesome.com/db50c9d526.js"></script>
     <link rel="stylesheet" href="../css/estilousuario.css">
+    <script src="../js/appbotonnegro.js" type="text/javascript" defer></script>
 </head>
 <?php
 switch ($idrol) {
@@ -75,7 +76,7 @@ switch ($idrol) {
     <div class="main_content">
 
         <div class="info">
-            
+
             <div class="izquierda">
                 <div class="turnoultimo">
                     <?php
@@ -90,38 +91,59 @@ switch ($idrol) {
                         $sqlquery = mysqli_fetch_row($queryProximoTurno);
                     ?>
                         <p><br>Tu Próximo Túrno</p>
-                        <p>Fecha: <?php echo $sqlquery[2]?>
-                        <p>hora: <?php echo $sqlquery[4]?>
-                        <p>Entrenador: <?php echo $sqlquery[0]?> 
-                        <p>modalidad: <?php echo $sqlquery[1]?> 
+                        <p>Fecha: <?php echo $sqlquery[2] ?>
+                        <p>hora: <?php echo $sqlquery[4] ?>
+                        <p>Entrenador: <?php echo $sqlquery[0] ?>
+                        <p>modalidad: <?php echo $sqlquery[1] ?>
                         <p> Ubicacion: Av viva la polenta 1976</p>
-                        <?php
-                        
+                    <?php
+
                     } ?> </p>
-                    
-                    
+
+
 
                 </div>
             </div>
-            
-            <div class="homepago">
-                <p> pago esta al dia</p>
 
-                <h3>deberas de actualizar el pago en el rango de fechas de: 1er al 10mo dia habil</h3>
+
+            <div class="homepago">
+                
+                <div class="pago">
+                <br>
+                    <p> pago esta al dia <i class="fa-solid fa-badge-check"></i></p>
+                    <br>
+                    <p>deberas de actualizar el pago en el rango de fechas de: 1er al 10mo dia habil</p><br>
+                </div>
             </div>
-            
+
             <style>
-                .homepago{
+                .pago{
+                    position: relative;
+                    height: fit-content;
+                    width: 85%;
+                    background: #fb4c0d;
+                    margin: 5%;
+                    border-radius: 15px;
+                }
+
+                .pago p{
+                    position: relative;
+                    color:#fff;
+                    margin: 2vh;
+                    text-align: justify;
+                }
+                
+                .homepago {
                     position: absolute;
                     margin-top: 25vw;
-                    height: 20vw;
+                    height: fit-content;
                     width: 45vw;
-                    border-radius:10px;
-                    background: rgba( 255, 255, 255, 0.2 );
-                    backdrop-filter: blur( 3.5px );
-                    -webkit-backdrop-filter: blur( 3.5px );
                     border-radius: 10px;
-                    border: 1px solid rgba( 255, 255, 255, 0.18 );
+                    background: rgba(255, 255, 255, 0.2);
+                    backdrop-filter: blur(3.5px);
+                    -webkit-backdrop-filter: blur(3.5px);
+                    border-radius: 10px;
+                    border: 1px solid rgba(255, 255, 255, 0.18);
                 }
             </style>
 

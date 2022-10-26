@@ -6,6 +6,7 @@
     <title>Perfil</title>
 
     <link rel="stylesheet" href="estilousuario.css">
+    <script src="script.js" type="text/javascript" defer></script>
 </head>
 
 <body>

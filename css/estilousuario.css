@@ -88,6 +88,9 @@ body{
     display: block;
     width: 5vw;
     height: 5vh;
+    line-height: 19%;
+    font-size: 18px;
+    text-decoration: none;
     margin-bottom: 3vh;
     margin-right: 5vw;
     background:var(--color-fondobotones);
@@ -95,10 +98,13 @@ body{
     text-align: center;
     font-size: 20px;
     border-radius: 10px;
+    position: relative;
+    letter-spacing: 2px;
     color: var(--color-letra);
     border:3px solid var(--color-bordes-normales) ;
     border-radius: 15px;
     transition:0.5s;
+    transition: all .35s;
     cursor:pointer;
 }
 .btn-exit i{
@@ -629,3 +635,5 @@ p {
     border-radius: 10px;
     border: 1px solid rgba( 255, 255, 255, 0.18 );
 }
+/*Aca empieza el modo polenta */
+
