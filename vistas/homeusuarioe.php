@@ -53,21 +53,45 @@ switch ($idrol) {
 
 <div class="izq">
     <h1>Turnos proximos</h1>
-    <hr>
+
     <div class="turno-prox">
-        <p> de turno <br> xd <br> xd <br> xd </p>
+    <?php
+                    $sqlper = "SELECT * FROM clases WHERE entrenador='$nusuario' WHERE estado=1";
+                    $queryper = mysqli_query($conex, $sqlper);
+                    while ($datap = mysqli_fetch_array($queryper)){
+                        ?>
+                        <br>
+                        <p>Clase N° <?php echo $datap['idclase']?></p>
+                        <p>Fecha: <?php echo $datap['fecha']?></p>
+                        <p>hora: <?php echo $datap['hora']?></p>
+                        <hr>
+                        <?php
+                    
+                    
+                        
+                    };?>
     </div>
 </div>
 
 <style>
     .turno-prox{
         position:relative;
-        height: 25vh;
+        height: fit-content;
         width: 90%;
         margin: 5%;
-        border: 1px solid red;
         border-radius: 15px;
         background: #fb5c0d;
+
+    } 
+
+    .turno-prox p{
+        margin: 2%;
+        color: #fff;
+    }
+
+    hr{
+        margin:2%;
+        border: 1px solid #303030;
     }
 </style>
 
