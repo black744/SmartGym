@@ -19,7 +19,7 @@ html{
 
 
 body {
-    height: 100vh;
+    height: 120vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -150,6 +150,7 @@ body {
 }
 
 .btn-r{
+    display:block;
     position: flex;
     margin: 3vh;
     height: 6.5vh;

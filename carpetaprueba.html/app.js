@@ -1,19 +1,14 @@
-$("#success").click(function () {
-  $(".notify").toggleClass("active");
-  $("#notifyType").toggleClass("success");
-  
-  setTimeout(function(){
-    $(".notify").removeClass("active");
-    $("#notifyType").removeClass("success");
-  },2000);
+const preferedColorScheme = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+const slider = document.getElementById('slider');
+
+const setTheme = (theme) => {
+    document.documentElement.setAttribute('data-theme', theme);
+    localStorage.setItem('theme', theme);
+}
+
+slider.addEventListener('click', ()  => {
+    let switchToTheme = localStorage.getItem('theme') === 'dark' ? 'light' : 'dark';
+    setTheme(switchToTheme);
 });
 
-$("#failure").click(function () {
-  $(".notify").addClass("active");
-  $("#notifyType").addClass("failure");
-  
-  setTimeout(function(){
-    $(".notify").removeClass("active");
-    $("#notifyType").removeClass("failure");
-  },2000);
-});
+setTheme(localStorage.getItem('theme') || preferedColorScheme);
