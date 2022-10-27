@@ -163,7 +163,7 @@ switch ($idrol) {
                     <form method="post">
                         <p>ingrese peso actual</p>
                         <input class="orange" type="text" name="pesoactual">
-                        <input class="botonenviar" type="submit" name="enviar">
+                        <input id="btn" class="botonenviar" type="submit" name="enviar">
                     </form>
                     <?php
                     if (isset($_POST['enviarpesoactual'])) {
@@ -175,7 +175,7 @@ switch ($idrol) {
                     <form method="post">
                         <p>ingrese peso ideal</p>
                         <input class="orange" type="text" name="pesoideal">
-                        <input class="botonenviar" type="submit" name="enviar">
+                        <input id="btn" class="botonenviar" type="submit" name="enviar">
                     </form>
                     <?php
                     if (isset($_POST['enviarpesoideal'])) {
