@@ -76,7 +76,7 @@ include("../models/validacion_clientes.php");
       <div class="swiper-wrapper">
         <!-- Slides -->
         <div class="swiper-slide">
-            <p>ejercicio  1</p>
+            <p>Ejercicio 1</p>
             <div class="dataview">
               <?php
               $sqlmostrarlunesej1= "SELECT rutinas_lunes.idusuario, rutinas_lunes.series_ej1, rutinas_lunes.repeticiones_ej1, ejercicios.nombre, ejercicios.descripcion
@@ -125,7 +125,7 @@ include("../models/validacion_clientes.php");
         
         </div>
         <div class="swiper-slide">
-            <p>ejercicio  2</p>
+            <p>Ejercicio 2</p>
             <div class="dataview">
               <?php
               $sqlmostrarlunesej2= "SELECT rutinas_lunes.idusuario, rutinas_lunes.series_ej2, rutinas_lunes.repeticiones_ej2, ejercicios.nombre, ejercicios.descripcion
@@ -151,7 +151,7 @@ include("../models/validacion_clientes.php");
             
         </div>
         <div class="swiper-slide">
-            <p>ejercicio  3</p>
+            <p>Ejercicio 3</p>
             <div class="dataview">
               <?php
               $sqlmostrarlunesej3= "SELECT rutinas_lunes.idusuario, rutinas_lunes.series_ej3, rutinas_lunes.repeticiones_ej3, ejercicios.nombre, ejercicios.descripcion
@@ -177,7 +177,7 @@ include("../models/validacion_clientes.php");
             
         </div>
         <div class="swiper-slide">
-            <p>ejercicio  4</p>
+            <p>Ejercicio 4</p>
             <div class="dataview">
               <?php
               $sqlmostrarlunesej4= "SELECT rutinas_lunes.idusuario, rutinas_lunes.series_ej4, rutinas_lunes.repeticiones_ej4, ejercicios.nombre, ejercicios.descripcion
@@ -202,7 +202,7 @@ include("../models/validacion_clientes.php");
             </div>
         </div>
         <div class="swiper-slide">
-         <p>ejercicio  5</p>
+         <p>Ejercicio 5</p>
          <div class="dataview">
               <?php
               $sqlmostrarlunesej5= "SELECT rutinas_lunes.idusuario, rutinas_lunes.series_ej5, rutinas_lunes.repeticiones_ej5, ejercicios.nombre, ejercicios.descripcion
@@ -246,7 +246,7 @@ include("../models/validacion_clientes.php");
       <div class="swiper-wrapper">
         <!-- Slides -->
         <div class="swiper-slide">
-            <p>ejercicio  1</p>
+            <p>Ejercicio 1</p>
             <div class="dataview">
               <?php
               $sqlmostrarmartesej1= "SELECT rutinas_martes.idusuario, rutinas_martes.series_ej1, rutinas_martes.repeticiones_ej1, ejercicios.nombre, ejercicios.descripcion
@@ -271,7 +271,7 @@ include("../models/validacion_clientes.php");
             </div>
         </div>
         <div class="swiper-slide">
-            <p>ejercicio  2</p>
+            <p>Ejercicio 2</p>
             <div class="dataview">
               <?php
               $sqlmostrarmartesej2= "SELECT rutinas_martes.idusuario, rutinas_martes.series_ej2, rutinas_martes.repeticiones_ej2, ejercicios.nombre, ejercicios.descripcion
@@ -297,7 +297,7 @@ include("../models/validacion_clientes.php");
             
         </div>
         <div class="swiper-slide">
-            <p>ejercicio  3</p>
+            <p>Ejercicio 3</p>
             <div class="dataview">
               <?php
               $sqlmostrarmartesej3= "SELECT rutinas_martes.idusuario, rutinas_martes.series_ej3, rutinas_martes.repeticiones_ej3, ejercicios.nombre, ejercicios.descripcion
@@ -323,7 +323,7 @@ include("../models/validacion_clientes.php");
             
         </div>
         <div class="swiper-slide">
-            <p>ejercicio  4</p>
+            <p>Ejercicio 4</p>
             <div class="dataview">
               <?php
               $sqlmostrarmartesej4= "SELECT rutinas_martes.idusuario, rutinas_martes.series_ej4, rutinas_martes.repeticiones_ej4, ejercicios.nombre, ejercicios.descripcion
@@ -349,7 +349,7 @@ include("../models/validacion_clientes.php");
             
         </div>
         <div class="swiper-slide">
-         <p>ejercicio  5</p>
+         <p>Ejercicio 5</p>
          <div class="dataview">
               <?php
               $sqlmostrarmartesej5= "SELECT rutinas_martes.idusuario, rutinas_martes.series_ej5, rutinas_martes.repeticiones_ej5, ejercicios.nombre, ejercicios.descripcion
@@ -393,7 +393,7 @@ include("../models/validacion_clientes.php");
       <div class="swiper-wrapper">
         <!-- Slides -->
         <div class="swiper-slide">
-            <p>ejercicio  1</p>
+            <p>Ejercicio 1</p>
             <div class="dataview">
               <?php
               $sqlmostrarmiercolesej1= "SELECT rutinas_miercoles.idusuario, rutinas_miercoles.series_ej1, rutinas_miercoles.repeticiones_ej1, ejercicios.nombre, ejercicios.descripcion
@@ -419,7 +419,7 @@ include("../models/validacion_clientes.php");
             
         </div>
         <div class="swiper-slide">
-            <p>ejercicio  2</p>
+            <p>Ejercicio 2</p>
             <div class="dataview">
               <?php
               $sqlmostrarmiercolesej2= "SELECT rutinas_miercoles.idusuario, rutinas_miercoles.series_ej2, rutinas_miercoles.repeticiones_ej2, ejercicios.nombre, ejercicios.descripcion
@@ -446,7 +446,7 @@ include("../models/validacion_clientes.php");
             
         </div>
         <div class="swiper-slide">
-            <p>ejercicio  3</p>
+            <p>Ejercicio 3</p>
             <div class="dataview">
               <?php
               $sqlmostrarmiercolesej3= "SELECT rutinas_miercoles.idusuario, rutinas_miercoles.series_ej3, rutinas_miercoles.repeticiones_ej3, ejercicios.nombre, ejercicios.descripcion
@@ -472,7 +472,7 @@ include("../models/validacion_clientes.php");
             
         </div>
         <div class="swiper-slide">
-            <p>ejercicio  4</p>
+            <p>Ejercicio 4</p>
             <div class="dataview">
               <?php
               $sqlmostrarmiercolesej4= "SELECT rutinas_miercoles.idusuario, rutinas_miercoles.series_ej4, rutinas_miercoles.repeticiones_ej4, ejercicios.nombre, ejercicios.descripcion
@@ -498,7 +498,7 @@ include("../models/validacion_clientes.php");
             
         </div>
         <div class="swiper-slide">
-         <p>ejercicio  5</p>
+         <p>Ejercicio 5</p>
          <div class="dataview">
               <?php
               $sqlmostrarmiercolesej5= "SELECT rutinas_miercoles.idusuario, rutinas_miercoles.series_ej5, rutinas_miercoles.repeticiones_ej5, ejercicios.nombre, ejercicios.descripcion
@@ -542,7 +542,7 @@ include("../models/validacion_clientes.php");
       <div class="swiper-wrapper">
         <!-- Slides -->
         <div class="swiper-slide">
-            <p>ejercicio  1</p>
+            <p>Ejercicio 1</p>
             <div class="dataview">
               <?php
               $sqlmostrarjuevesej1= "SELECT rutinas_jueves.idusuario, rutinas_jueves.series_ej1, rutinas_jueves.repeticiones_ej1, ejercicios.nombre, ejercicios.descripcion
@@ -568,7 +568,7 @@ include("../models/validacion_clientes.php");
             
         </div>
         <div class="swiper-slide">
-            <p>ejercicio  2</p>
+            <p>Ejercicio 2</p>
             <div class="dataview">
               <?php
               $sqlmostrarjuevesej2= "SELECT rutinas_jueves.idusuario, rutinas_jueves.series_ej2, rutinas_jueves.repeticiones_ej2, ejercicios.nombre, ejercicios.descripcion
@@ -594,7 +594,7 @@ include("../models/validacion_clientes.php");
             
         </div>
         <div class="swiper-slide">
-            <p>ejercicio  3</p>
+            <p>Ejercicio 3</p>
             <div class="dataview">
               <?php
               $sqlmostrarjuevesej3= "SELECT rutinas_jueves.idusuario, rutinas_jueves.series_ej3, rutinas_jueves.repeticiones_ej3, ejercicios.nombre, ejercicios.descripcion
@@ -620,7 +620,7 @@ include("../models/validacion_clientes.php");
             
         </div>
         <div class="swiper-slide">
-            <p>ejercicio  4</p>
+            <p>Ejercicio 4</p>
             <div class="dataview">
               <?php
               $sqlmostrarjuevesej4= "SELECT rutinas_jueves.idusuario, rutinas_jueves.series_ej4, rutinas_jueves.repeticiones_ej4, ejercicios.nombre, ejercicios.descripcion
@@ -646,7 +646,7 @@ include("../models/validacion_clientes.php");
             
         </div>
         <div class="swiper-slide">
-         <p>ejercicio  5</p>
+         <p>Ejercicio 5</p>
          <div class="dataview">
               <?php
               $sqlmostrarjuevesej5= "SELECT rutinas_jueves.idusuario, rutinas_jueves.series_ej5, rutinas_jueves.repeticiones_ej5, ejercicios.nombre, ejercicios.descripcion
@@ -690,7 +690,7 @@ include("../models/validacion_clientes.php");
       <div class="swiper-wrapper">
         <!-- Slides -->
         <div class="swiper-slide">
-            <p>ejercicio  1</p>
+            <p>Ejercicio 1</p>
             <div class="dataview">
               <?php
               $sqlmostrarviernesej1= "SELECT rutinas_viernes.idusuario, rutinas_viernes.series_ej1, rutinas_viernes.repeticiones_ej1, ejercicios.nombre, ejercicios.descripcion
@@ -716,7 +716,7 @@ include("../models/validacion_clientes.php");
             
         </div>
         <div class="swiper-slide">
-            <p>ejercicio  2</p>
+            <p>Ejercicio 2</p>
             <div class="dataview">
               <?php
               $sqlmostrarviernesej2= "SELECT rutinas_viernes.idusuario, rutinas_viernes.series_ej2, rutinas_viernes.repeticiones_ej2, ejercicios.nombre, ejercicios.descripcion
@@ -742,7 +742,7 @@ include("../models/validacion_clientes.php");
             
         </div>
         <div class="swiper-slide">
-            <p>ejercicio  3</p>
+            <p>Ejercicio 3</p>
             <div class="dataview">
               <?php
               $sqlmostrarviernesej3= "SELECT rutinas_viernes.idusuario, rutinas_viernes.series_ej3, rutinas_viernes.repeticiones_ej3, ejercicios.nombre, ejercicios.descripcion
@@ -768,7 +768,7 @@ include("../models/validacion_clientes.php");
             
         </div>
         <div class="swiper-slide">
-            <p>ejercicio  4</p>
+            <p>Ejercicio 4</p>
             <div class="dataview">
               <?php
               $sqlmostrarviernesej4= "SELECT rutinas_viernes.idusuario, rutinas_viernes.series_ej4, rutinas_viernes.repeticiones_ej4, ejercicios.nombre, ejercicios.descripcion
@@ -794,7 +794,7 @@ include("../models/validacion_clientes.php");
             
         </div>
         <div class="swiper-slide">
-         <p>ejercicio  5</p>
+         <p>Ejercicio 5</p>
          <div class="dataview">
               <?php
               $sqlmostrarviernesej5= "SELECT rutinas_viernes.idusuario, rutinas_viernes.series_ej5, rutinas_viernes.repeticiones_ej5, ejercicios.nombre, ejercicios.descripcion
@@ -837,7 +837,7 @@ include("../models/validacion_clientes.php");
       <div class="swiper-wrapper">
         <!-- Slides -->
         <div class="swiper-slide">
-            <p>ejercicio  1</p>
+            <p>Ejercicio 1</p>
             <div class="dataview">
               <?php
               $sqlmostrarsabadoej1= "SELECT rutinas_sabado.idusuario, rutinas_sabado.series_ej1, rutinas_sabado.repeticiones_ej1, ejercicios.nombre, ejercicios.descripcion
@@ -863,7 +863,7 @@ include("../models/validacion_clientes.php");
             
         </div>
         <div class="swiper-slide">
-            <p>ejercicio  2</p>
+            <p>Ejercicio 2</p>
             <div class="dataview">
               <?php
               $sqlmostrarsabadoej2= "SELECT rutinas_sabado.idusuario, rutinas_sabado.series_ej2, rutinas_sabado.repeticiones_ej2, ejercicios.nombre, ejercicios.descripcion
@@ -889,7 +889,7 @@ include("../models/validacion_clientes.php");
             
         </div>
         <div class="swiper-slide">
-            <p>ejercicio  3</p>
+            <p>Ejercicio 3</p>
             <div class="dataview">
               <?php
               $sqlmostrarsabadoej3= "SELECT rutinas_sabado.idusuario, rutinas_sabado.series_ej3, rutinas_sabado.repeticiones_ej3, ejercicios.nombre, ejercicios.descripcion
@@ -915,7 +915,7 @@ include("../models/validacion_clientes.php");
             
         </div>
         <div class="swiper-slide">
-            <p>ejercicio  4</p>
+            <p>Ejercicio 4</p>
             <div class="dataview">
               <?php
               $sqlmostrarsabadoej4= "SELECT rutinas_sabado.idusuario, rutinas_sabado.series_ej4, rutinas_sabado.repeticiones_ej4, ejercicios.nombre, ejercicios.descripcion
@@ -941,7 +941,7 @@ include("../models/validacion_clientes.php");
             
         </div>
         <div class="swiper-slide">
-         <p>ejercicio  5</p>
+         <p>Ejercicio 5</p>
          <div class="dataview">
               <?php
               $sqlmostrarsabadoej5= "SELECT rutinas_sabado.idusuario, rutinas_sabado.series_ej5, rutinas_sabado.repeticiones_ej5, ejercicios.nombre, ejercicios.descripcion

@@ -92,10 +92,11 @@ switch ($idrol) {
                     ?>
                         <p><br>Tu Próximo Túrno</p>
                         <p>Fecha: <?php echo $sqlquery[2] ?>
-                        <p>hora: <?php echo $sqlquery[4] ?>
+                        <p>Hora: <?php echo $sqlquery[4] ?>
                         <p>Entrenador: <?php echo $sqlquery[0] ?>
-                        <p>modalidad: <?php echo $sqlquery[1] ?>
-                        <p> Ubicacion: Av viva la polenta 1976</p>
+                        <p>Modalidad: <?php echo $sqlquery[1] ?>
+                        <p>Ubicacion: Av viva la polenta 1976</p>
+                        <br>
                     <?php
 
                     } ?> </p>
@@ -110,9 +111,8 @@ switch ($idrol) {
                 
                 <div class="pago">
                 <br>
-                    <p> pago esta al dia <i class="fa-solid fa-badge-check"></i></p>
+                    <p> Pago actualizado y al dia</p>
                     <br>
-                    <p>deberas de actualizar el pago en el rango de fechas de: 1er al 10mo dia habil</p><br>
                 </div>
             </div>
 

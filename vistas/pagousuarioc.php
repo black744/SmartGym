@@ -65,7 +65,7 @@ include("../models/validacion_clientes.php");
                         <!--aca se conecta con la base de datos y si el check esta bien le dice, si el pago de este mes fue exitoso-->
                     </div>
                     <div class="notificacion">
-                        <p> estas al dia!! felicitaciones / no estas al dia con los pagos, debes : mes, mes, mes, etc</p>
+                    <p> Nota: Los Pagos deberan de realizarse en las fechas correspondientes a los primeros 10 dias habiles del mes, posterior a dichas fechas las cuentas sin pago seran suspendidas hasta realizar el pago y actualizadas por el administrador.</p>
                         <!--aca se conceta con la base de datos y en tal caso de que deba 1 omas meses notificarle cual debe,-->
                     </div>
                 </form>
@@ -73,7 +73,6 @@ include("../models/validacion_clientes.php");
 
         </div>
     </div>
-    <!-- fin contenido -->
     </div>
 </body>
 

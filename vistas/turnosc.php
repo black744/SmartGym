@@ -90,7 +90,7 @@ switch ($idrol) {
                     <p> Entrenador: <?php echo $rowclasesasignadas['entrenador']; ?></p>
                     <p> Tipo de turno: <?php echo $rowclasesasignadas['modalidad']; ?></p>
                     <p> Direccion: av. siempre viva 777</p>
-
+                    <br>
                 </div>
             <?php
             } ?>

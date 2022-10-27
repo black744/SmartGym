@@ -22,7 +22,7 @@ html{
 body {
     background: var(--color-fondo-html);
     min-width: 100vh;
-    min-height: 100vw;
+    min-height: 160vw;
     text-align: justify;
 }
 
@@ -294,17 +294,24 @@ main .contenido .post p {
 }
 
 .btn1 {
-	background:transparent; 
-	color: black; 
+	position: relative;
+    margin-left: 40vw;
+    height: 8vh;
+    width: 15%;
+    text-align: center;
+    background:transparent; 
+	color: white; 
 	border: 2px solid #fb4c0d;
 	transition: 0.3s;
 	border-radius: 6px;
+    cursor:pointer;
+    font-size: 15px;
 }
 
 .btn1:hover {
-	background-color: #fb4c0d;
-	color: white;
-	cursor: pointer;
+    border: 1px solid var(--color-fondos);
+    cursor: pointer;
+    transform: scale(1.1);
 }
 
 
@@ -318,31 +325,6 @@ main .contenido .post p {
 
 .box button:hover {
     border: 2px solid var(--color-fondos);
-    cursor: pointer;
-    transform: scale(1.1);
-}
-
-.btn-subir {
-    position: relative;
-    margin-left: 40vw;
-    height: 8vh;
-    width: 15%;
-    text-align: center;
-    background:transparent; 
-	color: black; 
-	border: 2px solid #fb4c0d;
-	transition: 0.3s;
-	border-radius: 6px;
-    cursor:pointer;
-    font-size: 15px;
-}
-
-.btn-subir i {
-    font-size: 5vh;
-}
-
-.btn-subir:hover {
-    border: 1px solid var(--color-fondos);
     cursor: pointer;
     transform: scale(1.1);
 }

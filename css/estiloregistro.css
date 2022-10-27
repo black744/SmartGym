@@ -131,7 +131,7 @@ body {
     outline: none;
     padding: .2rem 0;
     font-size: .9rem;
-    color: white;
+    color: #fff;
 }
 
 .formulario input:focus {

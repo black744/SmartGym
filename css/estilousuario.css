@@ -197,8 +197,8 @@ body{
 .perfil-usuario-avatar form {
     display: inline-block;
     position: absolute;
-    top: 25%;
-    left: -290%;
+    top: -65%;
+    left: -250%;
     border: none;
     background: transparent;
     width: 42vw;
@@ -206,6 +206,9 @@ body{
 
 #boton-av {
     color: var(--color-letra);
+    margin-right: 6vw;
+    margin-bottom: 3vh;
+    border-radius: 100px;
     background: var(--color-fondobotones);
 }
 
@@ -238,11 +241,8 @@ body{
     margin-left: 0%;
     margin-bottom: 2.5%;
     padding: 2%;
-    background: rgba( 251, 76, 13, 0.5 );
-box-shadow: 0 4px 10px 0 rgba(  251, 76, 13,0.37 );
-backdrop-filter: blur( 15.5px );
--webkit-backdrop-filter: blur( 15.5px );
-border-radius: 10px;
+    background: #fb4c0d;
+    border-radius: 10px;
 }
 
 .perfil-usuario-bio h4 {
@@ -261,16 +261,14 @@ border-radius: 10px;
     margin-top: 2%;
     margin-left: 0%;
     margin-bottom: 4vh;
-    background: rgba( 251, 76, 13, 0.5 );
-box-shadow: 0 4px 10px 0 rgba(  251, 76, 13,0.37 );
-backdrop-filter: blur( 15.5px );
--webkit-backdrop-filter: blur( 15.5px );
-border-radius: 10px;
+    background: #fb4c0d;
+    border-radius: 10px;
 }
 
 .perfil-usuario-footer p{
 color: var(--color-letra);
 font-size: 15px;
+display: flex;
 }
 
 .lista-datos {
@@ -304,7 +302,7 @@ font-size: 15px;
     color: var(--color-letra);
     border:3px solid var(--color-bordes-normales) ;
     border-radius: 15px;
-    transition: 1.2s;
+    transition: 0.5s;
     cursor:pointer;
     font-size: 15px;
 }
@@ -328,7 +326,7 @@ font-size: 15px;
     color: var(--color-letra);
     border:3px solid var(--color-bordes-normales) ;
     border-radius: 15px;
-    transition: 1.2s;
+    transition: 0.5s;
     cursor:pointer;
     font-size: 15px;
 }
@@ -502,7 +500,7 @@ p {
     color: var(--color-letra);
     border:3px solid var(--color-bordes-normales) ;
     border-radius: 15px;
-    transition: 1.2s;
+    transition: 0.5s;
     cursor:pointer;
     font-size: 15px;
 }
@@ -523,7 +521,7 @@ p {
     color: var(--color-letra);
     border:3px solid var(--color-bordes-normales) ;
     border-radius: 15px;
-    transition: 1.2s;
+    transition: 0.5s;
     cursor:pointer;
     font-size: 15px;
 }
@@ -590,7 +588,7 @@ p {
 
 .der{
     position: relative;
-    height: 90vh;
+    height: fit-content;
     width: 40vw;
     margin-left: 22%;
     margin-top: 2.6%;
