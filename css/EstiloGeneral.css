@@ -1,0 +1,64 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+/*------------------------------------- estilo ----- fuente -------------------------------------------------*/
+
+@import url('https://fonts.googleapis.com/css?family=Barlow+Semi+Condensed');
+#text{
+    font-family: "Barlow Semi Condensed", sans-serif;
+    text-align: center;
+    font-size: 16px;
+    color: rgb(255, 255, 255);
+    text-align: justify;
+}
+
+/*------------------------------------- estilo - div negros -------------------------------------------------*/
+
+#divsb{
+    border-radius: 15px;
+    background: rgba( 0, 0, 0, 0.2 );
+    backdrop-filter: blur( 3.5px );
+    -webkit-backdrop-filter: blur( 3.5px );
+}
+
+/*------------------------------------ estilo - div naranjas-------------------------------------------------*/
+
+#divso{
+    border-radius: 15px;
+    background: var(--color-naranja);
+}
+
+/*------------------------------------ estilo ----- botones -------------------------------------------------*/
+
+#btns{
+    font-size: 16px;
+    color: #fff;
+    background-color: #fb4c0d;
+    padding: 10px 30px;
+    border: solid #fb4c0d 2px;
+    box-shadow: rgb(0, 0, 0) 0px 0px 0px 0px;
+    border-radius: 50px;
+    transition : 446ms;
+    transform: translateY(0);
+    flex-direction: row;
+    align-items: center;
+    cursor: pointer;
+}
+
+#btns:hover{
+    transition : 446ms;
+    padding: 10px 50px;
+    transform : translateY(-0px);
+    background-color: #fff;
+    color: #fb4c0d;
+    border: solid 2px #fb4c0d;
+}
+
+/*------------------------------------- estilo ----- inputs -------------------------------------------------*/
+
+#inputs{}
+
+/*------------------------------------ estilo ----- selects -------------------------------------------------*/
+
+#selects{}

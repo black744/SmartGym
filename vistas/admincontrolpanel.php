@@ -142,7 +142,8 @@ switch ($idrol) {
                         $asocc= mysqli_fetch_array($querycomp);
                         $passworduser=$asocc['contraseña'];
                         if($password == $passworduser){
-
+                            $insert="UPDATE datos SET estado_cuenta='0' WHERE idusuario='$iduser'";
+                            $queryinsert=mysqli_query($conex, ($insert));
                         }
 
                     }
