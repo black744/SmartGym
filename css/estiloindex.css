@@ -10,7 +10,6 @@
 *{
     margin: 0%;
     padding: 0%;
-    font-family: "Lucida Console", "Courier New", monospace;
 }
 
 html{
@@ -22,7 +21,7 @@ html{
 body {
     background: var(--color-fondo-html);
     min-width: 100vh;
-    min-height: 160vw;
+    min-height: 155vw;
     text-align: justify;
 }
 
@@ -329,11 +328,3 @@ main .contenido .post p {
     transform: scale(1.1);
 }
 
-
-/* en caso de no funcionar borrar*/
-
-
-/* estilo boton subir */
-
-
-/* fin estilo boton  subir*/
