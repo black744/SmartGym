@@ -94,3 +94,10 @@
     cursor: pointer;
     transform: scale(1.1);
 }
+
+.imagenlogo{
+    width: 100px;
+    height: 60px;
+    margin-left: 45px;
+    margin-top: -25px;
+}

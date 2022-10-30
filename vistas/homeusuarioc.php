@@ -48,10 +48,10 @@ if ($numrowsquery == 0) {
 
 <head>
     <meta charset="UTF-8">
-
     <title>Home Usuario</title>
     <script src="https://kit.fontawesome.com/db50c9d526.js"></script>
     <link rel="stylesheet" href="../css/estilousuario.css">
+    <link rel="stylesheet" href="../css/EstiloGeneral.css">
     <script src="../js/appbotonnegro.js" type="text/javascript" defer></script>
 </head>
 <?php
@@ -77,7 +77,7 @@ switch ($idrol) {
 
         <div class="info">
 
-            <div class="izquierda">
+            <div class="izquierda" id="divsb">
                 <div class="turnoultimo">
                     <?php
                     $sqlper = "SELECT * FROM clases_clientes WHERE usuario=$idusuario";
@@ -107,7 +107,7 @@ switch ($idrol) {
             </div>
 
 
-            <div class="homepago">
+            <div class="homepago" id="divsb">
                 
                 <div class="pago">
                 <br>
@@ -138,16 +138,10 @@ switch ($idrol) {
                     margin-top: 25vw;
                     height: fit-content;
                     width: 45vw;
-                    border-radius: 10px;
-                    background: rgba(255, 255, 255, 0.2);
-                    backdrop-filter: blur(3.5px);
-                    -webkit-backdrop-filter: blur(3.5px);
-                    border-radius: 10px;
-                    border: 1px solid rgba(255, 255, 255, 0.18);
                 }
             </style>
 
-            <div class="derecha">
+            <div class="derecha" id="divsb">
                 <img src="data:image/jpg;base64,<?php echo base64_encode($image); ?>" class="imgp">
                 <div class="nombre">
                     <p><?php echo $row['nombre'] ?></p>
@@ -162,8 +156,8 @@ switch ($idrol) {
                 <div class="progresoform">
                     <form method="post">
                         <p>ingrese peso actual</p>
-                        <input class="orange" type="text" name="pesoactual">
-                        <input id="btn" class="botonenviar" type="submit" name="enviar">
+                        <input class="orange" type="text" id="inputs" name="pesoactual" placeholder="Ingrese peso en kg">
+                        <input id="btns" class="botonenviar" type="submit" name="enviar">
                     </form>
                     <?php
                     if (isset($_POST['enviarpesoactual'])) {
@@ -174,8 +168,8 @@ switch ($idrol) {
                     ?>
                     <form method="post">
                         <p>ingrese peso ideal</p>
-                        <input class="orange" type="text" name="pesoideal">
-                        <input id="btn" class="botonenviar" type="submit" name="enviar">
+                        <input class="orange" id="inputs" type="text" name="pesoideal" placeholder="Ingrese peso en kg">
+                        <input id="btns" class="botonenviar" type="submit" name="enviar">
                     </form>
                     <?php
                     if (isset($_POST['enviarpesoideal'])) {

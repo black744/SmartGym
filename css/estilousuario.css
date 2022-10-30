@@ -10,51 +10,7 @@
 *{
     margin: 0%;
     padding: 0%;
-    font-family: "Lucida Console", "Courier New", monospace;
 }
-
-html{
-    background-image: url("../img/fondo_icon.png");
-}
-
-body{
-    background-image: url("../img/fondo_icon.png");
-}
-
-#btn{
-    position: flex;
-    margin: 3vh;
-    height: 6.5vh;
-    width: 10vw;
-    font-size: 16px;
-    color: #fff;
-    background-color: #fb4c0d;
-    padding: 10px 30px;
-    border: solid #fb4c0d 2px;
-    box-shadow: rgb(0, 0, 0) 0px 0px 0px 0px;
-    border-radius: 50px;
-    transition : 446ms;
-    transform: translateY(0);
-    flex-direction: row;
-    align-items: center;
-    cursor: pointer;
-    text-transform: lowercase;
-    }
-
-    #btn:hover{
-    
-    transition : 446ms;
-    padding: 10px 50px;
-    transform : translateY(-0px);
-    background-color: #fff;
-    color: #fb4c0d;
-    border: solid 2px #fb4c0d;
-    }
-    
-/* inicio estilo de menu*/
-
-
-/* fin de estilo de menu */
 
 .main_content {
     width: 80%;
@@ -62,19 +18,13 @@ body{
     margin-left: 15vw;
 }
 
-/* main */
+/*---------------------------------------------------*/
 .izquierda {
     width: 45VW;
     height: fit-content;
     margin-left: 2px;
     position: absolute;
     margin-top: 5vh;
-    border-radius:10px;
-    background: rgba( 255, 255, 255, 0.2 );
-    backdrop-filter: blur( 3.5px );
-    -webkit-backdrop-filter: blur( 3.5px );
-    border-radius: 10px;
-    border: 1px solid rgba( 255, 255, 255, 0.18 );
 }
 
 .derecha {
@@ -83,15 +33,46 @@ body{
     margin-left: 50vw;
     position: absolute;
     margin-top: 5vh;
-    border-width: 3px;
-    border-bottom: 3px;
-    border-radius:10px;
-    background: rgba( 255, 255, 255, 0.2 );
-    backdrop-filter: blur( 3.5px );
-    -webkit-backdrop-filter: blur( 3.5px );
-    border-radius: 10px;
-    border: 1px solid rgba( 255, 255, 255, 0.18 );
 }
+
+.izq{
+    position: relative;
+    left: 15vw;
+    margin-top: 2.6%;
+    margin-left: 2%;
+    margin-bottom: 2vh;
+    height: fit-content;
+    width: 30vw;
+}
+
+.der{
+    position: relative;
+    height: fit-content;
+    width: 40vw;
+    margin-left: 22%;
+    margin-top: 2.6%;
+    margin-bottom: 9%;
+}
+
+.izqui{
+    position: relative;
+    left: 15vw;
+    margin: 2%;
+    height: 60vh;
+    width: 30vw;
+    text-align: justify;
+}
+
+.dere{
+    position: absolute;
+    top: 0vh;
+    left: 52vw;
+    height: 90vh;
+    width: 40vw;
+    margin: 2%;
+}
+
+/*---------------------------------------------------*/
 .imgp{
     margin-left: 40%;
     max-width: 10vw;
@@ -138,20 +119,6 @@ body{
     margin-bottom: 2vh;
     height: 5.5vh;
     width: 8vw;
-    text-align: center;
-    background: var(--color-fondobotones);
-    color: var(--color-letra);
-    border:3px solid var(--color-bordes-normales) ;
-    border-radius: 15px;
-    transition: 0.5s;
-    cursor:pointer;
-    font-size: 15px;
-}
-
-.orange:focus{
-    border: 2px solid var(--color-fondos);
-    cursor: pointer;
-    transform: scale(1.1);
 }
 
 .botonenviar{
@@ -159,25 +126,11 @@ body{
     margin: 3vh;
     height: 6.5vh;
     width: 10vw;
-    text-align: center;
-    background: var(--color-fondobotones);
-    color: var(--color-letra);
-    border:3px solid var(--color-bordes-normales) ;
-    border-radius: 15px;
-    transition: 0.5s;
-    cursor:pointer;
-    font-size: 15px;
-}
-
-.botonenviar:hover{
-    border: 2px solid var(--color-fondos);
-    cursor: pointer;
-    transform: scale(1.1);
 }
 
 /* main */
 
-/* Inicio Izquierda */
+/* Inicio Izquierda cliente y entrenador */
 .turnoultimo{
     width: 95%;
     height: 20%;
@@ -193,88 +146,6 @@ body{
     margin-left: 5vh;
     color: var(--color-letra);
 }
+/* Fin Izquierda cliente y entrenador */
 
-
-/* Fin Izquierda */
-
-/* INICIO sidebar */
-
-.imagenlogo{
-    width: 100px;
-    height: 60px;
-    margin-left: 45px;
-    margin-top: -25px;
-
-}
-
-/* Fin sidebars */
-
-/*Aca estilo usuario admin*/
-
-.izq{
-    position: relative;
-    left: 15vw;
-    margin-top: 2.6%;
-    margin-left: 2%;
-    margin-bottom: 2vh;
-    height: fit-content;
-    width: 30vw;
-    text-align: justify;
-    border-radius: 15px;
-    font-size: 15px;
-    background: rgba( 255, 255, 255, 0.2 );
-    backdrop-filter: blur( 3.5px );
-    -webkit-backdrop-filter: blur( 3.5px );
-    border-radius: 10px;
-    border: 1px solid rgba( 255, 255, 255, 0.18 );
-}
-
-.der{
-    position: relative;
-    height: fit-content;
-    width: 40vw;
-    margin-left: 22%;
-    margin-top: 2.6%;
-    margin-bottom: 9%;
-    border-radius:10px ;
-    text-align: justify;
-    background: rgba( 255, 255, 255, 0.2 );
-    backdrop-filter: blur( 3.5px );
-    -webkit-backdrop-filter: blur( 3.5px );
-    border-radius: 10px;
-    border: 1px solid rgba( 255, 255, 255, 0.18 );
-}
-
-.izqui{
-    position: relative;
-    left: 15vw;
-    margin: 2%;
-    height: 60vh;
-    width: 30vw;
-    text-align: justify;
-    border-radius: 15px;
-    font-size: 15px;
-    background: rgba( 255, 255, 255, 0.2 );
-    backdrop-filter: blur( 3.5px );
-    -webkit-backdrop-filter: blur( 3.5px );
-    border-radius: 10px;
-    border: 1px solid rgba( 255, 255, 255, 0.18 );
-}
-
-.dere{
-    position: absolute;
-    top: 0vh;
-    left: 52vw;
-    height: 90vh;
-    width: 40vw;
-    margin: 2%;
-    border-radius:10px ;
-    text-align: justify;
-    background: rgba( 255, 255, 255, 0.2 );
-    backdrop-filter: blur( 3.5px );
-    -webkit-backdrop-filter: blur( 3.5px );
-    border-radius: 10px;
-    border: 1px solid rgba( 255, 255, 255, 0.18 );
-}
-/*Aca empieza el modo polenta */
 

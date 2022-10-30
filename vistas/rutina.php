@@ -32,6 +32,7 @@ include("../models/validacion_clientes.php");
     <link rel="stylesheet" href="../css/estilousuario.css">
     <link rel="stylesheet" href="../css/estilorutina.css">
     <link rel="stylesheet" href="../css/estilodiv.css">
+    <link rel="stylesheet" href="../css/EstiloGeneral.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
@@ -72,7 +73,7 @@ switch ($idrol) {
     
         <div class="carousel">
 
-            <div class="carousel__item">Lunes
+            <div class="carousel__item" id="divsb">Lunes
                 <div class="swiper swiper-hero">
                     <div class="swiper-wrapper">
 
@@ -81,7 +82,7 @@ switch ($idrol) {
                             <button class="btn-m" id="mostra"><i class="fa-solid fa-plus"></i></button>
                             <div class="sobretodo" id="oculto">
                                 <form method="post" action="getform.php" target="print_popup" onsubmit="window.open('about:blank','print_popup','width=600,height=300');">
-                                    
+                                    <br>
                                         <select class="se" name="s-e" onchange="enviar(this.form)">
                                             <?php
                     $sqlentrenador = "SELECT nombre,id_ejercicio FROM ejercicios";
@@ -112,7 +113,7 @@ switch ($idrol) {
                             <button class="btn-m" id="mostra"><i class="fa-solid fa-plus"></i></button>
                             <div class="sobretodo" id="oculto">
                             <form method="post" action="getform.php" target="print_popup" onsubmit="window.open('about:blank','print_popup','width=600,height=300');">
-                                    
+                                    <br>
                                         <select class="se" name="s-e" onchange="enviar(this.form)">
                                             <?php
                     $sqlentrenador = "SELECT nombre,id_ejercicio FROM ejercicios";
@@ -142,7 +143,7 @@ switch ($idrol) {
                             <button class="btn-m" id="mostra"><i class="fa-solid fa-plus"></i></button>
                             <div class="sobretodo" id="oculto">
                             <form method="post" action="getform.php" target="print_popup" onsubmit="window.open('about:blank','print_popup','width=600,height=300');">
-                                    
+                            <br>
                                     <select class="se" name="s-e" onchange="enviar(this.form)">
                                         <?php
                 $sqlentrenador = "SELECT nombre,id_ejercicio FROM ejercicios";
@@ -172,7 +173,7 @@ switch ($idrol) {
                             <button class="btn-m" id="mostra"><i class="fa-solid fa-plus"></i></button>
                             <div class="sobretodo" id="oculto">
                             <form method="post" action="getform.php" target="print_popup" onsubmit="window.open('about:blank','print_popup','width=600,height=300');">
-                                    
+                            <br>
                                     <select class="se" name="s-e" onchange="enviar(this.form)">
                                         <?php
                 $sqlentrenador = "SELECT nombre,id_ejercicio FROM ejercicios";
@@ -202,7 +203,7 @@ switch ($idrol) {
                             <button class="btn-m" id="mostra"><i class="fa-solid fa-plus"></i></button>
                             <div class="sobretodo" id="oculto">
                             <form method="post" action="getform.php" target="print_popup" onsubmit="window.open('about:blank','print_popup','width=600,height=300');">
-                                    
+                            <br>
                                     <select class="se" name="s-e" onchange="enviar(this.form)">
                                         <?php
                 $sqlentrenador = "SELECT nombre,id_ejercicio FROM ejercicios";
@@ -234,7 +235,7 @@ switch ($idrol) {
                 </div>
             </div>
 
-            <div class="carousel__item">Martes
+            <div class="carousel__item" id="divsb">Martes
                 <div class="swiper swiper-hero">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">
@@ -242,7 +243,7 @@ switch ($idrol) {
                             <button class="btn-m" id="mostra"><i class="fa-solid fa-plus"></i></button>
                             <div class="sobretodo" id="oculto">
                             <form method="post" action="getform.php" target="print_popup" onsubmit="window.open('about:blank','print_popup','width=600,height=300');">
-                                    
+                            <br>
                                     <select class="se" name="s-e" onchange="enviar(this.form)">
                                         <?php
                 $sqlentrenador = "SELECT nombre,id_ejercicio FROM ejercicios";
@@ -272,7 +273,7 @@ switch ($idrol) {
                             <button class="btn-m" id="mostra"><i class="fa-solid fa-plus"></i></button>
                             <div class="sobretodo" id="oculto">
                             <form method="post" action="getform.php" target="print_popup" onsubmit="window.open('about:blank','print_popup','width=600,height=300');">
-                                    
+                            <br>
                                     <select class="se" name="s-e" onchange="enviar(this.form)">
                                         <?php
                 $sqlentrenador = "SELECT nombre,id_ejercicio FROM ejercicios";
@@ -302,7 +303,7 @@ switch ($idrol) {
                             <button class="btn-m" id="mostra"><i class="fa-solid fa-plus"></i></button>
                             <div class="sobretodo" id="oculto">
                             <form method="post" action="getform.php" target="print_popup" onsubmit="window.open('about:blank','print_popup','width=600,height=300');">
-                                    
+                            <br>
                                     <select class="se" name="s-e" onchange="enviar(this.form)">
                                         <?php
                 $sqlentrenador = "SELECT nombre,id_ejercicio FROM ejercicios";
@@ -332,7 +333,7 @@ switch ($idrol) {
                             <button class="btn-m" id="mostra"><i class="fa-solid fa-plus"></i></button>
                             <div class="sobretodo" id="oculto">
                             <form method="post" action="getform.php" target="print_popup" onsubmit="window.open('about:blank','print_popup','width=600,height=300');">
-                                    
+                            <br>
                                     <select class="se" name="s-e" onchange="enviar(this.form)">
                                         <?php
                 $sqlentrenador = "SELECT nombre,id_ejercicio FROM ejercicios";
@@ -362,7 +363,7 @@ switch ($idrol) {
                             <button class="btn-m" id="mostra"><i class="fa-solid fa-plus"></i></button>
                             <div class="sobretodo" id="oculto">
                             <form method="post" action="getform.php" target="print_popup" onsubmit="window.open('about:blank','print_popup','width=600,height=300');">
-                                    
+                            <br>
                                     <select class="se" name="s-e" onchange="enviar(this.form)">
                                         <?php
                 $sqlentrenador = "SELECT nombre,id_ejercicio FROM ejercicios";
@@ -394,7 +395,7 @@ switch ($idrol) {
                     <div class="swiper-button-next"></div>
                 </div>
             </div>
-            <div class="carousel__item">Miercoles
+            <div class="carousel__item" id="divsb">Miercoles
                 <div class="swiper swiper-hero">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">
@@ -402,7 +403,7 @@ switch ($idrol) {
                             <button class="btn-m" id="mostra"><i class="fa-solid fa-plus"></i></button>
                             <div class="sobretodo" id="oculto">
                             <form method="post" action="getform.php" target="print_popup" onsubmit="window.open('about:blank','print_popup','width=600,height=300');">
-                                    
+                            <br>
                                     <select class="se" name="s-e" onchange="enviar(this.form)">
                                         <?php
                 $sqlentrenador = "SELECT nombre,id_ejercicio FROM ejercicios";
@@ -432,7 +433,7 @@ switch ($idrol) {
                             <button class="btn-m" id="mostra"><i class="fa-solid fa-plus"></i></button>
                             <div class="sobretodo" id="oculto">
                             <form method="post" action="getform.php" target="print_popup" onsubmit="window.open('about:blank','print_popup','width=600,height=300');">
-                                    
+                            <br>
                                     <select class="se" name="s-e" onchange="enviar(this.form)">
                                         <?php
                 $sqlentrenador = "SELECT nombre,id_ejercicio FROM ejercicios";
@@ -462,7 +463,7 @@ switch ($idrol) {
                             <button class="btn-m" id="mostra"><i class="fa-solid fa-plus"></i></button>
                             <div class="sobretodo" id="oculto">
                             <form method="post" action="getform.php" target="print_popup" onsubmit="window.open('about:blank','print_popup','width=600,height=300');">
-                                    
+                            <br>
                                     <select class="se" name="s-e" onchange="enviar(this.form)">
                                         <?php
                 $sqlentrenador = "SELECT nombre,id_ejercicio FROM ejercicios";
@@ -492,7 +493,7 @@ switch ($idrol) {
                             <button class="btn-m" id="mostra"><i class="fa-solid fa-plus"></i></button>
                             <div class="sobretodo" id="oculto">
                             <form method="post" action="getform.php" target="print_popup" onsubmit="window.open('about:blank','print_popup','width=600,height=300');">
-                                    
+                            <br>
                                     <select class="se" name="s-e" onchange="enviar(this.form)">
                                         <?php
                 $sqlentrenador = "SELECT nombre,id_ejercicio FROM ejercicios";
@@ -522,7 +523,7 @@ switch ($idrol) {
                             <button class="btn-m" id="mostra"><i class="fa-solid fa-plus"></i></button>
                             <div class="sobretodo" id="oculto">
                             <form method="post" action="getform.php" target="print_popup" onsubmit="window.open('about:blank','print_popup','width=600,height=300');">
-                                    
+                            <br>
                                     <select class="se" name="s-e" onchange="enviar(this.form)">
                                         <?php
                 $sqlentrenador = "SELECT nombre,id_ejercicio FROM ejercicios";
@@ -553,7 +554,7 @@ switch ($idrol) {
                     <div class="swiper-button-next"></div>
                 </div>
             </div>
-            <div class="carousel__item">Jueves
+            <div class="carousel__item" id="divsb">Jueves
                 <div class="swiper swiper-hero">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">
@@ -561,7 +562,7 @@ switch ($idrol) {
                             <button class="btn-m" id="mostra"><i class="fa-solid fa-plus"></i></button>
                             <div class="sobretodo" id="oculto">
                             <form method="post" action="getform.php" target="print_popup" onsubmit="window.open('about:blank','print_popup','width=600,height=300');">
-                                    
+                            <br>
                                     <select class="se" name="s-e" onchange="enviar(this.form)">
                                         <?php
                 $sqlentrenador = "SELECT nombre,id_ejercicio FROM ejercicios";
@@ -591,7 +592,7 @@ switch ($idrol) {
                             <button class="btn-m" id="mostra"><i class="fa-solid fa-plus"></i></button>
                             <div class="sobretodo" id="oculto">
                             <form method="post" action="getform.php" target="print_popup" onsubmit="window.open('about:blank','print_popup','width=600,height=300');">
-                                    
+                            <br>
                                     <select class="se" name="s-e" onchange="enviar(this.form)">
                                         <?php
                 $sqlentrenador = "SELECT nombre,id_ejercicio FROM ejercicios";
@@ -621,7 +622,7 @@ switch ($idrol) {
                             <button class="btn-m" id="mostra"><i class="fa-solid fa-plus"></i></button>
                             <div class="sobretodo" id="oculto">
                             <form method="post" action="getform.php" target="print_popup" onsubmit="window.open('about:blank','print_popup','width=600,height=300');">
-                                    
+                            <br>
                                     <select class="se" name="s-e" onchange="enviar(this.form)">
                                         <?php
                 $sqlentrenador = "SELECT nombre,id_ejercicio FROM ejercicios";
@@ -651,7 +652,7 @@ switch ($idrol) {
                             <button class="btn-m" id="mostra"><i class="fa-solid fa-plus"></i></button>
                             <div class="sobretodo" id="oculto">
                             <form method="post" action="getform.php" target="print_popup" onsubmit="window.open('about:blank','print_popup','width=600,height=300');">
-                                    
+                            <br>
                                     <select class="se" name="s-e" onchange="enviar(this.form)">
                                         <?php
                 $sqlentrenador = "SELECT nombre,id_ejercicio FROM ejercicios";
@@ -681,7 +682,7 @@ switch ($idrol) {
                             <button class="btn-m" id="mostra"><i class="fa-solid fa-plus"></i></button>
                             <div class="sobretodo" id="oculto">
                             <form method="post" action="getform.php" target="print_popup" onsubmit="window.open('about:blank','print_popup','width=600,height=300');">
-                                    
+                            <br>
                                     <select class="se" name="s-e" onchange="enviar(this.form)">
                                         <?php
                 $sqlentrenador = "SELECT nombre,id_ejercicio FROM ejercicios";
@@ -712,7 +713,7 @@ switch ($idrol) {
                     <div class="swiper-button-next"></div>
                 </div>
             </div>
-            <div class="carousel__item">Viernes
+            <div class="carousel__item" id="divsb">Viernes
                 <div class="swiper swiper-hero">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">
@@ -720,7 +721,7 @@ switch ($idrol) {
                             <button class="btn-m" id="mostra"><i class="fa-solid fa-plus"></i></button>
                             <div class="sobretodo" id="oculto">
                             <form method="post" action="getform.php" target="print_popup" onsubmit="window.open('about:blank','print_popup','width=600,height=300');">
-                                    
+                            <br>
                                     <select class="se" name="s-e" onchange="enviar(this.form)">
                                         <?php
                 $sqlentrenador = "SELECT nombre,id_ejercicio FROM ejercicios";
@@ -750,7 +751,7 @@ switch ($idrol) {
                             <button class="btn-m" id="mostra"><i class="fa-solid fa-plus"></i></button>
                             <div class="sobretodo" id="oculto">
                             <form method="post" action="getform.php" target="print_popup" onsubmit="window.open('about:blank','print_popup','width=600,height=300');">
-                                    
+                            <br>
                                     <select class="se" name="s-e" onchange="enviar(this.form)">
                                         <?php
                 $sqlentrenador = "SELECT nombre,id_ejercicio FROM ejercicios";
@@ -780,7 +781,7 @@ switch ($idrol) {
                             <button class="btn-m" id="mostra"><i class="fa-solid fa-plus"></i></button>
                             <div class="sobretodo" id="oculto">
                             <form method="post" action="getform.php" target="print_popup" onsubmit="window.open('about:blank','print_popup','width=600,height=300');">
-                                    
+                            <br>
                                     <select class="se" name="s-e" onchange="enviar(this.form)">
                                         <?php
                 $sqlentrenador = "SELECT nombre,id_ejercicio FROM ejercicios";
@@ -810,7 +811,7 @@ switch ($idrol) {
                             <button class="btn-m" id="mostra"><i class="fa-solid fa-plus"></i></button>
                             <div class="sobretodo" id="oculto">
                             <form method="post" action="getform.php" target="print_popup" onsubmit="window.open('about:blank','print_popup','width=600,height=300');">
-                                    
+                            <br>
                                     <select class="se" name="s-e" onchange="enviar(this.form)">
                                         <?php
                 $sqlentrenador = "SELECT nombre,id_ejercicio FROM ejercicios";
@@ -840,7 +841,7 @@ switch ($idrol) {
                             <button class="btn-m" id="mostra"><i class="fa-solid fa-plus"></i></button>
                             <div class="sobretodo" id="oculto">
                             <form method="post" action="getform.php" target="print_popup" onsubmit="window.open('about:blank','print_popup','width=600,height=300');">
-                                    
+                            <br>
                                     <select class="se" name="s-e" onchange="enviar(this.form)">
                                         <?php
                 $sqlentrenador = "SELECT nombre,id_ejercicio FROM ejercicios";
@@ -871,7 +872,7 @@ switch ($idrol) {
                     <div class="swiper-button-next"></div>
                 </div>
             </div>
-            <div class="carousel__item">Sabado
+            <div class="carousel__item" id="divsb">Sabado
                 <div class="swiper swiper-hero">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">
@@ -879,7 +880,7 @@ switch ($idrol) {
                             <button class="btn-m" id="mostra"><i class="fa-solid fa-plus"></i></button>
                             <div class="sobretodo" id="oculto">
                             <form method="post" action="getform.php" target="print_popup" onsubmit="window.open('about:blank','print_popup','width=600,height=300');">
-                                    
+                            <br>
                                     <select class="se" name="s-e" onchange="enviar(this.form)">
                                         <?php
                 $sqlentrenador = "SELECT nombre,id_ejercicio FROM ejercicios";
@@ -909,7 +910,7 @@ switch ($idrol) {
                             <button class="btn-m" id="mostra"><i class="fa-solid fa-plus"></i></button>
                             <div class="sobretodo" id="oculto">
                             <form method="post" action="getform.php" target="print_popup" onsubmit="window.open('about:blank','print_popup','width=600,height=300');">
-                                    
+                            <br>
                                     <select class="se" name="s-e" onchange="enviar(this.form)">
                                         <?php
                 $sqlentrenador = "SELECT nombre,id_ejercicio FROM ejercicios";
@@ -939,7 +940,7 @@ switch ($idrol) {
                             <button class="btn-m" id="mostra"><i class="fa-solid fa-plus"></i></button>
                             <div class="sobretodo" id="oculto">
                             <form method="post" action="getform.php" target="print_popup" onsubmit="window.open('about:blank','print_popup','width=600,height=300');">
-                                    
+                            <br>
                                     <select class="se" name="s-e" onchange="enviar(this.form)">
                                         <?php
                 $sqlentrenador = "SELECT nombre,id_ejercicio FROM ejercicios";
@@ -969,7 +970,7 @@ switch ($idrol) {
                             <button class="btn-m" id="mostra"><i class="fa-solid fa-plus"></i></button>
                             <div class="sobretodo" id="oculto">
                             <form method="post" action="getform.php" target="print_popup" onsubmit="window.open('about:blank','print_popup','width=600,height=300');">
-                                    
+                            <br>
                                     <select class="se" name="s-e" onchange="enviar(this.form)">
                                         <?php
                 $sqlentrenador = "SELECT nombre,id_ejercicio FROM ejercicios";
@@ -999,7 +1000,7 @@ switch ($idrol) {
                             <button class="btn-m" id="mostra"><i class="fa-solid fa-plus"></i></button>
                             <div class="sobretodo" id="oculto">
                             <form method="post" action="getform.php" target="print_popup" onsubmit="window.open('about:blank','print_popup','width=600,height=300');">
-                                    
+                            <br>
                                     <select class="se" name="s-e" onchange="enviar(this.form)">
                                         <?php
                 $sqlentrenador = "SELECT nombre,id_ejercicio FROM ejercicios";

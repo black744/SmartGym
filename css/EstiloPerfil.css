@@ -65,7 +65,7 @@
 .perfil-usuario-avatar form {
     display: inline-block;
     position: absolute;
-    top: -65%;
+    top: -60%;
     left: -250%;
     border: none;
     background: transparent;
@@ -94,11 +94,6 @@
     position: relative;
     border-radius: 25px;
     margin: 2vh;
-    background: rgba( 255, 255, 255, 0.2 );
-    backdrop-filter: blur( 3.5px );
-    -webkit-backdrop-filter: blur( 3.5px );
-    border-radius: 10px;
-    border: 1px solid rgba( 255, 255, 255, 0.18 );
 }
 
 .perfil-usuario-bio {
@@ -164,21 +159,8 @@ display: flex;
 .lista-datos input {
     margin-bottom: 2vh;
     height: 3.5vh;
-    width: 15vw;
+    width: 18vw;
     text-align: center;
-    background: var(--color-fondobotones);
-    color: var(--color-letra);
-    border:3px solid var(--color-bordes-normales) ;
-    border-radius: 15px;
-    transition: 0.5s;
-    cursor:pointer;
-    font-size: 15px;
-}
-
-.lista-datos input:focus{
-    border: 1px solid var(--color-fondos);
-    cursor: pointer;
-    transform: scale(1.1);
 }
 
 
@@ -189,18 +171,5 @@ display: flex;
     margin-left: 5vh;
     height: 6.5vh;
     width: 15vw;
-    text-align: center;
-    background: var(--color-fondobotones);
-    color: var(--color-letra);
-    border:3px solid var(--color-bordes-normales) ;
-    border-radius: 15px;
-    transition: 0.5s;
-    cursor:pointer;
-    font-size: 15px;
 }
 
-.perfil-usuario-body button:hover{
-    border: 1px solid var(--color-fondos);
-    cursor: pointer;
-    transform: scale(1.1);
-}

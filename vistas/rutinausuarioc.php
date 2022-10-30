@@ -51,6 +51,7 @@ include("../models/validacion_clientes.php");
     <link rel="stylesheet" href="../css/estilousuario.css">
     <link rel="stylesheet" href="../css/estilorutina.css">
     <link rel="stylesheet" href="../css/estilodiv.css">
+    <link rel="stylesheet" href="../css/EstiloGeneral.css">
 </head>
 <style>
   .dataview{
@@ -69,7 +70,7 @@ include("../models/validacion_clientes.php");
     <div class="menu">
 
     <div class="carousel">
-        <div class="carousel__item">Lunes 
+        <div class="carousel__item" id="divsb">Lunes 
             
         <div class="swiper swiper-hero">
       <!-- Additional required wrapper -->
@@ -239,7 +240,7 @@ include("../models/validacion_clientes.php");
       <!-- <div class="swiper-scrollbar"></div> -->
     </div>
 </div>
-        <div class="carousel__item">Martes
+        <div class="carousel__item" id="divsb">Martes
 
         <div class="swiper swiper-hero">
       <!-- Additional required wrapper -->
@@ -386,7 +387,7 @@ include("../models/validacion_clientes.php");
     </div>
 
         </div>
-        <div class="carousel__item">Miercoles
+        <div class="carousel__item" id="divsb">Miercoles
 
         <div class="swiper swiper-hero">
       <!-- Additional required wrapper -->
@@ -535,7 +536,7 @@ include("../models/validacion_clientes.php");
     </div>
 
         </div>
-        <div class="carousel__item">Jueves
+        <div class="carousel__item" id="divsb">Jueves
 
         <div class="swiper swiper-hero">
       <!-- Additional required wrapper -->
@@ -683,7 +684,7 @@ include("../models/validacion_clientes.php");
     </div>
 
         </div>
-        <div class="carousel__item">Viernes
+        <div class="carousel__item" id="divsb">Viernes
 
         <div class="swiper swiper-hero">
       <!-- Additional required wrapper -->
@@ -830,7 +831,7 @@ include("../models/validacion_clientes.php");
     </div>
 
         </div>
-        <div class="carousel__item">Sabado
+        <div class="carousel__item" id="divsb">Sabado
 
         <div class="swiper swiper-hero">
       <!-- Additional required wrapper -->

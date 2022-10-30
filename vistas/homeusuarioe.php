@@ -31,6 +31,7 @@ include("../models/validacion_clientes.php");
 
     <title>Home Usuario</title>
     <link rel="stylesheet" href="../css/estilousuario.css">
+    <link rel="stylesheet" href="../css/EstiloGeneral.css">
 </head>
 <?php
 switch ($idrol) {
@@ -51,7 +52,13 @@ switch ($idrol) {
 
 <body>
 
-    <div class="izq">
+    <div class="izq" id="divsb">
+        <style>
+            h1{
+                margin: 3%;
+                color: #fff;
+            }
+        </style>
         <h1>Turnos proximos</h1>
 
         <div class="turno-prox">
@@ -97,7 +104,7 @@ switch ($idrol) {
         }
     </style>
 
-    <div class="der">
+    <div class="der" id="divsb" >
         <h1> datos semanales</h1>
         <hr>
         <div class="caruselo">

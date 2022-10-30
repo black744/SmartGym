@@ -57,7 +57,7 @@
                     <div class="container">
                         <div class="container2"></div>
 
-                        <div class="box" onclick="location.href='../models/registro.php'">
+                        <div class="box" onclick="location.href='registro.php'">
                             &nbsp;
                             <i class="fa-solid fa-laptop"></i>
                             <h2> Plan virtual</h2> <br>
@@ -65,7 +65,7 @@
                             <button class="btn1"> Desde $1000 </button>
                         </div>
 
-                        <div class="box" onclick="location.href='../models/registro.php'">
+                        <div class="box" onclick="location.href='registro.php'">
                             &nbsp;
                             <i class="fa-solid fa-arrow-right-arrow-left"></i>
                             <h2> Plan Mixto </h2><br>
@@ -75,7 +75,7 @@
                             <button class="btn1"> Desde $3000 </button>
                         </div>
 
-                        <div class="box" onclick="location.href='../models/registro.php'">
+                        <div class="box" onclick="location.href='registro.php'">
                             &nbsp;
                             <i class="fa-solid fa-dumbbell"></i>
                             <h2> Plan Presencial </h2> <br>

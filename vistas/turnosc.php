@@ -27,6 +27,7 @@ include("../models/validacion_clientes.php");
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="../css/estilousuario.css">
     <link rel="stylesheet" type="text/css" href="../css/estiloturnos.css">
+    <link rel="stylesheet" type="text/css" href="../css/EstiloGeneral.css">
 
     <title>Turnos</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
@@ -70,7 +71,7 @@ switch ($idrol) {
 
 <body>
 
-    <div class="cont-body-turnos">
+    <div class="cont-body-turnos" id="divsb">
         <div class="cont-turnos-asignados">
             <div class="header">
                 <P>Turnos asignados</P>
