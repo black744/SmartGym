@@ -21,7 +21,7 @@
 
                 <li><a href="homeusuarioc.php"><i class="fas fa-home"></i>Home</a></li>
                 <li><a href="perfilusuarioc.php"><i class="fas fa-user"></i>Perfil</a></li>
-                <li><a href="turnosc.php"><i class="fas fa-address-card"></i>Turnos</a></li>
+                <li><a href="turnosc.php"><i class="fas fa-address-card"></i>Clases</a></li>
                 <li><a href="rutinausuarioc.php"><i class="fas fa-project-diagram"></i>Rutina</a></li>
                 <li><a href="pagousuarioc.php"><i class="fas fa-sack-dollar"></i>Pago</a></li>
                 <li><a href="indexchat.php"><i class="fas fa-address-book"></i>mensajeria</a></li>

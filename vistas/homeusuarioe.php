@@ -59,7 +59,7 @@ switch ($idrol) {
                 color: #fff;
             }
         </style>
-        <h1>Turnos proximos</h1>
+        <h1> Proximas clases </h1>
 
         <div class="turno-prox">
             <?php
