@@ -5,6 +5,6 @@
 
     if($array['estado_cuenta'] == 0){
         echo("<script>alert('ERROR, Tu cuenta no esta validada, debes pagar o aguardar a que se actualice el pago.');</script>");
-        echo("<script>window.location.href = '../models/sessiondestroy.php';</script>");
+        echo("<script>window.location.href = '../vistas/index_pago.php';</script>");
     }
 ?>
