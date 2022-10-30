@@ -51,15 +51,16 @@ include("../models/validacion_clientes.php");
     <link rel="stylesheet" href="../css/estilousuario.css">
     <link rel="stylesheet" href="../css/estilorutina.css">
     <link rel="stylesheet" href="../css/estilodiv.css">
+    <link rel="stylesheet" href="../css/EstiloGeneral.css">
 </head>
 <style>
   .dataview{
-    background-color: red;
-    left: 4vh;
-    top: 8vh;
+    background: #fb4c0d;
+    left: 8vh;
+    top: 6vh;
     position: absolute;
-    height: 40vh;
-    width: 80vh;
+    height: 50vh;
+    width: 78vh;
     border-radius: 30px;
     border-width: 3px ;
   }
@@ -69,14 +70,14 @@ include("../models/validacion_clientes.php");
     <div class="menu">
 
     <div class="carousel">
-        <div class="carousel__item">Lunes 
+        <div class="carousel__item" id="divsb">Lunes 
             
         <div class="swiper swiper-hero">
       <!-- Additional required wrapper -->
       <div class="swiper-wrapper">
         <!-- Slides -->
         <div class="swiper-slide">
-            <p>ejercicio  1</p>
+            <p>Ejercicio 1</p>
             <div class="dataview">
               <?php
               $sqlmostrarlunesej1= "SELECT rutinas_lunes.idusuario, rutinas_lunes.series_ej1, rutinas_lunes.repeticiones_ej1, ejercicios.nombre, ejercicios.descripcion
@@ -86,10 +87,11 @@ include("../models/validacion_clientes.php");
               $rowlunesej1= mysqli_fetch_array($querymostrarlunesej1);
               if($rowlunesej1 != 0){
               ?>
-              <p><?php echo $rowlunesej1['nombre'];?></p>
-              <p>Descripcion del Ejercicio:  <?php echo $rowlunesej1['descripcion'];?></p>
-              <p>Cantidad de Series:  <?php echo $rowlunesej1['series_ej1'];?></p>
-              <p>Cantidad de Repeticiones:  <?php echo $rowlunesej1['repeticiones_ej1'];?></p>
+              <h5 class="neje"><?php echo $rowlunesej1['nombre'];?></h5>
+              <hr>
+              <p class="deje">Descripcion del Ejercicio: <br><br> <?php echo $rowlunesej1['descripcion'];?></p>
+              <p class="cseje" >Cantidad de Series:  <?php echo $rowlunesej1['series_ej1'];?></p>
+              <p class="creje" >Cantidad de Repeticiones:  <?php echo $rowlunesej1['repeticiones_ej1'];?></p>
             <?php  
             }else{
               ?>
@@ -98,10 +100,33 @@ include("../models/validacion_clientes.php");
             };
             ?>
             </div>
+
+            <style>
+              .neje{
+                margin-top:3%;
+                margin-bottom: 3%;
+                margin-left:5%;
+                margin-right:0%;
+                color: #fff;
+              }
+              .deje{
+                margin: 8%;
+                color: #fff;
+              }
+              .cseje{
+                color: #fff;
+              }
+
+              .creje{
+                
+                margin: 1%;
+                color: #fff;
+              }
+            </style>
         
         </div>
         <div class="swiper-slide">
-            <p>ejercicio  2</p>
+            <p>Ejercicio 2</p>
             <div class="dataview">
               <?php
               $sqlmostrarlunesej2= "SELECT rutinas_lunes.idusuario, rutinas_lunes.series_ej2, rutinas_lunes.repeticiones_ej2, ejercicios.nombre, ejercicios.descripcion
@@ -111,10 +136,11 @@ include("../models/validacion_clientes.php");
               $rowlunesej2= mysqli_fetch_array($querymostrarlunesej2);
               if($rowlunesej2 != 0){
               ?>
-              <p><?php echo $rowlunesej2['nombre'];?></p>
-              <p>Descripcion del Ejercicio:  <?php echo $rowlunesej2['descripcion'];?></p>
-              <p>Cantidad de Series:  <?php echo $rowlunesej2['series_ej2'];?></p>
-              <p>Cantidad de Repeticiones:  <?php echo $rowlunesej2['repeticiones_ej2'];?></p>
+              <h5 class="neje"><?php echo $rowlunesej2['nombre'];?></h5>
+              <hr>
+              <p class="deje">Descripcion del Ejercicio: <br><br> <?php echo $rowlunesej2['descripcion'];?></p>
+              <p class="cseje">Cantidad de Series:  <?php echo $rowlunesej2['series_ej2'];?></p>
+              <p class="creje">Cantidad de Repeticiones:  <?php echo $rowlunesej2['repeticiones_ej2'];?></p>
             <?php  
             }else{
               ?>
@@ -126,7 +152,7 @@ include("../models/validacion_clientes.php");
             
         </div>
         <div class="swiper-slide">
-            <p>ejercicio  3</p>
+            <p>Ejercicio 3</p>
             <div class="dataview">
               <?php
               $sqlmostrarlunesej3= "SELECT rutinas_lunes.idusuario, rutinas_lunes.series_ej3, rutinas_lunes.repeticiones_ej3, ejercicios.nombre, ejercicios.descripcion
@@ -136,10 +162,11 @@ include("../models/validacion_clientes.php");
               $rowlunesej3= mysqli_fetch_array($querymostrarlunesej3);
               if($rowlunesej3 != 0){
               ?>
-              <p><?php echo $rowlunesej3['nombre'];?></p>
-              <p>Descripcion del Ejercicio:  <?php echo $rowlunesej3['descripcion'];?></p>
-              <p>Cantidad de Series:  <?php echo $rowlunesej3['series_ej3'];?></p>
-              <p>Cantidad de Repeticiones:  <?php echo $rowlunesej3['repeticiones_ej3'];?></p>
+              <h5 class="neje"><?php echo $rowlunesej3['nombre'];?></h5>
+<hr>
+              <p class="deje">Descripcion del Ejercicio: <br><br> <?php echo $rowlunesej3['descripcion'];?></p>
+              <p class="cseje">Cantidad de Series:  <?php echo $rowlunesej3['series_ej3'];?></p>
+              <p class="creje">Cantidad de Repeticiones:  <?php echo $rowlunesej3['repeticiones_ej3'];?></p>
             <?php  
             }else{
               ?>
@@ -151,7 +178,7 @@ include("../models/validacion_clientes.php");
             
         </div>
         <div class="swiper-slide">
-            <p>ejercicio  4</p>
+            <p>Ejercicio 4</p>
             <div class="dataview">
               <?php
               $sqlmostrarlunesej4= "SELECT rutinas_lunes.idusuario, rutinas_lunes.series_ej4, rutinas_lunes.repeticiones_ej4, ejercicios.nombre, ejercicios.descripcion
@@ -161,10 +188,11 @@ include("../models/validacion_clientes.php");
               $rowlunesej4= mysqli_fetch_array($querymostrarlunesej4);
               if($rowlunesej4 != 0){
               ?>
-              <p><?php echo $rowlunesej4['nombre'];?></p>
-              <p>Descripcion del Ejercicio:  <?php echo $rowlunesej4['descripcion'];?></p>
-              <p>Cantidad de Series:  <?php echo $rowlunesej4['series_ej4'];?></p>
-              <p>Cantidad de Repeticiones:  <?php echo $rowlunesej4['repeticiones_ej4'];?></p>
+              <h5 class="neje"><?php echo $rowlunesej4['nombre'];?></h5>
+              <hr>
+              <p class="deje">Descripcion del Ejercicio: <br><br> <?php echo $rowlunesej4['descripcion'];?></p>
+              <p class="cseje">Cantidad de Series:  <?php echo $rowlunesej4['series_ej4'];?></p>
+              <p class="creje">Cantidad de Repeticiones:  <?php echo $rowlunesej4['repeticiones_ej4'];?></p>
             <?php  
             }else{
               ?>
@@ -175,7 +203,7 @@ include("../models/validacion_clientes.php");
             </div>
         </div>
         <div class="swiper-slide">
-         <p>ejercicio  5</p>
+         <p>Ejercicio 5</p>
          <div class="dataview">
               <?php
               $sqlmostrarlunesej5= "SELECT rutinas_lunes.idusuario, rutinas_lunes.series_ej5, rutinas_lunes.repeticiones_ej5, ejercicios.nombre, ejercicios.descripcion
@@ -185,10 +213,11 @@ include("../models/validacion_clientes.php");
               $rowlunesej5= mysqli_fetch_array($querymostrarlunesej5);
               if($rowlunesej5 != 0){
               ?>
-              <p><?php echo $rowlunesej5['nombre'];?></p>
-              <p>Descripcion del Ejercicio:  <?php echo $rowlunesej5['descripcion'];?></p>
-              <p>Cantidad de Series:  <?php echo $rowlunesej5['series_ej5'];?></p>
-              <p>Cantidad de Repeticiones:  <?php echo $rowlunesej5['repeticiones_ej5'];?></p>
+              <h5 class="neje"><?php echo $rowlunesej5['nombre'];?></h5>
+              <hr>
+              <p class="deje">Descripcion del Ejercicio: <br><br> <?php echo $rowlunesej5['descripcion'];?></p>
+              <p class="cseje">Cantidad de Series:  <?php echo $rowlunesej5['series_ej5'];?></p>
+              <p class="creje">Cantidad de Repeticiones:  <?php echo $rowlunesej5['repeticiones_ej5'];?></p>
             <?php  
             }else{
               ?>
@@ -211,14 +240,14 @@ include("../models/validacion_clientes.php");
       <!-- <div class="swiper-scrollbar"></div> -->
     </div>
 </div>
-        <div class="carousel__item">Martes
+        <div class="carousel__item" id="divsb">Martes
 
         <div class="swiper swiper-hero">
       <!-- Additional required wrapper -->
       <div class="swiper-wrapper">
         <!-- Slides -->
         <div class="swiper-slide">
-            <p>ejercicio  1</p>
+            <p>Ejercicio 1</p>
             <div class="dataview">
               <?php
               $sqlmostrarmartesej1= "SELECT rutinas_martes.idusuario, rutinas_martes.series_ej1, rutinas_martes.repeticiones_ej1, ejercicios.nombre, ejercicios.descripcion
@@ -228,10 +257,11 @@ include("../models/validacion_clientes.php");
               $rowmartesej1= mysqli_fetch_array($querymostrarmartesej1);
               if($rowmartesej1 != 0){
               ?>
-              <p><?php echo $rowmartesej1['nombre'];?></p>
-              <p>Descripcion del Ejercicio:  <?php echo $rowmartesej1['descripcion'];?></p>
-              <p>Cantidad de Series:  <?php echo $rowmartesej1['series_ej1'];?></p>
-              <p>Cantidad de Repeticiones:  <?php echo $rowmartesej1['repeticiones_ej1'];?></p>
+              <h5 class="neje"><?php echo $rowmartesej1['nombre'];?></h5>
+              <hr>
+              <p class="deje">Descripcion del Ejercicio: <br><br> <?php echo $rowmartesej1['descripcion'];?></p>
+              <p class="cseje">Cantidad de Series:  <?php echo $rowmartesej1['series_ej1'];?></p>
+              <p class="creje">Cantidad de Repeticiones:  <?php echo $rowmartesej1['repeticiones_ej1'];?></p>
             <?php  
             }else{
               ?>
@@ -242,7 +272,7 @@ include("../models/validacion_clientes.php");
             </div>
         </div>
         <div class="swiper-slide">
-            <p>ejercicio  2</p>
+            <p>Ejercicio 2</p>
             <div class="dataview">
               <?php
               $sqlmostrarmartesej2= "SELECT rutinas_martes.idusuario, rutinas_martes.series_ej2, rutinas_martes.repeticiones_ej2, ejercicios.nombre, ejercicios.descripcion
@@ -252,10 +282,11 @@ include("../models/validacion_clientes.php");
               $rowmartesej2= mysqli_fetch_array($querymostrarmartesej2);
               if($rowmartesej2 != 0){
               ?>
-              <p><?php echo $rowmartesej2['nombre'];?></p>
-              <p>Descripcion del Ejercicio:  <?php echo $rowmartesej2['descripcion'];?></p>
-              <p>Cantidad de Series:  <?php echo $rowmartesej2['series_ej2'];?></p>
-              <p>Cantidad de Repeticiones:  <?php echo $rowmartesej2['repeticiones_ej2'];?></p>
+              <h5 class="neje"><?php echo $rowmartesej2['nombre'];?></h5>
+              <hr>
+              <p class="deje">Descripcion del Ejercicio: <br><br> <?php echo $rowmartesej2['descripcion'];?></p>
+              <p class="cseje">Cantidad de Series:  <?php echo $rowmartesej2['series_ej2'];?></p>
+              <p class="creje">Cantidad de Repeticiones:  <?php echo $rowmartesej2['repeticiones_ej2'];?></p>
             <?php  
             }else{
               ?>
@@ -267,7 +298,7 @@ include("../models/validacion_clientes.php");
             
         </div>
         <div class="swiper-slide">
-            <p>ejercicio  3</p>
+            <p>Ejercicio 3</p>
             <div class="dataview">
               <?php
               $sqlmostrarmartesej3= "SELECT rutinas_martes.idusuario, rutinas_martes.series_ej3, rutinas_martes.repeticiones_ej3, ejercicios.nombre, ejercicios.descripcion
@@ -277,10 +308,11 @@ include("../models/validacion_clientes.php");
               $rowmartesej3= mysqli_fetch_array($querymostrarmartesej3);
               if($rowmartesej3 != 0){
               ?>
-              <p><?php echo $rowmartesej3['nombre'];?></p>
-              <p>Descripcion del Ejercicio:  <?php echo $rowmartesej3['descripcion'];?></p>
-              <p>Cantidad de Series:  <?php echo $rowmartesej3['series_ej3'];?></p>
-              <p>Cantidad de Repeticiones:  <?php echo $rowmartesej3['repeticiones_ej3'];?></p>
+              <h5 class="neje"><?php echo $rowmartesej3['nombre'];?></h5>
+              <hr>
+              <p class="deje">Descripcion del Ejercicio: <br><br> <?php echo $rowmartesej3['descripcion'];?></p>
+              <p class="cseje">Cantidad de Series:  <?php echo $rowmartesej3['series_ej3'];?></p>
+              <p class="creje">Cantidad de Repeticiones:  <?php echo $rowmartesej3['repeticiones_ej3'];?></p>
             <?php  
             }else{
               ?>
@@ -292,7 +324,7 @@ include("../models/validacion_clientes.php");
             
         </div>
         <div class="swiper-slide">
-            <p>ejercicio  4</p>
+            <p>Ejercicio 4</p>
             <div class="dataview">
               <?php
               $sqlmostrarmartesej4= "SELECT rutinas_martes.idusuario, rutinas_martes.series_ej4, rutinas_martes.repeticiones_ej4, ejercicios.nombre, ejercicios.descripcion
@@ -302,10 +334,11 @@ include("../models/validacion_clientes.php");
               $rowmartesej4= mysqli_fetch_array($querymostrarmartesej4);
               if($rowmartesej4 != 0){
               ?>
-              <p><?php echo $rowmartesej4['nombre'];?></p>
-              <p>Descripcion del Ejercicio:  <?php echo $rowmartesej4['descripcion'];?></p>
-              <p>Cantidad de Series:  <?php echo $rowmartesej4['series_ej4'];?></p>
-              <p>Cantidad de Repeticiones:  <?php echo $rowmartesej4['repeticiones_ej4'];?></p>
+              <h5 class="neje"><?php echo $rowmartesej4['nombre'];?></h5>
+<hr>
+              <p class="deje">Descripcion del Ejercicio: <br><br> <?php echo $rowmartesej4['descripcion'];?></p>
+              <p class="cseje">Cantidad de Series:  <?php echo $rowmartesej4['series_ej4'];?></p>
+              <p class="creje">Cantidad de Repeticiones:  <?php echo $rowmartesej4['repeticiones_ej4'];?></p>
             <?php  
             }else{
               ?>
@@ -317,7 +350,7 @@ include("../models/validacion_clientes.php");
             
         </div>
         <div class="swiper-slide">
-         <p>ejercicio  5</p>
+         <p>Ejercicio 5</p>
          <div class="dataview">
               <?php
               $sqlmostrarmartesej5= "SELECT rutinas_martes.idusuario, rutinas_martes.series_ej5, rutinas_martes.repeticiones_ej5, ejercicios.nombre, ejercicios.descripcion
@@ -327,10 +360,11 @@ include("../models/validacion_clientes.php");
               $rowmartesej5= mysqli_fetch_array($querymostrarmartesej5);
               if($rowmartesej5 != 0){
               ?>
-              <p><?php echo $rowmartesej5['nombre'];?></p>
-              <p>Descripcion del Ejercicio:  <?php echo $rowmartesej5['descripcion'];?></p>
-              <p>Cantidad de Series:  <?php echo $rowmartesej5['series_ej5'];?></p>
-              <p>Cantidad de Repeticiones:  <?php echo $rowmartesej5['repeticiones_ej5'];?></p>
+              <h5 class="neje"><?php echo $rowmartesej5['nombre'];?></h5>
+              <hr>
+              <p class="deje">Descripcion del Ejercicio: <br><br> <?php echo $rowmartesej5['descripcion'];?></p>
+              <p class="cseje">Cantidad de Series:  <?php echo $rowmartesej5['series_ej5'];?></p>
+              <p class="creje">Cantidad de Repeticiones:  <?php echo $rowmartesej5['repeticiones_ej5'];?></p>
             <?php  
             }else{
               ?>
@@ -353,14 +387,14 @@ include("../models/validacion_clientes.php");
     </div>
 
         </div>
-        <div class="carousel__item">Miercoles
+        <div class="carousel__item" id="divsb">Miercoles
 
         <div class="swiper swiper-hero">
       <!-- Additional required wrapper -->
       <div class="swiper-wrapper">
         <!-- Slides -->
         <div class="swiper-slide">
-            <p>ejercicio  1</p>
+            <p>Ejercicio 1</p>
             <div class="dataview">
               <?php
               $sqlmostrarmiercolesej1= "SELECT rutinas_miercoles.idusuario, rutinas_miercoles.series_ej1, rutinas_miercoles.repeticiones_ej1, ejercicios.nombre, ejercicios.descripcion
@@ -370,10 +404,11 @@ include("../models/validacion_clientes.php");
               $rowmiercolesej1= mysqli_fetch_array($querymostrarmiercolesej1);
               if($rowmiercolesej1 != 0){
               ?>
-              <p><?php echo $rowmiercolesej1['nombre'];?></p>
-              <p>Descripcion del Ejercicio:  <?php echo $rowmiercolesej1['descripcion'];?></p>
-              <p>Cantidad de Series:  <?php echo $rowmiercolesej1['series_ej1'];?></p>
-              <p>Cantidad de Repeticiones:  <?php echo $rowmiercolesej1['repeticiones_ej1'];?></p>
+              <h5 class="neje"><?php echo $rowmiercolesej1['nombre'];?></h5>
+              <hr>
+              <p class="deje">Descripcion del Ejercicio: <br><br> <?php echo $rowmiercolesej1['descripcion'];?></p>
+              <p class="cseje">Cantidad de Series:  <?php echo $rowmiercolesej1['series_ej1'];?></p>
+              <p class="creje">Cantidad de Repeticiones:  <?php echo $rowmiercolesej1['repeticiones_ej1'];?></p>
             <?php  
             }else{
               ?>
@@ -385,7 +420,7 @@ include("../models/validacion_clientes.php");
             
         </div>
         <div class="swiper-slide">
-            <p>ejercicio  2</p>
+            <p>Ejercicio 2</p>
             <div class="dataview">
               <?php
               $sqlmostrarmiercolesej2= "SELECT rutinas_miercoles.idusuario, rutinas_miercoles.series_ej2, rutinas_miercoles.repeticiones_ej2, ejercicios.nombre, ejercicios.descripcion
@@ -395,10 +430,11 @@ include("../models/validacion_clientes.php");
               $rowmiercolesej2= mysqli_fetch_array($querymostrarmiercolesej2);
               if($rowmiercolesej2 != 0){
               ?>
-              <p><?php echo $rowmiercolesej2['nombre'];?></p>
-              <p>Descripcion del Ejercicio:  <?php echo $rowmiercolesej2['descripcion'];?></p>
-              <p>Cantidad de Series:  <?php echo $rowmiercolesej2['series_ej2'];?></p>
-              <p>Cantidad de Repeticiones:  <?php echo $rowmiercolesej2['repeticiones_ej2'];?></p>
+              <h5 class="neje"><?php echo $rowmiercolesej2['nombre'];?></h5>
+              <hr>
+              <p class="deje">Descripcion del Ejercicio: <br><br> <?php echo $rowmiercolesej2['descripcion'];?></p>
+              <p class="cseje">Cantidad de Series:  <?php echo $rowmiercolesej2['series_ej2'];?></p>
+              <p class="creje">Cantidad de Repeticiones:  <?php echo $rowmiercolesej2['repeticiones_ej2'];?></p>
             <?php  
             }else{
               ?>
@@ -411,7 +447,7 @@ include("../models/validacion_clientes.php");
             
         </div>
         <div class="swiper-slide">
-            <p>ejercicio  3</p>
+            <p>Ejercicio 3</p>
             <div class="dataview">
               <?php
               $sqlmostrarmiercolesej3= "SELECT rutinas_miercoles.idusuario, rutinas_miercoles.series_ej3, rutinas_miercoles.repeticiones_ej3, ejercicios.nombre, ejercicios.descripcion
@@ -421,10 +457,11 @@ include("../models/validacion_clientes.php");
               $rowmiercolesej3= mysqli_fetch_array($querymostrarmiercolesej3);
               if($rowmiercolesej3 != 0){
               ?>
-              <p><?php echo $rowmiercolesej3['nombre'];?></p>
-              <p>Descripcion del Ejercicio:  <?php echo $rowmiercolesej3['descripcion'];?></p>
-              <p>Cantidad de Series:  <?php echo $rowmiercolesej3['series_ej3'];?></p>
-              <p>Cantidad de Repeticiones:  <?php echo $rowmiercolesej3['repeticiones_ej3'];?></p>
+              <h5 class="neje"><?php echo $rowmiercolesej3['nombre'];?></h5>
+              <hr>
+              <p class="deje">Descripcion del Ejercicio: <br><br> <?php echo $rowmiercolesej3['descripcion'];?></p>
+              <p class="cseje">Cantidad de Series:  <?php echo $rowmiercolesej3['series_ej3'];?></p>
+              <p class="creje">Cantidad de Repeticiones:  <?php echo $rowmiercolesej3['repeticiones_ej3'];?></p>
             <?php  
             }else{
               ?>
@@ -436,7 +473,7 @@ include("../models/validacion_clientes.php");
             
         </div>
         <div class="swiper-slide">
-            <p>ejercicio  4</p>
+            <p>Ejercicio 4</p>
             <div class="dataview">
               <?php
               $sqlmostrarmiercolesej4= "SELECT rutinas_miercoles.idusuario, rutinas_miercoles.series_ej4, rutinas_miercoles.repeticiones_ej4, ejercicios.nombre, ejercicios.descripcion
@@ -446,10 +483,11 @@ include("../models/validacion_clientes.php");
               $rowmiercolesej4= mysqli_fetch_array($querymostrarmiercolesej4);
               if($rowmiercolesej4 != 0){
               ?>
-              <p><?php echo $rowmiercolesej4['nombre'];?></p>
-              <p>Descripcion del Ejercicio:  <?php echo $rowmiercolesej4['descripcion'];?></p>
-              <p>Cantidad de Series:  <?php echo $rowmiercolesej4['series_ej4'];?></p>
-              <p>Cantidad de Repeticiones:  <?php echo $rowmiercolesej4['repeticiones_ej4'];?></p>
+              <h5 class="neje"><?php echo $rowmiercolesej4['nombre'];?></h5>
+              <hr>
+              <p class="deje">Descripcion del Ejercicio:<br><br>  <?php echo $rowmiercolesej4['descripcion'];?></p>
+              <p class="cseje">Cantidad de Series:  <?php echo $rowmiercolesej4['series_ej4'];?></p>
+              <p class="creje">Cantidad de Repeticiones:  <?php echo $rowmiercolesej4['repeticiones_ej4'];?></p>
             <?php  
             }else{
               ?>
@@ -461,7 +499,7 @@ include("../models/validacion_clientes.php");
             
         </div>
         <div class="swiper-slide">
-         <p>ejercicio  5</p>
+         <p>Ejercicio 5</p>
          <div class="dataview">
               <?php
               $sqlmostrarmiercolesej5= "SELECT rutinas_miercoles.idusuario, rutinas_miercoles.series_ej5, rutinas_miercoles.repeticiones_ej5, ejercicios.nombre, ejercicios.descripcion
@@ -471,10 +509,11 @@ include("../models/validacion_clientes.php");
               $rowmiercolesej5= mysqli_fetch_array($querymostrarmiercolesej5);
               if($rowmiercolesej5 != 0){
               ?>
-              <p><?php echo $rowmiercolesej5['nombre'];?></p>
-              <p>Descripcion del Ejercicio:  <?php echo $rowmiercolesej5['descripcion'];?></p>
-              <p>Cantidad de Series:  <?php echo $rowmiercolesej5['series_ej5'];?></p>
-              <p>Cantidad de Repeticiones:  <?php echo $rowmiercolesej5['repeticiones_ej5'];?></p>
+              <h5 class="neje"><?php echo $rowmiercolesej5['nombre'];?></h5>
+              <hr>
+              <p class="deje">Descripcion del Ejercicio: <br><br> <?php echo $rowmiercolesej5['descripcion'];?></p>
+              <p class="cseje">Cantidad de Series:  <?php echo $rowmiercolesej5['series_ej5'];?></p>
+              <p class="creje">Cantidad de Repeticiones:  <?php echo $rowmiercolesej5['repeticiones_ej5'];?></p>
             <?php  
             }else{
               ?>
@@ -497,14 +536,14 @@ include("../models/validacion_clientes.php");
     </div>
 
         </div>
-        <div class="carousel__item">Jueves
+        <div class="carousel__item" id="divsb">Jueves
 
         <div class="swiper swiper-hero">
       <!-- Additional required wrapper -->
       <div class="swiper-wrapper">
         <!-- Slides -->
         <div class="swiper-slide">
-            <p>ejercicio  1</p>
+            <p>Ejercicio 1</p>
             <div class="dataview">
               <?php
               $sqlmostrarjuevesej1= "SELECT rutinas_jueves.idusuario, rutinas_jueves.series_ej1, rutinas_jueves.repeticiones_ej1, ejercicios.nombre, ejercicios.descripcion
@@ -514,10 +553,11 @@ include("../models/validacion_clientes.php");
               $rowjuevesej1= mysqli_fetch_array($querymostrarjuevesej1);
               if($rowjuevesej1 != 0){
               ?>
-              <p><?php echo $rowjuevesej1['nombre'];?></p>
-              <p>Descripcion del Ejercicio:  <?php echo $rowjuevesej1['descripcion'];?></p>
-              <p>Cantidad de Series:  <?php echo $rowjuevesej1['series_ej1'];?></p>
-              <p>Cantidad de Repeticiones:  <?php echo $rowjuevesej1['repeticiones_ej1'];?></p>
+              <h5 class="neje"><?php echo $rowjuevesej1['nombre'];?></h5>
+              <hr>
+              <p class="deje">Descripcion del Ejercicio:<br><br>  <?php echo $rowjuevesej1['descripcion'];?></p>
+              <p class="cseje">Cantidad de Series:  <?php echo $rowjuevesej1['series_ej1'];?></p>
+              <p class="creje">Cantidad de Repeticiones:  <?php echo $rowjuevesej1['repeticiones_ej1'];?></p>
             <?php  
             }else{
               ?>
@@ -529,7 +569,7 @@ include("../models/validacion_clientes.php");
             
         </div>
         <div class="swiper-slide">
-            <p>ejercicio  2</p>
+            <p>Ejercicio 2</p>
             <div class="dataview">
               <?php
               $sqlmostrarjuevesej2= "SELECT rutinas_jueves.idusuario, rutinas_jueves.series_ej2, rutinas_jueves.repeticiones_ej2, ejercicios.nombre, ejercicios.descripcion
@@ -539,10 +579,11 @@ include("../models/validacion_clientes.php");
               $rowjuevesej2= mysqli_fetch_array($querymostrarjuevesej2);
               if($rowjuevesej2 != 0){
               ?>
-              <p><?php echo $rowjuevesej2['nombre'];?></p>
-              <p>Descripcion del Ejercicio:  <?php echo $rowjuevesej2['descripcion'];?></p>
-              <p>Cantidad de Series:  <?php echo $rowjuevesej2['series_ej2'];?></p>
-              <p>Cantidad de Repeticiones:  <?php echo $rowjuevesej2['repeticiones_ej2'];?></p>
+              <h5 class="neje"><?php echo $rowjuevesej2['nombre'];?></h5>
+              <hr>
+              <p class="deje">Descripcion del Ejercicio: <br><br> <?php echo $rowjuevesej2['descripcion'];?></p>
+              <p class="cseje">Cantidad de Series:  <?php echo $rowjuevesej2['series_ej2'];?></p>
+              <p class="creje">Cantidad de Repeticiones:  <?php echo $rowjuevesej2['repeticiones_ej2'];?></p>
             <?php  
             }else{
               ?>
@@ -554,7 +595,7 @@ include("../models/validacion_clientes.php");
             
         </div>
         <div class="swiper-slide">
-            <p>ejercicio  3</p>
+            <p>Ejercicio 3</p>
             <div class="dataview">
               <?php
               $sqlmostrarjuevesej3= "SELECT rutinas_jueves.idusuario, rutinas_jueves.series_ej3, rutinas_jueves.repeticiones_ej3, ejercicios.nombre, ejercicios.descripcion
@@ -564,10 +605,11 @@ include("../models/validacion_clientes.php");
               $rowjuevesej3= mysqli_fetch_array($querymostrarjuevesej3);
               if($rowjuevesej3 != 0){
               ?>
-              <p><?php echo $rowjuevesej3['nombre'];?></p>
-              <p>Descripcion del Ejercicio:  <?php echo $rowjuevesej3['descripcion'];?></p>
-              <p>Cantidad de Series:  <?php echo $rowjuevesej3['series_ej3'];?></p>
-              <p>Cantidad de Repeticiones:  <?php echo $rowjuevesej3['repeticiones_ej3'];?></p>
+              <h5 class="neje"><?php echo $rowjuevesej3['nombre'];?></h5>
+              <hr>
+              <p class="deje">Descripcion del Ejercicio: <br><br> <?php echo $rowjuevesej3['descripcion'];?></p>
+              <p class="cseje">Cantidad de Series:  <?php echo $rowjuevesej3['series_ej3'];?></p>
+              <p class="creje">Cantidad de Repeticiones:  <?php echo $rowjuevesej3['repeticiones_ej3'];?></p>
             <?php  
             }else{
               ?>
@@ -579,7 +621,7 @@ include("../models/validacion_clientes.php");
             
         </div>
         <div class="swiper-slide">
-            <p>ejercicio  4</p>
+            <p>Ejercicio 4</p>
             <div class="dataview">
               <?php
               $sqlmostrarjuevesej4= "SELECT rutinas_jueves.idusuario, rutinas_jueves.series_ej4, rutinas_jueves.repeticiones_ej4, ejercicios.nombre, ejercicios.descripcion
@@ -589,10 +631,11 @@ include("../models/validacion_clientes.php");
               $rowjuevesej4= mysqli_fetch_array($querymostrarjuevesej4);
               if($rowjuevesej4 != 0){
               ?>
-              <p><?php echo $rowjuevesej4['nombre'];?></p>
-              <p>Descripcion del Ejercicio:  <?php echo $rowjuevesej4['descripcion'];?></p>
-              <p>Cantidad de Series:  <?php echo $rowjuevesej4['series_ej4'];?></p>
-              <p>Cantidad de Repeticiones:  <?php echo $rowjuevesej4['repeticiones_ej4'];?></p>
+              <h5 class="neje"><?php echo $rowjuevesej4['nombre'];?></h5>
+              <hr>
+              <p class="deje">Descripcion del Ejercicio: <br><br> <?php echo $rowjuevesej4['descripcion'];?></p>
+              <p class="cseje">Cantidad de Series:  <?php echo $rowjuevesej4['series_ej4'];?></p>
+              <p class="creje">Cantidad de Repeticiones:  <?php echo $rowjuevesej4['repeticiones_ej4'];?></p>
             <?php  
             }else{
               ?>
@@ -604,7 +647,7 @@ include("../models/validacion_clientes.php");
             
         </div>
         <div class="swiper-slide">
-         <p>ejercicio  5</p>
+         <p>Ejercicio 5</p>
          <div class="dataview">
               <?php
               $sqlmostrarjuevesej5= "SELECT rutinas_jueves.idusuario, rutinas_jueves.series_ej5, rutinas_jueves.repeticiones_ej5, ejercicios.nombre, ejercicios.descripcion
@@ -614,10 +657,11 @@ include("../models/validacion_clientes.php");
               $rowjuevesej5= mysqli_fetch_array($querymostrarjuevesej5);
               if($rowjuevesej5 != 0){
               ?>
-              <p><?php echo $rowjuevesej5['nombre'];?></p>
-              <p>Descripcion del Ejercicio:  <?php echo $rowjuevesej5['descripcion'];?></p>
-              <p>Cantidad de Series:  <?php echo $rowjuevesej5['series_ej5'];?></p>
-              <p>Cantidad de Repeticiones:  <?php echo $rowjuevesej5['repeticiones_ej5'];?></p>
+              <h5 class="neje"><?php echo $rowjuevesej5['nombre'];?></h5>
+              <hr>
+              <p class="deje">Descripcion del Ejercicio: <br><br> <?php echo $rowjuevesej5['descripcion'];?></p>
+              <p class="cseje">Cantidad de Series:  <?php echo $rowjuevesej5['series_ej5'];?></p>
+              <p class="creje">Cantidad de Repeticiones:  <?php echo $rowjuevesej5['repeticiones_ej5'];?></p>
             <?php  
             }else{
               ?>
@@ -640,14 +684,14 @@ include("../models/validacion_clientes.php");
     </div>
 
         </div>
-        <div class="carousel__item">Viernes
+        <div class="carousel__item" id="divsb">Viernes
 
         <div class="swiper swiper-hero">
       <!-- Additional required wrapper -->
       <div class="swiper-wrapper">
         <!-- Slides -->
         <div class="swiper-slide">
-            <p>ejercicio  1</p>
+            <p>Ejercicio 1</p>
             <div class="dataview">
               <?php
               $sqlmostrarviernesej1= "SELECT rutinas_viernes.idusuario, rutinas_viernes.series_ej1, rutinas_viernes.repeticiones_ej1, ejercicios.nombre, ejercicios.descripcion
@@ -657,10 +701,11 @@ include("../models/validacion_clientes.php");
               $rowviernesej1= mysqli_fetch_array($querymostrarviernesej1);
               if($rowviernesej1 != 0){
               ?>
-              <p><?php echo $rowviernesej1['nombre'];?></p>
-              <p>Descripcion del Ejercicio:  <?php echo $rowviernesej1['descripcion'];?></p>
-              <p>Cantidad de Series:  <?php echo $rowviernesej1['series_ej1'];?></p>
-              <p>Cantidad de Repeticiones:  <?php echo $rowviernesej1['repeticiones_ej1'];?></p>
+              <h5 class="neje"><?php echo $rowviernesej1['nombre'];?></h5>
+              <hr>
+              <p class="deje">Descripcion del Ejercicio: <br><br> <?php echo $rowviernesej1['descripcion'];?></p>
+              <p class="cseje">Cantidad de Series:  <?php echo $rowviernesej1['series_ej1'];?></p>
+              <p class="creje">Cantidad de Repeticiones:  <?php echo $rowviernesej1['repeticiones_ej1'];?></p>
             <?php  
             }else{
               ?>
@@ -672,7 +717,7 @@ include("../models/validacion_clientes.php");
             
         </div>
         <div class="swiper-slide">
-            <p>ejercicio  2</p>
+            <p>Ejercicio 2</p>
             <div class="dataview">
               <?php
               $sqlmostrarviernesej2= "SELECT rutinas_viernes.idusuario, rutinas_viernes.series_ej2, rutinas_viernes.repeticiones_ej2, ejercicios.nombre, ejercicios.descripcion
@@ -682,10 +727,11 @@ include("../models/validacion_clientes.php");
               $rowviernesej2= mysqli_fetch_array($querymostrarviernesej2);
               if($rowviernesej2 != 0){
               ?>
-              <p><?php echo $rowviernesej2['nombre'];?></p>
-              <p>Descripcion del Ejercicio:  <?php echo $rowviernesej2['descripcion'];?></p>
-              <p>Cantidad de Series:  <?php echo $rowviernesej2['series_ej2'];?></p>
-              <p>Cantidad de Repeticiones:  <?php echo $rowviernesej2['repeticiones_ej2'];?></p>
+              <h5 class="neje"><?php echo $rowviernesej2['nombre'];?></h5>
+              <hr>
+              <p class="deje">Descripcion del Ejercicio: <br><br> <?php echo $rowviernesej2['descripcion'];?></p>
+              <p class="cseje">Cantidad de Series:  <?php echo $rowviernesej2['series_ej2'];?></p>
+              <p class="creje">Cantidad de Repeticiones:  <?php echo $rowviernesej2['repeticiones_ej2'];?></p>
             <?php  
             }else{
               ?>
@@ -697,7 +743,7 @@ include("../models/validacion_clientes.php");
             
         </div>
         <div class="swiper-slide">
-            <p>ejercicio  3</p>
+            <p>Ejercicio 3</p>
             <div class="dataview">
               <?php
               $sqlmostrarviernesej3= "SELECT rutinas_viernes.idusuario, rutinas_viernes.series_ej3, rutinas_viernes.repeticiones_ej3, ejercicios.nombre, ejercicios.descripcion
@@ -707,10 +753,11 @@ include("../models/validacion_clientes.php");
               $rowviernesej3= mysqli_fetch_array($querymostrarviernesej3);
               if($rowviernesej3 != 0){
               ?>
-              <p><?php echo $rowviernesej3['nombre'];?></p>
-              <p>Descripcion del Ejercicio:  <?php echo $rowviernesej3['descripcion'];?></p>
-              <p>Cantidad de Series:  <?php echo $rowviernesej3['series_ej3'];?></p>
-              <p>Cantidad de Repeticiones:  <?php echo $rowviernesej3['repeticiones_ej3'];?></p>
+              <h5 class="neje"><?php echo $rowviernesej3['nombre'];?></h5>
+              <hr>
+              <p class="deje">Descripcion del Ejercicio: <br><br> <?php echo $rowviernesej3['descripcion'];?></p>
+              <p class="cseje">Cantidad de Series:  <?php echo $rowviernesej3['series_ej3'];?></p>
+              <p class="creje">Cantidad de Repeticiones:  <?php echo $rowviernesej3['repeticiones_ej3'];?></p>
             <?php  
             }else{
               ?>
@@ -722,7 +769,7 @@ include("../models/validacion_clientes.php");
             
         </div>
         <div class="swiper-slide">
-            <p>ejercicio  4</p>
+            <p>Ejercicio 4</p>
             <div class="dataview">
               <?php
               $sqlmostrarviernesej4= "SELECT rutinas_viernes.idusuario, rutinas_viernes.series_ej4, rutinas_viernes.repeticiones_ej4, ejercicios.nombre, ejercicios.descripcion
@@ -732,10 +779,11 @@ include("../models/validacion_clientes.php");
               $rowviernesej4= mysqli_fetch_array($querymostrarviernesej4);
               if($rowviernesej4 != 0){
               ?>
-              <p><?php echo $rowviernesej4['nombre'];?></p>
-              <p>Descripcion del Ejercicio:  <?php echo $rowviernesej4['descripcion'];?></p>
-              <p>Cantidad de Series:  <?php echo $rowviernesej4['series_ej4'];?></p>
-              <p>Cantidad de Repeticiones:  <?php echo $rowviernesej4['repeticiones_ej4'];?></p>
+              <h5 class="neje"><?php echo $rowviernesej4['nombre'];?></h5>
+              <hr>
+              <p class="deje">Descripcion del Ejercicio: <br><br> <?php echo $rowviernesej4['descripcion'];?></p>
+              <p class="cseje">Cantidad de Series:  <?php echo $rowviernesej4['series_ej4'];?></p>
+              <p class="creje">Cantidad de Repeticiones:  <?php echo $rowviernesej4['repeticiones_ej4'];?></p>
             <?php  
             }else{
               ?>
@@ -747,7 +795,7 @@ include("../models/validacion_clientes.php");
             
         </div>
         <div class="swiper-slide">
-         <p>ejercicio  5</p>
+         <p>Ejercicio 5</p>
          <div class="dataview">
               <?php
               $sqlmostrarviernesej5= "SELECT rutinas_viernes.idusuario, rutinas_viernes.series_ej5, rutinas_viernes.repeticiones_ej5, ejercicios.nombre, ejercicios.descripcion
@@ -757,10 +805,11 @@ include("../models/validacion_clientes.php");
               $rowviernesej5= mysqli_fetch_array($querymostrarviernesej5);
               if($rowviernesej5 != 0){
               ?>
-              <p><?php echo $rowviernesej5['nombre'];?></p>
-              <p>Descripcion del Ejercicio:  <?php echo $rowviernesej5['descripcion'];?></p>
-              <p>Cantidad de Series:  <?php echo $rowviernesej5['series_ej5'];?></p>
-              <p>Cantidad de Repeticiones:  <?php echo $rowviernesej5['repeticiones_ej5'];?></p>
+              <h5 class="neje"><?php echo $rowviernesej5['nombre'];?></h5>
+              <hr>
+              <p class="deje">Descripcion del Ejercicio: <br><br> <?php echo $rowviernesej5['descripcion'];?></p>
+              <p class="cseje">Cantidad de Series:  <?php echo $rowviernesej5['series_ej5'];?></p>
+              <p class="creje">Cantidad de Repeticiones:  <?php echo $rowviernesej5['repeticiones_ej5'];?></p>
             <?php  
             }else{
               ?>
@@ -782,14 +831,14 @@ include("../models/validacion_clientes.php");
     </div>
 
         </div>
-        <div class="carousel__item">Sabado
+        <div class="carousel__item" id="divsb">Sabado
 
         <div class="swiper swiper-hero">
       <!-- Additional required wrapper -->
       <div class="swiper-wrapper">
         <!-- Slides -->
         <div class="swiper-slide">
-            <p>ejercicio  1</p>
+            <p>Ejercicio 1</p>
             <div class="dataview">
               <?php
               $sqlmostrarsabadoej1= "SELECT rutinas_sabado.idusuario, rutinas_sabado.series_ej1, rutinas_sabado.repeticiones_ej1, ejercicios.nombre, ejercicios.descripcion
@@ -799,10 +848,11 @@ include("../models/validacion_clientes.php");
               $rowsabadoej1= mysqli_fetch_array($querymostrarsabadoej1);
               if($rowsabadoej1 != 0){
               ?>
-              <p><?php echo $rowsabadoej1['nombre'];?></p>
-              <p>Descripcion del Ejercicio:  <?php echo $rowsabadoej1['descripcion'];?></p>
-              <p>Cantidad de Series:  <?php echo $rowsabadoej1['series_ej1'];?></p>
-              <p>Cantidad de Repeticiones:  <?php echo $rowsabadoej1['repeticiones_ej1'];?></p>
+              <h5 class="neje"><?php echo $rowsabadoej1['nombre'];?></h5>
+              <hr>
+              <p class="deje">Descripcion del Ejercicio: <br><br> <?php echo $rowsabadoej1['descripcion'];?></p>
+              <p class="cseje">Cantidad de Series:  <?php echo $rowsabadoej1['series_ej1'];?></p>
+              <p class="creje">Cantidad de Repeticiones:  <?php echo $rowsabadoej1['repeticiones_ej1'];?></p>
             <?php  
             }else{
               ?>
@@ -814,7 +864,7 @@ include("../models/validacion_clientes.php");
             
         </div>
         <div class="swiper-slide">
-            <p>ejercicio  2</p>
+            <p>Ejercicio 2</p>
             <div class="dataview">
               <?php
               $sqlmostrarsabadoej2= "SELECT rutinas_sabado.idusuario, rutinas_sabado.series_ej2, rutinas_sabado.repeticiones_ej2, ejercicios.nombre, ejercicios.descripcion
@@ -824,10 +874,11 @@ include("../models/validacion_clientes.php");
               $rowsabadoej2= mysqli_fetch_array($querymostrarsabadoej2);
               if($rowsabadoej2 != 0){
               ?>
-              <p><?php echo $rowsabadoej2['nombre'];?></p>
-              <p>Descripcion del Ejercicio:  <?php echo $rowsabadoej2['descripcion'];?></p>
-              <p>Cantidad de Series:  <?php echo $rowsabadoej2['series_ej2'];?></p>
-              <p>Cantidad de Repeticiones:  <?php echo $rowsabadoej2['repeticiones_ej2'];?></p>
+              <h5 class="neje"><?php echo $rowsabadoej2['nombre'];?></h5>
+              <hr>
+              <p class="deje">Descripcion del Ejercicio: <br><br> <?php echo $rowsabadoej2['descripcion'];?></p>
+              <p class="cseje">Cantidad de Series:  <?php echo $rowsabadoej2['series_ej2'];?></p>
+              <p class="creje">Cantidad de Repeticiones:  <?php echo $rowsabadoej2['repeticiones_ej2'];?></p>
             <?php  
             }else{
               ?>
@@ -839,7 +890,7 @@ include("../models/validacion_clientes.php");
             
         </div>
         <div class="swiper-slide">
-            <p>ejercicio  3</p>
+            <p>Ejercicio 3</p>
             <div class="dataview">
               <?php
               $sqlmostrarsabadoej3= "SELECT rutinas_sabado.idusuario, rutinas_sabado.series_ej3, rutinas_sabado.repeticiones_ej3, ejercicios.nombre, ejercicios.descripcion
@@ -849,10 +900,11 @@ include("../models/validacion_clientes.php");
               $rowsabadoej3= mysqli_fetch_array($querymostrarsabadoej3);
               if($rowsabadoej3 != 0){
               ?>
-              <p><?php echo $rowsabadoej3['nombre'];?></p>
-              <p>Descripcion del Ejercicio:  <?php echo $rowsabadoej3['descripcion'];?></p>
-              <p>Cantidad de Series:  <?php echo $rowsabadoej3['series_ej3'];?></p>
-              <p>Cantidad de Repeticiones:  <?php echo $rowsabadoej3['repeticiones_ej3'];?></p>
+              <h5 class="neje"><?php echo $rowsabadoej3['nombre'];?></h5>
+              <hr>
+              <p class="deje">Descripcion del Ejercicio: <br><br> <?php echo $rowsabadoej3['descripcion'];?></p>
+              <p class="cseje">Cantidad de Series:  <?php echo $rowsabadoej3['series_ej3'];?></p>
+              <p class="creje">Cantidad de Repeticiones:  <?php echo $rowsabadoej3['repeticiones_ej3'];?></p>
             <?php  
             }else{
               ?>
@@ -864,7 +916,7 @@ include("../models/validacion_clientes.php");
             
         </div>
         <div class="swiper-slide">
-            <p>ejercicio  4</p>
+            <p>Ejercicio 4</p>
             <div class="dataview">
               <?php
               $sqlmostrarsabadoej4= "SELECT rutinas_sabado.idusuario, rutinas_sabado.series_ej4, rutinas_sabado.repeticiones_ej4, ejercicios.nombre, ejercicios.descripcion
@@ -874,10 +926,11 @@ include("../models/validacion_clientes.php");
               $rowsabadoej4= mysqli_fetch_array($querymostrarsabadoej4);
               if($rowsabadoej4 != 0){
               ?>
-              <p><?php echo $rowsabadoej4['nombre'];?></p>
-              <p>Descripcion del Ejercicio:  <?php echo $rowsabadoej4['descripcion'];?></p>
-              <p>Cantidad de Series:  <?php echo $rowsabadoej4['series_ej4'];?></p>
-              <p>Cantidad de Repeticiones:  <?php echo $rowsabadoej4['repeticiones_ej4'];?></p>
+              <h5 class="neje"><?php echo $rowsabadoej4['nombre'];?></h5>
+              <hr>
+              <p class="deje">Descripcion del Ejercicio: <br><br> <?php echo $rowsabadoej4['descripcion'];?></p>
+              <p class="cseje">Cantidad de Series:  <?php echo $rowsabadoej4['series_ej4'];?></p>
+              <p class="creje">Cantidad de Repeticiones:  <?php echo $rowsabadoej4['repeticiones_ej4'];?></p>
             <?php  
             }else{
               ?>
@@ -889,7 +942,7 @@ include("../models/validacion_clientes.php");
             
         </div>
         <div class="swiper-slide">
-         <p>ejercicio  5</p>
+         <p>Ejercicio 5</p>
          <div class="dataview">
               <?php
               $sqlmostrarsabadoej5= "SELECT rutinas_sabado.idusuario, rutinas_sabado.series_ej5, rutinas_sabado.repeticiones_ej5, ejercicios.nombre, ejercicios.descripcion
@@ -899,10 +952,11 @@ include("../models/validacion_clientes.php");
               $rowsabadoej5= mysqli_fetch_array($querymostrarsabadoej5);
               if($rowsabadoej5 != 0){
               ?>
-              <p><?php echo $rowsabadoej5['nombre'];?></p>
-              <p>Descripcion del Ejercicio:  <?php echo $rowsabadoej5['descripcion'];?></p>
-              <p>Cantidad de Series:  <?php echo $rowsabadoej5['series_ej5'];?></p>
-              <p>Cantidad de Repeticiones:  <?php echo $rowsabadoej5['repeticiones_ej5'];?></p>
+              <h5 class="neje"><?php echo $rowsabadoej5['nombre'];?></h5>
+              <hr>
+              <p class="deje">Descripcion del Ejercicio: <br><br> <?php echo $rowsabadoej5['descripcion'];?></p>
+              <p class="cseje">Cantidad de Series:  <?php echo $rowsabadoej5['series_ej5'];?></p>
+              <p class="creje">Cantidad de Repeticiones:  <?php echo $rowsabadoej5['repeticiones_ej5'];?></p>
             <?php  
             }else{
               ?>

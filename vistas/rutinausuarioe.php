@@ -28,6 +28,7 @@ include("../models/validacion_clientes.php");
   <link rel="stylesheet" href="../css/estilousuario.css">
   <link rel="stylesheet" href="../css/estilorutina.css">
   <link rel="stylesheet" href="../css/estilotablau.css">
+  <link rel="stylesheet" href="../css/EstiloGeneral.css">
 
   <script>
     (function(document) {

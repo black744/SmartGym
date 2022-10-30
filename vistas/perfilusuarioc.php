@@ -24,7 +24,9 @@ include("../models/validacion_clientes.php");
 <head>
     <meta charset="UTF-8">
     <title>Perfil</title>
+    <link rel="stylesheet" href="../css/EstiloPerfil.css">
     <link rel="stylesheet" href="../css/estilousuario.css">
+    <link rel="stylesheet" href="../css/EstiloGeneral.css">
 </head>
 
 <?php
@@ -49,14 +51,14 @@ switch ($idrol) {
 
         <div class="info">
             <section class="seccion-perfil-usuario">
-                <div class="perfil-usuario-header">
+                <div class="perfil-usuario-header" id="divsb">
                     <div class="perfil-usuario-portada">
                         <div class="perfil-usuario-avatar">
                             <img src="data:image/jpg;base64,<?php echo base64_encode($image); ?>">
                         </div>
                     </div>
                 </div>
-                <div class="perfil-usuario-body">
+                <div class="perfil-usuario-body" id="divsb" id="divsb">
                     <div class="perfil-usuario-bio">
                         <?php
                         echo "<h4> $nusuario "
@@ -71,7 +73,7 @@ switch ($idrol) {
                         </ul>
 
                         <form action="editarinfo.php">
-                            <button>Editar info</button>
+                            <button id="btnsn">Editar info</button>
                         </form>
                     </div>
                 </div>

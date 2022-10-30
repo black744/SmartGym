@@ -89,8 +89,6 @@ switch ($idrol) {
                             <td class="datos">-</td>
                             <td class="datos">-</td>
                             <td class="datos">-</td>
-                            <td><button class="pagoetc"> act pago</button></td>
-                            <td><button id="bajaetc"> dar de baja</button></td>
                         </tr>
                     <?php } ?>
 
@@ -128,10 +126,29 @@ switch ($idrol) {
                             <button type="submit"  id="btnExportar"> guardar pago</button>
                         </div>
                     </div>
+
                     <div id="cuadro-adminbaja">
-                        <input class="ing1" type="text" placeholder="Codigo de usuario">
-                        <input class="ing2" type="text" placeholder="Contraseña admin">
-                        <button type="submit"  id="btnExportar"> guardar pago</button>
+                        <form method="post">
+                        <input class="ing1" type="text" name="iduser" placeholder="Codigo de usuario">
+                        <input class="ing2" type="text" name="password" placeholder="Contraseña admin">
+                        <input type="submit" name="bajaboton" value="Enviar">
+                    </form>
+                    <?php
+                    if(isset($_POST['bajaboton'])){
+                        $iduser=$_POST['iduser'];
+                        $password=$_POST['password'];
+                        $sqlcomp="SELECT * FROM datos WHERE idusuario='$idusuario'";
+                        $querycomp=mysqli_query($conex,($sqlcomp));
+                        $asocc= mysqli_fetch_array($querycomp);
+                        $passworduser=$asocc['contraseña'];
+                        if($password == $passworduser){
+                            $insert="UPDATE datos SET estado_cuenta='0' WHERE idusuario='$iduser'";
+                            $queryinsert=mysqli_query($conex, ($insert));
+                        }
+
+                    }
+                    ?>
+
                     </div>
                 </Div>
             </div>

@@ -4,7 +4,7 @@
 
     <title>Perfil</title>
 
-    <link rel="stylesheet" href="estilousuario.css">
+    <link rel="stylesheet" href="../css/EstiloSidebar.css">
 </head>
 
 <body>

@@ -25,6 +25,8 @@ include("../models/validacion_clientes.php");
     <meta charset="UTF-8">
     <title>Pagos</title>
     <link rel="stylesheet" href="../css/estilousuario.css">
+    <link rel="stylesheet" href="../css/EstiloPagos.css">
+    <link rel="stylesheet" href="../css/EstiloGeneral.css">
     <?php
     switch ($idrol) {
         case 0:
@@ -50,7 +52,7 @@ include("../models/validacion_clientes.php");
     <div class="main_content">
         <div class="contenedor-pagos">
 
-            <div class="contenedor-cuerre-texto">
+            <div class="contenedor-cuerre-texto" id="divsb">
                 <h2> Escanea y Paga</h2>
                 <img src="../img/qr.png">
                 <p> Podes copiar el alias tambien: <br> alias.smartgym.mc</p>
@@ -58,14 +60,14 @@ include("../models/validacion_clientes.php");
                 <p> Escanee el codigo, con la aplicacion de mercado pago para realizar el pago de la membresia del gimnasio</p>
             </div>
 
-            <div class="mostrar-pago">
+            <div class="mostrar-pago" id="divsb">
                 <form action="">
                     <div class="notificacion">
                         <p> El pago realizado este mes ya se entrego exitosamente / el pago aun no se recibio, en caso de haber abonado debes aguardar un momento</p>
                         <!--aca se conecta con la base de datos y si el check esta bien le dice, si el pago de este mes fue exitoso-->
                     </div>
                     <div class="notificacion">
-                        <p> estas al dia!! felicitaciones / no estas al dia con los pagos, debes : mes, mes, mes, etc</p>
+                    <p> Nota: Los Pagos deberan de realizarse en las fechas correspondientes a los primeros 10 dias habiles del mes, posterior a dichas fechas las cuentas sin pago seran suspendidas hasta realizar el pago y actualizadas por el administrador.</p>
                         <!--aca se conceta con la base de datos y en tal caso de que deba 1 omas meses notificarle cual debe,-->
                     </div>
                 </form>
@@ -73,7 +75,6 @@ include("../models/validacion_clientes.php");
 
         </div>
     </div>
-    <!-- fin contenido -->
     </div>
 </body>
 

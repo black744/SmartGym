@@ -31,6 +31,7 @@ include("../models/validacion_clientes.php");
 
     <title>Home Usuario</title>
     <link rel="stylesheet" href="../css/estilousuario.css">
+    <link rel="stylesheet" href="../css/EstiloGeneral.css">
 </head>
 <?php
 switch ($idrol) {
@@ -52,18 +53,30 @@ switch ($idrol) {
 <body>
     
 
-        <div class="izqui">
+        <div class="izqui" id="divsb">
 
         </div>
 
-        <div class="dere">
-            <h3> Datos Mensuales </h3>
+        <div class="dere" id="divsb">
+            <h1> Datos Mensuales </h1>
             <hr>
-            <div><h5> Usuarios nuevos : </h5></div>
+            <div><h3> Usuarios nuevos : </h3></div>
             <br>
-            <div><h5> Usuarios Dados de baja : </h5></div>
+            <div><h3> Usuarios Dados de baja : </h3></div>
         </div>
+<style>
+    h1{
+        color: #fff;
+        margin:3%;
 
+    }
+
+    h3{
+        color: #fff;
+        margin:3%;
+    }
+
+</style>
 
 </body>
 

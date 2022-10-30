@@ -26,20 +26,20 @@ $sql1 = "SELECT idusuario FROM rutinas_lunes WHERE idusuario='$idusuario'";
 $query1 = mysqli_query($conex, $sql1);
 $numrowsquery = mysqli_num_rows($query1);
 
-if($numrowsquery == 0){
-$sqlinsertLunes = "INSERT INTO `rutinas_lunes`(`idusuario`, `id_ej1`, `series_ej1`, `repeticiones_ej1`, `id_ej2`, `series_ej2`, `repeticiones_ej2`, `id_ej3`, `series_ej3`, `repeticiones_ej3`, `id_ej4`, `series_ej4`, `repeticiones_ej4`, `id_ej5`, `series_ej5`, `repeticiones_ej5`) VALUES ('$idusuario','','','','','','','','','','','','','','','')";
-$sqlinsertMartes = "INSERT INTO `rutinas_martes`(`idusuario`, `id_ej1`, `series_ej1`, `repeticiones_ej1`, `id_ej2`, `series_ej2`, `repeticiones_ej2`, `id_ej3`, `series_ej3`, `repeticiones_ej3`, `id_ej4`, `series_ej4`, `repeticiones_ej4`, `id_ej5`, `series_ej5`, `repeticiones_ej5`) VALUES ('$idusuario','','','','','','','','','','','','','','','')";
-$sqlinsertMiercoles = "INSERT INTO `rutinas_miercoles`(`idusuario`, `id_ej1`, `series_ej1`, `repeticiones_ej1`, `id_ej2`, `series_ej2`, `repeticiones_ej2`, `id_ej3`, `series_ej3`, `repeticiones_ej3`, `id_ej4`, `series_ej4`, `repeticiones_ej4`, `id_ej5`, `series_ej5`, `repeticiones_ej5`) VALUES ('$idusuario','','','','','','','','','','','','','','','')";
-$sqlinsertJueves = "INSERT INTO `rutinas_jueves`(`idusuario`, `id_ej1`, `series_ej1`, `repeticiones_ej1`, `id_ej2`, `series_ej2`, `repeticiones_ej2`, `id_ej3`, `series_ej3`, `repeticiones_ej3`, `id_ej4`, `series_ej4`, `repeticiones_ej4`, `id_ej5`, `series_ej5`, `repeticiones_ej5`) VALUES ('$idusuario','','','','','','','','','','','','','','','')";
-$sqlinsertViernes = "INSERT INTO `rutinas_viernes`(`idusuario`, `id_ej1`, `series_ej1`, `repeticiones_ej1`, `id_ej2`, `series_ej2`, `repeticiones_ej2`, `id_ej3`, `series_ej3`, `repeticiones_ej3`, `id_ej4`, `series_ej4`, `repeticiones_ej4`, `id_ej5`, `series_ej5`, `repeticiones_ej5`) VALUES ('$idusuario','','','','','','','','','','','','','','','')";
-$sqlinsertSabado = "INSERT INTO `rutinas_sabado`(`idusuario`, `id_ej1`, `series_ej1`, `repeticiones_ej1`, `id_ej2`, `series_ej2`, `repeticiones_ej2`, `id_ej3`, `series_ej3`, `repeticiones_ej3`, `id_ej4`, `series_ej4`, `repeticiones_ej4`, `id_ej5`, `series_ej5`, `repeticiones_ej5`) VALUES ('$idusuario','','','','','','','','','','','','','','','')";
+if ($numrowsquery == 0) {
+    $sqlinsertLunes = "INSERT INTO `rutinas_lunes`(`idusuario`, `id_ej1`, `series_ej1`, `repeticiones_ej1`, `id_ej2`, `series_ej2`, `repeticiones_ej2`, `id_ej3`, `series_ej3`, `repeticiones_ej3`, `id_ej4`, `series_ej4`, `repeticiones_ej4`, `id_ej5`, `series_ej5`, `repeticiones_ej5`) VALUES ('$idusuario','','','','','','','','','','','','','','','')";
+    $sqlinsertMartes = "INSERT INTO `rutinas_martes`(`idusuario`, `id_ej1`, `series_ej1`, `repeticiones_ej1`, `id_ej2`, `series_ej2`, `repeticiones_ej2`, `id_ej3`, `series_ej3`, `repeticiones_ej3`, `id_ej4`, `series_ej4`, `repeticiones_ej4`, `id_ej5`, `series_ej5`, `repeticiones_ej5`) VALUES ('$idusuario','','','','','','','','','','','','','','','')";
+    $sqlinsertMiercoles = "INSERT INTO `rutinas_miercoles`(`idusuario`, `id_ej1`, `series_ej1`, `repeticiones_ej1`, `id_ej2`, `series_ej2`, `repeticiones_ej2`, `id_ej3`, `series_ej3`, `repeticiones_ej3`, `id_ej4`, `series_ej4`, `repeticiones_ej4`, `id_ej5`, `series_ej5`, `repeticiones_ej5`) VALUES ('$idusuario','','','','','','','','','','','','','','','')";
+    $sqlinsertJueves = "INSERT INTO `rutinas_jueves`(`idusuario`, `id_ej1`, `series_ej1`, `repeticiones_ej1`, `id_ej2`, `series_ej2`, `repeticiones_ej2`, `id_ej3`, `series_ej3`, `repeticiones_ej3`, `id_ej4`, `series_ej4`, `repeticiones_ej4`, `id_ej5`, `series_ej5`, `repeticiones_ej5`) VALUES ('$idusuario','','','','','','','','','','','','','','','')";
+    $sqlinsertViernes = "INSERT INTO `rutinas_viernes`(`idusuario`, `id_ej1`, `series_ej1`, `repeticiones_ej1`, `id_ej2`, `series_ej2`, `repeticiones_ej2`, `id_ej3`, `series_ej3`, `repeticiones_ej3`, `id_ej4`, `series_ej4`, `repeticiones_ej4`, `id_ej5`, `series_ej5`, `repeticiones_ej5`) VALUES ('$idusuario','','','','','','','','','','','','','','','')";
+    $sqlinsertSabado = "INSERT INTO `rutinas_sabado`(`idusuario`, `id_ej1`, `series_ej1`, `repeticiones_ej1`, `id_ej2`, `series_ej2`, `repeticiones_ej2`, `id_ej3`, `series_ej3`, `repeticiones_ej3`, `id_ej4`, `series_ej4`, `repeticiones_ej4`, `id_ej5`, `series_ej5`, `repeticiones_ej5`) VALUES ('$idusuario','','','','','','','','','','','','','','','')";
 
-$queryinsertLunes = mysqli_query($conex, $sqlinsertLunes);
-$queryinsertMartes = mysqli_query($conex, $sqlinsertMartes);
-$queryinsertMiercoles = mysqli_query($conex, $sqlinsertMiercoles);
-$queryinsertJueves = mysqli_query($conex, $sqlinsertJueves);
-$queryinsertViernes = mysqli_query($conex, $sqlinsertViernes);
-$queryinsertSabado = mysqli_query($conex, $sqlinsertSabado);
+    $queryinsertLunes = mysqli_query($conex, $sqlinsertLunes);
+    $queryinsertMartes = mysqli_query($conex, $sqlinsertMartes);
+    $queryinsertMiercoles = mysqli_query($conex, $sqlinsertMiercoles);
+    $queryinsertJueves = mysqli_query($conex, $sqlinsertJueves);
+    $queryinsertViernes = mysqli_query($conex, $sqlinsertViernes);
+    $queryinsertSabado = mysqli_query($conex, $sqlinsertSabado);
 };
 ?>
 
@@ -48,10 +48,11 @@ $queryinsertSabado = mysqli_query($conex, $sqlinsertSabado);
 
 <head>
     <meta charset="UTF-8">
-
     <title>Home Usuario</title>
-
+    <script src="https://kit.fontawesome.com/db50c9d526.js"></script>
     <link rel="stylesheet" href="../css/estilousuario.css">
+    <link rel="stylesheet" href="../css/EstiloGeneral.css">
+    <script src="../js/appbotonnegro.js" type="text/javascript" defer></script>
 </head>
 <?php
 switch ($idrol) {
@@ -75,35 +76,72 @@ switch ($idrol) {
     <div class="main_content">
 
         <div class="info">
-            <div class="izquierda">
+
+            <div class="izquierda" id="divsb">
                 <div class="turnoultimo">
                     <?php
-                    $sqlper = "SELECT * FROM turnos WHERE idusuario=$idusuario";
+                    $sqlper = "SELECT * FROM clases_clientes WHERE usuario=$idusuario";
                     $queryper = mysqli_query($conex, $sqlper);
                     $datap = mysqli_fetch_row($queryper);
                     if ($datap == 0) {
                         echo 'No existe un turno ';
                     } else {
-                        $sqlProximoTurno = "SELECT * FROM turnos WHERE idusuario='$idusuario' ORDER BY idturno DESC";
+                        $sqlProximoTurno = "SELECT clases.entrenador, clases.modalidad, clases.fecha, clases.cupos, clases.hora, clases_clientes.idclase, clases_clientes.usuario FROM clases INNER JOIN clases_clientes ON clases.idclase= clases_clientes.idclase WHERE usuario='$idusuario' ORDER BY fecha ASC";
                         $queryProximoTurno = mysqli_query($conex, $sqlProximoTurno);
-                        $sqlquery = mysqli_fetch_array($queryProximoTurno);
-                        $a = $sqlquery['idturno'];
+                        $sqlquery = mysqli_fetch_row($queryProximoTurno);
                     ?>
                         <p><br>Tu Próximo Túrno</p>
-                        <p>Fecha y hora:
-                        <?php
-                        if ($sqlquery['fechahora'] == 0) {
-                            echo 'Si deseas pedir un turno -->';
-                        } else {
-                            echo $sqlquery['fechahora'];
-                        };
+                        <p>Fecha: <?php echo $sqlquery[2] ?>
+                        <p>Hora: <?php echo $sqlquery[4] ?>
+                        <p>Entrenador: <?php echo $sqlquery[0] ?>
+                        <p>Modalidad: <?php echo $sqlquery[1] ?>
+                        <p>Ubicacion: Av viva la polenta 1976</p>
+                        <br>
+                    <?php
+
                     } ?> </p>
-                        <p>Entrenador</p>
+
+
 
                 </div>
             </div>
 
-            <div class="derecha">
+
+            <div class="homepago" id="divsb">
+                
+                <div class="pago">
+                <br>
+                    <p> Pago actualizado y al dia</p>
+                    <br>
+                </div>
+            </div>
+
+            <style>
+                .pago{
+                    position: relative;
+                    height: fit-content;
+                    width: 85%;
+                    background: #fb4c0d;
+                    margin: 5%;
+                    border-radius: 15px;
+                }
+
+                .pago p{
+                    position: relative;
+                    color:#fff;
+                    margin: 2vh;
+                    text-align: justify;
+                }
+                
+                .homepago {
+                    position: absolute;
+                    margin-top: 25vw;
+                    height: fit-content;
+                    width: 45vw;
+                }
+            </style>
+
+            <div class="derecha" id="divsb">
                 <img src="data:image/jpg;base64,<?php echo base64_encode($image); ?>" class="imgp">
                 <div class="nombre">
                     <p><?php echo $row['nombre'] ?></p>
@@ -118,8 +156,8 @@ switch ($idrol) {
                 <div class="progresoform">
                     <form method="post">
                         <p>ingrese peso actual</p>
-                        <input class="orange" type="text" name="pesoactual">
-                        <input class="botonenviar" type="submit" name="enviar">
+                        <input class="orange" type="text" id="inputs" name="pesoactual" placeholder="Ingrese peso en kg">
+                        <input id="btns" class="botonenviar" type="submit" name="enviar">
                     </form>
                     <?php
                     if (isset($_POST['enviarpesoactual'])) {
@@ -130,8 +168,8 @@ switch ($idrol) {
                     ?>
                     <form method="post">
                         <p>ingrese peso ideal</p>
-                        <input class="orange" type="text" name="pesoideal">
-                        <input class="botonenviar" type="submit" name="enviar">
+                        <input class="orange" id="inputs" type="text" name="pesoideal" placeholder="Ingrese peso en kg">
+                        <input id="btns" class="botonenviar" type="submit" name="enviar">
                     </form>
                     <?php
                     if (isset($_POST['enviarpesoideal'])) {

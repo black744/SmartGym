@@ -18,8 +18,8 @@
         <form method="POST" class="formulario" action="../models/validar.php">
             <h2 class="create-account">Iniciar Sesion</h2>
             <p class="cuenta-gratis">¿Aun no tienes una cuenta?</p>
-            <input type="user" placeholder="Usuario" name="usuario">
-            <input type="password" placeholder="Contraseña" name="contraseña">
+            <input type="user" placeholder="Usuario" name="usuario" required>
+            <input type="password" placeholder="Contraseña" name="contraseña" required>
             <input class="btn-r" type="submit" name="buttonlog" value="Loguearse">
         </form>
         <div class="welcome-back">
@@ -40,15 +40,16 @@
         </div>
         <form class="formulario" action="../models/registrar.php" method="POST">
             <h2 class="create-account">Crear una cuenta</h2>
-            <p class="cuenta-gratis">Crear una cuenta gratis</p>
-            <input type="text" placeholder="Nombre" name="nombre">
-            <input type="apellido" placeholder="Apellido" name="apellido">
-            <input type="text" placeholder="DNI" name="dni">
-            <input type="Usuario" placeholder="Usuario" name="usuario">
-            <input type="email" placeholder="Email" name="correo">
-            <input type="password" placeholder="Contraseña" name="contraseña">
-            <input type="number" placeholder="Edad" name="ED">
-            <input type="text" placeholder="Domicilio" name="DC">
+            <input type="text" placeholder="Nombre" name="nombre" required>
+            <input type="apellido" placeholder="Apellido" name="apellido" required>
+            <input type="number" placeholder="DNI" name="dni" required pattern="[0-9]">
+            <input type="Usuario" placeholder="Usuario" name="usuario" required>
+            <input type="email" placeholder="Email" name="correo" required>
+            <input type="password" placeholder="Contraseña" name="contraseña" required>
+            <input type="number" placeholder="Edad" name="ED" required>
+            <input type="text" placeholder="Domicilio" name="DC" required>
+            <input type="number" placeholder="peso actual" name="PA" required pattern="[0-9]">
+            <input type="number" placeholder="peso ideal" name="PI" required pattern="[0-9]">
             <input class="btn-r" type="submit" name="buttonreg" value="Registrarse">
         </form>
     </div>

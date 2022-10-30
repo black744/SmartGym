@@ -193,7 +193,7 @@
   height: 88%;
   width: 86.5%;
   background: #151515;
-  border: transparent;
+  border: 1.5px solid #fb4c0d;
   border-radius: 15px;
 }
 
@@ -243,11 +243,13 @@
 }
 
 .ingreso2{
+  display: inline;
   margin-top: 4vh;
   margin-left: 2vh;
+  margin-right: 10vw;
   margin-bottom: 2vh;
   height: 3.5vh;
-  width: 15%;
+  width: 40%;
   text-align: center;
   background: var(--color-fondobotones);
   color: var(--color-letra);

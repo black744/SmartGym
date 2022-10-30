@@ -27,6 +27,7 @@ include("../models/validacion_clientes.php");
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="../css/estilousuario.css">
     <link rel="stylesheet" type="text/css" href="../css/estiloturnos.css">
+    <link rel="stylesheet" type="text/css" href="../css/EstiloGeneral.css">
     <title>Turnos</title>
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -65,7 +66,7 @@ switch ($idrol) {
 
 <body>
 
-    <div class="cont-body-turnos">
+    <div class="cont-body-turnos" id="divsb">
         <div class="cont-turnos-asignados">
             <div class="header">
                 <P>Turnos asignados</P>
@@ -110,14 +111,14 @@ switch ($idrol) {
                     <br>
                     <br>
                     
-                    <input class="ingreso-t" type="text" placeholder="Ingrese el horario de la clase" name="h-c">  <abbr title="Ingresar con el siguiente formato: hora:minutos hs">?</abbr>                                   
+                    <input id="inputsn" class="ingreso-t" type="text" placeholder="Ingrese el horario de la clase" name="h-c">  <abbr title="Ingresar con el siguiente formato: hora:minutos hs">?</abbr>                                   
                     <br>
                     <br>
                     
-                    <input class="ingreso-t" type="number" min="10" max="30" placeholder="Ingrese los cupos de la clase" name="c-c">
+                    <input id="inputsn" class="ingreso-t" type="number" min="10" max="30" placeholder="Ingrese los cupos de la clase" name="c-c">
                     <br>
                     <br>
-                    <input class="botonguardado" type="submit" name="cargarclase">
+                    <input id="btnsn" class="botonguardado" type="submit" name="cargarclase">
                     <br>
                     <br>
                 </form>
