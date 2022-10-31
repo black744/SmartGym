@@ -30,7 +30,7 @@ $preference->back_urls=array(
 
 $productos=[];
 $item = new MercadoPago\Item();
-$item->title = 'Virtual';
+$item->title = 'Suscripcion';
 $item->quantity = 1;
 $item->unit_price = 1000;
 $preference->items = array($item);
@@ -131,7 +131,7 @@ $preference->save();
                             <p>Se combinaran las caracteristicas de las modalidades virtual como presencial en los turnos</p>
                             <br>
                             <br>
-                            <button class="btn1"> Desde $3000 </button>
+                            <div class="cho-container"></div>
                         </div>
 
                         <div class="box">
@@ -139,7 +139,7 @@ $preference->save();
                             <i class="fa-solid fa-dumbbell"></i>
                             <h2> Plan Presencial </h2> <br>
                             <p>En dicho sera de forma totalmente presencial con las comodidades de las rutinas, mensajeria virtuales al igual que gozan los otros planes</p>
-                            <button class="btn1"> Desde $2000 </button>
+                            <div class="cho-container"></div>
                         </div>
 
                     </div>

@@ -19,6 +19,7 @@ $image = $row['image'];
 $pesoactual = $row['pesoactual'];
 $pesoinicial = $row['pesoinicial'];
 $pesoideal = $row['pesoideal'];
+$ultimopago = $row['ultimopago'];
 
 include("../models/validacion_clientes.php");
 
@@ -111,7 +112,8 @@ switch ($idrol) {
                 
                 <div class="pago">
                 <br>
-                    <p> Pago actualizado y al dia</p>
+                    <p> Fecha del ultimo pago: <?php echo $ultimopago;?></p>
+                    <p> Vencimiento: <?php echo date("y-m-d",strtotime($ultimopago."+ 30 days"));?></p>
                     <br>
                 </div>
             </div>
