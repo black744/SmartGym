@@ -21,7 +21,6 @@
                 <li><a href="turnose.php"><i class="fas fa-address-card"></i>Crear Clases</a></li>
                 <li><a href="rutinausuarioe.php"><i class="fas fa-project-diagram"></i>Crear rutina</a></li>
                 <!-- si se usan iconos se debe usar la version 5.15.4 -->
-                <li><a href="indexchat.php"><i class="fas fa-address-book"></i>Mensajeria</a></li>
             </ul>
             <div class="salida">
             <a href="../models/sessiondestroy.php"><button class="btn-exit"><i class="fas fa-door-open"></i></button></a>

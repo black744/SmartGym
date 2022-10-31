@@ -24,8 +24,7 @@
                 <li><a href="turnosc.php"><i class="fas fa-address-card"></i>Clases</a></li>
                 <li><a href="rutinausuarioc.php"><i class="fas fa-project-diagram"></i>Rutina</a></li>
                 <li><a href="pagousuarioc.php"><i class="fas fa-sack-dollar"></i>Pago</a></li>
-                <li><a href="indexchat.php"><i class="fas fa-address-book"></i>mensajeria</a></li>
-                
+               
             </ul>
             <div class="salida">
             <a href="../models/sessiondestroy.php"><button class="btn-exit"><i class="fas fa-door-open"></i></button></a>

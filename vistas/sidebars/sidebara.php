@@ -19,7 +19,6 @@
             <ul>
                 <li><a href="homeusuarioa.php"><i class="fas fa-home"></i>Home</a></li>
                 <li><a href="perfilusuarioc.php"><i class="fas fa-user"></i>Perfil</a></li>
-                <li><a href="indexchat.php"><i class="fas fa-address-book"></i>mensajeria</a></li>
                 <li><a href="admincontrolpanel.php"><i class="fas fa-map-pin"></i>Panel Admin</a></li>
             </ul>
             <div class="salida">
