@@ -27,7 +27,7 @@ if($filas){
             break;
         default:
         echo("<script>alert('El usuario y/o contraseña son invalidos');</script>");
-        echo("<script>window.location.href = '../vistas/registro.php';</script>");
+        header("location: ../vistas/index_pago.php");
             break;
     }
 }else{

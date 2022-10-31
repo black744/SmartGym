@@ -1,13 +1,31 @@
 <?php
+include("../db.php");
+$conex = conectar();
+session_start();
+$nusuario = $_SESSION['usuario'];
+
+$sql = "SELECT * FROM datos WHERE usuario='$nusuario'";
+$query = mysqli_query($conex, $sql);
+
+$row = mysqli_fetch_array($query);
+$idrol = $row['id_rol'];
+$nombre = $row['nombre'];
+$apellido = $row['apellido'];
+$dni = $row['dni'];
+$correo = $row['correo'];
+$idusuario = $row['idusuario'];
+$image = $row['image'];
+
+
 require __DIR__.'\..\vendor\autoload.php';
 $access_token='TEST-696558555391091-103018-712336b022fa4844c0dd1c64d3860368-337317933';
 MercadoPago\SDK::setAccessToken($access_token);
 $preference = new MercadoPago\Preference();
 
 $preference->back_urls=array(
-    "success"=>"http://localhost/SmartGym/vistas/index.php",
-    "failure"=>"http://localhost/SmartGym/vistas/index.php",
-    "pending"=>"http://localhost/SmartGym/vistas/index.php"
+    "success"=>"http://localhost/SmartGym/models/success_pay.php?idusuario=$idusuario",
+    "failure"=>"http://localhost/SmartGym/models/sessiondestroy.php",
+    "pending"=>"http://localhost/SmartGym/models/sessiondestroy.php"
 );
 
 $productos=[];
