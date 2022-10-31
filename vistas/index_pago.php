@@ -2,7 +2,7 @@
 require __DIR__.'\..\vendor\autoload.php';
 $access_token='TEST-696558555391091-103018-712336b022fa4844c0dd1c64d3860368-337317933';
 MercadoPago\SDK::setAccessToken($access_token);
-$preference= new MercadoPago\Preference();
+$preference = new MercadoPago\Preference();
 
 $preference->back_urls=array(
     "success"=>"http://localhost/SmartGym/vistas/index.php",
@@ -11,13 +11,11 @@ $preference->back_urls=array(
 );
 
 $productos=[];
-$item=new MercadoPago\Item();
-$item->title="Virtual";
-$item->quantity=1;
-$item->price=1000;
-array_push($productos,$item);
-
-$preference->items=$productos;
+$item = new MercadoPago\Item();
+$item->title = 'Virtual';
+$item->quantity = 1;
+$item->unit_price = 1000;
+$preference->items = array($item);
 $preference->save();
 
 
