@@ -69,7 +69,7 @@ switch ($idrol) {
     <div class="cont-body-turnos" id="divsb">
         <div class="cont-turnos-asignados">
             <div class="header">
-                <P>Turnos asignados</P>
+                <P> Clases asignados</P>
             </div>
             <?php
             $query1 = mysqli_query($conex, "SELECT * from clases WHERE entrenador='$nusuario'");
@@ -80,7 +80,7 @@ switch ($idrol) {
 
             ?>
                     <div class="turno-a">
-                        <p> <?php echo $nturno ?></p>
+                        <br>
                         <p> Fecha: <?php echo $data['fecha']; ?></p>
                         <p> Horario: <?php echo $data['hora']; ?></p>
                         <p> Modalidad: <?php echo $data['modalidad']; ?></p>
@@ -93,7 +93,7 @@ switch ($idrol) {
         </div>
         <div class="cont-calendario-seleccionar">
             <div class="header2">
-                <P>Aceptar turnos</P>
+                <P>Generar Clases</P>
             </div>
             <div class="turno-a">
                 <form method="post">
@@ -111,11 +111,11 @@ switch ($idrol) {
                     <br>
                     <br>
                     
-                    <input id="inputsn" class="ingreso-t" type="text" placeholder="Ingrese el horario de la clase" name="h-c">  <abbr title="Ingresar con el siguiente formato: hora:minutos hs">?</abbr>                                   
+                    <input id="inputsn" class="ingreso-t" type="text" placeholder="Ingrese el horario de la clase (HR:MM)" name="h-c" required>                                   
                     <br>
                     <br>
                     
-                    <input id="inputsn" class="ingreso-t" type="number" min="10" max="30" placeholder="Ingrese los cupos de la clase" name="c-c">
+                    <input id="inputsn" class="ingreso-t" type="number" min="10" max="30" placeholder="Ingrese los cupos de la clase" name="c-c" required>
                     <br>
                     <br>
                     <input id="btnsn" class="botonguardado" type="submit" name="cargarclase">
