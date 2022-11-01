@@ -11,7 +11,7 @@ if(isset($_POST['buttonreg'])){
     $correo = $_POST['correo'];
     $apellido = $_POST['apellido'];
     $contraseña = $_POST['contraseña'];
-    $consulta = "INSERT INTO datos(nombre, apellido, correo, contraseña, dni, usuario) VALUES ('$nombre', '$apellido', '$correo','$contraseña','$dni','$usuario')";
+    $consulta = "INSERT INTO datos(nombre, apellido, correo, contraseña, dni, usuario, image) VALUES ('$nombre', '$apellido', '$correo','$contraseña','$dni','$usuario', '0')";
 
     //$resultado = mysqli_query($conex,$consulta);
     

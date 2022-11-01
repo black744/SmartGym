@@ -113,10 +113,23 @@ switch ($idrol) {
         $sqlbuscador = "SELECT * FROM `datos` WHERE id_rol=0 AND estado_cuenta=1";
         $querybuscador = mysqli_query($conex, $sqlbuscador);
         while ($nBuscador = mysqli_fetch_array($querybuscador)) {
+          $ImagenUsuario=$nBuscador['image'];
         ?>
           <tr class="fila">
             <td>
-              <img class="foto" src="data:image/jpg;base64,<?php echo base64_encode($nBuscador['image'])?>">
+            <?php 
+                                               $SQLDefault="SELECT image FROM datos WHERE idusuario=1";
+                                               $QUERYDefault=mysqli_query($conex, ($SQLDefault));
+                                               $ROWDefault = mysqli_fetch_array($QUERYDefault);
+                                               $DefaultIMG=$ROWDefault['image'];
+                    if ($ImagenUsuario == 0){
+                           ?>
+                           <img src="data:image/jpg;base64,<?php echo base64_encode($DefaultIMG); ?>" class="foto">
+                           <?php
+
+                    }else{?>
+                <img src="data:image/jpg;base64,<?php echo base64_encode($ImagenUsuario); ?>" class="foto">
+                    <?php } ?>
             </td>
             <td class="columna"><?php echo $nBuscador['usuario']?></td>
             <td class="columna"><?php echo $nBuscador['dni']?></td>

@@ -60,7 +60,19 @@ switch ($idrol) {
                 <div class="perfil-usuario-portada">
                     <div class="perfil-usuario-avatar">
 
-                        <img src="data:image/jpg;base64,<?php echo base64_encode($image); ?>">
+                    <?php 
+                                               $SQLDefault="SELECT image FROM datos WHERE idusuario=1";
+                                               $QUERYDefault=mysqli_query($conex, ($SQLDefault));
+                                               $ROWDefault = mysqli_fetch_array($QUERYDefault);
+                                               $DefaultIMG=$ROWDefault['image'];
+                    if ($image == 0){
+                           ?>
+                           <img src="data:image/jpg;base64,<?php echo base64_encode($DefaultIMG); ?>">
+                           <?php
+
+                    }else{?>
+                <img src="data:image/jpg;base64,<?php echo base64_encode($image); ?>">
+                    <?php } ?>
                         <form class="form" action="../models/uploadimage.php" method="post" enctype="multipart/form-data">
                             <input type="file" id="boton-av" name="image" />
                             <input type="submit" id="boton-av" value="UPLOAD" name="submit" />

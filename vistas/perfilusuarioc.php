@@ -54,7 +54,19 @@ switch ($idrol) {
             <div class="perfil-usuario-header" id="divsb">
                 <div class="perfil-usuario-portada">
                     <div class="perfil-usuario-avatar">
-                        <img src="data:image/jpg;base64,<?php echo base64_encode($image); ?>">
+                    <?php 
+                                               $SQLDefault="SELECT image FROM datos WHERE idusuario=1";
+                                               $QUERYDefault=mysqli_query($conex, ($SQLDefault));
+                                               $ROWDefault = mysqli_fetch_array($QUERYDefault);
+                                               $DefaultIMG=$ROWDefault['image'];
+                    if ($image == 0){
+                           ?>
+                           <img src="data:image/jpg;base64,<?php echo base64_encode($DefaultIMG); ?>" class="imgp">
+                           <?php
+
+                    }else{?>
+                <img src="data:image/jpg;base64,<?php echo base64_encode($image); ?>" class="imgp">
+                    <?php } ?>
                     </div>
                 </div>
             </div>
