@@ -12,6 +12,7 @@
   padding: 0%;
 }
 
+
 input[type="number"]::-webkit-inner-spin-button,
 input[type="number"]::-webkit-outer-spin-button {
   -webkit-appearance: none;
@@ -62,26 +63,22 @@ input::placeholder {
   grid-area: 1 / 2 / 2 / 3;
 }
 
-.main_contentt {
+.main_contentt{
   width: 72%;
   margin-top: 2%;
   margin-left: 17%;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(2, 1fr);
-  grid-column-gap: 100px;
-  grid-row-gap: 0px;
-}
-.cont-turnos-asignados {
-  grid-area: 1 / 1 / 2 / 2;
-}
-.cont-calendario-seleccionar {
-  grid-area: 1 / 2 / 3 / 3;
-}
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+    grid-template-rows: 2fr;
+    grid-column-gap: 100px;
+    }
+    
+    .cont-turnos-asignados{ grid-area: 1 / 1 / 2 / 2; }
+    .cont-calendario-seleccionar{ grid-area: 1 / 2 / 2 / 3; }
 
-.cont-calendario-seleccionar{
-  min-height: 35vh;
-}
+    .cont-calendario-seleccionar{
+      min-height: 35vh;
+    }
 
 /*---------------------------------------------------*/
 .imgp {
