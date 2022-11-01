@@ -152,6 +152,7 @@ switch ($idrol) {
                     <p>Peso actual: <?php echo $pesoactual ?> </p>
                     <p>Peso ideal: <?php echo $pesoideal ?> </p>
                     <p>Peso inicial: <?php echo $pesoinicial ?> </p>
+                    
 
                 </div>
                 <div class="progresoform">

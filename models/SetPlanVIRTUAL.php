@@ -15,6 +15,40 @@ $dni = $row['dni'];
 $correo = $row['correo'];
 $idusuario = $row['idusuario'];
 $image = $row['image'];
+$tiposelect="VIRTUAL";
+
+if(isset($_post['consultamixto'])){
+    $nombrep=$_POST['plantype'];
+    $preciop=$_POST['unit_price'];
+}
+if(isset($_post['consultavirtual'])){
+    $nombrep=$_POST['plantype'];
+    $preciop=$_POST['unit_price'];
+}
+if(isset($_post['consultapresencial'])){
+    $nombrep=$_POST['plantype'];
+    $preciop=$_POST['unit_price'];
+}
+
+require __DIR__.'\..\vendor\autoload.php';
+$access_token='TEST-696558555391091-103018-712336b022fa4844c0dd1c64d3860368-337317933';
+MercadoPago\SDK::setAccessToken($access_token);
+$preference = new MercadoPago\Preference();
+
+$preference->back_urls=array(
+    "success"=>"http://localhost/SmartGym/models/success_pay.php?idusuario=$idusuario&plantype_set=$tiposelect",
+    "failure"=>"http://localhost/SmartGym/models/sessiondestroy.php",
+    "pending"=>"http://localhost/SmartGym/models/sessiondestroy.php"
+);
+$productos=[];
+
+
+$item = new MercadoPago\Item();
+$item->title = $_POST['plantype'];
+$item->quantity = 1;
+$item->unit_price = $_POST['unit_price'];
+$preference->items = array($item);
+$preference->save();
 
 
 ?>
@@ -32,9 +66,26 @@ $image = $row['image'];
     <script src="https://kit.fontawesome.com/db50c9d526.js"></script>
     <title> Pagina de Inicio </title>
 </head>
-
-<body>
 <script src="https://sdk.mercadopago.com/js/v2"></script>
+<script>
+    
+    const PUBLIC_KEY='TEST-4554a482-f08b-469c-a749-5efd5b172077';
+  const mp = new MercadoPago(PUBLIC_KEY, {
+    locale: 'es-AR'
+  });
+
+  mp.checkout({
+    preference: {
+      id: '<?php echo $preference->id; ?>'
+    },
+    render: {
+      container: '.cho-container',
+      label: 'Pagar',
+    }
+  });
+</script>
+<body>
+
 
 
 
@@ -84,41 +135,31 @@ $image = $row['image'];
                             &nbsp;
                             <i class="fa-solid fa-laptop"></i>
                             <h2> Plan virtual</h2> <br>
-                            <form id="virtual" name="virtual" method="post" action="../models/SetPlanVIRTUAL.php">
-                                <input type="text" value="Virtual" name="plantype"hidden>
-                                <input type="number" value="1500" name="unit_price"hidden>
-                                <button type="submit" id="consultavirtual">Consulta</button>
+                            <form id="myForm" name="formulario" method="post" action="">
+                                <input type="text" value="Virtual" name="plantype">
+                                <input type="number" value="1500" name="unit_price">
+                                <button type="button" id="consulta">Consulta</button>
                             </form>
                             <p>Dicho plan ofrecera a los clientes participar de los entrenamientos pero de forma totalmente remota con sus respectivos turnos</p>
-                           
+                            <div class="cho-container"></div>
                         </div>
 
                         <div class="box">
                             &nbsp;
                             <i class="fa-solid fa-arrow-right-arrow-left"></i>
                             <h2> Plan Mixto </h2><br>
-                            <form id="mixto" name="mixto" method="post" action="../models/SetPlanMIXTO.php">
-                                <input type="text" value="Mixto" name="plantype"hidden>
-                                <input type="number" value="3000" name="unit_price"hidden>
-                                <button type="submit" id="consultamixto">Consulta</button>
-                            </form>
                             <p>Se combinaran las caracteristicas de las modalidades virtual como presencial en los turnos</p>
                             <br>
                             <br>
-                            
+                            <div class="cho-container" ></div>
                         </div>
 
                         <div class="box">
                             &nbsp;
                             <i class="fa-solid fa-dumbbell"></i>
                             <h2> Plan Presencial </h2> <br>
-                            <form id="presencial" name="presencial" method="post" action="../models/SetPlanPRESENCIAL.php">
-                                <input type="text" value="Presencial" name="plantype"hidden>
-                                <input type="number" value="1510" name="unit_price"hidden>
-                                <button type="submit" id="consultapresencial">Consulta</button>
-                            </form>
                             <p>En dicho sera de forma totalmente presencial con las comodidades de las rutinas, mensajeria virtuales al igual que gozan los otros planes</p>
-                            
+                            <div class="cho-container"></div>
                         </div>
 
                     </div>
@@ -152,4 +193,5 @@ $image = $row['image'];
     </footer>
 
 </body>
+
 </html>
