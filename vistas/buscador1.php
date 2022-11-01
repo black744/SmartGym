@@ -21,10 +21,10 @@ $image = $row['image'];
 position: relative;
 z-index:1;
 margin-left: 3%;
-height: 80px;
-width: 470px;
+height: 50%;
+width: 90%;
 margin-top:2vh;
-font-size: 10px;
+font-size: 15px;
 }
 </style>
 

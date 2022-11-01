@@ -103,7 +103,7 @@ switch ($idrol) {
       <table class="table table-bordered order-table ">
         <thead class="header">
           <tr class="fila-h">
-            <th>-</th>
+            <th></th>
             <th class="col-h">Nombre y apellido</th>
             <th class="col-h">DNI</th>
             <th class="col-h">Asignar rutina</th>
