@@ -84,13 +84,14 @@ switch ($idrol) {
                     $queryper = mysqli_query($conex, $sqlper);
                     $datap = mysqli_fetch_row($queryper);
                     if ($datap == 0) {
-                        echo 'No existe un turno ';
+                        echo 'No existe un turno '; 
                     } else {
                         $sqlProximoTurno = "SELECT clases.entrenador, clases.modalidad, clases.fecha, clases.cupos, clases.hora, clases_clientes.idclase, clases_clientes.usuario FROM clases INNER JOIN clases_clientes ON clases.idclase= clases_clientes.idclase WHERE usuario='$idusuario' ORDER BY fecha ASC";
                         $queryProximoTurno = mysqli_query($conex, $sqlProximoTurno);
                         $sqlquery = mysqli_fetch_row($queryProximoTurno);
                     ?>
-                        <p><br>Tu Próximo Túrno</p>
+                        <h1><br>Próximo Túrno</h1>
+                        <br>
                         <p>Fecha: <?php echo $sqlquery[2] ?>
                         <p>Hora: <?php echo $sqlquery[4] ?>
                         <p>Entrenador: <?php echo $sqlquery[0] ?>
@@ -117,43 +118,15 @@ switch ($idrol) {
                 </div>
             </div>
 
-            <style>
-                .pago{
-                    position: relative;
-                    height: fit-content;
-                    width: 85%;
-                    background: #fb4c0d;
-                    margin: 5%;
-                    border-radius: 15px;
-                }
-
-                .pago p{
-                    position: relative;
-                    color:#fff;
-                    margin: 2vh;
-                    text-align: justify;
-                }
-                
-                .homepago {
-                    position: absolute;
-                    margin-top: 25vw;
-                    height: fit-content;
-                    width: 45vw;
-                }
-            </style>
-
             <div class="derecha" id="divsb">
-                <img src="data:image/jpg;base64,<?php echo base64_encode($image); ?>" class="imgp">
-                <div class="nombre">
-                    <p><?php echo $row['nombre'] ?></p>
-                </div>
+                
                 <div class="progreso">
+                <img src="data:image/jpg;base64,<?php echo base64_encode($image); ?>" class="imgp">
+                    <h1><?php echo $row['nombre'] ?></h1>
                     <br>
-                    <p>Peso actual: <?php echo $pesoactual ?> </p>
-                    <p>Peso ideal: <?php echo $pesoideal ?> </p>
-                    <p>Peso inicial: <?php echo $pesoinicial ?> </p>
-                    
-
+                    <p>Peso actual: <?php echo $pesoactual?> </p>
+                    <p>Peso ideal: <?php echo $pesoideal?> </p>
+                    <p>Peso inicial: <?php echo $pesoinicial?> </p>
                 </div>
                 <div class="progresoform">
                     <form method="post">

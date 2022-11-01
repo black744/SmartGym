@@ -52,7 +52,7 @@ switch ($idrol) {
 
 <body>
 
-    <div class="izq" id="divsb">
+    <div class="izquierda" id="divsb">
         <style>
             h1{
                 margin: 3%;
@@ -104,7 +104,7 @@ switch ($idrol) {
         }
     </style>
 
-    <div class="der" id="divsb" >
+    <div class="derecha" id="divsb" >
         <h1> datos semanales</h1>
         <hr>
         <div class="caruselo">

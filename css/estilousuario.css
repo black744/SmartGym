@@ -1,105 +1,58 @@
-:root{
-    --color-letra: #fff;
-    --color-fondos: #fb4c0d;
-    --color-fondo-html:#020202;
-    --color-fondosn:#181818;
-    --color-fondobotones: #252525;
-    --color-bordes: #303030;
+:root {
+  --color-letra: #fff;
+  --color-fondos: #fb4c0d;
+  --color-fondo-html: #020202;
+  --color-fondosn: #181818;
+  --color-fondobotones: #252525;
+  --color-bordes: #303030;
 }
 
-*{
+* {
     margin: 0%;
     padding: 0%;
 }
 
 .main_content {
     width: 80%;
-    padding-bottom: 3%;
-    margin-left: 15vw;
+    margin-top: 2%;
+    margin-left: 17%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 100px;
+    grid-row-gap: 100px;
 }
 
-/*---------------------------------------------------*/
 .izquierda {
-    width: 45VW;
-    height: fit-content;
-    margin-left: 2px;
-    position: absolute;
-    margin-top: 5vh;
+    grid-area: 1 / 1 / 2 / 2;
 }
-
 .derecha {
-    width: 30%;
-    height: 40em;
-    margin-left: 50vw;
-    position: flex;
+    grid-area: 1 / 2 / 3 / 3;
 }
-
-.izq{
-    position: relative;
-    left: 15vw;
-    margin-top: 2.6%;
-    margin-left: 2%;
-    margin-bottom: 2vh;
-    height: fit-content;
-    width: 30vw;
-}
-
-.der{
-    position: relative;
-    height: fit-content;
-    width: 40vw;
-    margin-left: 22%;
-    margin-top: 2.6%;
-    margin-bottom: 9%;
-}
-
-.izqui{
-    position: relative;
-    left: 15vw;
-    margin: 2%;
-    height: 60vh;
-    width: 30vw;
-    text-align: justify;
-}
-
-.dere{
-    position: absolute;
-    top: 0vh;
-    left: 52vw;
-    height: 90vh;
-    width: 40vw;
-    margin: 2%;
+.homepago {
+    grid-area: 2 / 1 / 3 / 2;
 }
 
 /*---------------------------------------------------*/
-.imgp{
-    margin-left: 40%;
-    max-width: 10vw;
-    max-height: 10vh;
-    background-color: var(--color-fondosn);
-    border-radius:100%;
-    position: absolute;
-    margin-top:10px;
-}
-.nombre{
-    margin-top: 7em;
-    margin-left: 40%;
-    margin-left: 40%;
-    color:var(--color-letra);
-    font-size: 20px;
+.imgp {
+    margin-top: 5%;
+    margin-left: 38%;
+    max-width: 20%;
+    max-height: 20%;
+    border-radius: 100%;
 }
 
-.progreso{
+.progreso {
     margin-top: 1vh;
     margin-left: 3vh;
-    color:var(--color-letra);
+    color: var(--color-letra);
     font-size: 18px;
-}
+    }
 
-.progresoform{
+.progresoform {
     width: 100%;
-    height: 30em;
-    color:var(--color-letra);
+    height: 100%;
+    color: var(--color-letra);
     margin-left: 3.5%;
     margin-top: 1em;
     margin-bottom: 3em;
@@ -111,7 +64,7 @@
     color: var(--color-letra);
 }
 
-.orange{
+.orange {
     position: relative;
     margin-top: 1em;
     margin-left: 2%;
@@ -120,31 +73,53 @@
     width: 35%;
 }
 
-.botonenviar{
+.botonenviar {
     position: flex;
     margin: 3%;
-    height: 3.0em;
+    height: 10%;
     width: 40%;
 }
 
-/* main */
-
 /* Inicio Izquierda cliente y entrenador */
-.turnoultimo{
+.turnoultimo {
     width: 95%;
-    height: 20%;
-    background: var(--color-fondos) ;
+    height: 90%;
+    background: var(--color-fondos);
     border-radius: 10px;
     border: none;
     margin: 3%;
 }
 
-.turnoultimo p{
-    font-size: 18 px;
-    margin-top: 3vh;
-    margin-left: 5vh;
+.turnoultimo p {
+    text-align: justify;
+    font-size: 22px;
+    margin-top: 2%;
+    margin-left: 4%;
+    margin-right: 4%;
+    margin-bottom: 2%;
     color: var(--color-letra);
 }
+
+.turnoultimo h1 {
+    text-align: center;
+    color: white;
+}
+
 /* Fin Izquierda cliente y entrenador */
 
+.pago {
+    position: relative;
+    height: fit-content;
+    width: 90%;
+    background: #fb4c0d;
+    margin: 5%;
+    border-radius: 15px;
+}
 
+.pago p {
+    font-size: 22px;
+    position: relative;
+    color: #fff;
+    margin: 2vh;
+    text-align: justify;
+}

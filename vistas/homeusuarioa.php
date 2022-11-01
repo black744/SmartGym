@@ -53,30 +53,17 @@ switch ($idrol) {
 <body>
     
 
-        <div class="izqui" id="divsb">
+        <div class="izquierda" id="divsb">
 
         </div>
 
-        <div class="dere" id="divsb">
+        <div class="derecha" id="divsb">
             <h1> Datos Mensuales </h1>
             <hr>
             <div><h3> Usuarios nuevos : </h3></div>
             <br>
             <div><h3> Usuarios Dados de baja : </h3></div>
         </div>
-<style>
-    h1{
-        color: #fff;
-        margin:3%;
-
-    }
-
-    h3{
-        color: #fff;
-        margin:3%;
-    }
-
-</style>
 
 </body>
 
