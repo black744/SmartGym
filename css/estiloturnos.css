@@ -19,34 +19,8 @@ html{
 }
 
 
-.cont-body-turnos {
-    position: relative;
-    top: 5%;
-    left: 30vh;
-    display: flex;
-    margin: 12vh;
-    height: fit-content;
-    width: 78vw;
-}
-
-.cont-turnos-asignados {
-    position: flex;
-    border-top: none;
-    border-bottom: none;
-    border-right: none;
-    border-left: none;
-    height: fit-content;
-    width: 50%;
-    border-top-right-radius: 0%;
-    border-top-left-radius: 30px;
-    border-bottom-right-radius: 0%;
-    border-bottom-left-radius: 30px;
-}
-
 .header {
     position: relative;
-    top: 0%;
-    left: 0%;
     height: fit-content;
     width: 100%;
     border-top: none;
@@ -68,35 +42,22 @@ html{
 
 .turno-a {
     position: relative;
-    top: 0%;
-    left: 0%;
-    height: 30%;
-    width: 88%;
+    height: fit-content;
+    width: 90%;
     margin-top: 4%;
     margin-left: 5%;
     margin-bottom: 5%;
     border: none;
-    border-radius: 5px;
-    background: var(--color-fondos);
-}
-
-.turno-php {
-    position: relative;
-    top: 0%;
-    left: 0%;
-    height: 30%;
-    width: 88%;
-    margin-top: 4%;
-    margin-left: 5%;
-    border: none;
-    border-radius: 5px;
+    border-radius: 15px;
     background: var(--color-fondos);
 }
 
 .turno-a p{
-    margin: 3vh;
+    margin: 3%;
     color: var(--color-letra);
 }
+
+.cform
 
 .s-t{
     position: relative;
@@ -114,6 +75,22 @@ html{
     font-size: 15px;
 }
 
+
+/* nose que es*/
+.turno-php {
+    position: relative;
+    top: 0%;
+    left: 0%;
+    height: 30%;
+    width: 88%;
+    margin-top: 4%;
+    margin-left: 5%;
+    border: none;
+    border-radius: 5px;
+    background: var(--color-fondos);
+}
+
+
 #claseid{
     position: relative;
     top: 14vh;
@@ -129,154 +106,9 @@ html{
     cursor:pointer;
     font-size: 15px;
 }
-
-.cont-calendario-seleccionar {
-  position: flex;
-  border-top: none;
-  border-bottom: none;
-  border-right: none;
-  border-left: none;
-  height: fit-content;
-  width: 50%;
-  border-top-right-radius: 30px;
-  border-top-left-radius: 0%;
-  border-bottom-right-radius: 30px;
-  border-bottom-left-radius: 0%;
-}
-
-.header2 {
-    position: relative;
-    top: 0%;
-    left: 0%;
-    height: fit-content;
-    width: 100%;
-    border-top: none;
-    border-bottom: 2px solid orangered;
-    border-right: none;
-    border-left: none;
-    border-top-right-radius: 0%;
-    border-top-left-radius: 30px;
-    border-bottom-right-radius: 0%;
-    border-bottom-left-radius: 0px;
-    text-align: center;
-}
-
-.header2 p {
-  margin-top: 8%;
-  color: var(--color-letra);
-  font-size: 22px;
-}
-
-h3{
-    margin: 2vh;
-    color: var(--color-letra);
-    font-size: 22px;
-}
-
-form{
-    position: relative;
-    border-top: none;
-    border-bottom: none;
-    border-right: none;
-    border-left: none;
-    height: fit-content;
-    width: 100%;
-    background: transparent;
-}
-
-select
- {
-    position: relative;
-    left: 1vw;
-    margin-top: -2vh;
-    height: 6vh;
-    width: 44%;
-    text-align: center;
-    background: #101010;
-    color: var(--color-letra);
-    border:3px solid var(--color-bordes-normales) ;
-    border-radius: 15px;
-    transition: 1.2s;
-    cursor:pointer;
-    font-size: 15px;
-}
-
-.cont-calendario-seleccionar select:hover {
-    border: 1px solid var(--color-fondos);
-    cursor: pointer;
-    transform: scale(1.1);
-}
-
-.ingreso-t{
-    position: relative;
-    left: -1.5vw;
-    margin-top: 1vh;
-    margin-left: 5vh;
-    margin-bottom: 2vh;
-    height: 6vh;
-    width: 80%;
-    text-align: center;
-    background: var(--color-fondobotones);
-    color: var(--color-letra);
-    border:3px solid var(--color-bordes-normales) ;
-    border-radius: 5px;
-    transition: 1.2s;
-    cursor:pointer;
-    font-size: 12px;
-}
-
-.cont-calendario-seleccionar button {
-    position: flex;
-    margin: 5vh;
-    height: 6.5vh;
-    width: 35%;
-    text-align: center;
-    background: var(--color-fondobotones);
-    color: var(--color-letra);
-    border:3px solid var(--color-bordes-normales) ;
-    border-radius: 15px;
-    transition: 1.2s;
-    cursor:pointer;
-    font-size: 15px;
-}
-
-.botonguardado {
-    position: relative;
-    left: 1vw;
-    margin: 2vh;
-    height: 6.5vh;
-    width: 50%;
-    text-align: center;
-    background: var(--color-fondobotones);
-    color: var(--color-letra);
-    border:3px solid var(--color-bordes-normales) ;
-    border-radius: 15px;
-    transition: 1.2s;
-    cursor:pointer;
-    font-size: 15px;
-
-}
-
-.botonguardado:hover {
-    border: 1px solid var(--color-fondos);
-    cursor: pointer;
-    transform: scale(1.1);
-
-}
+/* nose que es*/
 
 
-
-
-.cont-calendario-seleccionar button:hover {
-    border: 1px solid var(--color-fondos);
-    cursor: pointer;
-    transform: scale(1.1);
-}
-
-.hora{
-    position: relative;
-    margin-left: 2vw;
-}
 
 
 /*inicio del estilo del datapicker*/
@@ -365,14 +197,4 @@ border-radius: 3px;  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rg
 .dtp_modal-digit{  }
 
 /* estilo del time picker*/
-
-input[type="number"]::-webkit-outer-spin-button,
-input[type="number"]::-webkit-inner-spin-button {
-	-webkit-appearance: none;
-	margin: 0;
-}
-
-input[type="number"] {
-	-moz-appearance: textfield;
-}
 

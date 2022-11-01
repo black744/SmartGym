@@ -82,7 +82,7 @@ switch ($idrol) {
                     $queryper = mysqli_query($conex, $sqlper);
                     $datap = mysqli_fetch_row($queryper);
                     if ($datap == 0) {
-                        echo 'No existe un turno '; 
+                        echo '<br><br><h1>No se incribio un turno para una clase</h1>'; 
                     } else {
                         $sqlProximoTurno = "SELECT clases.entrenador, clases.modalidad, clases.fecha, clases.cupos, clases.hora, clases_clientes.idclase, clases_clientes.usuario FROM clases INNER JOIN clases_clientes ON clases.idclase= clases_clientes.idclase WHERE usuario='$idusuario' ORDER BY fecha ASC";
                         $queryProximoTurno = mysqli_query($conex, $sqlProximoTurno);

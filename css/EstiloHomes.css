@@ -63,6 +63,20 @@ input::placeholder {
   grid-area: 1 / 2 / 2 / 3;
 }
 
+.main_contentt{
+  width: 72%;
+  margin-top: 2%;
+  margin-left: 17%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 100px;
+    grid-row-gap: px;
+    }
+    
+    .cont-turnos-asignados{ grid-area: 1 / 1 / 2 / 2; }
+    .cont-calendario-seleccionar{ grid-area: 1 / 2 / 2 / 3; }
+
 /*---------------------------------------------------*/
 .imgp {
   margin-top: 5%;
@@ -81,7 +95,7 @@ input::placeholder {
 
 .progreso h1 {
   position: relative;
-  left: 32%;
+  text-align: center;
 }
 .progreso p {
   margin-top: 2%;

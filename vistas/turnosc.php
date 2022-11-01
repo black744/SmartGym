@@ -25,7 +25,7 @@ include("../models/validacion_clientes.php");
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="../css/estilousuario.css">
+    <link rel="stylesheet" type="text/css" href="../css/EstiloHomes.css">
     <link rel="stylesheet" type="text/css" href="../css/estiloturnos.css">
     <link rel="stylesheet" type="text/css" href="../css/EstiloGeneral.css">
 
@@ -71,20 +71,18 @@ switch ($idrol) {
 
 <body>
 
-    <div class="cont-body-turnos" id="divsb">
-        <div class="cont-turnos-asignados">
-            <div class="header">
+    <div class="main_contentt">
+        <div class="cont-turnos-asignados" id="divsb">
+            <div class="header" >
                 <P>Turnos asignados</P>
             </div>
-            <!-- <form action="">-->
             <?php
             $sqlclasesasignadas = "SELECT clases_clientes.idclase, clases_clientes.usuario, clases.entrenador, clases.modalidad, clases.fecha, clases.hora FROM clases INNER JOIN clases_clientes ON clases.idclase = clases_clientes.idclase WHERE usuario = '$idusuario'";
             $queryclasesasignadas = mysqli_query($conex, $sqlclasesasignadas);
             while ($rowclasesasignadas = mysqli_fetch_array($queryclasesasignadas)) {
-                $nturno= $rowclasesasignadas['idclase'];
+                $nturno = $rowclasesasignadas['idclase'];
             ?>
                 <div class="turno-a">
-
                     <br>
                     <p> Fecha: <?php echo $rowclasesasignadas['fecha']; ?></p>
                     <p> Horario: <?php echo $rowclasesasignadas['hora']; ?></p>
@@ -95,16 +93,16 @@ switch ($idrol) {
                 </div>
             <?php
             } ?>
-            <!-- </form> -->
         </div>
-        <div class="cont-calendario-seleccionar">
+
+        <div class="cont-calendario-seleccionar" id="divsb" >
             <div class="header2">
-                <P>Crear turno</P>
+                <P>Unirse a Una clase</P>
             </div>
             <!-- <form action=""> -->
-            <form role="form" name="nD" id="nD" method="post">
+            <form class="cform" role="form" name="nD" id="nD" method="post">
                 <select class="s-t" name="s-e" onchange="enviar(this.form)">
-                    <option value=""> Todos los entrenadores</option>
+                    <option value=""> Seleccione entrenador </option>
                     <?php
                     $sqlentrenador = "SELECT * FROM `datos` WHERE id_rol=1";
                     $queryentrenador = mysqli_query($conex, $sqlentrenador);
@@ -154,28 +152,26 @@ switch ($idrol) {
                     };
                 };
             }; ?>
-
-
         </div>
+
+
+        <script>
+            function enviar(theForm) {
+                $.ajax({
+                    type: "POST",
+                    url: "buscador.php",
+                    data: $(theForm).serialize(),
+                    success: function(data) {
+                        $('#mostrar').html(data);
+                    }
+                });
+                event.preventDefault();
+            };
+        </script>
+
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"></script>
     </div>
-
-    <script>
-        function enviar(theForm) {
-            $.ajax({
-                type: "POST",
-                url: "buscador.php",
-                data: $(theForm).serialize(),
-                success: function(data) {
-                    $('#mostrar').html(data);
-                }
-            });
-            event.preventDefault();
-        };
-    </script>
-
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"></script>
-
 </body>
 
 
