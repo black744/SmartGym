@@ -13,7 +13,7 @@
 
     <div class="wrapper">
         <div class="menulateral">
-            <a href="index.php"><img class="imagenlogo" src="../img/logo.png"></a>
+            <a href="homeusuarioe.php"><img class="imagenlogo" src="../img/logo.png"></a>
             <ul>
                 <li><a href="homeusuarioe.php"><i class="fas fa-home"></i>Home</a></li>
                 <li><a href="perfilusuarioc.php"><i class="fas fa-user"></i>Perfil</a></li>
