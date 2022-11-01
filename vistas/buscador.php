@@ -18,12 +18,19 @@ $image = $row['image'];
 ?>
 <style>
   .botong {
-    width: 10vh;
+    position: relative;
+    left: -20%;
+    width: 30%;
     height: 5vh;
-    border-radius: 40px;
-    background-color: orangered;
+    border-radius: 15px;
+    background-color: #101010;
     margin-left: 15vh;
     color: white;
+  }
+
+  .botong:hover{
+    cursor: pointer;
+    border:2px solid white;
   }
 </style>
 <form method="post">

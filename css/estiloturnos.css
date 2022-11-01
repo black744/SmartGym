@@ -57,23 +57,68 @@ html{
     color: var(--color-letra);
 }
 
-.cform
+.header2{
+    position: relative;
+    height: fit-content;
+    width: 100%;
+    border-top: none;
+    border-bottom: 2px solid var(--color-fondos);
+    border-right: none;
+    border-left: none;
+    border-top-right-radius: 0%;
+    border-top-left-radius: 30px;
+    border-bottom-right-radius: 0%;
+    border-bottom-left-radius: 0px;
+    text-align: center;
+}
+
+.header2 p {
+    margin-top: 8%;
+    color: var(--color-letra);
+    font-size: 22px;
+}
+
+.cform{
+    position: relative;
+    height: 65%;
+    width: 95%;
+    margin: 3%;
+    border-radius: 15px;
+    background:#fb4c0d ;
+}
 
 .s-t{
     position: relative;
-    top: 8vh;
-    left: 2vw;
-    height: 6.5vh;
-    width: 35%;
+    height: 5vh;
+    width: 55%;
+    margin: 3%;
     text-align: center;
-    background: var(--color-fondobotones);
+    background: #101010;
     color: var(--color-letra);
+    border-radius: 15px;
+    transition: 1.2s;
+    border: none;
+    cursor:pointer;
+    font-size: 18px;
+}
+
+#claseid{
+    position: relative;
+    height: 5vh;
+    width: 92%;
+    margin: 3%;
+    text-align: center;
+    background: #101010;
+    color: #fff;
     border:3px solid var(--color-bordes-normales) ;
     border-radius: 15px;
     transition: 1.2s;
     cursor:pointer;
     font-size: 15px;
 }
+
+
+
 
 
 /* nose que es*/
@@ -90,22 +135,6 @@ html{
     background: var(--color-fondos);
 }
 
-
-#claseid{
-    position: relative;
-    top: 14vh;
-    left: 2vw;
-    height: 6.5vh;
-    width: 35%;
-    text-align: center;
-    background: var(--color-fondobotones);
-    color: var(--color-letra);
-    border:3px solid var(--color-bordes-normales) ;
-    border-radius: 15px;
-    transition: 1.2s;
-    cursor:pointer;
-    font-size: 15px;
-}
 /* nose que es*/
 
 

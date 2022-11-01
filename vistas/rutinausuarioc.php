@@ -56,18 +56,16 @@ include("../models/validacion_clientes.php");
 <style>
   .dataview{
     background: #fb4c0d;
-    left: 8vh;
-    top: 6vh;
-    position: absolute;
-    height: 50vh;
+    left: 5%;
+    position: relative;
+    height: 90%;
     width: 78vh;
-    border-radius: 30px;
-    border-width: 3px ;
+    border-radius: 15px;
   }
   </style>
 <body>
 
-    <div class="menu">
+
 
     <div class="carousel">
         <div class="carousel__item" id="divsb">Lunes 
@@ -87,7 +85,7 @@ include("../models/validacion_clientes.php");
               $rowlunesej1= mysqli_fetch_array($querymostrarlunesej1);
               if($rowlunesej1 != 0){
               ?>
-              <h5 class="neje"><?php echo $rowlunesej1['nombre'];?></h5>
+              <h5 class="neje"><br><?php echo $rowlunesej1['nombre'];?></h5>
               <hr>
               <p class="deje">Descripcion del Ejercicio: <br><br> <?php echo $rowlunesej1['descripcion'];?></p>
               <p class="cseje" >Cantidad de Series:  <?php echo $rowlunesej1['series_ej1'];?></p>
@@ -136,7 +134,7 @@ include("../models/validacion_clientes.php");
               $rowlunesej2= mysqli_fetch_array($querymostrarlunesej2);
               if($rowlunesej2 != 0){
               ?>
-              <h5 class="neje"><?php echo $rowlunesej2['nombre'];?></h5>
+              <h5 class="neje"><br><?php echo $rowlunesej2['nombre'];?></h5>
               <hr>
               <p class="deje">Descripcion del Ejercicio: <br><br> <?php echo $rowlunesej2['descripcion'];?></p>
               <p class="cseje">Cantidad de Series:  <?php echo $rowlunesej2['series_ej2'];?></p>
@@ -162,7 +160,7 @@ include("../models/validacion_clientes.php");
               $rowlunesej3= mysqli_fetch_array($querymostrarlunesej3);
               if($rowlunesej3 != 0){
               ?>
-              <h5 class="neje"><?php echo $rowlunesej3['nombre'];?></h5>
+              <h5 class="neje"><br><?php echo $rowlunesej3['nombre'];?></h5>
 <hr>
               <p class="deje">Descripcion del Ejercicio: <br><br> <?php echo $rowlunesej3['descripcion'];?></p>
               <p class="cseje">Cantidad de Series:  <?php echo $rowlunesej3['series_ej3'];?></p>
@@ -188,7 +186,7 @@ include("../models/validacion_clientes.php");
               $rowlunesej4= mysqli_fetch_array($querymostrarlunesej4);
               if($rowlunesej4 != 0){
               ?>
-              <h5 class="neje"><?php echo $rowlunesej4['nombre'];?></h5>
+              <h5 class="neje"><br><?php echo $rowlunesej4['nombre'];?></h5>
               <hr>
               <p class="deje">Descripcion del Ejercicio: <br><br> <?php echo $rowlunesej4['descripcion'];?></p>
               <p class="cseje">Cantidad de Series:  <?php echo $rowlunesej4['series_ej4'];?></p>
@@ -213,7 +211,7 @@ include("../models/validacion_clientes.php");
               $rowlunesej5= mysqli_fetch_array($querymostrarlunesej5);
               if($rowlunesej5 != 0){
               ?>
-              <h5 class="neje"><?php echo $rowlunesej5['nombre'];?></h5>
+              <h5 class="neje"><br><?php echo $rowlunesej5['nombre'];?></h5>
               <hr>
               <p class="deje">Descripcion del Ejercicio: <br><br> <?php echo $rowlunesej5['descripcion'];?></p>
               <p class="cseje">Cantidad de Series:  <?php echo $rowlunesej5['series_ej5'];?></p>
@@ -257,7 +255,7 @@ include("../models/validacion_clientes.php");
               $rowmartesej1= mysqli_fetch_array($querymostrarmartesej1);
               if($rowmartesej1 != 0){
               ?>
-              <h5 class="neje"><?php echo $rowmartesej1['nombre'];?></h5>
+              <h5 class="neje"><br><?php echo $rowmartesej1['nombre'];?></h5>
               <hr>
               <p class="deje">Descripcion del Ejercicio: <br><br> <?php echo $rowmartesej1['descripcion'];?></p>
               <p class="cseje">Cantidad de Series:  <?php echo $rowmartesej1['series_ej1'];?></p>
@@ -282,7 +280,7 @@ include("../models/validacion_clientes.php");
               $rowmartesej2= mysqli_fetch_array($querymostrarmartesej2);
               if($rowmartesej2 != 0){
               ?>
-              <h5 class="neje"><?php echo $rowmartesej2['nombre'];?></h5>
+              <h5 class="neje"><br><?php echo $rowmartesej2['nombre'];?></h5>
               <hr>
               <p class="deje">Descripcion del Ejercicio: <br><br> <?php echo $rowmartesej2['descripcion'];?></p>
               <p class="cseje">Cantidad de Series:  <?php echo $rowmartesej2['series_ej2'];?></p>
@@ -308,7 +306,7 @@ include("../models/validacion_clientes.php");
               $rowmartesej3= mysqli_fetch_array($querymostrarmartesej3);
               if($rowmartesej3 != 0){
               ?>
-              <h5 class="neje"><?php echo $rowmartesej3['nombre'];?></h5>
+              <h5 class="neje"><br><?php echo $rowmartesej3['nombre'];?></h5>
               <hr>
               <p class="deje">Descripcion del Ejercicio: <br><br> <?php echo $rowmartesej3['descripcion'];?></p>
               <p class="cseje">Cantidad de Series:  <?php echo $rowmartesej3['series_ej3'];?></p>
@@ -334,7 +332,7 @@ include("../models/validacion_clientes.php");
               $rowmartesej4= mysqli_fetch_array($querymostrarmartesej4);
               if($rowmartesej4 != 0){
               ?>
-              <h5 class="neje"><?php echo $rowmartesej4['nombre'];?></h5>
+              <h5 class="neje"><br><?php echo $rowmartesej4['nombre'];?></h5>
 <hr>
               <p class="deje">Descripcion del Ejercicio: <br><br> <?php echo $rowmartesej4['descripcion'];?></p>
               <p class="cseje">Cantidad de Series:  <?php echo $rowmartesej4['series_ej4'];?></p>
@@ -360,7 +358,7 @@ include("../models/validacion_clientes.php");
               $rowmartesej5= mysqli_fetch_array($querymostrarmartesej5);
               if($rowmartesej5 != 0){
               ?>
-              <h5 class="neje"><?php echo $rowmartesej5['nombre'];?></h5>
+              <h5 class="neje"><br><?php echo $rowmartesej5['nombre'];?></h5>
               <hr>
               <p class="deje">Descripcion del Ejercicio: <br><br> <?php echo $rowmartesej5['descripcion'];?></p>
               <p class="cseje">Cantidad de Series:  <?php echo $rowmartesej5['series_ej5'];?></p>
@@ -404,7 +402,7 @@ include("../models/validacion_clientes.php");
               $rowmiercolesej1= mysqli_fetch_array($querymostrarmiercolesej1);
               if($rowmiercolesej1 != 0){
               ?>
-              <h5 class="neje"><?php echo $rowmiercolesej1['nombre'];?></h5>
+              <h5 class="neje"><br><?php echo $rowmiercolesej1['nombre'];?></h5>
               <hr>
               <p class="deje">Descripcion del Ejercicio: <br><br> <?php echo $rowmiercolesej1['descripcion'];?></p>
               <p class="cseje">Cantidad de Series:  <?php echo $rowmiercolesej1['series_ej1'];?></p>
@@ -430,7 +428,7 @@ include("../models/validacion_clientes.php");
               $rowmiercolesej2= mysqli_fetch_array($querymostrarmiercolesej2);
               if($rowmiercolesej2 != 0){
               ?>
-              <h5 class="neje"><?php echo $rowmiercolesej2['nombre'];?></h5>
+              <h5 class="neje"><br><?php echo $rowmiercolesej2['nombre'];?></h5>
               <hr>
               <p class="deje">Descripcion del Ejercicio: <br><br> <?php echo $rowmiercolesej2['descripcion'];?></p>
               <p class="cseje">Cantidad de Series:  <?php echo $rowmiercolesej2['series_ej2'];?></p>
@@ -457,7 +455,7 @@ include("../models/validacion_clientes.php");
               $rowmiercolesej3= mysqli_fetch_array($querymostrarmiercolesej3);
               if($rowmiercolesej3 != 0){
               ?>
-              <h5 class="neje"><?php echo $rowmiercolesej3['nombre'];?></h5>
+              <h5 class="neje"><br><?php echo $rowmiercolesej3['nombre'];?></h5>
               <hr>
               <p class="deje">Descripcion del Ejercicio: <br><br> <?php echo $rowmiercolesej3['descripcion'];?></p>
               <p class="cseje">Cantidad de Series:  <?php echo $rowmiercolesej3['series_ej3'];?></p>
@@ -483,7 +481,7 @@ include("../models/validacion_clientes.php");
               $rowmiercolesej4= mysqli_fetch_array($querymostrarmiercolesej4);
               if($rowmiercolesej4 != 0){
               ?>
-              <h5 class="neje"><?php echo $rowmiercolesej4['nombre'];?></h5>
+              <h5 class="neje"><br><?php echo $rowmiercolesej4['nombre'];?></h5>
               <hr>
               <p class="deje">Descripcion del Ejercicio:<br><br>  <?php echo $rowmiercolesej4['descripcion'];?></p>
               <p class="cseje">Cantidad de Series:  <?php echo $rowmiercolesej4['series_ej4'];?></p>
@@ -509,7 +507,7 @@ include("../models/validacion_clientes.php");
               $rowmiercolesej5= mysqli_fetch_array($querymostrarmiercolesej5);
               if($rowmiercolesej5 != 0){
               ?>
-              <h5 class="neje"><?php echo $rowmiercolesej5['nombre'];?></h5>
+              <h5 class="neje"><br><?php echo $rowmiercolesej5['nombre'];?></h5>
               <hr>
               <p class="deje">Descripcion del Ejercicio: <br><br> <?php echo $rowmiercolesej5['descripcion'];?></p>
               <p class="cseje">Cantidad de Series:  <?php echo $rowmiercolesej5['series_ej5'];?></p>
@@ -553,7 +551,7 @@ include("../models/validacion_clientes.php");
               $rowjuevesej1= mysqli_fetch_array($querymostrarjuevesej1);
               if($rowjuevesej1 != 0){
               ?>
-              <h5 class="neje"><?php echo $rowjuevesej1['nombre'];?></h5>
+              <h5 class="neje"><br><?php echo $rowjuevesej1['nombre'];?></h5>
               <hr>
               <p class="deje">Descripcion del Ejercicio:<br><br>  <?php echo $rowjuevesej1['descripcion'];?></p>
               <p class="cseje">Cantidad de Series:  <?php echo $rowjuevesej1['series_ej1'];?></p>
@@ -579,7 +577,7 @@ include("../models/validacion_clientes.php");
               $rowjuevesej2= mysqli_fetch_array($querymostrarjuevesej2);
               if($rowjuevesej2 != 0){
               ?>
-              <h5 class="neje"><?php echo $rowjuevesej2['nombre'];?></h5>
+              <h5 class="neje"><br><?php echo $rowjuevesej2['nombre'];?></h5>
               <hr>
               <p class="deje">Descripcion del Ejercicio: <br><br> <?php echo $rowjuevesej2['descripcion'];?></p>
               <p class="cseje">Cantidad de Series:  <?php echo $rowjuevesej2['series_ej2'];?></p>
@@ -605,7 +603,7 @@ include("../models/validacion_clientes.php");
               $rowjuevesej3= mysqli_fetch_array($querymostrarjuevesej3);
               if($rowjuevesej3 != 0){
               ?>
-              <h5 class="neje"><?php echo $rowjuevesej3['nombre'];?></h5>
+              <h5 class="neje"><br><?php echo $rowjuevesej3['nombre'];?></h5>
               <hr>
               <p class="deje">Descripcion del Ejercicio: <br><br> <?php echo $rowjuevesej3['descripcion'];?></p>
               <p class="cseje">Cantidad de Series:  <?php echo $rowjuevesej3['series_ej3'];?></p>
@@ -631,7 +629,7 @@ include("../models/validacion_clientes.php");
               $rowjuevesej4= mysqli_fetch_array($querymostrarjuevesej4);
               if($rowjuevesej4 != 0){
               ?>
-              <h5 class="neje"><?php echo $rowjuevesej4['nombre'];?></h5>
+              <h5 class="neje"><br><?php echo $rowjuevesej4['nombre'];?></h5>
               <hr>
               <p class="deje">Descripcion del Ejercicio: <br><br> <?php echo $rowjuevesej4['descripcion'];?></p>
               <p class="cseje">Cantidad de Series:  <?php echo $rowjuevesej4['series_ej4'];?></p>
@@ -657,7 +655,7 @@ include("../models/validacion_clientes.php");
               $rowjuevesej5= mysqli_fetch_array($querymostrarjuevesej5);
               if($rowjuevesej5 != 0){
               ?>
-              <h5 class="neje"><?php echo $rowjuevesej5['nombre'];?></h5>
+              <h5 class="neje"><br><?php echo $rowjuevesej5['nombre'];?></h5>
               <hr>
               <p class="deje">Descripcion del Ejercicio: <br><br> <?php echo $rowjuevesej5['descripcion'];?></p>
               <p class="cseje">Cantidad de Series:  <?php echo $rowjuevesej5['series_ej5'];?></p>
@@ -701,7 +699,7 @@ include("../models/validacion_clientes.php");
               $rowviernesej1= mysqli_fetch_array($querymostrarviernesej1);
               if($rowviernesej1 != 0){
               ?>
-              <h5 class="neje"><?php echo $rowviernesej1['nombre'];?></h5>
+              <h5 class="neje"><br><?php echo $rowviernesej1['nombre'];?></h5>
               <hr>
               <p class="deje">Descripcion del Ejercicio: <br><br> <?php echo $rowviernesej1['descripcion'];?></p>
               <p class="cseje">Cantidad de Series:  <?php echo $rowviernesej1['series_ej1'];?></p>
@@ -727,7 +725,7 @@ include("../models/validacion_clientes.php");
               $rowviernesej2= mysqli_fetch_array($querymostrarviernesej2);
               if($rowviernesej2 != 0){
               ?>
-              <h5 class="neje"><?php echo $rowviernesej2['nombre'];?></h5>
+              <h5 class="neje"><br><?php echo $rowviernesej2['nombre'];?></h5>
               <hr>
               <p class="deje">Descripcion del Ejercicio: <br><br> <?php echo $rowviernesej2['descripcion'];?></p>
               <p class="cseje">Cantidad de Series:  <?php echo $rowviernesej2['series_ej2'];?></p>
@@ -753,7 +751,7 @@ include("../models/validacion_clientes.php");
               $rowviernesej3= mysqli_fetch_array($querymostrarviernesej3);
               if($rowviernesej3 != 0){
               ?>
-              <h5 class="neje"><?php echo $rowviernesej3['nombre'];?></h5>
+              <h5 class="neje"><br><?php echo $rowviernesej3['nombre'];?></h5>
               <hr>
               <p class="deje">Descripcion del Ejercicio: <br><br> <?php echo $rowviernesej3['descripcion'];?></p>
               <p class="cseje">Cantidad de Series:  <?php echo $rowviernesej3['series_ej3'];?></p>
@@ -779,7 +777,7 @@ include("../models/validacion_clientes.php");
               $rowviernesej4= mysqli_fetch_array($querymostrarviernesej4);
               if($rowviernesej4 != 0){
               ?>
-              <h5 class="neje"><?php echo $rowviernesej4['nombre'];?></h5>
+              <h5 class="neje"><br><?php echo $rowviernesej4['nombre'];?></h5>
               <hr>
               <p class="deje">Descripcion del Ejercicio: <br><br> <?php echo $rowviernesej4['descripcion'];?></p>
               <p class="cseje">Cantidad de Series:  <?php echo $rowviernesej4['series_ej4'];?></p>
@@ -805,7 +803,7 @@ include("../models/validacion_clientes.php");
               $rowviernesej5= mysqli_fetch_array($querymostrarviernesej5);
               if($rowviernesej5 != 0){
               ?>
-              <h5 class="neje"><?php echo $rowviernesej5['nombre'];?></h5>
+              <h5 class="neje"><br><?php echo $rowviernesej5['nombre'];?></h5>
               <hr>
               <p class="deje">Descripcion del Ejercicio: <br><br> <?php echo $rowviernesej5['descripcion'];?></p>
               <p class="cseje">Cantidad de Series:  <?php echo $rowviernesej5['series_ej5'];?></p>
@@ -848,7 +846,7 @@ include("../models/validacion_clientes.php");
               $rowsabadoej1= mysqli_fetch_array($querymostrarsabadoej1);
               if($rowsabadoej1 != 0){
               ?>
-              <h5 class="neje"><?php echo $rowsabadoej1['nombre'];?></h5>
+              <h5 class="neje"><br><?php echo $rowsabadoej1['nombre'];?></h5>
               <hr>
               <p class="deje">Descripcion del Ejercicio: <br><br> <?php echo $rowsabadoej1['descripcion'];?></p>
               <p class="cseje">Cantidad de Series:  <?php echo $rowsabadoej1['series_ej1'];?></p>
@@ -874,7 +872,7 @@ include("../models/validacion_clientes.php");
               $rowsabadoej2= mysqli_fetch_array($querymostrarsabadoej2);
               if($rowsabadoej2 != 0){
               ?>
-              <h5 class="neje"><?php echo $rowsabadoej2['nombre'];?></h5>
+              <h5 class="neje"><br><?php echo $rowsabadoej2['nombre'];?></h5>
               <hr>
               <p class="deje">Descripcion del Ejercicio: <br><br> <?php echo $rowsabadoej2['descripcion'];?></p>
               <p class="cseje">Cantidad de Series:  <?php echo $rowsabadoej2['series_ej2'];?></p>
@@ -900,7 +898,7 @@ include("../models/validacion_clientes.php");
               $rowsabadoej3= mysqli_fetch_array($querymostrarsabadoej3);
               if($rowsabadoej3 != 0){
               ?>
-              <h5 class="neje"><?php echo $rowsabadoej3['nombre'];?></h5>
+              <h5 class="neje"><br><?php echo $rowsabadoej3['nombre'];?></h5>
               <hr>
               <p class="deje">Descripcion del Ejercicio: <br><br> <?php echo $rowsabadoej3['descripcion'];?></p>
               <p class="cseje">Cantidad de Series:  <?php echo $rowsabadoej3['series_ej3'];?></p>
@@ -926,7 +924,7 @@ include("../models/validacion_clientes.php");
               $rowsabadoej4= mysqli_fetch_array($querymostrarsabadoej4);
               if($rowsabadoej4 != 0){
               ?>
-              <h5 class="neje"><?php echo $rowsabadoej4['nombre'];?></h5>
+              <h5 class="neje"><br><?php echo $rowsabadoej4['nombre'];?></h5>
               <hr>
               <p class="deje">Descripcion del Ejercicio: <br><br> <?php echo $rowsabadoej4['descripcion'];?></p>
               <p class="cseje">Cantidad de Series:  <?php echo $rowsabadoej4['series_ej4'];?></p>
@@ -952,7 +950,7 @@ include("../models/validacion_clientes.php");
               $rowsabadoej5= mysqli_fetch_array($querymostrarsabadoej5);
               if($rowsabadoej5 != 0){
               ?>
-              <h5 class="neje"><?php echo $rowsabadoej5['nombre'];?></h5>
+              <h5 class="neje"><br><?php echo $rowsabadoej5['nombre'];?></h5>
               <hr>
               <p class="deje">Descripcion del Ejercicio: <br><br> <?php echo $rowsabadoej5['descripcion'];?></p>
               <p class="cseje">Cantidad de Series:  <?php echo $rowsabadoej5['series_ej5'];?></p>
