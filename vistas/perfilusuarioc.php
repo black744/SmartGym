@@ -24,11 +24,10 @@ include("../models/validacion_clientes.php");
 <head>
     <meta charset="UTF-8">
     <title>Perfil</title>
-    <link rel="stylesheet" href="../css/EstiloPerfil.css">
-    <link rel="stylesheet" href="../css/EstiloSidebar.css">
-    <link rel="stylesheet" href="../css/EstiloGeneral.css">
+    <link href="../css/EstiloPerfil.css" rel="stylesheet">
+    <link href="../css/EstiloHomes.css" rel="stylesheet">
+    <link href="../css/EstiloGeneral.css" rel="stylesheet">
 </head>
-<!--  -->
 <?php
 switch ($idrol) {
     case 0:
@@ -47,8 +46,6 @@ switch ($idrol) {
 ?>
 
 <body>
-
-    <div class="main_contentn">
         <div class="info">
             <section class="seccion-perfil-usuario">
                 <div class="perfil-usuario-header" id="divsb">
@@ -61,11 +58,11 @@ switch ($idrol) {
                             $DefaultIMG = $ROWDefault['image'];
                             if ($image == 0) {
                             ?>
-                                <img src="data:image/jpg;base64,<?php echo base64_encode($DefaultIMG); ?>" class="imgp">
+                                <img src="data:image/jpg;base64,<?php echo base64_encode($DefaultIMG); ?>">
                             <?php
 
                             } else { ?>
-                                <img src="data:image/jpg;base64,<?php echo base64_encode($image); ?>" class="imgp">
+                                <img src="data:image/jpg;base64,<?php echo base64_encode($image); ?>">
                             <?php } ?>
                         </div>
                     </div>
@@ -91,7 +88,6 @@ switch ($idrol) {
                 </div>
             </section>
         </div>
-    </div>
 </body>
 
 </html>
