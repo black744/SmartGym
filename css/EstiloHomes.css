@@ -78,6 +78,11 @@ input::placeholder {
 .cont-calendario-seleccionar {
   grid-area: 1 / 2 / 3 / 3;
 }
+
+.cont-calendario-seleccionar{
+  min-height: 35vh;
+}
+
 /*---------------------------------------------------*/
 .imgp {
   margin-top: 5%;
