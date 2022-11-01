@@ -51,7 +51,7 @@ if ($numrowsquery == 0) {
     <meta charset="UTF-8">
     <title>Home Usuario</title>
     <script src="https://kit.fontawesome.com/db50c9d526.js"></script>
-    <link rel="stylesheet" href="../css/estilousuario.css">
+    <link rel="stylesheet" href="../css/EstiloHomes.css">
     <link rel="stylesheet" href="../css/EstiloGeneral.css">
     <script src="../js/appbotonnegro.js" type="text/javascript" defer></script>
 </head>
@@ -75,8 +75,6 @@ switch ($idrol) {
 <body>
 
     <div class="main_content">
-
-
             <div class="izquierda" id="divsb">
                 <div class="turnoultimo">
                     <?php
@@ -122,6 +120,7 @@ switch ($idrol) {
                 
                 <div class="progreso">
                 <img src="data:image/jpg;base64,<?php echo base64_encode($image); ?>" class="imgp">
+                <br>
                     <h1><?php echo $row['nombre'] ?></h1>
                     <br>
                     <p>Peso actual: <?php echo $pesoactual?> </p>
@@ -130,8 +129,8 @@ switch ($idrol) {
                 </div>
                 <div class="progresoform">
                     <form method="post">
-                        <p>ingrese peso actual</p>
-                        <input class="orange" type="text" id="inputs" name="pesoactual" placeholder="Ingrese peso en kg">
+                        <p>Ingrese peso actual</p>
+                        <input class="orange" type="number" id="inputs" name="pesoactual" placeholder="Peso en kg">
                         <input id="btns" class="botonenviar" type="submit" name="enviar">
                     </form>
                     <?php
@@ -142,8 +141,8 @@ switch ($idrol) {
                     }
                     ?>
                     <form method="post">
-                        <p>ingrese peso ideal</p>
-                        <input class="orange" id="inputs" type="text" name="pesoideal" placeholder="Ingrese peso en kg">
+                        <p>Ingrese peso ideal</p>
+                        <input class="orange" id="inputs" type="number" name="pesoideal" placeholder="Peso en kg">
                         <input id="btns" class="botonenviar" type="submit" name="enviar">
                     </form>
                     <?php

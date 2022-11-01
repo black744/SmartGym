@@ -25,7 +25,7 @@ include("../models/validacion_clientes.php");
     <meta charset="UTF-8">
     <title>Perfil</title>
     <link rel="stylesheet" href="../css/EstiloPerfil.css">
-    <link rel="stylesheet" href="../css/estilousuario.css">
+    <link rel="stylesheet" href="../css/EstiloSidebar.css">
     <link rel="stylesheet" href="../css/EstiloGeneral.css">
 </head>
 
@@ -47,41 +47,39 @@ switch ($idrol) {
 ?>
 
 <body>
-    <div class="main_content">
 
+    <div class="main_contentn">
         <div class="info">
-            <section class="seccion-perfil-usuario">
-                <div class="perfil-usuario-header" id="divsb">
-                    <div class="perfil-usuario-portada">
-                        <div class="perfil-usuario-avatar">
-                            <img src="data:image/jpg;base64,<?php echo base64_encode($image); ?>">
-                        </div>
+        <section class="seccion-perfil-usuario">
+            <div class="perfil-usuario-header" id="divsb">
+                <div class="perfil-usuario-portada">
+                    <div class="perfil-usuario-avatar">
+                        <img src="data:image/jpg;base64,<?php echo base64_encode($image); ?>">
                     </div>
                 </div>
-                <div class="perfil-usuario-body" id="divsb" id="divsb">
-                    <div class="perfil-usuario-bio">
-                        <?php
-                        echo "<h4> $nusuario "
-                        ?>
-                    </div>
-                    <div class="perfil-usuario-footer">
-                        <ul class="lista-datos">
-                            <li> Nombre: <?php echo $nombre ?> </li> <br>
-                            <li> Apellido: <?php echo $apellido ?> </li> <br>
-                            <li> Correo: <?php echo $correo ?> </li> <br>
-                            <li> DNI: <?php echo $dni ?> </li> <br>
-                        </ul>
+            </div>
+            <div class="perfil-usuario-body" id="divsb" id="divsb">
+                <div class="perfil-usuario-bio">
+                    <?php
+                    echo "<h4> $nusuario "
+                    ?>
+                </div>
+                <div class="perfil-usuario-footer">
+                    <ul class="lista-datos">
+                        <li> Nombre: <?php echo $nombre ?> </li> <br>
+                        <li> Apellido: <?php echo $apellido ?> </li> <br>
+                        <li> Correo: <?php echo $correo ?> </li> <br>
+                        <li> DNI: <?php echo $dni ?> </li> <br>
+                    </ul>
 
-                        <form action="editarinfo.php">
-                            <button id="btnsn">Editar info</button>
-                        </form>
-                    </div>
+                    <form action="editarinfo.php">
+                        <button id="btnsn">Editar info</button>
+                    </form>
                 </div>
-            </section>
+            </div>
+        </section>
         </div>
     </div>
-    </div>
-
 </body>
 
 </html>

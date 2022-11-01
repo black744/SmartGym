@@ -24,7 +24,9 @@ include("../models/validacion_clientes.php");
 <head>
     <meta charset="UTF-8">
     <title>Pagos</title>
-    <link rel="stylesheet" href="../css/estilousuario.css">
+
+    <link rel="stylesheet" href="../css/EstiloHomes.css">
+    <link rel="stylesheet" href="../css/EstiloSidebar.css">
     <link rel="stylesheet" href="../css/EstiloPagos.css">
     <link rel="stylesheet" href="../css/EstiloGeneral.css">
     <?php
@@ -49,8 +51,8 @@ include("../models/validacion_clientes.php");
 
 <body>
 
-    <div class="main_content">
-        <div class="contenedor-pagos">
+    <div class="main_contentn">
+
 
             <div class="contenedor-cuerre-texto" id="divsb">
                 <h2> Escanea y Paga</h2>
@@ -67,14 +69,11 @@ include("../models/validacion_clientes.php");
                         <!--aca se conecta con la base de datos y si el check esta bien le dice, si el pago de este mes fue exitoso-->
                     </div>
                     <div class="notificacion">
-                    <p> Nota: Los Pagos deberan de realizarse en las fechas correspondientes a los primeros 10 dias habiles del mes, posterior a dichas fechas las cuentas sin pago seran suspendidas hasta realizar el pago y actualizadas por el administrador.</p>
+                        <p> Nota: Los Pagos deberan de realizarse en las fechas correspondientes a los primeros 10 dias habiles del mes, posterior a dichas fechas las cuentas sin pago seran suspendidas hasta realizar el pago y actualizadas por el administrador.</p>
                         <!--aca se conceta con la base de datos y en tal caso de que deba 1 omas meses notificarle cual debe,-->
                     </div>
                 </form>
             </div>
-
-        </div>
-    </div>
     </div>
 </body>
 

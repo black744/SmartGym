@@ -26,6 +26,7 @@ include("../models/validacion_clientes.php");
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="../css/EstiloPerfil.css" rel="stylesheet">
+    <link href="../css/EstiloHomes.css" rel="stylesheet">
     <link href="../css/estilousuario.css" rel="stylesheet">
     <link href="../css/EstiloGeneral.css" rel="stylesheet">
     <title>Actualizar Info</title>
@@ -51,51 +52,46 @@ switch ($idrol) {
 
 
 <body>
-    <div class="main_content">
-        
-        <div class="info">
-            <section class="seccion-perfil-usuario">
+    <div class="main_contentn">
 
-                <div class="perfil-usuario-header" id="divsb">
-                    <div class="perfil-usuario-portada">
-                        <div class="perfil-usuario-avatar">
+        <section class="seccion-perfil-usuario">
 
-                            <img src="data:image/jpg;base64,<?php echo base64_encode($image); ?>">
-                            <form class="form" action="../models/uploadimage.php" method="post" enctype="multipart/form-data">
-                                <input type="file" id="boton-av" name="image" />
-                                <input type="submit" id="boton-av" value="UPLOAD" name="submit" />
-                            </form>
+            <div class="perfil-usuario-header" id="divsb">
+                <div class="perfil-usuario-portada">
+                    <div class="perfil-usuario-avatar">
 
-                        </div>
+                        <img src="data:image/jpg;base64,<?php echo base64_encode($image); ?>">
+                        <form class="form" action="../models/uploadimage.php" method="post" enctype="multipart/form-data">
+                            <input type="file" id="boton-av" name="image" />
+                            <input type="submit" id="boton-av" value="UPLOAD" name="submit" />
+                        </form>
+
                     </div>
                 </div>
+            </div>
 
-                <div class="perfil-usuario-body" id="divsb">
-                    <div class="perfil-usuario-bio">
-                        <input type="hidden" name="usuario" value="<?php echo $row['usuario']  ?>">
-                    </div>
-                    <div class="perfil-usuario-footer">
-                        <form method="POST" action="../models/update.php">
-                            <ul class="lista-datos">
-                                <p>Nombre:</p><input id="inputsn" type="text" class="inputinfo" name="nombre" placeholder="Nombre" value="<?php echo $row['nombre']  ?>"> <br><br>
-                                <p>Apellido:</p><input id="inputsn" type="text" class="inputinfo" name="apellido" placeholder="Apellido" value="<?php echo $row['apellido']  ?>"> <br><br>
-                                <p>Apodo:</p><input id="inputsn" type="text" class="inputinfo" name="usuario" placeholder="Usuario" value="<?php echo $row['usuario']  ?>"> <br><br>
-                                <p>D.N.I:</p><input id="inputsn" type="number" class="inputinfo" name="dni" placeholder="D.N.I" value="<?php echo $row['dni']  ?>"> <br><br>
-                            </ul>
-                            <ul class="lista-datos">
-                                <p>Contraseña:</p><input id="inputsn" type="password" class="inputinfo" name="contraseña" placeholder="Contraseña" value="<?php echo $row['contraseña']  ?>"> <br><br>
-                                <!--<input type="text" class="inputinfo" name="dom" placeholder="domicilio" value="<?php echo $row['dom']  ?>">
+            <div class="perfil-usuario-body" id="divsb">
+                <div class="perfil-usuario-bio">
+                    <input type="hidden" name="usuario" value="<?php echo $row['usuario']  ?>">
+                </div>
+                <div class="perfil-usuario-footer">
+                    <form method="POST" action="../models/update.php">
+                        <ul class="lista-datos">
+                            <p>Nombre:</p><input id="inputsn" type="text" class="inputinfo" name="nombre" placeholder="Nombre" value="<?php echo $row['nombre']  ?>"> <br><br>
+                            <p>Apellido:</p><input id="inputsn" type="text" class="inputinfo" name="apellido" placeholder="Apellido" value="<?php echo $row['apellido']  ?>"> <br><br>
+                            <p>Apodo:</p><input id="inputsn" type="text" class="inputinfo" name="usuario" placeholder="Usuario" value="<?php echo $row['usuario']  ?>"> <br><br>
+                            <p>D.N.I:</p><input id="inputsn" type="number" class="inputinfo" name="dni" placeholder="D.N.I" value="<?php echo $row['dni']  ?>"> <br><br>
+                        </ul>
+                        <ul class="lista-datos">
+                            <p>Contraseña:</p><input id="inputsn" type="password" class="inputinfo" name="contraseña" placeholder="Contraseña" value="<?php echo $row['contraseña']  ?>"> <br><br>
+                            <!--<input type="text" class="inputinfo" name="dom" placeholder="domicilio" value="<?php echo $row['dom']  ?>">
                                 <input type="date" class="inputinfo" name="fnac" placeholder="fecha de nacimiento" value="<?php echo $row['fnac']  ?>"> -->
-                            </ul>
-                                    <button id="btnsn" type="submit" name="buttonedit" value="Editar">finalizar edicion</button>
-                                </form>
-                            </div>
-                        </div>
-                    </div>
+                        </ul>
+                        <button id="btnsn" type="submit" name="buttonedit" value="Editar">finalizar edicion</button>
+                    </form>
                 </div>
-            </section>
-    </div>
-    </div>
+            </div>
+        </section>
     </div>
 
 </body>
