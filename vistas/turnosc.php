@@ -115,9 +115,10 @@ switch ($idrol) {
                     ?>
 
                 </select>
+                <div id="mostrar" class="container col-12 row"></div>
             </form>
 
-            <div id="mostrar" class="container col-12 row"></div>
+            
             <?php
             if (isset($_POST['enviarclase'])) {
                 $idclase = $_POST['claseid'];
