@@ -133,6 +133,12 @@ body {
     color: #fff;
 }
 
+.formulario input[type=number]::-webkit-inner-spin-button, 
+.formulario input[type=number]::-webkit-outer-spin-button { 
+    -webkit-appearance: none; 
+    margin: 0; 
+}
+
 .formulario input:focus {
     width: 70%;
     display: block;

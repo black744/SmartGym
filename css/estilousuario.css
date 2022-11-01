@@ -28,11 +28,10 @@
 }
 
 .derecha {
-    width: 60vh;
-    height: 80vh;
+    width: 30%;
+    height: 40em;
     margin-left: 50vw;
-    position: absolute;
-    margin-top: 5vh;
+    position: flex;
 }
 
 .izq{
@@ -83,8 +82,9 @@
     margin-top:10px;
 }
 .nombre{
-    margin-top: 105px;
-    margin-left: 9vw;
+    margin-top: 7em;
+    margin-left: 40%;
+    margin-left: 40%;
     color:var(--color-letra);
     font-size: 20px;
 }
@@ -97,35 +97,34 @@
 }
 
 .progresoform{
-    width: 55vh;
-    height: 30vh;
+    width: 100%;
+    height: 30em;
     color:var(--color-letra);
-    margin-left: 2.5vh;
-    margin-top:5px;
+    margin-left: 3.5%;
+    margin-top: 1em;
+    margin-bottom: 3em;
 }
 
 .progresoform p {
     font-size: 18px;
-    margin-top: 2vh;
-    margin-left: 0.5vh;
-    margin-bottom: 1vh;
+    margin-top: 1em;
     color: var(--color-letra);
 }
 
 .orange{
     position: relative;
-    margin-top: 5vh;
-    margin-left: 5vh;
-    margin-bottom: 2vh;
-    height: 5.5vh;
-    width: 8vw;
+    margin-top: 1em;
+    margin-left: 2%;
+    margin-bottom: 2em;
+    height: 3.5em;
+    width: 35%;
 }
 
 .botonenviar{
     position: flex;
-    margin: 3vh;
-    height: 6.5vh;
-    width: 10vw;
+    margin: 3%;
+    height: 3.0em;
+    width: 40%;
 }
 
 /* main */

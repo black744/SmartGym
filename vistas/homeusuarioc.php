@@ -76,7 +76,6 @@ switch ($idrol) {
 
     <div class="main_content">
 
-        <div class="info">
 
             <div class="izquierda" id="divsb">
                 <div class="turnoultimo">
@@ -186,7 +185,6 @@ switch ($idrol) {
             </div>
         </div>
 
-    </div>
     </div>
 
 </body>
