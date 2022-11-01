@@ -96,7 +96,7 @@ $preference->save();
                 <a href="#Servicios-2">Servicio</a>
                 <a href="#Planes-3">Planes</a>
                 <a href="#Soporte-4">Contacto</a>
-                <a href="registro.php">Inicia sesion</a>
+                <a href="../vistas/registro.php">Inicia sesion</a>
 
             </div>
         </nav>

@@ -141,7 +141,7 @@ switch ($idrol) {
                 $querycomp2 = mysqli_query($conex, $sqlcomp2);
                 $filascomp2 = mysqli_fetch_array($querycomp2);
                 if ($filascomp2) {
-                    echo ("<script>alert('Error, ya estas en esta clase');</script>");
+                    
                     echo ("<script>window.location.href = '../vistas/turnosc.php';</script>");
                 } else {
                     if ($idclase == 0) {
@@ -154,7 +154,8 @@ switch ($idrol) {
                         $queryupdate = mysqli_query($conex, $sqlupdate);
                     };
                 };
-            }; ?>
+            };
+             ?>
         </div>
 
 
