@@ -144,25 +144,28 @@ switch ($idrol) {
                     <form method="post">
                         <p>Ingrese peso actual</p>
                         <input class="orange" type="number" id="inputs" name="pesoactual" placeholder="Peso en kg">
-                        <input id="btns" class="botonenviar" type="submit" name="enviar">
+                        <input id="btns" class="botonenviar" type="submit" name="enviarpesoactual">
                     </form>
                     <?php
                     if (isset($_POST['enviarpesoactual'])) {
                         $NPactual = $_POST['pesoactual'];
                         $sqlNPA = "UPDATE datos SET pesoactual='$NPactual' WHERE idusuario='$idusuario'";
                         $queryNPA = mysqli_query($conex, $sqlNPA);
+                        echo("<script>window.location.href = 'homeusuarioc.php';</script>");
+                        
                     }
                     ?>
                     <form method="post">
                         <p>Ingrese peso ideal</p>
                         <input class="orange" id="inputs" type="number" name="pesoideal" placeholder="Peso en kg">
-                        <input id="btns" class="botonenviar" type="submit" name="enviar">
+                        <input id="btns" class="botonenviar" type="submit" name="enviarpesoideal">
                     </form>
                     <?php
                     if (isset($_POST['enviarpesoideal'])) {
                         $NPideal = $_POST['pesoideal'];
                         $sqlideal = "UPDATE datos SET pesoideal='$NPideal' WHERE idusuario='$idusuario'";
                         $queryideal = mysqli_query($conex, $sqlideal);
+                        echo("<script>window.location.href = 'homeusuarioc.php';</script>");
                     }
                     ?>
                 </div>
