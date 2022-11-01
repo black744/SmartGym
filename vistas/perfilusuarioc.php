@@ -28,7 +28,7 @@ include("../models/validacion_clientes.php");
     <link rel="stylesheet" href="../css/EstiloSidebar.css">
     <link rel="stylesheet" href="../css/EstiloGeneral.css">
 </head>
-
+<!--  -->
 <?php
 switch ($idrol) {
     case 0:
@@ -50,46 +50,46 @@ switch ($idrol) {
 
     <div class="main_contentn">
         <div class="info">
-        <section class="seccion-perfil-usuario">
-            <div class="perfil-usuario-header" id="divsb">
-                <div class="perfil-usuario-portada">
-                    <div class="perfil-usuario-avatar">
-                    <?php 
-                                               $SQLDefault="SELECT image FROM datos WHERE idusuario=1";
-                                               $QUERYDefault=mysqli_query($conex, ($SQLDefault));
-                                               $ROWDefault = mysqli_fetch_array($QUERYDefault);
-                                               $DefaultIMG=$ROWDefault['image'];
-                    if ($image == 0){
-                           ?>
-                           <img src="data:image/jpg;base64,<?php echo base64_encode($DefaultIMG); ?>" class="imgp">
-                           <?php
+            <section class="seccion-perfil-usuario">
+                <div class="perfil-usuario-header" id="divsb">
+                    <div class="perfil-usuario-portada">
+                        <div class="perfil-usuario-avatar">
+                            <?php
+                            $SQLDefault = "SELECT image FROM datos WHERE idusuario=1";
+                            $QUERYDefault = mysqli_query($conex, ($SQLDefault));
+                            $ROWDefault = mysqli_fetch_array($QUERYDefault);
+                            $DefaultIMG = $ROWDefault['image'];
+                            if ($image == 0) {
+                            ?>
+                                <img src="data:image/jpg;base64,<?php echo base64_encode($DefaultIMG); ?>" class="imgp">
+                            <?php
 
-                    }else{?>
-                <img src="data:image/jpg;base64,<?php echo base64_encode($image); ?>" class="imgp">
-                    <?php } ?>
+                            } else { ?>
+                                <img src="data:image/jpg;base64,<?php echo base64_encode($image); ?>" class="imgp">
+                            <?php } ?>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="perfil-usuario-body" id="divsb" id="divsb">
-                <div class="perfil-usuario-bio">
-                    <?php
-                    echo "<h4> $nusuario "
-                    ?>
-                </div>
-                <div class="perfil-usuario-footer">
-                    <ul class="lista-datos">
-                        <li> Nombre: <?php echo $nombre ?> </li> <br>
-                        <li> Apellido: <?php echo $apellido ?> </li> <br>
-                        <li> Correo: <?php echo $correo ?> </li> <br>
-                        <li> DNI: <?php echo $dni ?> </li> <br>
-                    </ul>
+                <div class="perfil-usuario-body" id="divsb" id="divsb">
+                    <div class="perfil-usuario-bio">
+                        <?php
+                        echo "<h4> $nusuario "
+                        ?>
+                    </div>
+                    <div class="perfil-usuario-footer">
+                        <ul class="lista-datos">
+                            <li> Nombre: <?php echo $nombre ?> </li> <br>
+                            <li> Apellido: <?php echo $apellido ?> </li> <br>
+                            <li> Correo: <?php echo $correo ?> </li> <br>
+                            <li> DNI: <?php echo $dni ?> </li> <br>
+                        </ul>
 
-                    <form action="editarinfo.php">
-                        <button id="btnsn">Editar info</button>
-                    </form>
+                        <form action="editarinfo.php">
+                            <button id="btnsn">Editar info</button>
+                        </form>
+                    </div>
                 </div>
-            </div>
-        </section>
+            </section>
         </div>
     </div>
 </body>

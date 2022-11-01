@@ -85,10 +85,9 @@
 
 .perfil-usuario-body {
     width: 95%;
-    height: 95%;
+    height: 90%;
     position: relative;
     border-radius: 25px;
-    margin: 2vh;
 }
 
 .perfil-usuario-bio {

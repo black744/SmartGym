@@ -27,7 +27,6 @@ include("../models/validacion_clientes.php");
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="../css/EstiloPerfil.css" rel="stylesheet">
     <link href="../css/EstiloHomes.css" rel="stylesheet">
-    <link href="../css/estilousuario.css" rel="stylesheet">
     <link href="../css/EstiloGeneral.css" rel="stylesheet">
     <title>Actualizar Info</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
@@ -52,8 +51,8 @@ switch ($idrol) {
 
 
 <body>
-    <div class="main_contentn">
-
+    
+    <div class="info">
         <section class="seccion-perfil-usuario">
 
             <div class="perfil-usuario-header" id="divsb">
@@ -89,13 +88,13 @@ switch ($idrol) {
                 <div class="perfil-usuario-footer">
                     <form method="POST" action="../models/update.php">
                         <ul class="lista-datos">
-                            <p>Nombre:</p><input id="inputsn" type="text" class="inputinfo" name="nombre" placeholder="Nombre" value="<?php echo $row['nombre']  ?>"> <br><br>
-                            <p>Apellido:</p><input id="inputsn" type="text" class="inputinfo" name="apellido" placeholder="Apellido" value="<?php echo $row['apellido']  ?>"> <br><br>
-                            <p>Apodo:</p><input id="inputsn" type="text" class="inputinfo" name="usuario" placeholder="Usuario" value="<?php echo $row['usuario']  ?>"> <br><br>
-                            <p>D.N.I:</p><input id="inputsn" type="number" class="inputinfo" name="dni" placeholder="D.N.I" value="<?php echo $row['dni']  ?>"> <br><br>
+                            <p>Nombre:</p><input id="inputsn" type="text" class="inputinfo" name="nombre" placeholder="Nombre" value="<?php echo $row['nombre']  ?>"> 
+                            <p>Apellido:</p><input id="inputsn" type="text" class="inputinfo" name="apellido" placeholder="Apellido" value="<?php echo $row['apellido']  ?>"> 
+                            <p>Apodo:</p><input id="inputsn" type="text" class="inputinfo" name="usuario" placeholder="Usuario" value="<?php echo $row['usuario']  ?>"> 
+                            <p>D.N.I:</p><input id="inputsn" type="number" class="inputinfo" name="dni" placeholder="D.N.I" value="<?php echo $row['dni']  ?>"> 
                         </ul>
                         <ul class="lista-datos">
-                            <p>Contraseña:</p><input id="inputsn" type="password" class="inputinfo" name="contraseña" placeholder="Contraseña" value="<?php echo $row['contraseña']  ?>"> <br><br>
+                            <p>Contraseña:</p><input id="inputsn" type="password" class="inputinfo" name="contraseña" placeholder="Contraseña" value="<?php echo $row['contraseña']  ?>"> 
                             <!--<input type="text" class="inputinfo" name="dom" placeholder="domicilio" value="<?php echo $row['dom']  ?>">
                                 <input type="date" class="inputinfo" name="fnac" placeholder="fecha de nacimiento" value="<?php echo $row['fnac']  ?>"> -->
                         </ul>
