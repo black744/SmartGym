@@ -15,7 +15,9 @@
 .carousel {
     position: relative;
     top: 15vh;
-    left: 18vw;
+    left: 30%;
+    height:50vh;
+    width:60vw;
   }
   
   .carousel__item {
