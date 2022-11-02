@@ -85,9 +85,10 @@ include("../models/validacion_clientes.php");
                 ?>
                   <h5 class="neje"><br><?php echo $rowlunesej1['nombre']; ?></h5>
                   <hr>
-                  <p class="deje">Descripcion del Ejercicio: <br><br> <?php echo $rowlunesej1['descripcion']; ?></p>
                   <p class="cseje">Cantidad de Series: <?php echo $rowlunesej1['series_ej1']; ?></p>
-                  <p class="creje">Cantidad de Repeticiones: <?php echo $rowlunesej1['repeticiones_ej1']; ?></p>
+                  <p class="creje">Cantidad de Repeticiones: <?php echo $rowlunesej1['repeticiones_ej1']; ?></p><br>
+                  <p class="deje">Descripcion del Ejercicio: <br><br> <?php echo $rowlunesej1['descripcion']; ?></p>
+                  
                 <?php
                 } else {
                 ?>
@@ -107,6 +108,7 @@ include("../models/validacion_clientes.php");
                 }
 
                 .deje {
+                  max-height: 25%;
                   margin: 8%;
                   color: #fff;
                 }

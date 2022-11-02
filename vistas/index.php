@@ -15,7 +15,7 @@
 
 <body>
 
-    <header>
+    <header class="a1">
         <nav class="barranav" id="arriba">
             <div class="contenedorbtnnav" id="Precios-3">
                 <a href="#Smart Gym-1">Smart Gym</a>
@@ -28,7 +28,7 @@
         </nav>
     </header>
 
-    <div class="contenedorimagen">
+    <div class="contenedorimagen a2">
         <img src="../img/fondoindes.jpg">
         <div class="contenedorpresentacion">
             <img src="../img/logo.png">
@@ -38,7 +38,7 @@
         </div>
     </div>
 
-    <main id="blog">
+    <main id="blog" class="a3">
         <div class="contenedor">
 
             <div class="contenido">
@@ -51,67 +51,18 @@
                         iniciaron y ver su perfil.
                     </p>
                 </div>
-                <div class="post">
-                    <h1 class="titulo" id="Planes-3"> Planes </h1>
-
-                    <div class="container">
-                        <div class="container2"></div>
-
-                        <div class="box" onclick="location.href='registro.php'">
-                            &nbsp;
-                            <i class="fa-solid fa-laptop"></i>
-                            <h2> Plan virtual</h2> <br>
-                            <p>Dicho plan ofrecera a los clientes participar de los entrenamientos pero de forma totalmente remota con sus respectivos turnos</p>
-                            <button class="btn1"> Desde $1000 </button>
-                        </div>
-
-                        <div class="box" onclick="location.href='registro.php'">
-                            &nbsp;
-                            <i class="fa-solid fa-arrow-right-arrow-left"></i>
-                            <h2> Plan Mixto </h2><br>
-                            <p>Se combinaran las caracteristicas de las modalidades virtual como presencial en los turnos</p>
-                            <br>
-                            <br>
-                            <button class="btn1"> Desde $3000 </button>
-                        </div>
-
-                        <div class="box" onclick="location.href='registro.php'">
-                            &nbsp;
-                            <i class="fa-solid fa-dumbbell"></i>
-                            <h2> Plan Presencial </h2> <br>
-                            <p>En dicho sera de forma totalmente presencial con las comodidades de las rutinas, mensajeria virtuales al igual que gozan los otros planes</p>
-                            <button class="btn1"> Desde $2000 </button>
-                        </div>
-
-                    </div>
-
-                </div>
-
+                
                 <a href="#arriba"><button class="btn1"><i class="fas fa-arrow-alt-circle-up"></i></button></a>
 
             </div>
         </div>
     </main>
 
-    <footer>
-        <div class="barracontacto">
+        <div class="barracontacto a4">
             <h1 class="titulo2" id="Soporte-4">Contacto</h1>
             <div class="linkcontacto"><i class="fa-solid fa-envelope"></i> <a href="mailto:smartgymj23@gmail.com">Contactar por gmail</a></div>
-            <br>
-            <p>Los desarrolladores de Smart Gym somos:<br>
-                Argañaras Ulises
-                <br>
-                Arnaldi Leandro
-                <br>
-                Fernandez Facundo
-                <br>
-                Ianni Fabricio
-                <br>
-                <br>
-                <br>
-            </p>
         </div>
-    </footer>
+
 
 </body>
 
