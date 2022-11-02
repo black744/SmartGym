@@ -51,7 +51,7 @@ switch ($idrol) {
 
 
 <body>
-    
+
     <div class="info">
         <section class="seccion-perfil-usuario">
 
@@ -59,23 +59,19 @@ switch ($idrol) {
                 <div class="perfil-usuario-portada">
                     <div class="perfil-usuario-avatar">
 
-                    <?php 
-                                               $SQLDefault="SELECT image FROM datos WHERE idusuario=1";
-                                               $QUERYDefault=mysqli_query($conex, ($SQLDefault));
-                                               $ROWDefault = mysqli_fetch_array($QUERYDefault);
-                                               $DefaultIMG=$ROWDefault['image'];
-                    if ($image == 0){
-                           ?>
-                           <img src="data:image/jpg;base64,<?php echo base64_encode($DefaultIMG); ?>">
-                           <?php
+                        <?php
+                        $SQLDefault = "SELECT image FROM datos WHERE idusuario=1";
+                        $QUERYDefault = mysqli_query($conex, ($SQLDefault));
+                        $ROWDefault = mysqli_fetch_array($QUERYDefault);
+                        $DefaultIMG = $ROWDefault['image'];
+                        if ($image == 0) {
+                        ?>
+                            <img src="data:image/jpg;base64,<?php echo base64_encode($DefaultIMG); ?>">
+                        <?php
 
-                    }else{?>
-                <img src="data:image/jpg;base64,<?php echo base64_encode($image); ?>">
-                    <?php } ?>
-                        <form class="form" action="../models/uploadimage.php" method="post" enctype="multipart/form-data">
-                            <input type="file" id="boton-av" name="image" />
-                            <input type="submit" id="boton-av" value="UPLOAD" name="submit" />
-                        </form>
+                        } else { ?>
+                            <img src="data:image/jpg;base64,<?php echo base64_encode($image); ?>">
+                        <?php } ?>
 
                     </div>
                 </div>
@@ -84,17 +80,21 @@ switch ($idrol) {
             <div class="perfil-usuario-body" id="divsb">
                 <div class="perfil-usuario-bio">
                     <input type="hidden" name="usuario" value="<?php echo $row['usuario']  ?>">
+                    <form class="form" action="../models/uploadimage.php" method="post" enctype="multipart/form-data">
+                            <input type="file" id="boton-av" name="image" />
+                            <input type="submit" id="boton-av" value="UPLOAD" name="submit" />
+                        </form>
                 </div>
                 <div class="perfil-usuario-footer">
                     <form method="POST" action="../models/update.php">
                         <ul class="lista-datos">
-                            <p>Nombre:</p><input id="inputsn" type="text" class="inputinfo" name="nombre" placeholder="Nombre" value="<?php echo $row['nombre']  ?>"> 
-                            <p>Apellido:</p><input id="inputsn" type="text" class="inputinfo" name="apellido" placeholder="Apellido" value="<?php echo $row['apellido']  ?>"> 
-                            <p>Apodo:</p><input id="inputsn" type="text" class="inputinfo" name="usuario" placeholder="Usuario" value="<?php echo $row['usuario']  ?>"> 
-                            <p>D.N.I:</p><input id="inputsn" type="number" class="inputinfo" name="dni" placeholder="D.N.I" value="<?php echo $row['dni']  ?>"> 
+                            <p>Nombre:</p><input id="inputsn" type="text" class="inputinfo" name="nombre" placeholder="Nombre" value="<?php echo $row['nombre']  ?>">
+                            <p>Apellido:</p><input id="inputsn" type="text" class="inputinfo" name="apellido" placeholder="Apellido" value="<?php echo $row['apellido']  ?>">
+                            <p>Apodo:</p><input id="inputsn" type="text" class="inputinfo" name="usuario" placeholder="Usuario" value="<?php echo $row['usuario']  ?>">
+                            <p>D.N.I:</p><input id="inputsn" type="number" class="inputinfo" name="dni" placeholder="D.N.I" value="<?php echo $row['dni']  ?>">
                         </ul>
                         <ul class="lista-datos">
-                            <p>Contraseña:</p><input id="inputsn" type="password" class="inputinfo" name="contraseña" placeholder="Contraseña" value="<?php echo $row['contraseña']  ?>"> 
+                            <p>Contraseña:</p><input id="inputsn" type="password" class="inputinfo" name="contraseña" placeholder="Contraseña" value="<?php echo $row['contraseña']  ?>">
                             <!--<input type="text" class="inputinfo" name="dom" placeholder="domicilio" value="<?php echo $row['dom']  ?>">
                                 <input type="date" class="inputinfo" name="fnac" placeholder="fecha de nacimiento" value="<?php echo $row['fnac']  ?>"> -->
                         </ul>

@@ -30,16 +30,16 @@
 }
 
 .seccion-perfil-usuario .perfil-usuario-avatar {
+    position: static;
     display: flex;
-    width: 10vw;
-    height: 18vh;
+    width: 12vw;
+    height: 20vh;
     align-items: center;
     justify-content: center;
     border: 5px solid var(--color-bordes);
     border-radius: 50%;
-    box-shadow: 0 0 12px rgba(0, 0, 0, .2);
     position: absolute;
-    bottom: -40px;
+    bottom: 10%;
     left: calc(50% - 90px);
     z-index: 1;
 }
@@ -68,26 +68,22 @@
 }
 
 #boton-av {
+    min-width: 20vw;
+    max-width: 40%;
     color: var(--color-letra);
-    margin-right: 6vw;
-    margin-bottom: 3vh;
     border-radius: 100px;
     background: var(--color-fondobotones);
 }
 
-#boton-av{
-    border: 2px solid var(--color-fondos);
-    cursor: pointer;
-    transform: scale(1.1);
-}
 
 /* fin estilo de botones de cambio de foto de perfil*/
 
 .perfil-usuario-body {
     width: 95%;
-    height: 90%;
+    height: 95%;
     position: relative;
     border-radius: 25px;
+    margin: 2vh;
 }
 
 .perfil-usuario-bio {

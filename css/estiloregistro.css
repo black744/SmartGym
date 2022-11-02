@@ -139,6 +139,10 @@ body {
     margin: 0; 
 }
 
+input::placeholder {
+    color: white;
+}
+
 .formulario input:focus {
     width: 70%;
     display: block;

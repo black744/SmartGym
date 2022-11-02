@@ -15,7 +15,7 @@
 
 <body>
 
-    <header>
+    <header class="a1">
         <nav class="barranav" id="arriba">
             <div class="contenedorbtnnav" id="Precios-3">
                 <a href="#Smart Gym-1">Smart Gym</a>
@@ -28,7 +28,7 @@
         </nav>
     </header>
 
-    <div class="contenedorimagen">
+    <div class="contenedorimagen a2">
         <img src="../img/fondoindes.jpg">
         <div class="contenedorpresentacion">
             <img src="../img/logo.png">
@@ -38,37 +38,36 @@
         </div>
     </div>
 
-    <main id="blog">
+    <main id="blog" class="a3">
         <div class="contenedor">
 
             <div class="contenido">
+<<<<<<< HEAD
             
 
+=======
+                <div class="post">
+                    <h1 class="titulo" id="Servicios-2">Servicio </h1>
+                    <p>
+                        Los servicios ofrecidos por el gymnasio incluyen, la gestion personalizada de cada usuario que componen el gymnasio, dentro de los mismos se encuentrar el usuario administrador, el cual tendra las funcionalidades de administrar los pagos que se realizan,
+                        visualizar los usuarios que abonaron o no y realizar una lista acerca de lo registrado, notificar acerca del pago exitoso al cliente, registrar a los usuarios entrenadores, quienes podran crear una rutina para los clientes asignandola
+                        a cada uno, visualizar los turnos pendientes con los clientes, ya sea virtual o presencial. por ultimo los clientes podran solicitar un turno, visualizar los rutinas asginadas, visualizar sus turnos, ver su progreso desde que se
+                        iniciaron y ver su perfil.
+                    </p>
+                </div>
+                
+>>>>>>> aa1b4e4a431893d529b639b8deaeee44420ae89f
                 <a href="#arriba"><button class="btn1"><i class="fas fa-arrow-alt-circle-up"></i></button></a>
 
             </div>
         </div>
     </main>
 
-    <footer>
-        <div class="barracontacto">
+        <div class="barracontacto a4">
             <h1 class="titulo2" id="Soporte-4">Contacto</h1>
             <div class="linkcontacto"><i class="fa-solid fa-envelope"></i> <a href="mailto:smartgymj23@gmail.com">Contactar por gmail</a></div>
-            <br>
-            <p>Los desarrolladores de Smart Gym somos:<br>
-                Argañaras Ulises
-                <br>
-                Arnaldi Leandro
-                <br>
-                Fernandez Facundo
-                <br>
-                Ianni Fabricio
-                <br>
-                <br>
-                <br>
-            </p>
         </div>
-    </footer>
+
 
 </body>
 
