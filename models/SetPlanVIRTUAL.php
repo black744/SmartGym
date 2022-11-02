@@ -105,7 +105,7 @@ $preference->save();
     <div class="contenedorimagen">
         <img src="../img/fondoindes.jpg">
         <div class="contenedorpresentacion">
-            <img src="../img/logo.png">
+        <i class="fa-solid fa-laptop"></i>
             <p>
                 Smart gym, un sitio web destinado a la solución virtual necesaria para los gimnasios donde se desee aumentar su alcance, más que a un espacio físico, un espacio virtual, desde la comodidad de su casa. Ofreciendo los planes de entrenamientos, atención de un entrenador virtual, con rutinas personalizadas para cada uno de los clientes Basados en cada uno de los datos ingresados por los usuarios en su perfil, que por otra parte se realizará un seguimiento del progreso teniendo en cuenta la actividad del usuario. Por último contando con una administración más efectiva pudiendo, administrar los pagos de los usuarios con una lista, notificando a los mismos de que su pago ha sido exitoso.
             </p>
@@ -125,48 +125,6 @@ $preference->save();
                         iniciaron y ver su perfil.
                     </p>
                 </div>
-                <div class="post">
-                    <h1 class="titulo" id="Planes-3"> Planes </h1>
-
-                    <div class="container">
-                        <div class="container2"></div>
-
-                        <div class="box">
-                            &nbsp;
-                            <i class="fa-solid fa-laptop"></i>
-                            <h2> Plan virtual</h2> <br>
-                            <form id="myForm" name="formulario" method="post" action="">
-                                <input type="text" value="Virtual" name="plantype">
-                                <input type="number" value="1500" name="unit_price">
-                                <button type="button" id="consulta">Consulta</button>
-                            </form>
-                            <p>Dicho plan ofrecera a los clientes participar de los entrenamientos pero de forma totalmente remota con sus respectivos turnos</p>
-                            <div class="cho-container"></div>
-                        </div>
-
-                        <div class="box">
-                            &nbsp;
-                            <i class="fa-solid fa-arrow-right-arrow-left"></i>
-                            <h2> Plan Mixto </h2><br>
-                            <p>Se combinaran las caracteristicas de las modalidades virtual como presencial en los turnos</p>
-                            <br>
-                            <br>
-                            <div class="cho-container" ></div>
-                        </div>
-
-                        <div class="box">
-                            &nbsp;
-                            <i class="fa-solid fa-dumbbell"></i>
-                            <h2> Plan Presencial </h2> <br>
-                            <p>En dicho sera de forma totalmente presencial con las comodidades de las rutinas, mensajeria virtuales al igual que gozan los otros planes</p>
-                            <div class="cho-container"></div>
-                        </div>
-
-                    </div>
-
-                </div>
-
-                <a href="#arriba"><button class="btn1"><i class="fas fa-arrow-alt-circle-up"></i></button></a>
 
             </div>
         </div>

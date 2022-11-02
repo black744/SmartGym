@@ -225,13 +225,14 @@ main .contenido .post p {
 /* inicio estilo planes*/
 
 .container {
+    position: absolute;
     width: 80%;
-    margin: 3.5%;
+    margin: 0%;
     background: transparent;
     display: flex;
     flex-direction: row;
     justify-content: center;
-    
+    top:30%;
 }
 
 .container2 {
@@ -242,14 +243,15 @@ main .contenido .post p {
 
 .box {
     position: flex;
-    min-height: 30%;
-    min-width: 25%;
+    min-height: 40%;
+    min-width: 20%;
     margin: 2.5%;
-    border-radius: 20px;
+    border-radius: 100%;
     background: var(--color-fondosn);
     transition: 0.5s;
     text-align: justify;
     cursor: pointer;
+    align-items: center;
     
 }
 
@@ -285,11 +287,13 @@ main .contenido .post p {
     text-align: center;
     background:transparent; 
 	color: var(--color-letra); 
-	border: 2px solid #fb4c0d;
+	border: transparent;
 	transition: 0.3s;
 	border-radius: 6px;
     cursor:pointer;
-    font-size: 15px;
+    font-size: 20px;
+    margin-left: 25%;
+    
 }
 
 .btn1 {
@@ -322,9 +326,10 @@ main .contenido .post p {
     color: var(--color-fondos);
 }
 
-.box button:hover {
+
+
+.box:hover{
     border: 2px solid var(--color-fondos);
     cursor: pointer;
     transform: scale(1.1);
 }
-

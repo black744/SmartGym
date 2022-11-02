@@ -42,50 +42,7 @@
         <div class="contenedor">
 
             <div class="contenido">
-                <div class="post">
-                    <h1 class="titulo" id="Servicios-2">Servicio </h1>
-                    <p>
-                        Los servicios ofrecidos por el gymnasio incluyen, la gestion personalizada de cada usuario que componen el gymnasio, dentro de los mismos se encuentrar el usuario administrador, el cual tendra las funcionalidades de administrar los pagos que se realizan,
-                        visualizar los usuarios que abonaron o no y realizar una lista acerca de lo registrado, notificar acerca del pago exitoso al cliente, registrar a los usuarios entrenadores, quienes podran crear una rutina para los clientes asignandola
-                        a cada uno, visualizar los turnos pendientes con los clientes, ya sea virtual o presencial. por ultimo los clientes podran solicitar un turno, visualizar los rutinas asginadas, visualizar sus turnos, ver su progreso desde que se
-                        iniciaron y ver su perfil.
-                    </p>
-                </div>
-                <div class="post">
-                    <h1 class="titulo" id="Planes-3"> Planes </h1>
-
-                    <div class="container">
-                        <div class="container2"></div>
-
-                        <div class="box" onclick="location.href='registro.php'">
-                            &nbsp;
-                            <i class="fa-solid fa-laptop"></i>
-                            <h2> Plan virtual</h2> <br>
-                            <p>Dicho plan ofrecera a los clientes participar de los entrenamientos pero de forma totalmente remota con sus respectivos turnos</p>
-                            <button class="btn1"> Desde $1000 </button>
-                        </div>
-
-                        <div class="box" onclick="location.href='registro.php'">
-                            &nbsp;
-                            <i class="fa-solid fa-arrow-right-arrow-left"></i>
-                            <h2> Plan Mixto </h2><br>
-                            <p>Se combinaran las caracteristicas de las modalidades virtual como presencial en los turnos</p>
-                            <br>
-                            <br>
-                            <button class="btn1"> Desde $3000 </button>
-                        </div>
-
-                        <div class="box" onclick="location.href='registro.php'">
-                            &nbsp;
-                            <i class="fa-solid fa-dumbbell"></i>
-                            <h2> Plan Presencial </h2> <br>
-                            <p>En dicho sera de forma totalmente presencial con las comodidades de las rutinas, mensajeria virtuales al igual que gozan los otros planes</p>
-                            <button class="btn1"> Desde $2000 </button>
-                        </div>
-
-                    </div>
-
-                </div>
+            
 
                 <a href="#arriba"><button class="btn1"><i class="fas fa-arrow-alt-circle-up"></i></button></a>
 
