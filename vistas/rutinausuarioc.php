@@ -57,7 +57,45 @@ include("../models/validacion_clientes.php");
     height: 90%;
     width: 90%;
     border-radius: 15px;
+    overflow-y: scroll;
   }
+
+  .dataview::-webkit-scrollbar {
+    position: relative;
+    margin-right: 2vw;
+    width: 8px;
+    height: 12px;
+  }
+.dataview::-webkit-scrollbar-button {
+    width: 12px;
+    height: 12px;
+  }
+  .dataview::-webkit-scrollbar-thumb {
+    background: #000000;
+    border: 1px solid #ffffff;
+    border-radius: 100px;
+  }
+  .dataview::-webkit-scrollbar-thumb:hover {
+    background: #fb4c0d;
+  }
+  .dataview::-webkit-scrollbar-thumb:active {
+    background: #404040;
+  }
+  .dataview::-webkit-scrollbar-track {
+    background: #000000;
+    border: 0px none #ffffff;
+    border-radius: 50px;
+  }
+  .dataview::-webkit-scrollbar-track:hover {
+    background: #000000;
+  }
+  .dataview::-webkit-scrollbar-track:active {
+    background: #000000;
+  }
+  .dataview::-webkit-scrollbar-corner {
+    background: transparent;
+  }
+
 </style>
 
 <body>

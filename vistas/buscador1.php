@@ -24,7 +24,7 @@ margin-left: 3%;
 height: 50%;
 width: 90%;
 margin-top:2vh;
-font-size: 15px;
+font-size: 1rem;
 }
 </style>
 

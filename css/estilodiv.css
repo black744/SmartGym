@@ -15,7 +15,7 @@
     position: relative;
     top: 15vh;
     left: 30%;
-    height:50vh;
+    height:fit-content;
     width:60vw;
   }
   
@@ -190,6 +190,43 @@
   background: #151515;
   border: 1.5px solid #fb4c0d;
   border-radius: 15px;
+  overflow-y: scroll;
+}
+
+.sobretodo::-webkit-scrollbar {
+  position: relative;
+  margin-right: 2vw;
+  width: 8px;
+  height: 12px;
+}
+.sobretodo::-webkit-scrollbar-button {
+  width: 12px;
+  height: 12px;
+}
+.sobretodo::-webkit-scrollbar-thumb {
+  background: #000000;
+  border: 1px solid #ffffff;
+  border-radius: 100px;
+}
+.sobretodo::-webkit-scrollbar-thumb:hover {
+  background: #fb4c0d;
+}
+.sobretodo::-webkit-scrollbar-thumb:active {
+  background: #404040;
+}
+.sobretodo::-webkit-scrollbar-track {
+  background: #000000;
+  border: 0px none #ffffff;
+  border-radius: 50px;
+}
+.sobretodo::-webkit-scrollbar-track:hover {
+  background: #000000;
+}
+.sobretodo::-webkit-scrollbar-track:active {
+  background: #000000;
+}
+.sobretodo::-webkit-scrollbar-corner {
+  background: transparent;
 }
 
 .fr{
@@ -200,8 +237,9 @@
 
 .btn-g{
     margin: 3vh;
-    height: 5vh;
-    width: 42%;
+    min-height: 20%;
+  min-width: fit-content;
+  width: 38%;
     text-align: center;
     background: var(--color-fondobotones);
     color: var(--color-letra);
@@ -209,7 +247,7 @@
     border-radius: 15px;
     transition: 0.3s;
     cursor:pointer;
-    font-size: 16px;
+    font-size: 1rem;
 }
 
 .btn-g:hover{
@@ -221,12 +259,13 @@
 
 .ingreso2{
   display: inline;
-  height: 3.5vh;
+  min-height: 20%;
+  min-width: fit-content;
+  width: 38%;
   margin-top: 1%;
   margin-right: 2%;
   margin-left: 2.5%;
   margin-bottom: 1%;
-  width: 40%;
   text-align: center;
   background: var(--color-fondobotones);
   color: var(--color-letra);
@@ -234,7 +273,8 @@
   border-radius: 15px;
   transition: 0.3s;
   cursor:pointer;
-  font-size: 13px;
+  font-size: 1rem;
+  min-height: 3.5vh;
 }
 .ingreso2:hover{
 cursor: text;
@@ -251,7 +291,8 @@ input::placeholder {
   position: relative;
   margin-top: 2%;
   margin-left: 3%;
-  height: 5vh;
+  min-height: 20%;
+  min-width: fit-content;
   width: 38%;
   text-align: center;
   background: var(--color-fondobotones);
@@ -260,5 +301,5 @@ input::placeholder {
   border-radius: 15px;
   transition: 0.3s;
   cursor:pointer;
-  font-size: 16px;
+  font-size: 1rem;
 }

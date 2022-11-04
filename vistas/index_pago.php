@@ -57,7 +57,6 @@ $image = $row['image'];
                                 <button type="submit" id="consultamixto"><i class="fa-solid fa-circle-arrow-down"></i></button>
                             </form>
                             
-                           
                         </div>
 
                         <div class="box">
