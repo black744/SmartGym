@@ -1,0 +1,164 @@
+:root{
+    --color-letra: #fff;
+    --color-fondos: #fb4c0d;
+    --color-fondo-html:#020202;
+    --color-fondosn:#181818;
+    --color-fondobotones: #252525;
+    --color-bordes: #303030;
+}
+
+*{
+    margin: 0%;
+    padding: 0%;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+
+
+.contenedorimagen {
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+
+.texto-encabezado{
+    position: absolute;
+    color: white;
+    z-index: 1;
+    top: 10%;
+    left: 19%;
+    font-size: min(5em,50px) ;
+}
+
+.contenedorimagen img {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    text-align: center;
+}
+
+.contenedorimagen {
+    position: relative;
+    height: 80vh;
+    width: 100%;
+    text-align: center;
+}
+
+.imgemus {
+    width: 100vw;
+    height: 100vw;
+}
+
+
+.container {
+    position: absolute;
+    width: 80%;
+    margin: 0%;
+    background: transparent;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    top:30%;
+}
+
+.container2 {
+    width: 25%;
+    margin: 1.0%;
+    justify-content: center;
+}
+
+.box {
+    position: flex;
+    min-height: 40%;
+    min-width: 20%;
+    margin: 2.5%;
+    border-radius: 100%;
+    background: var(--color-fondosn);
+    transition: 0.5s;
+    text-align: justify;
+    cursor: pointer;
+    align-items: center;
+    
+}
+
+.box i {
+    font-size: 250%;
+    display: block;
+    text-align: center;
+    margin: 2%;
+    padding: 2%;
+    margin-top: 0.5vh;
+    color: var(--color-fondos);
+}
+
+.box h2 {
+    font-size: 18px;
+    text-align: center;
+    color:var(--color-letra);
+
+}
+.box p {
+    margin-left: 2%;
+    font-size: 16px;
+    color: var(--color-fondos);
+    text-align: justify;
+}
+
+.box button {
+    position: relative;
+    margin: 5%;
+    bottom: 1vh;
+    width: 8vw;
+    height: 5vh;
+    text-align: center;
+    background:transparent; 
+	color: var(--color-letra); 
+	border: transparent;
+	transition: 0.3s;
+	border-radius: 6px;
+    cursor:pointer;
+    font-size: 20px;
+    margin-left: 25%;
+    
+}
+
+.btn1 {
+	position: relative;
+    margin-left: 40vw;
+    height: 8vh;
+    width: 15%;
+    text-align: center;
+    background:transparent; 
+	color: white; 
+	border: 2px solid #fb4c0d;
+	transition: 0.3s;
+	border-radius: 6px;
+    cursor:pointer;
+    font-size: 15px;
+}
+
+.btn1:hover {
+    border: 1px solid var(--color-fondos);
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+
+.box:hover i {
+    color: var(--color-fondos);
+}
+
+.box:hover p:hover {
+    color: var(--color-fondos);
+}
+
+
+
+.box:hover{
+    border: 2px solid var(--color-fondos);
+    cursor: pointer;
+    transform: scale(1.1);
+}

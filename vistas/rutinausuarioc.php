@@ -45,7 +45,6 @@ include("../models/validacion_clientes.php");
   <title>Rutina</title>
 
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
-  <link rel="stylesheet" href="../css/estilousuario.css">
   <link rel="stylesheet" href="../css/estilorutina.css">
   <link rel="stylesheet" href="../css/estilodiv.css">
   <link rel="stylesheet" href="../css/EstiloGeneral.css">
@@ -56,7 +55,7 @@ include("../models/validacion_clientes.php");
     left: 5%;
     position: relative;
     height: 90%;
-    width: 78vh;
+    width: 90%;
     border-radius: 15px;
   }
 </style>
@@ -100,14 +99,16 @@ include("../models/validacion_clientes.php");
 
               <style>
                 .neje {
-                  margin-top: 3%;
+                  max-width: 20%;
+                  margin-top: 2%;
                   margin-bottom: 3%;
-                  margin-left: 5%;
+                  margin-left: 8%;
                   margin-right: 0%;
                   color: #fff;
                 }
 
                 .deje {
+                  max-width: 80%;
                   max-height: 25%;
                   margin: 8%;
                   color: #fff;

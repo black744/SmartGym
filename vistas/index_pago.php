@@ -25,7 +25,7 @@ $image = $row['image'];
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/estiloindex.css">
+    <link rel="stylesheet" href="../css/estilo-index-pago.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@300&display=swap" rel="stylesheet">
@@ -36,25 +36,11 @@ $image = $row['image'];
 <body>
 <script src="https://sdk.mercadopago.com/js/v2"></script>
 
-
-
-    <style>
-        .texto-encabezado{
-            position: absolute;
-            color: white;
-            z-index: 1;
-            top: 10%;
-            left: 19%;
-            font-size: min(5em,50px) ;
-        }
-        </style>
     <h1 class="texto-encabezado" id="Planes-3"> Selecciona una suscripción </h1>
     <div class="contenedorimagen">
-        <img src="../img/fondoindes.jpg" style="position:inherit">
+        <img src="../img/fondoindes.jpg">
     </div>
         </div>
-        
-        <div class="post">
         </div>
                     
 
