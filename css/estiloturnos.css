@@ -103,7 +103,8 @@ html{
 .sm{
     position: relative;
     left: -3.5%;
-    height: 5vh;
+    min-height: 20%;
+    min-width: fit-content;
     width: 55%;
     margin: 4%;
     text-align: center;
@@ -118,7 +119,8 @@ html{
 .ingreso-t{
     position: relative;
     left: -3.5%;
-    height: 5vh;
+    min-height: 5vh;
+    min-width: fit-content;
     width: 95%;
     margin: 5%;
     text-align: center;

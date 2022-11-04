@@ -48,8 +48,9 @@ h4{
     margin-top: 5vh;
     margin-left: 5vh;
     margin-bottom: 2vh;
-    height: 3.5vh;
-    width: 25%;
+    min-height: 20%;
+  min-width: fit-content;
+  width: 38%;
     text-align: center;
     background: var(--color-fondobotones);
     color: var(--color-letra);
@@ -57,7 +58,7 @@ h4{
     border-radius: 15px;
     transition: 1.2s;
     cursor:pointer;
-    font-size: 15px;
+    font-size: 1.2rem;
 }
 
 .form-control:focus{
@@ -93,8 +94,9 @@ text-align: center;
 .btnr{
     position: flex;
     margin: 1vh;
-    height: 4vh;
-    width: 45%;
+    min-height: 20%;
+  min-width: fit-content;
+  width: 38%;
     text-align: center;
     background: var(--color-fondobotones);
     color: var(--color-letra);
@@ -102,7 +104,7 @@ text-align: center;
     border-radius: 15px;
     transition: .2s;
     cursor:pointer;
-    font-size: 15px;
+    font-size: 1rem;
 }
 
 .btnr:hover{

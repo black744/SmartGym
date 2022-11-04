@@ -20,7 +20,7 @@
   }
   
   .carousel__item {
-    height: 60vh;
+    height: 70vh;
     width: 45vw;
     padding: 1em;
     font-size: 2em;
@@ -35,10 +35,12 @@
   }
   
   .carousel__nav {
-    height: fit-content;
-    width: 1vw;
+    min-height: fit-content;
+    max-width: fit-content;
+    min-width: 1vw;
+    max-width: 1vw;
     position: relative;
-    top: -32vh;
+    top: -52vh;
     margin-left: 2vw;
     text-align: center;
   }

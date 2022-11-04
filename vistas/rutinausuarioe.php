@@ -25,7 +25,6 @@ include("../models/validacion_clientes.php");
   <title>Rutina</title>
   <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/css/select2.min.css" rel="stylesheet" />
   <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/js/select2.min.js"></script>
-  <link rel="stylesheet" href="../css/estilousuario.css">
   <link rel="stylesheet" href="../css/estilorutina.css">
   <link rel="stylesheet" href="../css/estilotablau.css">
   <link rel="stylesheet" href="../css/EstiloGeneral.css">
