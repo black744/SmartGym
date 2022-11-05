@@ -46,14 +46,34 @@
             <input type="Usuario" placeholder="Usuario" name="usuario" required>
             <input type="email" placeholder="Email" name="correo" required>
             <input type="password" placeholder="Contraseña" name="contraseña" required>
-            <input type="number" placeholder="Edad" name="ED" required>
-            <input type="text" placeholder="Domicilio" name="DC" required>
-            <input type="number" placeholder="peso actual" name="PA" required pattern="[0-9]">
-            <input type="number" placeholder="peso ideal" name="PI" required pattern="[0-9]">
+            <input type="number" placeholder="peso inicial" name="PA" required pattern="[0-9]">
+            <select name="sexo" id="genero" class="sg">
+                <option>Selecciona genero</option>
+                <option value="1">Hombre</option>
+                <option value="2">Mujer</option>
+            </select>
             <input class="btn-r" type="submit" name="buttonreg" value="Registrarse">
         </form>
     </div>
     <script src="../js/appregistro.js"></script>
+
+    <style>
+        .sg {
+            margin-bottom: 6%;
+            min-height: 5vh;
+            min-width: fit-content;
+            width: 70%;
+            text-align: center;
+            background: var(--color-fondobotones);
+            color: var(--color-letra);
+            border: 3px solid var(--color-bordes-normales);
+            border-radius: 15px;
+            transition: 0.3s;
+            cursor: pointer;
+            font-size: 1rem;
+        }
+    </style>
+
 </body>
 
 </html>

@@ -44,12 +44,26 @@
             <p>Usa un diccionario de mas de 200 palabras provenientes del latín, combinadas con estructuras muy útiles de sentencias, para generar texto de Lorem Ipsum que parezca razonable. Este Lorem Ipsum generado siempre estará libre de repeticiones, humor agregado o palabras no características del lenguaje, etc.</p>
     </div>
 
-    <div class="barradcontacto">
-        <div class="posicion1"></div>
-        <div class="posicion2"></div>
-        <div class="posicion3"></div>
-    </div>
-
+    <div class="footer-basic">
+                <footer>
+                    <div class="social">
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#"><i class="fa-solid fa-envelope"></i></a>
+                        <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                    </div>
+                    <ul class="list-inline">
+                        <li class="list-inline-item"><a href="#">Inicio</a></li>
+                        <li class="list-inline-item"><a href="#">Servicios</a></li>
+                        <li class="list-inline-item"><a href="#">Acerca de</a></li>
+                        <li class="list-inline-item"><a href="#">Quienes somos?</a></li>
+                    </ul>
+                    <p class="copyright">SmartGym © 2022</p>
+                </footer>
+            </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>

@@ -19,6 +19,7 @@
             <ul>
                 <li><a href="homeusuarioa.php"><i class="fas fa-home"></i>Home</a></li>
                 <li><a href="perfilusuarioc.php"><i class="fas fa-user"></i>Perfil</a></li>
+                <li><a href="crearusuarioe.php"><i class="fa-solid fa-user-plus"></i> Crear usuario entrenador</a></li>
                 <li><a href="admincontrolpanel.php"><i class="fas fa-map-pin"></i>Panel Admin</a></li>
                 <li><a href="../models/sessiondestroy.php"><i class="fas fa-door-open"></i>Salida</a></li>
             </ul>
