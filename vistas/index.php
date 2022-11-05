@@ -14,16 +14,13 @@
 </head>
 
 <body>
-
     <header class="a1">
         <nav class="barranav" id="arriba">
             <div class="contenedorbtnnav" id="Precios-3">
                 <a href="#Smart Gym-1">Smart Gym</a>
                 <a href="#Servicios-2">Servicio</a>
-                <a href="#Planes-3">Planes</a>
                 <a href="#Soporte-4">Contacto</a>
                 <a href="registro.php">Inicia sesion</a>
-
             </div>
         </nav>
     </header>
@@ -38,36 +35,20 @@
         </div>
     </div>
 
-    <main id="blog" class="a3">
-        <div class="contenedor">
+    <div class="a3">
+        <h2>Servicios</h2>
+            <p>Al contrario del pensamiento popular, el texto de Lorem Ipsum no es simplemente texto aleatorio. Tiene sus raices en una pieza cl´sica de la literatura del Latin, que data del año 45 antes de Cristo, haciendo que este adquiera mas de 2000 años de antiguedad. Richard McClintock, un profesor de Latin de la Universidad de Hampden-Sydney en Virginia, encontró una de las palabras más oscuras de la lengua del latín, "consecteur", en un pasaje de Lorem Ipsum, y al seguir leyendo distintos textos del latín, descubrió la fuente indudable. Lorem Ipsum viene de las secciones 1.10.32 y 1.10.33 de "de Finnibus Bonorum et Malorum"</p>
+        <h2>Quienes somos</h2>
+            <p>Hay muchas variaciones de los pasajes de Lorem Ipsum disponibles, pero la mayoría sufrió alteraciones en alguna manera, ya sea porque se le agregó humor, o palabras aleatorias que no parecen ni un poco creíbles. Si vas a utilizar un pasaje de Lorem Ipsum, necesitás estar seguro de que no hay nada avergonzante escondido en el medio del texto. Todos los generadores de Lorem Ipsum que se encuentran en Internet tienden a repetir trozos predefinidos cuando sea necesario, haciendo a este el único generador verdadero (válido) en la Internet. </p>
+        <h2>objetivo</h2>
+            <p>Usa un diccionario de mas de 200 palabras provenientes del latín, combinadas con estructuras muy útiles de sentencias, para generar texto de Lorem Ipsum que parezca razonable. Este Lorem Ipsum generado siempre estará libre de repeticiones, humor agregado o palabras no características del lenguaje, etc.</p>
+    </div>
 
-            <div class="contenido">
-<<<<<<< HEAD
-            
-
-=======
-                <div class="post">
-                    <h1 class="titulo" id="Servicios-2">Servicio </h1>
-                    <p>
-                        Los servicios ofrecidos por el gymnasio incluyen, la gestion personalizada de cada usuario que componen el gymnasio, dentro de los mismos se encuentrar el usuario administrador, el cual tendra las funcionalidades de administrar los pagos que se realizan,
-                        visualizar los usuarios que abonaron o no y realizar una lista acerca de lo registrado, notificar acerca del pago exitoso al cliente, registrar a los usuarios entrenadores, quienes podran crear una rutina para los clientes asignandola
-                        a cada uno, visualizar los turnos pendientes con los clientes, ya sea virtual o presencial. por ultimo los clientes podran solicitar un turno, visualizar los rutinas asginadas, visualizar sus turnos, ver su progreso desde que se
-                        iniciaron y ver su perfil.
-                    </p>
-                </div>
-                
->>>>>>> aa1b4e4a431893d529b639b8deaeee44420ae89f
-                <a href="#arriba"><button class="btn1"><i class="fas fa-arrow-alt-circle-up"></i></button></a>
-
-            </div>
-        </div>
-    </main>
-
-        <div class="barracontacto a4">
-            <h1 class="titulo2" id="Soporte-4">Contacto</h1>
-            <div class="linkcontacto"><i class="fa-solid fa-envelope"></i> <a href="mailto:smartgymj23@gmail.com">Contactar por gmail</a></div>
-        </div>
-
+    <div class="barradcontacto">
+        <div class="posicion1"></div>
+        <div class="posicion2"></div>
+        <div class="posicion3"></div>
+    </div>
 
 </body>
 

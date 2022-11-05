@@ -60,6 +60,8 @@ $preference->save();
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/estilo-planes.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@300&display=swap" rel="stylesheet">
@@ -92,8 +94,8 @@ $preference->save();
         </div>
         <div class="contenedorformdiv">
             <div class="descmaspago">
-                <div class="icono"><i class="fa-solid fa-laptop"></i></div>
                 <div class="desc">
+                    <h2> Plan virtual </h2>
                     <p>
                         Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto.
                         Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500,
@@ -107,16 +109,35 @@ $preference->save();
                     </p>
                 </div>
                 <div class="formabajo">
-                <form action="">
+                    <form action="">
 
-                </form>
+                    </form>
                 </div>
             </div>
         </div>
-        <div class="barradcontacto"></div>
+        <div class="barradcontacto">
+            <div class="footer-basic">
+                <footer>
+                    <div class="social">
+                        <a href="#"><i class="icon ion-social-instagram"></i></a>
+                        <a href="#"><i class="fa-solid fa-envelope"></i></a>
+                        <a href="#"><i class="icon ion-social-twitter"></i></a>
+                        <a href="#"><i class="icon ion-social-facebook"></i></a>
+                    </div>
+                    <ul class="list-inline">
+                        <li class="list-inline-item"><a href="#">Inicio</a></li>
+                        <li class="list-inline-item"><a href="#">Servicios</a></li>
+                        <li class="list-inline-item"><a href="#">Acerca de</a></li>
+                        <li class="list-inline-item"><a href="#">Quienes somos?</a></li>
+                    </ul>
+                    <p class="copyright">SmartGym © 2022</p>
+                </footer>
+            </div>
+        </div>
     </div>
 
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>

@@ -64,7 +64,7 @@ input::placeholder {
 }
 
 .main_contentt{
-  width: 72%;
+  width: 68%;
   margin-top: 2%;
   margin-left: 17%;
     display: grid;
@@ -80,6 +80,12 @@ input::placeholder {
       min-height: 35vh;
     }
 
+
+.main_contentpa{
+  width: 72%;
+  margin-top: 2%;
+  margin-left: 17%;
+}
 /*---------------------------------------------------*/
 .imgp {
   margin-top: 5%;

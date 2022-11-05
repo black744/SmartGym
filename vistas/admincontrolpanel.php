@@ -25,8 +25,9 @@ include("../models/validacion_clientes.php");
     <meta charset="UTF-8">
     <title>Perfil</title>
 
-    <link rel="stylesheet" href="../css/estilousuario.css">
+    <link rel="stylesheet" href="../css/EstiloGeneral.css">
     <link rel="stylesheet" href="../css/estilotabla.css">
+    <link rel="stylesheet" href="../css/EstiloHomes.css">
 
     <script src="https://unpkg.com/xlsx@0.16.9/dist/xlsx.full.min.js"></script>
     <script src="https://unpkg.com/file-saverjs@latest/FileSaver.min.js"></script>
@@ -53,9 +54,8 @@ switch ($idrol) {
 
 <body>
 
-    <div class="main_content">
+    <div class="main_contentpa">
         
-
             <div class="contenedortabla">
 
                 <h4>Panel de control adminsitrador</h4>
@@ -69,10 +69,10 @@ switch ($idrol) {
                         <tr class="filah">
                             <th>id usuario</th>
                             <th>Nombre</th>
-                            <th>Edad</th>
                             <th>DNI</th>
                             <th>Pago</th>
-                            <th>Deuda</th>
+                            <th>Fecha de pago</th>
+                            <th>Fecha de vencimiento</th>
                             <th>Plan</th>
                         </tr>
                     </thead>
@@ -84,8 +84,8 @@ switch ($idrol) {
                         <tr class="tabla-fila">
                             <td class="datos"><?php echo $data['idusuario']; ?></td>
                             <td class="datos"><?php echo $data['usuario']; ?></td>
-                            <td class="datos">-</td>
                             <td class="datos"><?php echo $data['dni']; ?></td>
+                            <td class="datos">-</td>
                             <td class="datos">-</td>
                             <td class="datos">-</td>
                             <td class="datos">-</td>
