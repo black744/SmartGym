@@ -22,7 +22,7 @@ body {
     max-height: fit-content;
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 0.45fr 1.5fr 2.2fr 0.4fr;
+    grid-template-rows: 0.25fr 1.5fr 2.2fr 0.4fr;
     grid-column-gap: 0px;
     grid-row-gap: 0px;
 }
@@ -55,6 +55,7 @@ a {
 }
 
 .contenedorbtnnav a {
+    font-size: 2rem;
     color: #fff;
     display: inline-block;
     padding: 3vh;
@@ -94,10 +95,11 @@ a {
 
 .contenedorpresentacion {
     position: absolute;
+    margin: 2%;
     top: 15%;
     left: 5%;
-    height: fit-content;
-    width: 65vh;
+    max-width: 35vw;
+    max-height: 60vh;
     color: #ffffff;
     border-radius: 30px;
     text-align: left;
@@ -105,9 +107,10 @@ a {
 }
 
 .contenedorpresentacion p {
-    font-size: 16px;
-    margin-left: 10vh;
+    font-size: 1.8rem;
+    margin: 5%;
     line-height: 3.2vh;
+    line-height: min(1.2em);
     text-align: justify;
 }
 
@@ -122,9 +125,8 @@ a {
 
 .a3{
     position: relative;
-    border: 2px solid red;
     width: 99.7%;
-    margin-top: 20vh;
+    margin-top: 40vh;
 }
 
 .a3 h2{

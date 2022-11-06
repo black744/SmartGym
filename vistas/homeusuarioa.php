@@ -16,9 +16,6 @@ $dni = $row['dni'];
 $correo = $row['correo'];
 $idusuario = $row['idusuario'];
 $image = $row['image'];
-$pesoactual = $row['pesoactual'];
-$pesoinicial = $row['pesoinicial'];
-$pesoideal = $row['pesoideal'];
 
 include("../models/validacion_clientes.php");
 ?>

@@ -60,7 +60,7 @@ switch ($idrol) {
 
                 <h4>Panel de control adminsitrador</h4>
 
-                <input class="form-control col-md-3 light-table-filter" data-table="order-table" type="text" placeholder="Search..">
+                <input class="form-control col-md-3 light-table-filter" data-table="order-table" type="text" placeholder="Buscar usuario">
 
                 <hr>
 
@@ -101,6 +101,7 @@ switch ($idrol) {
                         <i class="fas fa-file-excel"></i> crear archivo mensual usuarios
                     </button>
                     <div class="cuadro-admin">
+                        <h2>Ingresar pago de cliente</h2>
                         <input class="ing1" type="text" placeholder="Codigo de usuario">
                         <input class="ing2" type="text" placeholder="Contraseña admin">
                         <select name="metodopago" id="mtp">
@@ -123,15 +124,16 @@ switch ($idrol) {
                                 <option value="">Noviembre</option>
                                 <option value="">Diciembre</option>
                             </select>
-                            <button type="submit"  id="btnExportar"> guardar pago</button>
+                            <button type="submit"  id="btn-n"> guardar pago</button>
                         </div>
                     </div>
 
                     <div id="cuadro-adminbaja">
+                        <h2> Deshabilitar cliente</h2>
                         <form method="post">
                         <input class="ing1" type="text" name="iduser" placeholder="Codigo de usuario">
                         <input class="ing2" type="text" name="password" placeholder="Contraseña admin">
-                        <input type="submit" name="bajaboton" value="Enviar">
+                        <input id="btn-n" type="submit" name="bajaboton" value="Enviar">
                     </form>
                     <?php
                     if(isset($_POST['bajaboton'])){
@@ -163,8 +165,8 @@ switch ($idrol) {
     $btnExportar.addEventListener("click", function() {
         let tableExport = new TableExport($tabla, {
             exportButtons: false, // No queremos botones
-            filename: "Reporte de prueba", //Nombre del archivo de Excel
-            sheetname: "Reporte de prueba", //Título de la hoja
+            filename: "Registro de usuarios activos", //Nombre del archivo de Excel
+            sheetname: "Datos usuarios activos", //Título de la hoja
         });
         let datos = tableExport.getExportData();
         let preferenciasDocumento = datos.tabla.xlsx;

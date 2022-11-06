@@ -93,57 +93,57 @@ switch ($idrol) {
 
 <body>
 
-  
 
-    <div class="cont-t-u">
-      <h4>Buscador de clientes</h4>
-      <input class="form-control col-md-3 light-table-filter" data-table="order-table" type="text" placeholder="Buscar usuario">
-      <hr>
-      <table class="table table-bordered order-table ">
-        <thead class="header">
-          <tr class="fila-h">
-            <th></th>
-            <th class="col-h">Nombre y apellido</th>
-            <th class="col-h">DNI</th>
-            <th class="col-h">Asignar rutina</th>
-          </tr>
-        </thead>
-        <?php
-        $sqlbuscador = "SELECT * FROM `datos` WHERE id_rol=0 AND estado_cuenta=1";
-        $querybuscador = mysqli_query($conex, $sqlbuscador);
-        while ($nBuscador = mysqli_fetch_array($querybuscador)) {
-          $ImagenUsuario=$nBuscador['image'];
-        ?>
-          <tr class="fila">
-            <td>
-            <?php 
-                                               $SQLDefault="SELECT image FROM datos WHERE idusuario=1";
-                                               $QUERYDefault=mysqli_query($conex, ($SQLDefault));
-                                               $ROWDefault = mysqli_fetch_array($QUERYDefault);
-                                               $DefaultIMG=$ROWDefault['image'];
-                    if ($ImagenUsuario == 0){
-                           ?>
-                           <img src="data:image/jpg;base64,<?php echo base64_encode($DefaultIMG); ?>" class="foto">
-                           <?php
 
-                    }else{?>
-                <img src="data:image/jpg;base64,<?php echo base64_encode($ImagenUsuario); ?>" class="foto">
-                    <?php } ?>
-            </td>
-            <td class="columna"><?php echo $nBuscador['usuario']?></td>
-            <td class="columna"><?php echo $nBuscador['dni']?></td>
-            <form method="post" action="rutina.php">
-              <input type="text" name="iduselect" value="<?php echo $nBuscador['idusuario']?>" hidden>
+  <div class="cont-t-u">
+    <h4>Buscador de clientes</h4>
+    <input class="form-control col-md-3 light-table-filter" data-table="order-table" type="text" placeholder="Buscar usuario">
+    <hr>
+    <table class="table table-bordered order-table ">
+      <thead class="header">
+        <tr class="fila-h">
+          <th></th>
+          <th class="col-h">Nombre y apellido</th>
+          <th class="col-h">DNI</th>
+          <th class="col-h">Asignar rutina</th>
+        </tr>
+      </thead>
+      <?php
+      $sqlbuscador = "SELECT * FROM `datos` WHERE id_rol=0 AND estado_cuenta=1";
+      $querybuscador = mysqli_query($conex, $sqlbuscador);
+      while ($nBuscador = mysqli_fetch_array($querybuscador)) {
+        $ImagenUsuario = $nBuscador['image'];
+      ?>
+        <tr class="fila">
+          <td>
+            <?php
+            $SQLDefault = "SELECT image FROM datos WHERE idusuario=1";
+            $QUERYDefault = mysqli_query($conex, ($SQLDefault));
+            $ROWDefault = mysqli_fetch_array($QUERYDefault);
+            $DefaultIMG = $ROWDefault['image'];
+            if ($ImagenUsuario == 0) {
+            ?>
+              <img src="data:image/jpg;base64,<?php echo base64_encode($DefaultIMG); ?>" class="foto">
+            <?php
+
+            } else { ?>
+              <img src="data:image/jpg;base64,<?php echo base64_encode($ImagenUsuario); ?>" class="foto">
+            <?php } ?>
+          </td>
+          <td class="columna"><?php echo $nBuscador['usuario'] ?></td>
+          <td class="columna"><?php echo $nBuscador['dni'] ?></td>
+          <form method="post" action="rutina.php">
+            <input type="text" name="iduselect" value="<?php echo $nBuscador['idusuario'] ?>" hidden>
             <td><input type="submit" name="enviarid" class="btnr" value="Crear Rutina"></td>
-        </form>
-          </tr>
-        <?php
-        };?>
-  
+          </form>
+        </tr>
+      <?php
+      }; ?>
 
-      </table>
 
-  
+    </table>
+
+
 
 
 </body>
