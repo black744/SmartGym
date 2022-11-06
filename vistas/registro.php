@@ -47,10 +47,11 @@
             <input type="email" placeholder="Email" name="correo" required>
             <input type="password" placeholder="Contraseña" name="contraseña" required>
             <input type="number" placeholder="peso inicial" name="PA" required pattern="[0-9]">
+            <input type="number" placeholder="edad" name="edad" required pattern="[0-9]" max="99" required>
             <select name="sexo" id="genero" class="sg">
                 <option>Selecciona genero</option>
-                <option value="1">Hombre</option>
-                <option value="2">Mujer</option>
+                <option value="Masculino">Masculino</option>
+                <option value="Femenino">Femenino</option>
             </select>
             <input class="btn-r" type="submit" name="buttonreg" value="Registrarse">
         </form>

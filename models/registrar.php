@@ -11,7 +11,10 @@ if(isset($_POST['buttonreg'])){
     $correo = $_POST['correo'];
     $apellido = $_POST['apellido'];
     $contraseña = $_POST['contraseña'];
-    $consulta = "INSERT INTO datos(nombre, apellido, correo, contraseña, dni, usuario, image) VALUES ('$nombre', '$apellido', '$correo','$contraseña','$dni','$usuario', '0')";
+    $sexo= $_POST['sexo'];
+    $PA= $_POST['PA'];
+    $edad= $_POST['edad'];
+    $consulta = "INSERT INTO datos(nombre, apellido, correo, contraseña, dni, usuario, image, edad, sexo, pesoinicial) VALUES ('$nombre', '$apellido', '$correo','$contraseña','$dni','$usuario', '0', '$edad', '$sexo', '$PA')";
 
     //$resultado = mysqli_query($conex,$consulta);
     

@@ -54,7 +54,7 @@ $image = $row['image'];
                             <form id="virtual" name="virtual" method="post" action="../models/SetPlanVIRTUAL.php">
                                 <input type="text" value="Virtual" name="plantype"hidden>
                                 <input type="number" value="1500" name="unit_price"hidden>
-                                <button type="submit" id="consultamixto"><i class="fa-solid fa-circle-arrow-down"></i></button>
+                                <button type="submit" name="consultavirtual"><i class="fa-solid fa-circle-arrow-down"></i></button>
                             </form>
                             
                         </div>
@@ -66,7 +66,7 @@ $image = $row['image'];
                             <form id="mixto" name="mixto" method="post" action="../models/SetPlanMIXTO.php">
                                 <input type="text" value="Mixto" name="plantype"hidden>
                                 <input type="number" value="3000" name="unit_price"hidden>
-                                <button type="submit" id="consultamixto"><i class="fa-solid fa-circle-arrow-down"></i></button>
+                                <button type="submit" name="consultamixto"><i class="fa-solid fa-circle-arrow-down"></i></button>
                             </form>
                             
                             <br>
@@ -81,7 +81,7 @@ $image = $row['image'];
                             <form id="presencial" name="presencial" method="post" action="../models/SetPlanPRESENCIAL.php">
                                 <input type="text" value="Presencial" name="plantype"hidden>
                                 <input type="number" value="1510" name="unit_price"hidden>
-                                <button type="submit" id="consultamixto"><i class="fa-solid fa-circle-arrow-down"></i></button>
+                                <button type="submit" name="consultapresencial"><i class="fa-solid fa-circle-arrow-down"></i></button>
                             </form>
                             
                             

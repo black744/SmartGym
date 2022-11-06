@@ -16,19 +16,8 @@ $correo = $row['correo'];
 $idusuario = $row['idusuario'];
 $image = $row['image'];
 $tiposelect = "VIRTUAL";
+$preciop = $_POST['unit_price'];
 
-if (isset($_post['consultamixto'])) {
-    $nombrep = $_POST['plantype'];
-    $preciop = $_POST['unit_price'];
-}
-if (isset($_post['consultavirtual'])) {
-    $nombrep = $_POST['plantype'];
-    $preciop = $_POST['unit_price'];
-}
-if (isset($_post['consultapresencial'])) {
-    $nombrep = $_POST['plantype'];
-    $preciop = $_POST['unit_price'];
-}
 
 require __DIR__ . '\..\vendor\autoload.php';
 $access_token = 'TEST-696558555391091-103018-712336b022fa4844c0dd1c64d3860368-337317933';
@@ -95,7 +84,7 @@ $preference->save();
         <div class="contenedorformdiv">
             <div class="descmaspago">
                 <div class="desc">
-                    <h2> Plan virtual </h2>
+                    <h2> Suscripción Virtual </h2>
                     <p>
                         Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto.
                         Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500,
@@ -109,9 +98,7 @@ $preference->save();
                     </p>
                 </div>
                 <div class="formabajo">
-                    <form action="">
-
-                    </form>
+                <div class="cho-container"></div>
                 </div>
             </div>
         </div>
