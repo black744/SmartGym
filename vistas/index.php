@@ -18,8 +18,9 @@
         <nav class="barranav" id="arriba">
             <div class="contenedorbtnnav" id="Precios-3">
                 <a href="#Smart Gym-1">Smart Gym</a>
-                <a href="#Servicios-2">Servicio</a>
-                <a href="#Soporte-4">Contacto</a>
+                <a href="#Servicios-2">Servicios</a>
+                <a href="#Servicios-2">Objetivo</a>
+                <a href="#Soporte-4">Quienes somos</a>
                 <a href="registro.php">Inicia sesion</a>
             </div>
         </nav>

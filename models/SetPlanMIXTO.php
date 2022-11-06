@@ -77,7 +77,7 @@ $preference->save();
 <body>
 
     <div class="contenedorgrande">
-        <div class="boton">
+    <div class="boton">
             <button><a href="../vistas/index_pago.php"><i class="fa-solid fa-circle-arrow-left"></i></a></button>
         </div>
         <div class="contenedorformdiv">

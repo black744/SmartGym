@@ -55,17 +55,26 @@ switch ($idrol) {
         </div>
 
         <div class="derechan" id="divsb">
-            <h1> Datos Mensuales </h1>
-            <hr>
-            <div>
-                <h3> Usuarios nuevos : </h3>
-            </div>
-            <br>
-            <div>
-                <h3> Usuarios Dados de baja : </h3>
+            <div class="progreso">
+
+                <?php
+                $SQLDefault = "SELECT image FROM datos WHERE idusuario=1";
+                $QUERYDefault = mysqli_query($conex, ($SQLDefault));
+                $ROWDefault = mysqli_fetch_array($QUERYDefault);
+                $DefaultIMG = $ROWDefault['image'];
+                if ($image == 0) {
+                ?>
+                    <img src="data:image/jpg;base64,<?php echo base64_encode($DefaultIMG); ?>" class="imgp">
+                <?php
+
+                } else { ?>
+                    <img src="data:image/jpg;base64,<?php echo base64_encode($image); ?>" class="imgp">
+                <?php } ?>
+                <br>
+                <h1><?php echo $row['nombre'] ?></h1>
+                <br>
             </div>
         </div>
-    </div>
 </body>
 
 </html>
