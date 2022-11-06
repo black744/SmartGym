@@ -17,7 +17,6 @@
     <div class="container-form sign-in">
         <form method="POST" class="formulario" action="../models/validar.php">
             <h2 class="create-account">Iniciar Sesion</h2>
-            <p class="cuenta-gratis">¿Aun no tienes una cuenta?</p>
             <input type="user" placeholder="Usuario" name="usuario" required>
             <input type="password" placeholder="Contraseña" name="contraseña" required>
             <input class="btn-r" type="submit" name="buttonlog" value="Loguearse">
