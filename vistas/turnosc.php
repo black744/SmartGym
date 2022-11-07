@@ -143,9 +143,6 @@ switch ($idrol) {
                 if ($filascomp2) {
                     
                     echo ("<script>alert('Ya estas en la clase');</script>");
-                    if ($filascomp2){
-                        echo ("<script>window.location.href = '../vistas/turnosc.php';</script>");
-                    }
                     
                 } else {
                     if ($idclase == 0) {
