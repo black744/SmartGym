@@ -75,15 +75,22 @@ switch ($idrol) {
                 $result1 = mysqli_num_rows($query1);
                 if ($result1 > 0) {
                     while ($data = mysqli_fetch_array($query1)) {
+                        $rowidclase = $data['idclase'];
 
 
                 ?>
                         <div class="turno-a">
                             <br>
+                            <?php echo $rowidclase;?>
                             <p> Fecha: <?php echo $data['fecha']; ?></p>
                             <p> Horario: <?php echo $data['hora']; ?></p>
                             <p> Modalidad: <?php echo $data['modalidad']; ?></p>
                             <p> Direccion: Miro 2126 (preguntar por silvia frujter)</p>
+                            <form method="get" action="../models/delete_class.php">
+                                <input type="number" value="<?php echo $rowidclase;?>" name="idclase" hidden>
+                                <input type="submit" name="delete" id="btnsn" value="Borrar">
+                    </form>                               
+                            <br>
                         </div>
                 <?php
                     }
@@ -100,21 +107,24 @@ switch ($idrol) {
                         <h3> Ingresar datos del turno para clase </h3>
                         <div style="width: fit-content;">
                             <div id="picker-no-time"></div>
-                            <input name="f-c" type="hidden" id="result2" value="" />
+                            <input name="f-c" type="hidden" id="result2"/>
                         </div>
                         <select class="sm" name="modalidad">
-                            <option value="Vitual">Virtual</option>
+                            <option value="Virtual">Virtual</option>
                             <option value="Presencial">Presencial</option>
                         </select>
 
                         <br>
 
-                        <input id="inputsn" class="ingreso-t" type="text" placeholder="Ingrese el horario de la clase (HR:MM)" name="h-c" required>
-                        <br>
+                        <input id="appt-time" type="time" min="07" max="23" name="h-c"/>
+                        <time>
 
-                        <input id="inputsn" class="ingreso-t" type="number" min="10" max="30" placeholder="Ingrese los cupos de la clase" name="c-c" required>
                         <br>
-                        <input id="btnsn" class="botonguardado" type="submit" name="cargarclase">
+                        <br>
+                        <br>
+                        <input type="number" class="cuposcc" id="tentacles" name="c-c" min="10" max="30" placeholder="ingrese cupos" >
+                        <br>
+                        <input id="btnsn" class="botonguardado"  type="submit" name="cargarclase">
                         <br>
                     </form>
 
@@ -128,8 +138,10 @@ switch ($idrol) {
                     $modalidad = $_POST['modalidad'];
                     $horaclase = $_POST['h-c'];
                     $cuposclase = $_POST['c-c'];
-                    $sqlclase = "INSERT INTO `clases`(`idclase`, `entrenador`, `modalidad`, `fecha`, `hora`, `cupos`, `estado`) VALUES ('','$nusuario','$modalidad','$fechaclase','$horaclase','$cuposclase','0')";
+                    $hour_str= $horaclase . ' ' . 'hs';
+                    $sqlclase = "INSERT INTO `clases`(`idclase`, `entrenador`, `modalidad`, `fecha`, `hora`, `cupos`, `estado`) VALUES ('','$nusuario','$modalidad','$fechaclase','$hour_str','$cuposclase','0')";
                     $queryclase = mysqli_query($conex, $sqlclase);
+                    echo ("<script>window.location.href = '../vistas/turnose.php';</script>");
                 }
                 ?>
         </div>

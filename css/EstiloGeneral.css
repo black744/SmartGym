@@ -18,7 +18,7 @@ input[type="number"] {
 
 @import url("https://fonts.googleapis.com/css?family=Barlow+Semi+Condensed");
 #text {
-  font-family: "Barlow Semi Condensed", sans-serif;
+  font-family: 'Poppins';
   text-align: center;
   font-size: 16px;
   color: rgb(255, 255, 255);

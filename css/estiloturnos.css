@@ -102,29 +102,112 @@ html{
 .sm{
     position: relative;
     left: -3.5%;
-    min-height: 20%;
+    min-height: 30%;
+    height: 4vh;
     min-width: fit-content;
     width: 55%;
     margin: 4%;
     text-align: center;
-    background: #101010;
+    background: #404040;
     color: var(--color-letra);
     border-radius: 15px;
     border: none;
     cursor:pointer;
-    font-size: 18px;
+    font-size: 1.2rem;
 }
 
 .ingreso-t{
     position: relative;
     left: -3.5%;
-    min-height: 5vh;
+    min-height: 4vh;
     min-width: fit-content;
-    width: 95%;
+    width: 50%;
     margin: 5%;
     text-align: center;
-    background: #101010;
+    background: #404040;
+    color: white;
+    border-radius: 15px;
 }
+
+.cuposcc{
+    position: relative;
+    left: -3.5%;
+    min-height: 4vh;
+    min-width: fit-content;
+    width: 50%;
+    margin-top: 0%;
+    margin-bottom: 0%;
+    margin-left: 5%;
+    margin-right: 2%;
+    text-align: center;
+    background: #404040;
+    color: white;
+    border-radius: 5px;
+}
+
+input[type=time] {
+    margin-top: 0%;
+    margin-bottom: 0%;
+    margin-left: 0%;
+    margin-right: 2%;
+    border: none;
+    border-radius: 15px;
+    background-color: #404040;
+    color: #ffffff;
+    font-size: 0.4 rem;
+    width: 55%;
+    min-height: 23px;
+    max-height: 32px;
+  }
+  
+  /* Wrapper around the hour, minute, second, and am/pm fields as well as 
+  the up and down buttons and the 'X' button */
+  input[type=time]::-webkit-datetime-edit-fields-wrapper {
+      border-radius: 15px;
+    display: flex;
+  }
+  
+  /* The space between the fields - between hour and minute, the minute and 
+  second, second and am/pm */
+  input[type=time]::-webkit-datetime-edit-text {
+    padding: 19px 4px;
+  }
+  
+  /* The naming convention for the hour, minute, second, and am/pm field is
+  `-webkit-datetime-edit-{field}-field` */
+  
+  /* Hour */
+  input[type=time]::-webkit-datetime-edit-hour-field {
+    background-color: #404040;
+    border-radius: 15%;
+    padding: 19px 13px;
+  }
+  
+  /* Minute */
+  input[type=time]::-webkit-datetime-edit-minute-field {
+    background-color: #404040;
+    border-radius: 15%;
+    padding: 19px 13px;
+  }
+  
+  /* AM/PM */
+  input[type=time]::-webkit-datetime-edit-ampm-field {
+    background-color: #fb4c0d;
+    border-radius: 15%;
+    color: #fff;
+  }
+  
+  /* 'X' button for resetting/clearing time */
+  input[type=time]::-webkit-clear-button {
+    display: flex;
+  }
+  
+  /* Up/Down arrows for incrementing/decrementing the value */
+  input[type=time]::-webkit-inner-spin-button {
+    display: none;
+  }
+
+
 
 .botonguardado{
     position: relative;
@@ -133,17 +216,17 @@ html{
 
 .s-t{
     position: relative;
-    height: 5vh;
-    width: 55%;
+    max-height: 4vh;
+    max-width: 55%;
     margin: 3%;
     text-align: center;
-    background: #101010;
+    background: #404040;
     color: var(--color-letra);
     border-radius: 15px;
     transition: 1.2s;
     border: none;
     cursor:pointer;
-    font-size: 18px;
+    font-size: 1.2rem;
 }
 
 #claseid{
@@ -152,7 +235,7 @@ html{
     width: 92%;
     margin: 3%;
     text-align: center;
-    background: #101010;
+    background: #404040;
     color: #fff;
     border:3px solid var(--color-bordes-normales) ;
     border-radius: 15px;
@@ -199,10 +282,10 @@ html{
 .dtp_main{  position: relative;
     margin-top: 10%;
     align-items: center;
-    height: 2vh;
-    width: 15vw;
+    min-height: 3vh;
+    max-width: 15vw;
     text-align: center;
-    background: #101010;
+    background: #404040;
     color: var(--color-letra);
     border:3px solid var(--color-bordes-normales) ;
     border-radius: 15px;
@@ -224,7 +307,7 @@ html{
 .dtp_modal-content{ background-color: var(--color-fondosn); border-radius: 10px; width: 624px;
     position: absolute; z-index: 1000; top: 100px; left: 100px; font-size: 16px;font-weight: normal;}
 
-.dtp_modal-content-no-time{ background-color: var(--color-fondobotones); border-radius: 10px; width: 20vw;
+.dtp_modal-content-no-time{ background-color: var(--color-fondobotones); border-radius: 10px; width: fit-content;
     position: absolute; z-index: 1000; top: 100px; left: 100px; font-size: 15px; font-weight: normal;}
 
 .dtp_modal-title{ border-bottom: solid 3px var(--color-bordes); padding: 16px 36px; margin-bottom: 16px;  font-size: 22px; color: var(--color-letra); }

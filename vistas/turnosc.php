@@ -153,6 +153,7 @@ switch ($idrol) {
                         $sqlinsertquery = mysqli_query($conex, $sqlinsert);
                         $sqlupdate = "UPDATE `clases` SET cupos= cupos -1 WHERE idclase='$idclase'";
                         $queryupdate = mysqli_query($conex, $sqlupdate);
+                        echo ("<script>window.location.href = '../vistas/turnosc.php';</script>");
                     };
                 };
             };
