@@ -60,7 +60,7 @@ $image = $row['image'];
                             &nbsp;
                             <i class="fa-solid fa-laptop"></i>
                             <h2> Plan virtual</h2> <br>
-                            <form id="virtual" name="virtual" method="post" action="../vistas/indespago1.php">
+                            <form id="virtual" name="virtual" method="post" action="../vistas/cant_items.php">
                                 <input type="text" value="Virtual" name="plantype"hidden>
                                 <input type="number" value="1500" name="unit_price"hidden>
                                 <button type="submit" name="consultavirtual"><i class="fa-solid fa-circle-arrow-down"></i></button>
@@ -72,7 +72,7 @@ $image = $row['image'];
                             &nbsp;
                             <i class="fa-solid fa-arrow-right-arrow-left"></i>
                             <h2> Plan Mixto </h2><br>
-                            <form id="mixto" name="mixto" method="post" action="../models/SetPlanMIXTO.php">
+                            <form id="mixto" name="mixto" method="post" action="../vistas/cant_items.php">
                                 <input type="text" value="Mixto" name="plantype"hidden>
                                 <input type="number" value="3000" name="unit_price"hidden>
                                 <button type="submit" name="consultamixto"><i class="fa-solid fa-circle-arrow-down"></i></button>
@@ -87,7 +87,7 @@ $image = $row['image'];
                             &nbsp;
                             <i class="fa-solid fa-dumbbell"></i>
                             <h2> Plan Presencial </h2> <br>
-                            <form id="presencial" name="presencial" method="post" action="../models/SetPlanPRESENCIAL.php">
+                            <form id="presencial" name="presencial" method="post" action="../vistas/cant_items.php">
                                 <input type="text" value="Presencial" name="plantype"hidden>
                                 <input type="number" value="1510" name="unit_price"hidden>
                                 <button type="submit" name="consultapresencial"><i class="fa-solid fa-circle-arrow-down"></i></button>

@@ -15,7 +15,9 @@ $dni = $row['dni'];
 $correo = $row['correo'];
 $idusuario = $row['idusuario'];
 $image = $row['image'];
-
+//-------------------------------------------------//
+$plantype= $_POST['plantype'];
+$unit_price= $_POST['unit_price'];
 
 ?>
 <!DOCTYPE html>
@@ -59,9 +61,10 @@ $image = $row['image'];
                         <div class="box">
                             &nbsp;
                             <h2> Pago 1 mes</h2> <br>
-                            <form id="virtual" name="virtual" method="post" action="../models/SetPlanVIRTUAL.php">
-                                <input type="text" value="Virtual" name="plantype"hidden>
-                                <input type="number" value="1500" name="unit_price"hidden>
+                            <form id="1" name="one" method="post" action="../models/pagar.php">
+                                <input type="number" value="1" name="quantity" hidden>
+                                <input type="text" value="<?php echo $plantype;?>" name="plantype" hidden>
+                                <input type="number" value="<?php echo $unit_price;?>" name="unit_price" hidden>
                                 <button type="submit" id="consultamixto"><i class="fa-solid fa-circle-arrow-down"></i></button>
                             </form>
                             
@@ -70,9 +73,10 @@ $image = $row['image'];
                         <div class="box">
                             &nbsp;
                             <h2> Pago 3 meses </h2><br>
-                            <form id="mixto" name="mixto" method="post" action="../models/SetPlanMIXTO.php">
-                                <input type="text" value="Mixto" name="plantype"hidden>
-                                <input type="number" value="3000" name="unit_price"hidden>
+                            <form id="3" name="three" method="post" action="../models/pagar.php">
+                                <input type="number" value="3" name="quantity" hidden>
+                                <input type="text" value="<?php echo $plantype;?>" name="plantype" hidden>
+                                <input type="number" value="<?php echo $unit_price;?>" name="unit_price" hidden>
                                 <button type="submit" id="consultamixto"><i class="fa-solid fa-circle-arrow-down"></i></button>
                             </form>
                             
@@ -84,9 +88,10 @@ $image = $row['image'];
                         <div class="box">
                             &nbsp;
                             <h2> Pago 6 meses </h2> <br>
-                            <form id="presencial" name="presencial" method="post" action="../models/SetPlanPRESENCIAL.php">
-                                <input type="text" value="Presencial" name="plantype"hidden>
-                                <input type="number" value="1510" name="unit_price"hidden>
+                            <form id="6" name="six" method="post" action="../models/pagar.php">
+                                <input type="number" value="6" name="quantity" hidden>
+                                <input type="text" value="<?php echo $plantype;?>" name="plantype" hidden>
+                                <input type="number" value="<?php echo $unit_price;?>" name="unit_price" hidden>
                                 <button type="submit" id="consultamixto"><i class="fa-solid fa-circle-arrow-down"></i></button>
                             </form>
                             

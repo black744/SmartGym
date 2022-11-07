@@ -142,7 +142,11 @@ switch ($idrol) {
                 $filascomp2 = mysqli_fetch_array($querycomp2);
                 if ($filascomp2) {
                     
-                    echo ("<script>window.location.href = '../vistas/turnosc.php';</script>");
+                    echo ("<script>alert('Ya estas en la clase');</script>");
+                    if ($filascomp2){
+                        echo ("<script>window.location.href = '../vistas/turnosc.php';</script>");
+                    }
+                    
                 } else {
                     if ($idclase == 0) {
                         echo ("<script>window.location.href = '../vistas/turnosc.php';</script>");
