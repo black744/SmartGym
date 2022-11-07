@@ -55,107 +55,113 @@ switch ($idrol) {
 <body>
 
     <div class="main_contentpa">
-        
-            <div class="contenedortabla">
 
-                <h4>Panel de control adminsitrador</h4>
+        <div class="contenedortabla">
 
-                <input class="form-control col-md-3 light-table-filter" data-table="order-table" type="text" placeholder="Buscar usuario">
+            <h4>Panel de control adminsitrador</h4>
 
-                <hr>
+            <input class="form-control col-md-3 light-table-filter" data-table="order-table" type="text" placeholder="Buscar usuario">
 
-                <table class="table table-bordered order-table " id="tabla">
-                    <thead class="tabla-header">
-                        <tr class="filah">
-                            <th>id usuario</th>
-                            <th>Nombre</th>
-                            <th>DNI</th>
-                            <th>Pago</th>
-                            <th>Fecha de pago</th>
-                            <th>Fecha de vencimiento</th>
-                            <th>Plan</th>
-                        </tr>
-                    </thead>
-                    <?php
-                    $query = mysqli_query($conex, "SELECT * FROM datos");
-                    $result = mysqli_num_rows($query);
-                    while ($data = mysqli_fetch_array($query)) {
-                    ?>
-                        <tr class="tabla-fila">
-                            <td class="datos"><?php echo $data['idusuario']; ?></td>
-                            <td class="datos"><?php echo $data['usuario']; ?></td>
-                            <td class="datos"><?php echo $data['dni']; ?></td>
-                            <td class="datos">-</td>
-                            <td class="datos">-</td>
-                            <td class="datos">-</td>
-                            <td class="datos">-</td>
-                        </tr>
-                    <?php } ?>
+            <hr>
 
-                </table>
-                <hr>
+            <table class="table table-bordered order-table " id="tabla">
+                <thead class="tabla-header">
+                    <tr class="filah">
+                        <th>id usuario</th>
+                        <th>Nombre</th>
+                        <th>DNI</th>
+                        <th>Pago</th>
+                        <th>Fecha de pago</th>
+                        <th>Fecha de vencimiento</th>
+                        <th>Plan</th>
+                    </tr>
+                </thead>
+                <?php
+                $query = mysqli_query($conex, "SELECT * FROM datos");
+                $result = mysqli_num_rows($query);
+                while ($data = mysqli_fetch_array($query)) {
+                ?>
+                    <tr class="tabla-fila">
+                        <td class="datos"><?php echo $data['idusuario']; ?></td>
+                        <td class="datos"><?php echo $data['usuario']; ?></td>
+                        <td class="datos"><?php echo $data['dni']; ?></td>
+                        <td class="datos">-</td>
+                        <td class="datos">-</td>
+                        <td class="datos">-</td>
+                        <td class="datos">-</td>
+                    </tr>
+                <?php } ?>
 
-                <Div class="barra-abajo">
+            </table>
+            <hr>
 
-                    <button id="btnExportar" class="btn btn-success">
-                        <i class="fas fa-file-excel"></i> crear archivo mensual usuarios
-                    </button>
-                    <div class="cuadro-admin">
-                        <h2>Ingresar pago de cliente</h2>
-                        <input class="ing1" type="text" placeholder="Codigo de usuario">
-                        <input class="ing2" type="text" placeholder="Contraseña admin">
-                        <select name="metodopago" id="mtp">
-                            <option value="1">efectivo</option>
-                            <option value="2">transferencia</option>
-                            <option value="3">debito</option>
-                        </select>
-                        <div class="meses">
-                            <select name="meses-pago" id="p-meses">
-                                <option value="">Enero</option>
-                                <option value="">Febrero</option>
-                                <option value="">Marzo</option>
-                                <option value="">Abril</option>
-                                <option value="">Mayo</option>
-                                <option value="">Junio</option>
-                                <option value="">Julio</option>
-                                <option value="">Agosto</option>
-                                <option value="">Septiembre</option>
-                                <option value="">Octubre</option>
-                                <option value="">Noviembre</option>
-                                <option value="">Diciembre</option>
-                            </select>
-                            <button type="submit"  id="btn-n"> guardar pago</button>
-                        </div>
-                    </div>
+            <Div class="barra-abajo">
 
-                    <div id="cuadro-adminbaja">
-                        <h2> Deshabilitar cliente</h2>
-                        <form method="post">
+                <button id="btnExportar" class="btn btn-success">
+                    <i class="fas fa-file-excel"></i> crear archivo mensual usuarios
+                </button>
+                <div class="cuadro-admin">
+                    <h2>Ingresar pago de cliente</h2>
+                    <form method="POST" >
+                    <input class="ing1"  name="iduser" type="text" placeholder="Codigo de usuario">
+                    <input class="ing2"  name="password" type="text" placeholder="Contraseña admin">
+                    <select name="tipoplan" class="sg">
+                        <option value="Mixto"> Mixto</option>
+                        <option value="Presencial"> Presencial</option>
+                        <option value="Virtual">Virtual</option>
+                    </select>
+                    <input id="btn-n" type="submit" name="subipago" value="Enviar">
+                    </form>
+                </div>
+
+                <div id="cuadro-adminbaja">
+                    <h2> Deshabilitar cliente</h2>
+                    <form method="post">
                         <input class="ing1" type="text" name="iduser" placeholder="Codigo de usuario">
                         <input class="ing2" type="text" name="password" placeholder="Contraseña admin">
+
                         <input id="btn-n" type="submit" name="bajaboton" value="Enviar">
                     </form>
                     <?php
-                    if(isset($_POST['bajaboton'])){
-                        $iduser=$_POST['iduser'];
-                        $password=$_POST['password'];
-                        $sqlcomp="SELECT * FROM datos WHERE idusuario='$idusuario'";
-                        $querycomp=mysqli_query($conex,($sqlcomp));
-                        $asocc= mysqli_fetch_array($querycomp);
-                        $passworduser=$asocc['contraseña'];
-                        if($password == $passworduser){
-                            $insert="UPDATE datos SET estado_cuenta='0' WHERE idusuario='$iduser'";
-                            $queryinsert=mysqli_query($conex, ($insert));
+                    if (isset($_POST['bajaboton'])) {
+                        $iduser = $_POST['iduser'];
+                        $password = $_POST['password'];
+                        $sqlcomp = "SELECT * FROM datos WHERE idusuario='$idusuario'";
+                        $querycomp = mysqli_query($conex, ($sqlcomp));
+                        $asocc = mysqli_fetch_array($querycomp);
+                        $passworduser = $asocc['contraseña'];
+                        if ($password == $passworduser) {
+                            $insert = "UPDATE datos SET estado_cuenta='0' WHERE idusuario='$iduser'";
+                            $queryinsert = mysqli_query($conex, ($insert));
                         }
-
+                    }
+                    ?>
+                    <?php
+                    if (isset($_POST['subipago'])) {
+                        $iduser = $_POST['iduser'];
+                        $password = $_POST['password'];
+                        $tipoplan = $_POST['tipoplan'];
+                        $sqlcomp = "SELECT * FROM datos WHERE idusuario='$idusuario'";
+                        $querycomp = mysqli_query($conex, ($sqlcomp));
+                        $asocc = mysqli_fetch_array($querycomp);
+                        $passworduser = $asocc['contraseña'];
+                        if ($password == $passworduser) {
+                            $act_pago = "UPDATE datos SET cantidad_meses='1', estado_cuenta='1', plantype='$tipoplan', vencimiento = date_add(NOW(), INTERVAL +1 MONTH),  ultimopago= NOW() WHERE idusuario='$iduser'";
+                            $query_pago_aceptado = mysqli_query($conex, ($act_pago));
+                            echo ("<script>alert('Pago acreditado correctamente, ya puede usar el servicio');</script>");
+                            echo ("<script>window.location.href = '../vistas/admincontrolpanel.php';</script>");
+                        }
+                        else{
+                            echo("<script>alert('Error en el pago, verifique los datos ');</script>");
+                        }
                     }
                     ?>
 
-                    </div>
-                </Div>
-            </div>
+                </div>
+            </Div>
         </div>
-<script src="app1.js"></script>
+    </div>
+    <script src="app1.js"></script>
 </body>
 
 <script>
@@ -176,34 +182,32 @@ switch ($idrol) {
 
 <script>
     const btn = document.querySelectorAll(".pagoetc")
-    const contei= document.querySelector(".cuadro-admin")
+    const contei = document.querySelector(".cuadro-admin")
     console.log(btn);
-    for(let i = 0; i < btn.length; i++){
-    btn[i].addEventListener("click", function(){
-        if(contei.style.display ==="block"){
-        contei.style.display ="none";
-        }
-        else{
-        contei.style.display ="block";
-        }
-    })
-}
+    for (let i = 0; i < btn.length; i++) {
+        btn[i].addEventListener("click", function() {
+            if (contei.style.display === "block") {
+                contei.style.display = "none";
+            } else {
+                contei.style.display = "block";
+            }
+        })
+    }
 </script>
 
 <script>
     const btne = document.querySelectorAll("#bajaetc")
-    const conteinerrrr= document.querySelector("#cuadro-adminbaja")
+    const conteinerrrr = document.querySelector("#cuadro-adminbaja")
     console.log(btne);
-    for(let i = 0; i < btne.length; i++){
-    btne[i].addEventListener("click", function(){
-        if(conteinerrrr.style.display ==="block"){
-        conteinerrrr.style.display ="none";
-        }
-        else{
-        conteinerrrr.style.display ="block";
-        }
-    })
-}
+    for (let i = 0; i < btne.length; i++) {
+        btne[i].addEventListener("click", function() {
+            if (conteinerrrr.style.display === "block") {
+                conteinerrrr.style.display = "none";
+            } else {
+                conteinerrrr.style.display = "block";
+            }
+        })
+    }
 </script>
 
 </html>

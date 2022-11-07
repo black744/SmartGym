@@ -51,8 +51,43 @@ switch ($idrol) {
 
     <div class="main_contentn">
         <div class="izquierdan" id="divsb">
+            <?php
+            $sql_count = "SELECT COUNT(*) AS idusuario FROM datos WHERE id_rol=0";
+            $queryCount= mysqli_query($conex, ($sql_count));
+            $cantidad = mysqli_fetch_assoc($queryCount);
+            ?>
+            <h2> Cantidad de usuarios clientes: <?php echo $cantidad['idusuario']; ?></h2>
+            <?php
+            $sql_counta = "SELECT COUNT(*) AS idusuario FROM datos WHERE id_rol=0 and estado_cuenta=1";
+            $queryCounta= mysqli_query($conex, ($sql_counta));
+            $cantidada = mysqli_fetch_assoc($queryCounta);
+            ?>
+            <h2> Cantidad de usuarios clientes activos: <?php echo $cantidada['idusuario']; ?></h2>
+            <?php
+            $sql_countd = "SELECT COUNT(*) AS idusuario FROM datos WHERE id_rol=0 and estado_cuenta=0";
+            $queryCountd= mysqli_query($conex, ($sql_countd));
+            $cantidadd = mysqli_fetch_assoc($queryCountd);
+            ?>
+            <h2> Cantidad de usuarios clientes inactivos: <?php echo $cantidadd['idusuario']; ?></h2>
+            <?php
+            $sql_counte = "SELECT COUNT(*) AS idusuario FROM datos WHERE id_rol=1";
+            $queryCounte= mysqli_query($conex, ($sql_counte));
+            $cantidade = mysqli_fetch_assoc($queryCounte);
+            ?>
+            <h2> Cantidad de usuarios Entrenadores: <?php echo $cantidade['idusuario']; ?></h2>
 
         </div>
+
+        <style>
+            .izquierdan h2{
+                margin:3%;
+                color: white;
+            }
+            .izquierdan p{
+                margin:3%;
+                color: white;
+            }
+        </style>
 
         <div class="derechan" id="divsb">
             <div class="progreso">
