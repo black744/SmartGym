@@ -45,7 +45,7 @@ switch ($idrol) {
 <body>
     <div class="main_contentn">
         <div class="registrocu" id="divsb">
-        <form class="formulario" action="../models/registrar.php" method="POST">
+        <form class="formulario" action="../models/registrarue.php" method="POST">
             <h2 class="create-account">Crear una cuenta a entrenador</h2>
             <input type="text" placeholder="Nombre" name="nombre" required>
             <input type="apellido" placeholder="Apellido" name="apellido" required>
@@ -53,7 +53,7 @@ switch ($idrol) {
             <input type="Usuario" placeholder="Usuario" name="usuario" required>
             <input type="email" placeholder="Email" name="correo" required>
             <input type="password" placeholder="Contraseña" name="contraseña" required>
-            <input type="number" placeholder="peso inicial" name="PA" required pattern="[0-9]">
+            <input type="number" placeholder="edad" name="edad" required pattern="[0-9]" max="99" required>
             <select name="sexo" id="genero" class="sg">
                 <option>Selecciona genero</option>
                 <option value="1">Hombre</option>

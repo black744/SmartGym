@@ -104,11 +104,6 @@ switch ($idrol) {
                         <h2>Ingresar pago de cliente</h2>
                         <input class="ing1" type="text" placeholder="Codigo de usuario">
                         <input class="ing2" type="text" placeholder="Contraseña admin">
-                        <select name="metodopago" id="mtp">
-                            <option value="1">efectivo</option>
-                            <option value="2">transferencia</option>
-                            <option value="3">debito</option>
-                        </select>
                         <div class="meses">
                             <select name="meses-pago" id="p-meses">
                                 <option value="">Enero</option>
