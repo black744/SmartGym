@@ -88,7 +88,7 @@ $preference->save();
         <div class="contenedorformdiv">
             <div class="descmaspago">
                 <div class="desc">
-                    <h2> Suscripción <?php echo $_POST['plantype']?></h2>
+                    <h2> Suscripción <?php echo $_POST['plantype'] ?></h2>
                     <p>
                         Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto.
                         Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500,
@@ -102,29 +102,38 @@ $preference->save();
                     </p>
                 </div>
                 <div class="formabajo">
-                <div class="cho-container"></div>
+                    <div class="cho-container"></div>
                 </div>
             </div>
+            <style>
+                .cho-container {
+                    position: relative;
+                    left: 45%;
+                    max-height: fit-content;
+                    height: fit-content;
+                    width: fit-content;
+                    max-width: 20%;
+                }
+            </style>
         </div>
-        <div class="barradcontacto">
-            <div class="footer-basic">
-                <footer>
-                    <div class="social">
-                        <a href="#"><i class="icon ion-social-instagram"></i></a>
-                        <a href="#"><i class="fa-solid fa-envelope"></i></a>
-                        <a href="#"><i class="icon ion-social-twitter"></i></a>
-                        <a href="#"><i class="icon ion-social-facebook"></i></a>
-                    </div>
-                    <ul class="list-inline">
-                        <li class="list-inline-item"><a href="#">Inicio</a></li>
-                        <li class="list-inline-item"><a href="#">Servicios</a></li>
-                        <li class="list-inline-item"><a href="#">Acerca de</a></li>
-                        <li class="list-inline-item"><a href="#">Quienes somos?</a></li>
-                    </ul>
-                    <p class="copyright">SmartGym © 2022</p>
-                </footer>
-            </div>
+        <div class="footer-basic">
+            <footer>
+                <div class="social">
+                    <a href="#"><i class="icon ion-social-instagram"></i></a>
+                    <a href="#"><i class="fa-solid fa-envelope"></i></a>
+                    <a href="#"><i class="icon ion-social-twitter"></i></a>
+                    <a href="#"><i class="icon ion-social-facebook"></i></a>
+                </div>
+                <ul class="list-inline">
+                    <li class="list-inline-item"><a href="#">Inicio</a></li>
+                    <li class="list-inline-item"><a href="#">Servicios</a></li>
+                    <li class="list-inline-item"><a href="#">Acerca de</a></li>
+                    <li class="list-inline-item"><a href="#">Quienes somos?</a></li>
+                </ul>
+                <p class="copyright">SmartGym © 2022</p>
+            </footer>
         </div>
+
     </div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>

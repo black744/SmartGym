@@ -137,6 +137,7 @@ include("../models/validacion_clientes.php");
 
               <style>
                 .neje {
+                  font-size: 2.5rem;
                   max-width: 20%;
                   margin-top: 2%;
                   margin-bottom: 3%;
@@ -146,6 +147,7 @@ include("../models/validacion_clientes.php");
                 }
 
                 .deje {
+                  font-size: 2rem;
                   max-width: 80%;
                   max-height: 25%;
                   margin: 8%;
@@ -153,11 +155,12 @@ include("../models/validacion_clientes.php");
                 }
 
                 .cseje {
+                  font-size: 2rem;
                   color: #fff;
                 }
 
                 .creje {
-
+                  font-size: 2rem;
                   margin: 1%;
                   color: #fff;
                 }

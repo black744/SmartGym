@@ -17,10 +17,9 @@
     <header class="a1">
         <nav class="barranav" id="arriba">
             <div class="contenedorbtnnav" id="Precios-3">
-                <a href="#Smart Gym-1">Smart Gym</a>
-                <a href="#Servicios-2">Servicios</a>
-                <a href="#Servicios-2">Objetivo</a>
-                <a href="#Soporte-4">Quienes somos</a>
+                <a href="#servicios">Servicios</a>
+                <a href="#objetivo">Objetivo</a>
+                <a href="#quienessomos">Quienes somos</a>
                 <a href="registro.php">Inicia sesion</a>
             </div>
         </nav>
@@ -37,19 +36,47 @@
     </div>
 
     <div class="a3">
-        <h2>Servicios</h2>
+        <h2 id="servicios">Servicios</h2>
             <p>Al contrario del pensamiento popular, el texto de Lorem Ipsum no es simplemente texto aleatorio. Tiene sus raices en una pieza cl´sica de la literatura del Latin, que data del año 45 antes de Cristo, haciendo que este adquiera mas de 2000 años de antiguedad. Richard McClintock, un profesor de Latin de la Universidad de Hampden-Sydney en Virginia, encontró una de las palabras más oscuras de la lengua del latín, "consecteur", en un pasaje de Lorem Ipsum, y al seguir leyendo distintos textos del latín, descubrió la fuente indudable. Lorem Ipsum viene de las secciones 1.10.32 y 1.10.33 de "de Finnibus Bonorum et Malorum"</p>
-        <h2>Quienes somos</h2>
+        <h2 id="quienessomos" >Quienes somos</h2>
             <p>Hay muchas variaciones de los pasajes de Lorem Ipsum disponibles, pero la mayoría sufrió alteraciones en alguna manera, ya sea porque se le agregó humor, o palabras aleatorias que no parecen ni un poco creíbles. Si vas a utilizar un pasaje de Lorem Ipsum, necesitás estar seguro de que no hay nada avergonzante escondido en el medio del texto. Todos los generadores de Lorem Ipsum que se encuentran en Internet tienden a repetir trozos predefinidos cuando sea necesario, haciendo a este el único generador verdadero (válido) en la Internet. </p>
-        <h2>objetivo</h2>
+        <h2 id="objetivo" >objetivo</h2>
             <p>Usa un diccionario de mas de 200 palabras provenientes del latín, combinadas con estructuras muy útiles de sentencias, para generar texto de Lorem Ipsum que parezca razonable. Este Lorem Ipsum generado siempre estará libre de repeticiones, humor agregado o palabras no características del lenguaje, etc.</p>
-    </div>
+
+            <a href="#arriba"><button class="s"><i class="fa-solid fa-circle-arrow-up"></i></button></a>
+            <style>
+                .s{
+                    position: relative;
+                    min-height: fit-content;
+                    height: 5%;
+                    min-width: 10%;
+                    background: #000 ;
+                    color: white;
+                    margin: 5%;
+                    left: 40%;
+                    border: 1.5px solid white;
+                    border-radius: 15px;
+                    cursor: pointer;
+                    transition: 0.2s;
+                }
+
+                .s i{
+                    color: white;
+                    font-size: 2rem;
+                }
+
+                .s:hover{
+                    transform: scale(1.2);
+                    border: 1.5px solid #fb4c0d;
+                }
+            </style>
+        </div>
 
     <div class="footer-basic">
                 <footer>
                     <div class="social">
                         <a href="#"><i class="fa-brands fa-instagram"></i></a>
-                        <a href="#"><i class="fa-solid fa-envelope"></i></a>
+                        <a href=""><i class="fa-solid fa-envelope"></i></a>
                         <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
                         <a href="#"><i class="fa-brands fa-twitter"></i></a>
                         <a href="#"><i class="fa-brands fa-facebook"></i></a>
