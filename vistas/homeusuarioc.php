@@ -121,7 +121,7 @@ switch ($idrol) {
             <div class="progreso">
 
                 <?php
-                $SQLDefault = "SELECT image FROM datos WHERE idusuario=1";
+                $SQLDefault = 'CALL getImage()';
                 $QUERYDefault = mysqli_query($conex, ($SQLDefault));
                 $ROWDefault = mysqli_fetch_array($QUERYDefault);
                 $DefaultIMG = $ROWDefault['image'];
