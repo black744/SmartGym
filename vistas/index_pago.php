@@ -47,7 +47,6 @@ $image = $row['image'];
         </style>
     <h1 class="texto-encabezado" id="Planes-3"> Selecciona una suscripción </h1>
     <div class="contenedorimagen">
-        <img src="../img/fondoindes.jpg">
     </div>
         </div>
         </div>
