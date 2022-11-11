@@ -1,3 +1,10 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    font-family: "Poppins", sans-serif;
+}
+
+
 .contenedor-pagos {
     display: grid;
     grid-template-columns: 50% 50%;

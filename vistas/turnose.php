@@ -81,14 +81,19 @@ switch ($idrol) {
                 ?>
                         <div class="turno-a">
                             <br>
-                            <?php echo $rowidclase;?>
+                            <p><?php echo $rowidclase;?></p>
                             <p> Fecha: <?php echo $data['fecha']; ?></p>
                             <p> Horario: <?php echo $data['hora']; ?></p>
                             <p> Modalidad: <?php echo $data['modalidad']; ?></p>
                             <p> Direccion: Miro 2126 (preguntar por silvia frujter)</p>
                             <form method="get" action="../models/delete_class.php">
                                 <input type="number" value="<?php echo $rowidclase;?>" name="idclase" hidden>
-                                <input type="submit" name="delete" id="btnsn" value="Borrar">
+                                <style>
+                                    .idbtn{
+                                        margin-left: 5%;
+                                    }
+                                </style>
+                                <input class="idbtn" type="submit" name="delete" id="btnsn" value="Borrar">
                     </form>                               
                             <br>
                         </div>

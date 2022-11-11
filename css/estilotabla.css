@@ -1,8 +1,8 @@
 *{
     margin: 0%;
     padding: 0%;
+    font-family: "Poppins", sans-serif;
 }
-
 :root{
     --color-letra: #fff;
     --color-fondos: #fb4c0d;
