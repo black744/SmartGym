@@ -51,8 +51,8 @@ switch ($idrol) {
 ?>
 
 <body>
-    <div class="main_contentn">
-        <div class="izquierdan" id="divsb">
+    <div class="main_contente">
+        <div class="izquierdae" id="divsb">
             <style>
                 h1 {
                     margin: 3%;
@@ -98,6 +98,7 @@ switch ($idrol) {
                 margin: 2%;
                 color: #fff;
             }
+
             .turno-prox h2 {
                 font-size: 24px;
                 margin: 2%;
@@ -110,99 +111,27 @@ switch ($idrol) {
             }
         </style>
 
-        <div class="derechan" id="divsb">
-            <h1> Datos semanales</h1>
-            <hr>
-            <div class="caruselo">
-                <div class="citem">Content #1</div>
-                <div class="citem">Content #2</div>
-                <div class="citem">Content #3</div>
+        <div class="derechae" id="divsb">
+            <div class="progreso">
+                <?php
+                $SQLDefault = 'CALL getImage()';
+                $QUERYDefault = mysqli_query($conex, ($SQLDefault));
+                $ROWDefault = mysqli_fetch_array($QUERYDefault);
+                $DefaultIMG = $ROWDefault['image'];
+                if ($image == 0) {
+                ?>
+                    <img src="data:image/jpg;base64,<?php echo base64_encode($DefaultIMG); ?>" class="imgp">
+                <?php
+
+                } else { ?>
+                    <img src="data:image/jpg;base64,<?php echo base64_encode($image); ?>" class="imgp">
+                <?php } ?>
+                <br>
+                <h1><?php echo $row['nombre'] ?></h1>
+                <br>
             </div>
         </div>
-
-        <style>
-            .caruselo {
-                position: relative;
-            }
-
-            .citem {
-                height: 53vh;
-                margin: 3vh;
-                border-radius: 15px;
-                background: #fb4c0d;
-                padding: 1em;
-                font-weight: bold;
-                font-size: 2em;
-                color: #ffffff;
-                display: none;
-            }
-
-            .citem--selected {
-                display: block;
-            }
-
-            .caruselo__nav {
-                width: 100%;
-                padding: 20px 0;
-                position: absolute;
-                bottom: 0;
-                left: 0;
-                text-align: center;
-            }
-
-            .caruselo__button {
-                width: 4vh;
-                height: 4vh;
-                display: inline-block;
-                background: rgba(255, 255, 255, 0.2);
-                border-radius: 5%;
-                margin: 0 5px;
-                cursor: pointer;
-            }
-
-            .caruselo__button--selected {
-                background: rgba(255, 255, 255, 0.5);
-            }
-        </style>
     </div>
 </body>
-<script>
-    document.querySelectorAll(".caruselo").forEach((carousel) => {
-        const items = carousel.querySelectorAll(".citem");
-        const buttonsHtml = Array.from(items, () => {
-            return `<span class="caruselo__button"></span>`;
-        });
-
-        carousel.insertAdjacentHTML(
-            "beforeend",
-            `
-		<div class="caruselo__nav">
-			${buttonsHtml.join("")}
-		</div>
-	`
-        );
-
-        const buttons = carousel.querySelectorAll(".caruselo__button");
-
-        buttons.forEach((button, i) => {
-            button.addEventListener("click", () => {
-                // un-select all the items
-                items.forEach((item) =>
-                    item.classList.remove("citem--selected")
-                );
-                buttons.forEach((button) =>
-                    button.classList.remove("caruselo__button--selected")
-                );
-
-                items[i].classList.add("citem--selected");
-                button.classList.add("caruselo__button--selected");
-            });
-        });
-
-        // Select the first item on page load
-        items[0].classList.add("citem--selected");
-        buttons[0].classList.add("caruselo__button--selected");
-    });
-</script>
 
 </html>

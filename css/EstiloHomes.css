@@ -84,6 +84,17 @@ grid-row-gap: 100px;
   margin-top: 2%;
   margin-left: 17%;
 }
+
+.main_contente{
+  width: 72%;
+  margin-top: 2%;
+  margin-left: 17%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 100px;
+    grid-row-gap: px;
+}
 /*---------------------------------------------------*/
 .imgp {
   margin-top: 5%;
