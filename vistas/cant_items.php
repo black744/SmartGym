@@ -33,7 +33,7 @@ $unit_price= $_POST['unit_price'];
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@300&display=swap" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/db50c9d526.js"></script>
+    <script src="https://kit.fontawesome.com/83a547849e.js" crossorigin="anonymous"></script>
     <title> Pagina de Inicio </title>
 </head>
 
@@ -46,6 +46,7 @@ $unit_price= $_POST['unit_price'];
             .boton{
                 background: #000;
             }
+            
         </style>
     <h1 class="texto-encabezado" id="Planes-3"> Selecciona una suscripción </h1>
     <div class="contenedorimagen">
@@ -60,7 +61,8 @@ $unit_price= $_POST['unit_price'];
 
                         <div class="box">
                             &nbsp;
-                            <h2> Pago 1 mes</h2> <br>
+                            <i class="fa-solid fa-dice-one"></i>
+                            <h2> 1 MES </h2> <br>
                             <form id="1" name="one" method="post" action="../models/pagar.php">
                                 <input type="number" value="1" name="quantity" hidden>
                                 <input type="text" value="<?php echo $plantype;?>" name="plantype" hidden>
@@ -72,7 +74,8 @@ $unit_price= $_POST['unit_price'];
 
                         <div class="box">
                             &nbsp;
-                            <h2> Pago 3 meses </h2><br>
+                            <i class="fa-solid fa-dice-three"></i>
+                            <h2> 3 MESES </h2><br>
                             <form id="3" name="three" method="post" action="../models/pagar.php">
                                 <input type="number" value="3" name="quantity" hidden>
                                 <input type="text" value="<?php echo $plantype;?>" name="plantype" hidden>
@@ -87,7 +90,8 @@ $unit_price= $_POST['unit_price'];
 
                         <div class="box">
                             &nbsp;
-                            <h2> Pago 6 meses </h2> <br>
+                            <i class="fa-solid fa-medal"></i>
+                            <h2> 6 MESES </h2> <br>
                             <form id="6" name="six" method="post" action="../models/pagar.php">
                                 <input type="number" value="6" name="quantity" hidden>
                                 <input type="text" value="<?php echo $plantype;?>" name="plantype" hidden>

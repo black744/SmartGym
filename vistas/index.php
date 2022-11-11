@@ -37,7 +37,8 @@
 
     <div class="a3">
         <h2 id="servicios">Servicios</h2>
-            <p>Al contrario del pensamiento popular, el texto de Lorem Ipsum no es simplemente texto aleatorio. Tiene sus raices en una pieza cl´sica de la literatura del Latin, que data del año 45 antes de Cristo, haciendo que este adquiera mas de 2000 años de antiguedad. Richard McClintock, un profesor de Latin de la Universidad de Hampden-Sydney en Virginia, encontró una de las palabras más oscuras de la lengua del latín, "consecteur", en un pasaje de Lorem Ipsum, y al seguir leyendo distintos textos del latín, descubrió la fuente indudable. Lorem Ipsum viene de las secciones 1.10.32 y 1.10.33 de "de Finnibus Bonorum et Malorum"</p>
+            <p>SmartGym ofrece al cliente 3 planes de modalidades de entrenamiento:
+            el primer plan es el virtual que consiste en clases virtuales de entrenamiento con clases grupales por vía zoom con nuestros entrenadores, tambien recibiran por parte de los mismos, rutinas de entrenamiento para que puedan seguir desde la comodidad de su hogar.</P> 
         <h2 id="quienessomos" >Quienes somos</h2>
             <p>Hay muchas variaciones de los pasajes de Lorem Ipsum disponibles, pero la mayoría sufrió alteraciones en alguna manera, ya sea porque se le agregó humor, o palabras aleatorias que no parecen ni un poco creíbles. Si vas a utilizar un pasaje de Lorem Ipsum, necesitás estar seguro de que no hay nada avergonzante escondido en el medio del texto. Todos los generadores de Lorem Ipsum que se encuentran en Internet tienden a repetir trozos predefinidos cuando sea necesario, haciendo a este el único generador verdadero (válido) en la Internet. </p>
         <h2 id="objetivo" >objetivo</h2>
