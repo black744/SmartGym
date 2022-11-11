@@ -53,40 +53,67 @@ switch ($idrol) {
         <div class="izquierdan" id="divsb">
             <?php
             $sql_count = "SELECT COUNT(*) AS idusuario FROM datos WHERE id_rol=0";
-            $queryCount= mysqli_query($conex, ($sql_count));
+            $queryCount = mysqli_query($conex, ($sql_count));
             $cantidad = mysqli_fetch_assoc($queryCount);
             ?>
-            <h2> Cantidad de usuarios clientes: <?php echo $cantidad['idusuario']; ?></h2>
+            
+            <div class="cir-culo">
+            <h2> <br> Cantidad de usuarios clientes:</h2> <h3><?php echo $cantidad['idusuario']; ?> </h3>
+            </div>
             <?php
             $sql_counta = "SELECT COUNT(*) AS idusuario FROM datos WHERE id_rol=0 and estado_cuenta=1";
-            $queryCounta= mysqli_query($conex, ($sql_counta));
+            $queryCounta = mysqli_query($conex, ($sql_counta));
             $cantidada = mysqli_fetch_assoc($queryCounta);
             ?>
-            <h2> Cantidad de usuarios clientes activos: <?php echo $cantidada['idusuario']; ?></h2>
+            <div class="cir-culo">
+            <h2> <br> Cantidad de usuarios clientes activos: </h2> <h3><?php echo $cantidada['idusuario']; ?> </h3>
+            </div>
             <?php
             $sql_countd = "SELECT COUNT(*) AS idusuario FROM datos WHERE id_rol=0 and estado_cuenta=0";
-            $queryCountd= mysqli_query($conex, ($sql_countd));
+            $queryCountd = mysqli_query($conex, ($sql_countd));
             $cantidadd = mysqli_fetch_assoc($queryCountd);
             ?>
-            <h2> Cantidad de usuarios clientes inactivos: <?php echo $cantidadd['idusuario']; ?></h2>
+            <div class="cir-culo">
+            <h2> <br> Cantidad de usuarios clientes inactivos: </h2><h3> <?php echo $cantidadd['idusuario']; ?> </h3>
+            </div>
             <?php
             $sql_counte = "SELECT COUNT(*) AS idusuario FROM datos WHERE id_rol=1";
-            $queryCounte= mysqli_query($conex, ($sql_counte));
+            $queryCounte = mysqli_query($conex, ($sql_counte));
             $cantidade = mysqli_fetch_assoc($queryCounte);
             ?>
-            <h2> Cantidad de usuarios Entrenadores: <?php echo $cantidade['idusuario']; ?></h2>
+            <div class="cir-culo">
+            <h2> <br> Cantidad de usuarios Entrenadores: </h2> <h3> <?php echo $cantidade['idusuario']; ?></h3>
+            </div>
 
+            <style>
+                .cir-culo {
+                    position: flex;
+                    min-height: 40%;
+                    height: fit-content;
+                    width: fit-content;
+                    max-width: 15%;
+                    margin:5%;
+                    border-radius: 100%;
+                    background: #fb4c0d;
+                    transition: 0.5s;
+                    text-align: center;
+                }
+            </style>
         </div>
 
         <style>
-            .izquierdan h2{
-                margin:3%;
+            .izquierdan h2 {
+                font-size: 1.1rem;
+                margin: 3%;
+                padding: 6%;
                 color: white;
             }
-            .izquierdan p{
-                margin:3%;
+            .izquierdan h3 {
+                font-size: 1.1rem;
+                margin-bottom: 13%;
                 color: white;
             }
+
         </style>
 
         <div class="derechan" id="divsb">
