@@ -16,9 +16,9 @@ input[type="number"] {
 
 /*------------------------------------- estilo ----- fuente -------------------------------------------------*/
 
-@import url("https://fonts.googleapis.com/css?family=Barlow+Semi+Condensed");
+@import url(https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap%22);
 #text {
-  font-family: 'Poppins';
+  font-family: "Poppins", sans-serif;
   text-align: center;
   font-size: 16px;
   color: rgb(255, 255, 255);
