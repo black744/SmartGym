@@ -135,8 +135,8 @@ switch ($idrol) {
                     <img src="data:image/jpg;base64,<?php echo base64_encode($image); ?>" class="imgp">
                 <?php } ?>
                 <br>
-                <h1><?php echo $row['nombre'] ?></h1>
                 <br>
+                <h1><?php echo $row['nombre'] ?></h1>
                 <p>Peso actual: <?php echo $pesoactual ?> </p>
                 <p>Peso ideal: <?php echo $pesoideal ?> </p>
                 <p>Peso inicial: <?php echo $pesoinicial ?> </p>
