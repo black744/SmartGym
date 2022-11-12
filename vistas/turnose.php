@@ -81,7 +81,6 @@ switch ($idrol) {
                 ?>
                         <div class="turno-a">
                             <br>
-                            <p><?php echo $rowidclase;?></p>
                             <p> Fecha: <?php echo $data['fecha']; ?></p>
                             <p> Horario: <?php echo $data['hora']; ?></p>
                             <p> Modalidad: <?php echo $data['modalidad']; ?></p>
