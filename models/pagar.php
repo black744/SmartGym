@@ -92,14 +92,13 @@ $preference->save();
 
                     <?php
                     if ($_POST['plantype'] == "Mixto") { ?>
-                        <p>Mixto</p>
-                        <p>En el plan mixto podras encontrar clases tanto presenciales como virtuales con posibilidad de tener acceso a los 2 tipos de clases, por un precio accesible</p>
+                        <p>Tendras acceso tanto a clases presenciales (en la sucursal del gimnasio) como virtuales (via zoom meeting), podras escoger la clase de tu conveniencia, teniendo en cuanta tus horarios y dias de disponibilidad, tambien podras gestionar tu perfil, basandose en tus necesidades a la hora de llevar a cabo las rutinas previamente asignadas por un entrenador</p>
                     <?php
                     } else if ($_POST['plantype'] == "Virtual") { ?>
-                        <p>Virtual</p>
+                        <p>Tendras acceso a clases virtuales (via zoom meeting), podras escoger la clase de tu conveniencia, teniendo en cuanta tus horarios y dias de disponibilidad, tambien podras gestionar tu perfil, basandose en tus necesidades a la hora de llevar a cabo las rutinas previamente asignadas por un entrenador</p>
                     <?php
                     } else { ?>
-                        <p>Presencial</p>
+                        <p>Tendras acceso a clases presenciales (en la sucursal del gimnasio), podras escoger la clase de tu conveniencia, teniendo en cuanta tus horarios y dias de disponibilidad, tambien podras gestionar tu perfil, basandose en tus necesidades a la hora de llevar a cabo las rutinas previamente asignadas por un entrenador</p>
                     <?php
                     } ?>
 

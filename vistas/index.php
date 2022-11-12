@@ -39,10 +39,10 @@
         <h2 id="servicios">Servicios</h2>
             <p>SmartGym ofrece al cliente 3 planes de modalidades de entrenamiento:
              virtual,presencial y mixta. El cliente podrá acceder al plan que mas le guste, teniendo acceso a nuestro servicio de Smart Gym disponiendo de total acceso a todas las opciones que ofrezca su plan de servicio elegido. </P> 
-        <h2 id="quienessomos" >Quienes somos</h2>
+        <h2 id="quienessomos" >¿Quienes somos?</h2>
             <p>Somos un grupo de alumnos de informatica de 7° año que detectamos un problema en la organizacion de los gimnasios de la zona de Villa Luzuriaga lo que llevo a proponernos desarrollar un sistema de gestion, orientados a optimizar las diversas tareas que se realizan en los mismos; que van desde gestionar pagos,tareas,dictar planes en linea, asignar rutinas entre otras actividades. Generando un feedback constante entre usuarios, entrenadores y administradores. Somos Smart Gym</p>
         <h2 id="objetivo" >objetivo</h2>
-            <p>Interactuar mediante diversas estrategias de marketing para que los gimnasios puedan incorporar nuestra plataforma a un bajo costo.</p>
+            <p>Incentivar mediante diversas estrategias de marketing para que los gimnasios puedan incorporar nuestra plataforma a un bajo costo.</p>
 
             <a href="#arriba"><button class="s"><i class="fa-solid fa-circle-arrow-up"></i></button></a>
             <style>
