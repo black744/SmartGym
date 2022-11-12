@@ -89,53 +89,20 @@ $preference->save();
             <div class="descmaspago">
                 <div class="desc">
                     <h2> Suscripción <?php echo $_POST['plantype'] ?></h2>
-                    <p>
-                        <?php
-                        if($_POST['plantype'] == "Mixto"){
-                            ?>
-                            Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto.
-                        Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500,
-                        cuando un impresor (N. del T. persona que se dedica a la imprenta) desconocido usó una
-                        galería de textos y los mezcló de tal manera que logró hacer un libro de textos especimen.
-                        No sólo sobrevivió 500 años, sino que tambien ingresó como texto de relleno en documentos e
-                        lectrónicos, quedando esencialmente igual al original. Fue popularizado en los 60s con la creación
-                        de las hojas "Letraset", las cuales contenian pasajes de Lorem Ipsum,
-                        y más recientemente con software de autoedición, como por ejemplo Aldus PageMaker,
-                        el cual incluye versiones de Lorem Ipsum.
-                    </p>
-                            <?php
-                        }?>
-                        <?php
-                        if($_POST['plantype'] == "Virtual"){
-                            ?>
-                            Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto.
-                        Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500,
-                        cuando un impresor (N. del T. persona que se dedica a la imprenta) desconocido usó una
-                        galería de textos y los mezcló de tal manera que logró hacer un libro de textos especimen.
-                        No sólo sobrevivió 500 años, sino que tambien ingresó como texto de relleno en documentos e
-                        lectrónicos, quedando esencialmente igual al original. Fue popularizado en los 60s con la creación
-                        de las hojas "Letraset", las cuales contenian pasajes de Lorem Ipsum,
-                        y más recientemente con software de autoedición, como por ejemplo Aldus PageMaker,
-                        el cual incluye versiones de Lorem Ipsum.
-                    </p>
-                            <?php
-                        }?>
-                        <?php
-                        if($_POST['plantype'] == "Presencial"){
-                            ?>
-                            Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto.
-                        Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500,
-                        cuando un impresor (N. del T. persona que se dedica a la imprenta) desconocido usó una
-                        galería de textos y los mezcló de tal manera que logró hacer un libro de textos especimen.
-                        No sólo sobrevivió 500 años, sino que tambien ingresó como texto de relleno en documentos e
-                        lectrónicos, quedando esencialmente igual al original. Fue popularizado en los 60s con la creación
-                        de las hojas "Letraset", las cuales contenian pasajes de Lorem Ipsum,
-                        y más recientemente con software de autoedición, como por ejemplo Aldus PageMaker,
-                        el cual incluye versiones de Lorem Ipsum.
-                    </p>
-                            <?php
-                        }?>
-                        
+
+                    <?php
+                    if ($_POST['plantype'] == "Mixto") { ?>
+                        <p>Mixto</p>
+                        <p>En el plan mixto podras encontrar clases tanto presenciales como virtuales con posibilidad de tener acceso a los 2 tipos de clases, por un precio accesible</p>
+                    <?php
+                    } else if ($_POST['plantype'] == "Virtual") { ?>
+                        <p>Virtual</p>
+                    <?php
+                    } else { ?>
+                        <p>Presencial</p>
+                    <?php
+                    } ?>
+
                 </div>
                 <div class="formabajo">
                     <div class="cho-container"></div>
