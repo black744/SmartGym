@@ -117,7 +117,7 @@ switch ($idrol) {
         <tr class="fila">
           <td>
             <?php
-            $SQLDefault = 'CALL getImage()';
+            $SQLDefault = "SELECT image FROM datos WHERE idusuario=1";
             $QUERYDefault = mysqli_query($conex, ($SQLDefault));
             $ROWDefault = mysqli_fetch_array($QUERYDefault);
             $DefaultIMG = $ROWDefault['image'];

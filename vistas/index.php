@@ -38,7 +38,7 @@
     <div class="a3">
         <h2 id="servicios">Servicios</h2>
             <p>SmartGym ofrece al cliente 3 planes de modalidades de entrenamiento:
-            el primer plan es el virtual que consiste en clases virtuales de entrenamiento con clases grupales por vía zoom con nuestros entrenadores, tambien recibiran por parte de los mismos, rutinas de entrenamiento para que puedan seguir desde la comodidad de su hogar.</P> 
+             virtual,presencial y mixta. El cliente podrá acceder al plan que mas le guste, teniendo acceso a nuestro servicio de Smart Gym disponiendo de total acceso a todas las opciones que ofrezca su plan de servicio elegido. </P> 
         <h2 id="quienessomos" >Quienes somos</h2>
             <p>Hay muchas variaciones de los pasajes de Lorem Ipsum disponibles, pero la mayoría sufrió alteraciones en alguna manera, ya sea porque se le agregó humor, o palabras aleatorias que no parecen ni un poco creíbles. Si vas a utilizar un pasaje de Lorem Ipsum, necesitás estar seguro de que no hay nada avergonzante escondido en el medio del texto. Todos los generadores de Lorem Ipsum que se encuentran en Internet tienden a repetir trozos predefinidos cuando sea necesario, haciendo a este el único generador verdadero (válido) en la Internet. </p>
         <h2 id="objetivo" >objetivo</h2>
