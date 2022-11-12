@@ -41,6 +41,11 @@ $plantype= $row['plantype'];
     $buscador = mysqli_query($conex, "SELECT * FROM clases WHERE modalidad='$plantype' AND entrenador LIKE LOWER('%" . $_POST["s-e"] . "%')");
 
     while ($resultado = mysqli_fetch_assoc($buscador)) {
+      if($resultado == 0){
+        ?>
+        <p>No posee clases</p>
+        <?php
+}
       if ($resultado['cupos'] == 0 or $resultado['estado'] == 1 ) {
     ?>
         <option disabled value="<?php echo $resultado['idclase'] ?>">
