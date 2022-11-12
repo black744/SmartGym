@@ -43,7 +43,9 @@ $plantype= $row['plantype'];
     while ($resultado = mysqli_fetch_assoc($buscador)) {
       if($resultado == 0){
         ?>
+        <option>
         <p>No posee clases</p>
+      </option>
         <?php
 }
       if ($resultado['cupos'] == 0 or $resultado['estado'] == 1 ) {
