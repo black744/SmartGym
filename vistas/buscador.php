@@ -41,7 +41,7 @@ $plantype= $row['plantype'];
     $buscador = mysqli_query($conex, "SELECT * FROM clases WHERE modalidad='$plantype' AND entrenador LIKE LOWER('%" . $_POST["s-e"] . "%')");
 
     while ($resultado = mysqli_fetch_assoc($buscador)) {
-      if($resultado == 0){
+      if($resultado['idclase'] == 0){
         ?>
         <option>
         <p>No posee clases</p>
@@ -65,6 +65,7 @@ $plantype= $row['plantype'];
       $buscador = mysqli_query($conex, "SELECT * FROM clases WHERE entrenador LIKE LOWER('%" . $_POST["s-e"] . "%')");
 
       while ($resultado = mysqli_fetch_assoc($buscador)) {
+
         if ($resultado['cupos'] == 0 or $resultado['estado'] == 1 ) {
       ?>
           <option disabled value="<?php echo $resultado['idclase'] ?>">
@@ -72,11 +73,17 @@ $plantype= $row['plantype'];
           </option>
         <?php
         } else {
+          if(resultado !=0){
         ?>
           <option value="<?php echo $resultado['idclase'] ?>">
             <p>Cupos: <?php echo $resultado['cupos'] ?> - Entrenador: <?php echo $resultado['entrenador'] ?> - <?php echo $resultado['fecha'] ?> - <?php echo $resultado['hora'] ?> - <?php echo $resultado['modalidad'] ?></p>
           </option>
-      <?php }
+      <?php }else{
+                  ?>
+                  <option><p>No posee clases</p></option>
+                  <?php
+          
+      }}
       };
     } ?>
   </select>
