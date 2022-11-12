@@ -40,9 +40,9 @@
             <p>SmartGym ofrece al cliente 3 planes de modalidades de entrenamiento:
              virtual,presencial y mixta. El cliente podrá acceder al plan que mas le guste, teniendo acceso a nuestro servicio de Smart Gym disponiendo de total acceso a todas las opciones que ofrezca su plan de servicio elegido. </P> 
         <h2 id="quienessomos" >Quienes somos</h2>
-            <p>Hay muchas variaciones de los pasajes de Lorem Ipsum disponibles, pero la mayoría sufrió alteraciones en alguna manera, ya sea porque se le agregó humor, o palabras aleatorias que no parecen ni un poco creíbles. Si vas a utilizar un pasaje de Lorem Ipsum, necesitás estar seguro de que no hay nada avergonzante escondido en el medio del texto. Todos los generadores de Lorem Ipsum que se encuentran en Internet tienden a repetir trozos predefinidos cuando sea necesario, haciendo a este el único generador verdadero (válido) en la Internet. </p>
+            <p>Somos un grupo de alumnos de informatica de 7° año que detectamos un problema en la organizacion de los gimnasios de la zona de Villa Luzuriaga lo que llevo a proponernos desarrollar un sistema de gestion, orientados a optimizar las diversas tareas que se realizan en los mismos; que van desde gestionar pagos,tareas,dictar planes en linea, asignar rutinas entre otras actividades. Generando un feedback constante entre usuarios, entrenadores y administradores. Somos Smart Gym</p>
         <h2 id="objetivo" >objetivo</h2>
-            <p>Usa un diccionario de mas de 200 palabras provenientes del latín, combinadas con estructuras muy útiles de sentencias, para generar texto de Lorem Ipsum que parezca razonable. Este Lorem Ipsum generado siempre estará libre de repeticiones, humor agregado o palabras no características del lenguaje, etc.</p>
+            <p>Interactuar mediante diversas estrategias de marketing para que los gimnasios puedan incorporar nuestra plataforma a un bajo costo.</p>
 
             <a href="#arriba"><button class="s"><i class="fa-solid fa-circle-arrow-up"></i></button></a>
             <style>
