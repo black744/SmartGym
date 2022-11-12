@@ -120,17 +120,14 @@ $preference->save();
         </div>
         <div class="footer-basic">
             <footer>
+                <br>
                 <div class="social">
-                    <a href="#"><i class="icon ion-social-instagram"></i></a>
-                    <a href="#"><i class="fa-solid fa-envelope"></i></a>
-                    <a href="#"><i class="icon ion-social-twitter"></i></a>
-                    <a href="#"><i class="icon ion-social-facebook"></i></a>
                 </div>
                 <ul class="list-inline">
-                    <li class="list-inline-item"><a href="#">Inicio</a></li>
-                    <li class="list-inline-item"><a href="#">Servicios</a></li>
-                    <li class="list-inline-item"><a href="#">Acerca de</a></li>
-                    <li class="list-inline-item"><a href="#">Quienes somos?</a></li>
+                <li class="list-inline-item"><a href="#servicios">Servicios</a>
+                <li class="list-inline-item"><a href="#objetivo">Objetivo</a>
+                <li class="list-inline-item"><a href="#quienessomos">Quienes somos</a>
+                <li class="list-inline-item"><a href="index.php">inicio</a>
                 </ul>
                 <p class="copyright">SmartGym © 2022</p>
             </footer>
