@@ -37,60 +37,54 @@
 
     <div class="a3">
         <h2 id="servicios">Servicios</h2>
-            <p>SmartGym ofrece al cliente 3 planes de modalidades de entrenamiento:
-             virtual,presencial y mixta. El cliente podrá acceder al plan que mas le guste, teniendo acceso a nuestro servicio de Smart Gym disponiendo de total acceso a todas las opciones que ofrezca su plan de servicio elegido. </P> 
-        <h2 id="quienessomos" >¿Quienes somos?</h2>
-            <p>Somos un grupo de alumnos de informatica de 7° año que detectamos un problema en la organizacion de los gimnasios de la zona de Villa Luzuriaga lo que llevo a proponernos desarrollar un sistema de gestion, orientados a optimizar las diversas tareas que se realizan en los mismos; que van desde gestionar pagos,tareas,dictar planes en linea, asignar rutinas entre otras actividades. Generando un feedback constante entre usuarios, entrenadores y administradores. Somos Smart Gym</p>
-        <h2 id="objetivo" >objetivo</h2>
-            <p>Incentivar mediante diversas estrategias de marketing para que los gimnasios puedan incorporar nuestra plataforma a un bajo costo.</p>
+        <p>SmartGym ofrece al cliente 3 planes de modalidades de entrenamiento:
+            virtual,presencial y mixta. El cliente podrá acceder al plan que mas le guste, teniendo acceso a nuestro servicio de Smart Gym disponiendo de total acceso a todas las opciones que ofrezca su plan de servicio elegido. </P>
+        <h2 id="quienessomos">¿Quienes somos?</h2>
+        <p>Somos un grupo de alumnos de informatica de 7° año que detectamos un problema en la organizacion de los gimnasios de la zona de Villa Luzuriaga lo que llevo a proponernos desarrollar un sistema de gestion, orientados a optimizar las diversas tareas que se realizan en los mismos; que van desde gestionar pagos,tareas,dictar planes en linea, asignar rutinas entre otras actividades. Generando un feedback constante entre usuarios, entrenadores y administradores. Somos Smart Gym</p>
+        <h2 id="objetivo">objetivo</h2>
+        <p>Incentivar mediante diversas estrategias de marketing para que los gimnasios puedan incorporar nuestra plataforma a un bajo costo.</p>
 
-            <a href="#arriba"><button class="s"><i class="fa-solid fa-circle-arrow-up"></i></button></a>
-            <style>
-                .s{
-                    position: relative;
-                    min-height: fit-content;
-                    height: 5%;
-                    min-width: 10%;
-                    background: #000 ;
-                    color: white;
-                    margin: 5%;
-                    left: 40%;
-                    border: 1.5px solid white;
-                    border-radius: 15px;
-                    cursor: pointer;
-                    transition: 0.2s;
-                }
+        <a href="#arriba"><button class="s"><i class="fa-solid fa-circle-arrow-up"></i></button></a>
+        <style>
+            .s {
+                position: relative;
+                min-height: fit-content;
+                height: 5%;
+                min-width: 10%;
+                background: #000;
+                color: white;
+                margin: 5%;
+                left: 40%;
+                border: 1.5px solid white;
+                border-radius: 15px;
+                cursor: pointer;
+                transition: 0.2s;
+            }
 
-                .s i{
-                    color: white;
-                    font-size: 2rem;
-                }
+            .s i {
+                color: white;
+                font-size: 2rem;
+            }
 
-                .s:hover{
-                    transform: scale(1.2);
-                    border: 1.5px solid #fb4c0d;
-                }
-            </style>
-        </div>
+            .s:hover {
+                transform: scale(1.2);
+                border: 1.5px solid #fb4c0d;
+            }
+        </style>
+    </div>
 
     <div class="footer-basic">
-                <footer>
-                    <div class="social">
-                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
-                        <a href=""><i class="fa-solid fa-envelope"></i></a>
-                        <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
-                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
-                        <a href="#"><i class="fa-brands fa-facebook"></i></a>
-                    </div>
-                    <ul class="list-inline">
-                        <li class="list-inline-item"><a href="#">Inicio</a></li>
-                        <li class="list-inline-item"><a href="#">Servicios</a></li>
-                        <li class="list-inline-item"><a href="#">Acerca de</a></li>
-                        <li class="list-inline-item"><a href="#">Quienes somos?</a></li>
-                    </ul>
-                    <p class="copyright">SmartGym © 2022</p>
-                </footer>
-            </div>
+        <footer>
+            <br>
+            <ul class="list-inline">
+                <li class="list-inline-item"><a href="#servicios">Servicios</a>
+                <li class="list-inline-item"><a href="#objetivo">Objetivo</a>
+                <li class="list-inline-item"><a href="#quienessomos">Quienes somos</a>
+                <li class="list-inline-item"><a href="index.php">inicio</a>
+            </ul>
+            <p class="copyright">SmartGym © 2022</p>
+        </footer>
+    </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
 </body>
