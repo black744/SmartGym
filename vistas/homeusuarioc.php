@@ -20,6 +20,7 @@ $pesoactual = $row['pesoactual'];
 $pesoinicial = $row['pesoinicial'];
 $pesoideal = $row['pesoideal'];
 $ultimopago = $row['ultimopago'];
+$vto = $row['vencimiento'];
 
 include("../models/validacion_clientes.php");
 
@@ -111,7 +112,7 @@ switch ($idrol) {
             <div class="pago">
                 <br>
                 <p> Fecha del ultimo pago: <?php echo $ultimopago; ?></p>
-                <p> Vencimiento: <?php echo date("y-m-d", strtotime($ultimopago . "+ 30 days")); ?></p>
+                <p> Vencimiento: <?php echo $vto;?></p>
                 <br>
             </div>
         </div>
@@ -141,32 +142,18 @@ switch ($idrol) {
                 <p>Peso inicial: <?php echo $pesoinicial ?> </p>
             </div>
             <div class="progresoform">
-                <form method="post">
+                <form method="post" action="../models/updtp.php">
                     <p>Ingrese peso actual</p>
-                    <input class="orange" type="number" id="inputs" name="pesoactual" placeholder="Peso en kg">
-                    <input  class="botonenviar" type="submit" name="enviarpesoactual">
+                    <input class="orange" type="number" id="inputs" name="pesoactual" placeholder="Peso en kg" min=10 max=200s required>
+                    <input id="btns" class="botonenviar" type="submit" name="enviarpesoactual">
                 </form>
-                <?php
-                if (isset($_POST['enviarpesoactual'])) {
-                    $NPactual = $_POST['pesoactual'];
-                    $sqlNPA = "UPDATE datos SET pesoactual='$NPactual' WHERE idusuario='$idusuario'";
-                    $queryNPA = mysqli_query($conex, ($sqlNPA));
-                    echo ("<script>window.location.href = 'homeusuarioc.php';</script>");
-                }
-                ?>
-                <form method="post">
+
+                <form method="post" action="../models/updtp.php">
                     <p>Ingrese peso ideal</p>
-                    <input class="orange" id="inputs" type="number" name="pesoideal" placeholder="Peso en kg">
-                    <input  class="botonenviar" type="submit" name="enviarpesoideal">
+                    <input class="orange" id="inputs" type="number" name="pesoideal" placeholder="Peso en kg" min=10 max=200 required>
+                    <input id="btns" class="botonenviar" type="submit" name="enviarpesoideal">
                 </form>
-                <?php
-                if (isset($_POST['enviarpesoideal'])) {
-                    $NPideal = $_POST['pesoideal'];
-                    $sqlideal = "UPDATE datos SET pesoideal='$NPideal' WHERE idusuario='$idusuario'";
-                    $queryideal = mysqli_query($conex, ($sqlideal));
-                    echo ("<script>window.location.href = 'homeusuarioc.php';</script>");
-                }
-                ?>
+
             </div>
 
 
